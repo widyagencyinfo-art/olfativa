@@ -65,12 +65,34 @@ Edita `data/perfumes.json` y añade un objeto con esta forma:
   "longevity": "7-9 horas",
   "history": "Texto de 100-300 palabras, único y bien redactado.",
   "similar": ["slug-1", "slug-2"],
-  "rating": 4.2
+  "rating": 4.2,
+  "image": "/perfumes/marca-nombre.jpg"
 }
 ```
 
 El `slug` debe ser único. Las páginas de marca, nota, género y temporada se
 generan automáticamente a partir de los datos.
+
+## Imágenes de los perfumes
+
+El campo `image` es opcional. Si está presente, la ficha y la tarjeta
+muestran esa imagen; si no, se muestra una ilustración. Para añadir fotos
+propias, coloca los archivos en `public/perfumes/` y apunta el campo a la
+ruta (p. ej. `/perfumes/dior-sauvage.jpg`).
+
+Cada ficha incluye además un botón **Ver fotos en Google Imágenes** que
+abre una búsqueda del perfume, sin alojar material con derechos de autor.
+
+## Foro de comentarios
+
+Cada perfume tiene un foro propio con [Giscus](https://giscus.app), basado
+en GitHub Discussions. Para activarlo:
+
+1. Instala la app de Giscus en el repositorio: <https://github.com/apps/giscus>
+2. Los identificadores ya están configurados en `lib/giscus.js`.
+
+Mientras la app no esté instalada, el foro muestra un aviso en lugar de
+cargar los comentarios.
 
 ## Despliegue
 
