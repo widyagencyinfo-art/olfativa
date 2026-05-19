@@ -3,7 +3,9 @@ import {
   getAllPerfumes,
   getBrands,
   getNotes,
+  getComparisonPairs,
 } from "@/lib/data";
+import { LISTS } from "@/lib/lists";
 
 export default function sitemap() {
   const now = new Date();
@@ -14,6 +16,8 @@ export default function sitemap() {
     "/marcas",
     "/notas",
     "/buscar",
+    "/comparativas",
+    "/mejores",
     "/genero/hombre",
     "/genero/mujer",
     "/genero/unisex",
@@ -28,11 +32,27 @@ export default function sitemap() {
     priority: path === "" ? 1 : 0.7,
   }));
 
-  const perfumePages = getAllPerfumes().map((p) => ({
+  const perfumes = getAllPerfumes();
+
+  const perfumePages = perfumes.map((p) => ({
     url: `${SITE_URL}/perfumes/${p.slug}`,
     lastModified: now,
     changeFrequency: "monthly",
     priority: 0.9,
+  }));
+
+  const alternativesPages = perfumes.map((p) => ({
+    url: `${SITE_URL}/alternativas/${p.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  const comparisonPages = getComparisonPairs().map((pair) => ({
+    url: `${SITE_URL}/comparativas/${pair.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.8,
   }));
 
   const brandPages = getBrands().map((b) => ({
@@ -49,5 +69,20 @@ export default function sitemap() {
     priority: 0.5,
   }));
 
-  return [...staticPages, ...perfumePages, ...brandPages, ...notePages];
+  const listPages = LISTS.map((l) => ({
+    url: `${SITE_URL}/mejores/${l.slug}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: 0.85,
+  }));
+
+  return [
+    ...staticPages,
+    ...perfumePages,
+    ...alternativesPages,
+    ...comparisonPages,
+    ...brandPages,
+    ...notePages,
+    ...listPages,
+  ];
 }

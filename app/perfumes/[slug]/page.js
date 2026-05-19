@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import PerfumeGrid from "@/components/PerfumeGrid";
 import PerfumeImage from "@/components/PerfumeImage";
+import BuyBox from "@/components/BuyBox";
 import Comments from "@/components/Comments";
 import {
   getAllPerfumes,
@@ -51,6 +52,45 @@ export default async function PerfumePage({ params }) {
   const similar = getSimilarPerfumes(perfume);
   const { min, max, currency } = perfume.priceRange;
 
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: `¿${perfume.name} es para hombre o para mujer?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `${perfume.name} de ${perfume.brand} es un perfume de ${genderLabel(perfume.gender).toLowerCase()}, lanzado en ${perfume.year}.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: `¿Cuánto dura ${perfume.name}?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `${perfume.name} tiene una duración aproximada de ${perfume.longevity} con proyección ${perfume.projection.toLowerCase()}.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: `¿En qué época del año usar ${perfume.name}?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `${perfume.name} es ideal en ${perfume.seasons.map((s) => seasonLabel(s).toLowerCase()).join(", ")}.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: `¿Cuánto cuesta ${perfume.name}?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `${perfume.name} (${perfume.concentration}) tiene un precio orientativo de ${formatPrice(perfume)}, lo que equivale a unos ${perfume.pricePerMl.toFixed(2)}€ por mililitro.`,
+        },
+      },
+    ],
+  };
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -85,6 +125,10 @@ export default async function PerfumePage({ params }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
       <Breadcrumbs
         items={[
@@ -219,6 +263,10 @@ export default async function PerfumePage({ params }) {
         </div>
 
         <div className="block">
+          <BuyBox perfume={perfume} />
+        </div>
+
+        <div className="block">
           <h2>Historia de {perfume.name}</h2>
           <div className="prose">
             <p>{perfume.history}</p>
@@ -229,6 +277,23 @@ export default async function PerfumePage({ params }) {
           <div className="block">
             <h2>Perfumes similares a {perfume.name}</h2>
             <PerfumeGrid perfumes={similar} />
+            <div className="chip-row" style={{ marginTop: "20px" }}>
+              <Link href={`/alternativas/${perfume.slug}`} className="chip">
+                Ver todas las alternativas →
+              </Link>
+              {similar.map((other) => {
+                const pair = [perfume.slug, other.slug].sort().join("-vs-");
+                return (
+                  <Link
+                    key={other.slug}
+                    href={`/comparativas/${pair}`}
+                    className="chip"
+                  >
+                    {perfume.name} vs {other.name}
+                  </Link>
+                );
+              })}
+            </div>
           </div>
         )}
 

@@ -748,6 +748,125 @@ img {
   color: var(--text-soft);
 }
 
+/* ---------- BuyBox ---------- */
+.buybox {
+  background: linear-gradient(150deg, var(--accent-soft), var(--surface));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.buybox-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.buybox-head h3 {
+  font-size: 1.3rem;
+}
+
+.buybox-price {
+  font-family: Georgia, serif;
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
+.buybox-text {
+  color: var(--text-soft);
+  font-size: 0.92rem;
+  margin: 8px 0 16px;
+}
+
+.buybox-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.buybox-btn {
+  flex: 1;
+  min-width: 170px;
+  text-align: center;
+}
+
+.buybox-note {
+  font-size: 0.78rem;
+  color: var(--text-soft);
+  margin-top: 14px;
+}
+
+/* ---------- Comparativa ---------- */
+.vs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: 20px 0;
+}
+
+.vs-col {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.vs-col-head {
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.vs-col-head .card-brand {
+  display: block;
+}
+
+.vs-col-head h3 {
+  font-size: 1.2rem;
+  margin-top: 2px;
+}
+
+.vs-col-body {
+  padding: 4px 0;
+}
+
+.vs-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 9px 18px;
+  font-size: 0.88rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.vs-row:last-child {
+  border-bottom: none;
+}
+
+.vs-row dt {
+  color: var(--text-soft);
+}
+
+.vs-row dd {
+  font-weight: 600;
+  text-align: right;
+}
+
+.vs-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
   .detail-top {
@@ -755,6 +874,9 @@ img {
   }
   .detail-visual {
     height: 300px;
+  }
+  .vs-grid {
+    grid-template-columns: 1fr;
   }
   .footer-grid {
     grid-template-columns: 1fr 1fr;

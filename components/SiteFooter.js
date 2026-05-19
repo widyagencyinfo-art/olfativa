@@ -23,6 +23,8 @@ export default function SiteFooter() {
             <h4>Explorar</h4>
             <ul>
               <li><Link href="/perfumes">Todos los perfumes</Link></li>
+              <li><Link href="/mejores">Mejores perfumes</Link></li>
+              <li><Link href="/comparativas">Comparativas</Link></li>
               <li><Link href="/marcas">Marcas</Link></li>
               <li><Link href="/notas">Notas olfativas</Link></li>
               <li><Link href="/buscar">Buscador avanzado</Link></li>
