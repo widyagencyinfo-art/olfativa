@@ -1,6 +1,8 @@
+import PerfumeBottle from "./PerfumeBottle";
+import { familyTheme } from "@/lib/data";
+
 export default function PerfumeImage({ perfume, variant = "card" }) {
   const cls = variant === "detail" ? "detail-visual" : "card-visual";
-  const bottle = variant === "detail" ? "detail-bottle" : "card-bottle";
 
   if (perfume.image) {
     return (
@@ -14,9 +16,15 @@ export default function PerfumeImage({ perfume, variant = "card" }) {
     );
   }
 
+  const theme = familyTheme(perfume.family);
   return (
-    <div className={cls}>
-      <div className={bottle} />
+    <div
+      className={cls}
+      style={{
+        background: `linear-gradient(150deg, ${theme.bg1}, ${theme.bg2})`,
+      }}
+    >
+      <PerfumeBottle perfume={perfume} variant={variant} />
     </div>
   );
 }
