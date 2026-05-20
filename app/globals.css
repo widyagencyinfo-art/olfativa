@@ -748,6 +748,22 @@ img {
   color: var(--text-soft);
 }
 
+.image-attribution {
+  font-size: 0.75rem;
+  color: var(--text-soft);
+  text-align: right;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+.image-attribution a {
+  color: var(--accent);
+}
+
+.image-attribution a:hover {
+  text-decoration: underline;
+}
+
 /* ---------- BuyBox ---------- */
 .buybox {
   background: linear-gradient(150deg, var(--accent-soft), var(--surface));

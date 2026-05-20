@@ -10,19 +10,53 @@
     "perfumer": "François Demachy",
     "family": "Amaderado aromático",
     "notes": {
-      "top": ["Bergamota", "Mandarina", "Pimienta de Sichuan"],
-      "heart": ["Lavanda", "Salvia", "Pimienta rosa", "Nuez moscada"],
-      "base": ["Ambroxan", "Vainilla", "Haba tonka", "Cedro"]
+      "top": [
+        "Bergamota",
+        "Mandarina",
+        "Pimienta de Sichuan"
+      ],
+      "heart": [
+        "Lavanda",
+        "Salvia",
+        "Pimienta rosa",
+        "Nuez moscada"
+      ],
+      "base": [
+        "Ambroxan",
+        "Vainilla",
+        "Haba tonka",
+        "Cedro"
+      ]
     },
-    "priceRange": { "min": 75, "max": 135, "currency": "EUR" },
+    "priceRange": {
+      "min": 75,
+      "max": 135,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.35,
-    "seasons": ["primavera", "otono", "invierno"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["diario", "oficina", "cita", "eventos"],
+    "seasons": [
+      "primavera",
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "cita",
+      "eventos"
+    ],
     "projection": "Alta",
     "longevity": "8-10 horas",
     "history": "Sauvage nació en 2015 como un eau de toilette que rcompió con la imagen del antiguo Eau Sauvage de 1966, y la versión Eau de Parfum llegó en 2018 para profundizar su carácter. Inspirado en paisajes desérticos al atardecer, François Demachy buscó una frescura mineral envuelta en calidez ambarina. Con Johnny Depp como rostro de campaña, se convirtió en uno de los perfumes masculinos más vendidos del mundo y en un fenómeno cultural difícil de igualar.",
-    "similar": ["bleu-de-chanel-edp", "versace-eros", "ysl-y-edp"],
+    "similar": [
+      "bleu-de-chanel-edp",
+      "versace-eros",
+      "ysl-y-edp"
+    ],
     "rating": 4.3
   },
   {
@@ -36,19 +70,55 @@
     "perfumer": "Jacques Polge",
     "family": "Amaderado aromático",
     "notes": {
-      "top": ["Limón", "Menta", "Pomelo", "Bergamota"],
-      "heart": ["Jengibre", "Nuez moscada", "Jazmín", "Melón"],
-      "base": ["Incienso", "Sándalo", "Cedro", "Pachulí", "Haba tonka"]
+      "top": [
+        "Limón",
+        "Menta",
+        "Pomelo",
+        "Bergamota"
+      ],
+      "heart": [
+        "Jengibre",
+        "Nuez moscada",
+        "Jazmín",
+        "Melón"
+      ],
+      "base": [
+        "Incienso",
+        "Sándalo",
+        "Cedro",
+        "Pachulí",
+        "Haba tonka"
+      ]
     },
-    "priceRange": { "min": 90, "max": 150, "currency": "EUR" },
+    "priceRange": {
+      "min": 90,
+      "max": 150,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.5,
-    "seasons": ["primavera", "otono", "invierno"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["oficina", "diario", "eventos", "cita"],
+    "seasons": [
+      "primavera",
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "oficina",
+      "diario",
+      "eventos",
+      "cita"
+    ],
     "projection": "Media-alta",
     "longevity": "8-9 horas",
     "history": "Bleu de Chanel se lanzó en 2010 como eau de toilette y la casa amplió la línea con la versión Eau de Parfum en 2014, más cálida y resinosa. Jacques Polge concibió un perfume que simbolizara la libertad de un hombre que rechaza las convenciones, idea reforzada por la campaña de Martin Scorsese. Su equilibrio entre frescura cítrica e incienso amaderado lo convirtió en un pilar de la perfumería masculina contemporánea y en una alternativa elegante y versátil.",
-    "similar": ["dior-sauvage-edp", "prada-lhomme", "givenchy-gentleman-edp"],
+    "similar": [
+      "dior-sauvage-edp",
+      "prada-lhomme",
+      "givenchy-gentleman-edp"
+    ],
     "rating": 4.4
   },
   {
@@ -62,19 +132,53 @@
     "perfumer": "Olivier Creed y Erwin Creed",
     "family": "Chipre frutal",
     "notes": {
-      "top": ["Piña", "Bergamota", "Grosella negra", "Manzana"],
-      "heart": ["Abedul", "Pachulí", "Rosa", "Jazmín"],
-      "base": ["Almizcle", "Roble", "Ámbar gris", "Vainilla"]
+      "top": [
+        "Piña",
+        "Bergamota",
+        "Grosella negra",
+        "Manzana"
+      ],
+      "heart": [
+        "Abedul",
+        "Pachulí",
+        "Rosa",
+        "Jazmín"
+      ],
+      "base": [
+        "Almizcle",
+        "Roble",
+        "Ámbar gris",
+        "Vainilla"
+      ]
     },
-    "priceRange": { "min": 230, "max": 360, "currency": "EUR" },
+    "priceRange": {
+      "min": 230,
+      "max": 360,
+      "currency": "EUR"
+    },
     "pricePerMl": 3.6,
-    "seasons": ["primavera", "verano", "otono"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["eventos", "cita", "oficina"],
+    "seasons": [
+      "primavera",
+      "verano",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "eventos",
+      "cita",
+      "oficina"
+    ],
     "projection": "Alta",
     "longevity": "8-12 horas",
     "history": "Aventus se presentó en 2010 para celebrar el 250 aniversario de la casa Creed e inmediatamente redefinió la perfumería masculina de lujo. Inspirado en la vida de Napoleón Bonaparte —su fuerza, conquista y reputación—, combina una piña jugosa con un fondo ahumado de abedul. Su éxito fue tan rotundo que generó incontables imitaciones y popularizó la idea del perfume como objeto de estatus, manteniéndose como referencia obligada más de una década después.",
-    "similar": ["parfums-de-marly-layton", "xerjoff-naxos", "dior-sauvage-edp"],
+    "similar": [
+      "parfums-de-marly-layton",
+      "xerjoff-naxos",
+      "dior-sauvage-edp"
+    ],
     "rating": 4.5
   },
   {
@@ -88,20 +192,49 @@
     "perfumer": "Christophe Raynaud, Olivier Pescheux, Michel Girard",
     "family": "Amaderado especiado",
     "notes": {
-      "top": ["Pomelo", "Mandarina", "Menta"],
-      "heart": ["Rosa", "Canela", "Especias"],
-      "base": ["Cuero", "Ámbar", "Pachulí"]
+      "top": [
+        "Pomelo",
+        "Mandarina",
+        "Menta"
+      ],
+      "heart": [
+        "Rosa",
+        "Canela",
+        "Especias"
+      ],
+      "base": [
+        "Cuero",
+        "Ámbar",
+        "Pachulí"
+      ]
     },
-    "priceRange": { "min": 55, "max": 105, "currency": "EUR" },
+    "priceRange": {
+      "min": 55,
+      "max": 105,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.05,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["ocio", "cita", "eventos"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "ocio",
+      "cita",
+      "eventos"
+    ],
     "projection": "Alta",
     "longevity": "7-9 horas",
     "history": "Lanzado en 2008 con su icónico frasco en forma de lingote de oro, 1 Million convirtió la opulencia en un juego desenfadado y accesible. Paco Rabanne quería un perfume que oliera a riqueza y seducción sin tomarse demasiado en serio, idea que las campañas publicitarias llevaron al humor más descarado. Su mezcla dulce y especiada de cuero y canela lo hizo enormemente popular entre el público joven y lo consolidó como un superventas global.",
-    "similar": ["jean-paul-gaultier-le-male", "azzaro-the-most-wanted", "viktor-rolf-spicebomb"],
-    "rating": 4.0
+    "similar": [
+      "jean-paul-gaultier-le-male",
+      "azzaro-the-most-wanted",
+      "viktor-rolf-spicebomb"
+    ],
+    "rating": 4
   },
   {
     "slug": "jean-paul-gaultier-le-male",
@@ -114,20 +247,55 @@
     "perfumer": "Francis Kurkdjian",
     "family": "Aromático fougère",
     "notes": {
-      "top": ["Menta", "Lavanda", "Bergamota", "Cardamomo"],
-      "heart": ["Canela", "Comino", "Flor de azahar"],
-      "base": ["Vainilla", "Haba tonka", "Sándalo", "Ámbar"]
+      "top": [
+        "Menta",
+        "Lavanda",
+        "Bergamota",
+        "Cardamomo"
+      ],
+      "heart": [
+        "Canela",
+        "Comino",
+        "Flor de azahar"
+      ],
+      "base": [
+        "Vainilla",
+        "Haba tonka",
+        "Sándalo",
+        "Ámbar"
+      ]
     },
-    "priceRange": { "min": 50, "max": 95, "currency": "EUR" },
+    "priceRange": {
+      "min": 50,
+      "max": 95,
+      "currency": "EUR"
+    },
     "pricePerMl": 0.95,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche", "dia"],
-    "occasions": ["diario", "cita", "ocio"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche",
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "cita",
+      "ocio"
+    ],
     "projection": "Media-alta",
     "longevity": "7-9 horas",
     "history": "Le Male debutó en 1995 dentro de su célebre frasco con forma de torso masculino, una provocación deliberada de Jean Paul Gaultier contra los estereotipos de género. Fue el primer gran trabajo de Francis Kurkdjian, que con apenas 25 años creó una fragancia revolucionaria al unir la frescura de la lavanda con una vainilla golosa. Considerado uno de los perfumes más influyentes de su época, abrió la puerta a toda una generación de aromas dulces y orientales.",
-    "similar": ["paco-rabanne-1-million", "mugler-a-men", "viktor-rolf-spicebomb"],
-    "rating": 4.2
+    "similar": [
+      "paco-rabanne-1-million",
+      "mugler-a-men",
+      "viktor-rolf-spicebomb"
+    ],
+    "rating": 4.2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Gaultier_Le_M%C3%A2le.jpg",
+    "imageSource": "Wikipedia (fr)",
+    "imageTitle": "Le Mâle"
   },
   {
     "slug": "versace-eros",
@@ -140,19 +308,51 @@
     "perfumer": "Aurélien Guichard",
     "family": "Aromático fougère",
     "notes": {
-      "top": ["Menta", "Manzana verde", "Limón"],
-      "heart": ["Haba tonka", "Geranio", "Ambroxan"],
-      "base": ["Vainilla", "Cedro", "Vetiver", "Musgo de roble"]
+      "top": [
+        "Menta",
+        "Manzana verde",
+        "Limón"
+      ],
+      "heart": [
+        "Haba tonka",
+        "Geranio",
+        "Ambroxan"
+      ],
+      "base": [
+        "Vainilla",
+        "Cedro",
+        "Vetiver",
+        "Musgo de roble"
+      ]
     },
-    "priceRange": { "min": 45, "max": 90, "currency": "EUR" },
+    "priceRange": {
+      "min": 45,
+      "max": 90,
+      "currency": "EUR"
+    },
     "pricePerMl": 0.9,
-    "seasons": ["primavera", "otono", "invierno"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["ocio", "cita", "diario"],
+    "seasons": [
+      "primavera",
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "ocio",
+      "cita",
+      "diario"
+    ],
     "projection": "Alta",
     "longevity": "7-9 horas",
     "history": "Eros llegó en 2012 inspirado en el dios griego del amor y el deseo, una temática perfecta para la sensualidad teatral de la casa Versace. Aurélien Guichard construyó un contraste adictivo entre una menta fresca y vibrante y un fondo dulce de vainilla y haba tonka. Con su frasco verde grabado con la Medusa, se convirtió rápidamente en favorito del público joven y en uno de los lanzamientos masculinos más exitosos de la marca.",
-    "similar": ["dior-sauvage-edp", "versace-dylan-blue", "ysl-y-edp"],
+    "similar": [
+      "dior-sauvage-edp",
+      "versace-dylan-blue",
+      "ysl-y-edp"
+    ],
     "rating": 4.1
   },
   {
@@ -166,19 +366,52 @@
     "perfumer": "Dominique Ropion, Nathalie Lorson",
     "family": "Amaderado aromático",
     "notes": {
-      "top": ["Manzana", "Bergamota", "Jengibre"],
-      "heart": ["Salvia", "Geranio", "Lavanda"],
-      "base": ["Ámbar", "Cedro", "Haba tonka", "Vetiver"]
+      "top": [
+        "Manzana",
+        "Bergamota",
+        "Jengibre"
+      ],
+      "heart": [
+        "Salvia",
+        "Geranio",
+        "Lavanda"
+      ],
+      "base": [
+        "Ámbar",
+        "Cedro",
+        "Haba tonka",
+        "Vetiver"
+      ]
     },
-    "priceRange": { "min": 70, "max": 125, "currency": "EUR" },
+    "priceRange": {
+      "min": 70,
+      "max": 125,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.25,
-    "seasons": ["primavera", "otono", "invierno"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["oficina", "diario", "cita", "eventos"],
+    "seasons": [
+      "primavera",
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "oficina",
+      "diario",
+      "cita",
+      "eventos"
+    ],
     "projection": "Media-alta",
     "longevity": "8-9 horas",
     "history": "Y Eau de Parfum apareció en 2018 como evolución más intensa del Y original de 2017, concebido como retrato del hombre que persigue sus ambiciones. Su nombre alude a la pregunta universal del porqué y a la firma de Yves Saint Laurent. Dominique Ropion equilibró una frescura de salvia y manzana con un fondo cremoso de haba tonka, logrando una fragancia versátil que se ganó un puesto fijo entre los grandes superventas masculinos modernos.",
-    "similar": ["dior-sauvage-edp", "bleu-de-chanel-edp", "versace-eros"],
+    "similar": [
+      "dior-sauvage-edp",
+      "bleu-de-chanel-edp",
+      "versace-eros"
+    ],
     "rating": 4.2
   },
   {
@@ -192,19 +425,47 @@
     "perfumer": "Quentin Bisch, Louise Turner",
     "family": "Amaderado especiado",
     "notes": {
-      "top": ["Pimienta blanca", "Pimienta de Sichuan", "Bergamota"],
-      "heart": ["Salvia", "Cedro"],
-      "base": ["Haba tonka", "Cacao", "Ámbar"]
+      "top": [
+        "Pimienta blanca",
+        "Pimienta de Sichuan",
+        "Bergamota"
+      ],
+      "heart": [
+        "Salvia",
+        "Cedro"
+      ],
+      "base": [
+        "Haba tonka",
+        "Cacao",
+        "Ámbar"
+      ]
     },
-    "priceRange": { "min": 55, "max": 105, "currency": "EUR" },
+    "priceRange": {
+      "min": 55,
+      "max": 105,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.05,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["cita", "ocio", "eventos"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "ocio",
+      "eventos"
+    ],
     "projection": "Media-alta",
     "longevity": "7-9 horas",
     "history": "Bad Boy llegó en 2019 como contrapunto rebelde del exitoso Good Girl femenino, compartiendo el llamativo frasco geométrico en forma de rayo. Carolina Herrera buscaba un retrato del hombre contradictorio que combina luces y sombras. Quentin Bisch firmó una fórmula que une especias picantes con la calidez golosa del cacao y la haba tonka, creando una propuesta moderna y magnética muy popular para las salidas nocturnas.",
-    "similar": ["paco-rabanne-1-million", "viktor-rolf-spicebomb", "dior-homme-intense"],
+    "similar": [
+      "paco-rabanne-1-million",
+      "viktor-rolf-spicebomb",
+      "dior-homme-intense"
+    ],
     "rating": 4.1
   },
   {
@@ -218,19 +479,48 @@
     "perfumer": "Alberto Morillas",
     "family": "Acuático amaderado",
     "notes": {
-      "top": ["Bergamota", "Notas marinas"],
-      "heart": ["Geranio", "Salvia", "Romero"],
-      "base": ["Incienso", "Pachulí"]
+      "top": [
+        "Bergamota",
+        "Notas marinas"
+      ],
+      "heart": [
+        "Geranio",
+        "Salvia",
+        "Romero"
+      ],
+      "base": [
+        "Incienso",
+        "Pachulí"
+      ]
     },
-    "priceRange": { "min": 75, "max": 130, "currency": "EUR" },
+    "priceRange": {
+      "min": 75,
+      "max": 130,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.3,
-    "seasons": ["primavera", "verano", "otono"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["oficina", "diario", "eventos"],
+    "seasons": [
+      "primavera",
+      "verano",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "oficina",
+      "diario",
+      "eventos"
+    ],
     "projection": "Media-alta",
     "longevity": "8-10 horas",
     "history": "El Acqua di Giò original de 1996 definió toda una era de frescura acuática masculina. En 2015, Alberto Morillas firmó la versión Profumo, una relectura más sofisticada y elegante que oscurece la clásica brisa marina con incienso ahumado. El resultado mantiene el espíritu mediterráneo de la línea pero le añade profundidad y carácter nocturno, convirtiéndose en uno de los lanzamientos más aplaudidos de Armani en la última década.",
-    "similar": ["bleu-de-chanel-edp", "versace-dylan-blue", "prada-lhomme"],
+    "similar": [
+      "bleu-de-chanel-edp",
+      "versace-dylan-blue",
+      "prada-lhomme"
+    ],
     "rating": 4.4
   },
   {
@@ -244,19 +534,46 @@
     "perfumer": "François Demachy",
     "family": "Amaderado floral",
     "notes": {
-      "top": ["Lavanda"],
-      "heart": ["Iris", "Ámbar", "Pera"],
-      "base": ["Vetiver", "Cedro", "Haba tonka"]
+      "top": [
+        "Lavanda"
+      ],
+      "heart": [
+        "Iris",
+        "Ámbar",
+        "Pera"
+      ],
+      "base": [
+        "Vetiver",
+        "Cedro",
+        "Haba tonka"
+      ]
     },
-    "priceRange": { "min": 75, "max": 130, "currency": "EUR" },
+    "priceRange": {
+      "min": 75,
+      "max": 130,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.3,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["eventos", "cita", "oficina"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "eventos",
+      "cita",
+      "oficina"
+    ],
     "projection": "Media-alta",
     "longevity": "9-12 horas",
     "history": "Dior Homme Intense profundiza el carácter del Dior Homme original de 2005, célebre por su atrevido uso del iris en una fragancia masculina. François Demachy convirtió esa raíz pulverulenta y aristocrática en algo aún más cremoso y envolvente, con cacao suave y maderas. Considerado un perfume de elegancia indiscutible, es la elección habitual para bodas y ocasiones formales y un favorito recurrente entre los entusiastas de la perfumería.",
-    "similar": ["prada-lhomme", "carolina-herrera-bad-boy", "givenchy-gentleman-edp"],
+    "similar": [
+      "prada-lhomme",
+      "carolina-herrera-bad-boy",
+      "givenchy-gentleman-edp"
+    ],
     "rating": 4.4
   },
   {
@@ -270,19 +587,46 @@
     "perfumer": "Olivier Gillotin",
     "family": "Oriental especiado",
     "notes": {
-      "top": ["Hoja de tabaco", "Especias"],
-      "heart": ["Vainilla", "Cacao", "Haba tonka", "Fruto seco"],
-      "base": ["Frutos secos", "Madera"]
+      "top": [
+        "Hoja de tabaco",
+        "Especias"
+      ],
+      "heart": [
+        "Vainilla",
+        "Cacao",
+        "Haba tonka",
+        "Fruto seco"
+      ],
+      "base": [
+        "Frutos secos",
+        "Madera"
+      ]
     },
-    "priceRange": { "min": 180, "max": 320, "currency": "EUR" },
+    "priceRange": {
+      "min": 180,
+      "max": 320,
+      "currency": "EUR"
+    },
     "pricePerMl": 3.2,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["eventos", "cita"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "eventos",
+      "cita"
+    ],
     "projection": "Alta",
     "longevity": "10-14 horas",
     "history": "Tobacco Vanille forma parte de la colección Private Blend con la que Tom Ford lanzó su perfumería de lujo en 2007. Inspirado en los clubes de caballeros ingleses, evoca el aroma de una pipa de tabaco dulce envuelta en vainilla y especias. Su carácter opulento y reconfortante lo convirtió en uno de los perfumes invernales más imitados del mercado y en una auténtica firma de la casa.",
-    "similar": ["mfk-grand-soir", "viktor-rolf-spicebomb", "xerjoff-naxos"],
+    "similar": [
+      "mfk-grand-soir",
+      "viktor-rolf-spicebomb",
+      "xerjoff-naxos"
+    ],
     "rating": 4.5
   },
   {
@@ -296,19 +640,49 @@
     "perfumer": "Richard Herpin",
     "family": "Oriental amaderado",
     "notes": {
-      "top": ["Oud", "Palo de rosa", "Cardamomo"],
-      "heart": ["Sándalo", "Palisandro", "Especias"],
-      "base": ["Haba tonka", "Vainilla", "Ámbar"]
+      "top": [
+        "Oud",
+        "Palo de rosa",
+        "Cardamomo"
+      ],
+      "heart": [
+        "Sándalo",
+        "Palisandro",
+        "Especias"
+      ],
+      "base": [
+        "Haba tonka",
+        "Vainilla",
+        "Ámbar"
+      ]
     },
-    "priceRange": { "min": 200, "max": 340, "currency": "EUR" },
+    "priceRange": {
+      "min": 200,
+      "max": 340,
+      "currency": "EUR"
+    },
     "pricePerMl": 3.4,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche", "dia"],
-    "occasions": ["eventos", "oficina", "cita"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche",
+      "dia"
+    ],
+    "occasions": [
+      "eventos",
+      "oficina",
+      "cita"
+    ],
     "projection": "Media",
     "longevity": "8-10 horas",
     "history": "Oud Wood fue uno de los primeros perfumes occidentales en popularizar el oud, la preciada madera de agar, presentándolo de forma suave y accesible. Lanzado en 2007 dentro de la línea Private Blend, Tom Ford domesticó esa nota tradicionalmente intensa de Oriente Medio para el gusto europeo. Cremoso, especiado y discreto, se convirtió en la puerta de entrada al mundo del oud para millones de personas.",
-    "similar": ["initio-oud-for-greatness", "le-labo-santal-33", "parfums-de-marly-herod"],
+    "similar": [
+      "initio-oud-for-greatness",
+      "le-labo-santal-33",
+      "parfums-de-marly-herod"
+    ],
     "rating": 4.4
   },
   {
@@ -322,19 +696,47 @@
     "perfumer": "Francis Kurkdjian",
     "family": "Ambar floral",
     "notes": {
-      "top": ["Azafrán", "Jazmín"],
-      "heart": ["Amaderado ambarino", "Madera de abeto"],
-      "base": ["Resina", "Cedro", "Almizcle"]
+      "top": [
+        "Azafrán",
+        "Jazmín"
+      ],
+      "heart": [
+        "Amaderado ambarino",
+        "Madera de abeto"
+      ],
+      "base": [
+        "Resina",
+        "Cedro",
+        "Almizcle"
+      ]
     },
-    "priceRange": { "min": 200, "max": 330, "currency": "EUR" },
+    "priceRange": {
+      "min": 200,
+      "max": 330,
+      "currency": "EUR"
+    },
     "pricePerMl": 3.3,
-    "seasons": ["otono", "invierno", "primavera"],
-    "timeOfDay": ["noche", "dia"],
-    "occasions": ["eventos", "cita"],
+    "seasons": [
+      "otono",
+      "invierno",
+      "primavera"
+    ],
+    "timeOfDay": [
+      "noche",
+      "dia"
+    ],
+    "occasions": [
+      "eventos",
+      "cita"
+    ],
     "projection": "Alta",
     "longevity": "9-12 horas",
     "history": "Baccarat Rouge 540 nació en 2014 como edición limitada para el 250 aniversario de la cristalería Baccarat y se volvió tan deseado que pasó a la colección permanente. Francis Kurkdjian logró un aroma único: dulce, ambarino y ligeramente afrutado, descrito a menudo como adictivo. Impulsado por las redes sociales, se transformó en uno de los perfumes más virales e imitados de la historia reciente.",
-    "similar": ["mfk-grand-soir", "initio-oud-for-greatness", "ysl-black-opium"],
+    "similar": [
+      "mfk-grand-soir",
+      "initio-oud-for-greatness",
+      "ysl-black-opium"
+    ],
     "rating": 4.3
   },
   {
@@ -348,19 +750,53 @@
     "perfumer": "Hamid Merati-Kashani",
     "family": "Amaderado especiado",
     "notes": {
-      "top": ["Manzana", "Bergamota", "Mandarina", "Lavanda"],
-      "heart": ["Jazmín", "Geranio", "Pimienta", "Violeta"],
-      "base": ["Vainilla", "Sándalo", "Haba tonka", "Cardamomo"]
+      "top": [
+        "Manzana",
+        "Bergamota",
+        "Mandarina",
+        "Lavanda"
+      ],
+      "heart": [
+        "Jazmín",
+        "Geranio",
+        "Pimienta",
+        "Violeta"
+      ],
+      "base": [
+        "Vainilla",
+        "Sándalo",
+        "Haba tonka",
+        "Cardamomo"
+      ]
     },
-    "priceRange": { "min": 180, "max": 300, "currency": "EUR" },
-    "pricePerMl": 3.0,
-    "seasons": ["otono", "invierno", "primavera"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["eventos", "oficina", "cita"],
+    "priceRange": {
+      "min": 180,
+      "max": 300,
+      "currency": "EUR"
+    },
+    "pricePerMl": 3,
+    "seasons": [
+      "otono",
+      "invierno",
+      "primavera"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "eventos",
+      "oficina",
+      "cita"
+    ],
     "projection": "Alta",
     "longevity": "9-12 horas",
     "history": "Layton se lanzó en 2016 y rápidamente se convirtió en el buque insignia de Parfums de Marly, casa francesa que se inspira en la perfumería de la corte de Versalles. Combina una manzana fresca y una lavanda elegante con una vainilla especiada muy reconfortante. Su versatilidad, que funciona tanto de día como de noche y en cualquier estación fría, lo consolidó como uno de los grandes éxitos de la perfumería de nicho.",
-    "similar": ["creed-aventus", "parfums-de-marly-herod", "dior-sauvage-edp"],
+    "similar": [
+      "creed-aventus",
+      "parfums-de-marly-herod",
+      "dior-sauvage-edp"
+    ],
     "rating": 4.5
   },
   {
@@ -374,19 +810,47 @@
     "perfumer": "Egon Oelkers",
     "family": "Oriental especiado",
     "notes": {
-      "top": ["Canela", "Pimienta", "Incienso"],
-      "heart": ["Hoja de tabaco", "Osmanto"],
-      "base": ["Vainilla", "Cedro", "Vetiver", "Gaiac"]
+      "top": [
+        "Canela",
+        "Pimienta",
+        "Incienso"
+      ],
+      "heart": [
+        "Hoja de tabaco",
+        "Osmanto"
+      ],
+      "base": [
+        "Vainilla",
+        "Cedro",
+        "Vetiver",
+        "Gaiac"
+      ]
     },
-    "priceRange": { "min": 175, "max": 290, "currency": "EUR" },
+    "priceRange": {
+      "min": 175,
+      "max": 290,
+      "currency": "EUR"
+    },
     "pricePerMl": 2.9,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["eventos", "cita"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "eventos",
+      "cita"
+    ],
     "projection": "Alta",
     "longevity": "9-12 horas",
     "history": "Herod es uno de los perfumes más reconocibles de Parfums de Marly, una oda al tabaco dulce y la vainilla especiada. Lanzado en 2012, evoca la calidez de la madera ahumada y las hojas de tabaco curadas con un toque goloso. Su carácter intenso y reconfortante lo ha convertido en un favorito incondicional del invierno y en una firma frecuente entre los amantes de las fragancias orientales.",
-    "similar": ["tom-ford-tobacco-vanille", "parfums-de-marly-layton", "viktor-rolf-spicebomb"],
+    "similar": [
+      "tom-ford-tobacco-vanille",
+      "parfums-de-marly-layton",
+      "viktor-rolf-spicebomb"
+    ],
     "rating": 4.4
   },
   {
@@ -400,19 +864,45 @@
     "perfumer": "Quentin Bisch",
     "family": "Amaderado especiado",
     "notes": {
-      "top": ["Cardamomo", "Bergamota"],
-      "heart": ["Toffee", "Especias"],
-      "base": ["Maderas ambaradas", "Haba tonka"]
+      "top": [
+        "Cardamomo",
+        "Bergamota"
+      ],
+      "heart": [
+        "Toffee",
+        "Especias"
+      ],
+      "base": [
+        "Maderas ambaradas",
+        "Haba tonka"
+      ]
     },
-    "priceRange": { "min": 55, "max": 105, "currency": "EUR" },
+    "priceRange": {
+      "min": 55,
+      "max": 105,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.05,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["cita", "ocio", "eventos"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "ocio",
+      "eventos"
+    ],
     "projection": "Alta",
     "longevity": "8-10 horas",
     "history": "The Most Wanted llegó en 2021 como relanzamiento moderno de la línea Wanted de Azzaro, con Michele Morrone como rostro de campaña. Quentin Bisch construyó una fórmula golosa y magnética alrededor de un toffee caramelizado y un cardamomo especiado. Su carácter dulce pero adulto y su precio asequible lo convirtieron rápidamente en uno de los perfumes nocturnos más recomendados de su franja.",
-    "similar": ["carolina-herrera-bad-boy", "paco-rabanne-1-million", "viktor-rolf-spicebomb"],
+    "similar": [
+      "carolina-herrera-bad-boy",
+      "paco-rabanne-1-million",
+      "viktor-rolf-spicebomb"
+    ],
     "rating": 4.2
   },
   {
@@ -426,19 +916,48 @@
     "perfumer": "Jacques Huclier",
     "family": "Oriental amaderado",
     "notes": {
-      "top": ["Menta", "Bergamota", "Lavanda"],
-      "heart": ["Café", "Caramelo", "Pachulí"],
-      "base": ["Vainilla", "Haba tonka", "Cuero", "Alquitrán"]
+      "top": [
+        "Menta",
+        "Bergamota",
+        "Lavanda"
+      ],
+      "heart": [
+        "Café",
+        "Caramelo",
+        "Pachulí"
+      ],
+      "base": [
+        "Vainilla",
+        "Haba tonka",
+        "Cuero",
+        "Alquitrán"
+      ]
     },
-    "priceRange": { "min": 45, "max": 85, "currency": "EUR" },
+    "priceRange": {
+      "min": 45,
+      "max": 85,
+      "currency": "EUR"
+    },
     "pricePerMl": 0.85,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["cita", "ocio"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "ocio"
+    ],
     "projection": "Alta",
     "longevity": "9-12 horas",
     "history": "A*Men, también conocido como Angel Men, llegó en 1996 como contrapartida masculina del revolucionario Angel femenino. Mugler apostó por una golosa mezcla gourmand de café, caramelo y chocolate que resultaba tan provocadora como su frasco metalizado. Pionero de las fragancias dulces para hombre, abrió camino a toda una categoría y sigue siendo un referente de culto entre los aficionados.",
-    "similar": ["jean-paul-gaultier-le-male", "viktor-rolf-spicebomb", "carolina-herrera-bad-boy"],
+    "similar": [
+      "jean-paul-gaultier-le-male",
+      "viktor-rolf-spicebomb",
+      "carolina-herrera-bad-boy"
+    ],
     "rating": 4.2
   },
   {
@@ -452,19 +971,50 @@
     "perfumer": "Olivier Polge",
     "family": "Amaderado especiado",
     "notes": {
-      "top": ["Pimienta rosa", "Bergamota", "Hoja de pomelo", "Elemí"],
-      "heart": ["Canela", "Pimienta", "Azafrán", "Pimentón"],
-      "base": ["Tabaco", "Cuero", "Vetiver"]
+      "top": [
+        "Pimienta rosa",
+        "Bergamota",
+        "Hoja de pomelo",
+        "Elemí"
+      ],
+      "heart": [
+        "Canela",
+        "Pimienta",
+        "Azafrán",
+        "Pimentón"
+      ],
+      "base": [
+        "Tabaco",
+        "Cuero",
+        "Vetiver"
+      ]
     },
-    "priceRange": { "min": 55, "max": 100, "currency": "EUR" },
-    "pricePerMl": 1.0,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["cita", "eventos", "ocio"],
+    "priceRange": {
+      "min": 55,
+      "max": 100,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1,
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "eventos",
+      "ocio"
+    ],
     "projection": "Media-alta",
     "longevity": "7-9 horas",
     "history": "Spicebomb estalló en 2012 con su inconfundible frasco en forma de granada de mano, una declaración de intenciones del dúo de diseñadores Viktor&Rolf. Olivier Polge concibió una explosión de especias cálidas —canela, pimienta y azafrán— sobre un fondo de tabaco y cuero. Su concepto audaz y su carácter envolvente lo convirtieron en un fijo de los meses fríos y en uno de los lanzamientos especiados más recordados.",
-    "similar": ["carolina-herrera-bad-boy", "parfums-de-marly-herod", "mugler-a-men"],
+    "similar": [
+      "carolina-herrera-bad-boy",
+      "parfums-de-marly-herod",
+      "mugler-a-men"
+    ],
     "rating": 4.2
   },
   {
@@ -478,20 +1028,53 @@
     "perfumer": "Annick Menardo",
     "family": "Amaderado especiado",
     "notes": {
-      "top": ["Manzana", "Bergamota", "Limón", "Ciruela"],
-      "heart": ["Canela", "Geranio", "Clavo"],
-      "base": ["Sándalo", "Vainilla", "Cedro", "Vetiver"]
+      "top": [
+        "Manzana",
+        "Bergamota",
+        "Limón",
+        "Ciruela"
+      ],
+      "heart": [
+        "Canela",
+        "Geranio",
+        "Clavo"
+      ],
+      "base": [
+        "Sándalo",
+        "Vainilla",
+        "Cedro",
+        "Vetiver"
+      ]
     },
-    "priceRange": { "min": 45, "max": 85, "currency": "EUR" },
+    "priceRange": {
+      "min": 45,
+      "max": 85,
+      "currency": "EUR"
+    },
     "pricePerMl": 0.85,
-    "seasons": ["primavera", "otono", "invierno"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["oficina", "diario", "eventos"],
+    "seasons": [
+      "primavera",
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "oficina",
+      "diario",
+      "eventos"
+    ],
     "projection": "Media",
     "longevity": "6-8 horas",
     "history": "Boss Bottled se lanzó en 1998 y se ganó el apodo de 'el perfume del hombre de éxito' por su imagen profesional y pulcra. Annick Menardo combinó una manzana jugosa con especias suaves y maderas cálidas para crear un aroma equilibrado y elegante. Considerado un clásico moderno de la oficina, ha vendido millones de unidades y mantiene su reputación como apuesta segura para el día a día.",
-    "similar": ["bleu-de-chanel-edp", "dolce-gabbana-the-one", "givenchy-gentleman-edp"],
-    "rating": 4.0
+    "similar": [
+      "bleu-de-chanel-edp",
+      "dolce-gabbana-the-one",
+      "givenchy-gentleman-edp"
+    ],
+    "rating": 4
   },
   {
     "slug": "dolce-gabbana-the-one",
@@ -504,20 +1087,50 @@
     "perfumer": "Olivier Polge",
     "family": "Oriental especiado",
     "notes": {
-      "top": ["Pomelo", "Cilantro", "Albahaca"],
-      "heart": ["Cardamomo", "Jengibre", "Flor de azahar"],
-      "base": ["Tabaco", "Ámbar", "Cedro"]
+      "top": [
+        "Pomelo",
+        "Cilantro",
+        "Albahaca"
+      ],
+      "heart": [
+        "Cardamomo",
+        "Jengibre",
+        "Flor de azahar"
+      ],
+      "base": [
+        "Tabaco",
+        "Ámbar",
+        "Cedro"
+      ]
     },
-    "priceRange": { "min": 50, "max": 95, "currency": "EUR" },
+    "priceRange": {
+      "min": 50,
+      "max": 95,
+      "currency": "EUR"
+    },
     "pricePerMl": 0.95,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche", "dia"],
-    "occasions": ["oficina", "cita", "eventos"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche",
+      "dia"
+    ],
+    "occasions": [
+      "oficina",
+      "cita",
+      "eventos"
+    ],
     "projection": "Media",
     "longevity": "7-8 horas",
     "history": "The One for Men apareció en 2008 como un oriental especiado de carácter sobrio y refinado. Olivier Polge firmó una fórmula cálida basada en tabaco suave y especias dulces, pensada para el hombre elegante y seguro. Su discreción y su carácter acogedor lo han hecho muy popular para el trabajo y las citas en los meses fríos, manteniéndose como un superventas constante de la casa italiana.",
-    "similar": ["hugo-boss-bottled", "bvlgari-man-in-black", "givenchy-gentleman-edp"],
-    "rating": 4.0
+    "similar": [
+      "hugo-boss-bottled",
+      "bvlgari-man-in-black",
+      "givenchy-gentleman-edp"
+    ],
+    "rating": 4
   },
   {
     "slug": "versace-dylan-blue",
@@ -530,20 +1143,52 @@
     "perfumer": "Alberto Morillas",
     "family": "Acuático aromático",
     "notes": {
-      "top": ["Bergamota de Calabria", "Pomelo", "Notas acuáticas"],
-      "heart": ["Pimienta negra", "Hoja de violeta", "Papiro"],
-      "base": ["Almizcle", "Incienso", "Tinta", "Sándalo"]
+      "top": [
+        "Bergamota de Calabria",
+        "Pomelo",
+        "Notas acuáticas"
+      ],
+      "heart": [
+        "Pimienta negra",
+        "Hoja de violeta",
+        "Papiro"
+      ],
+      "base": [
+        "Almizcle",
+        "Incienso",
+        "Tinta",
+        "Sándalo"
+      ]
     },
-    "priceRange": { "min": 45, "max": 85, "currency": "EUR" },
+    "priceRange": {
+      "min": 45,
+      "max": 85,
+      "currency": "EUR"
+    },
     "pricePerMl": 0.85,
-    "seasons": ["primavera", "verano", "otono"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["diario", "oficina", "ocio"],
+    "seasons": [
+      "primavera",
+      "verano",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "ocio"
+    ],
     "projection": "Media-alta",
     "longevity": "7-9 horas",
     "history": "Dylan Blue llegó en 2016 como interpretación contemporánea de la frescura acuática masculina de la casa Versace. Alberto Morillas mezcló cítricos vibrantes con notas acuáticas y un fondo aromático ligeramente ahumado. Versátil y fácil de llevar, se convirtió en una de las propuestas más populares de la marca para el día a día y las estaciones cálidas.",
-    "similar": ["versace-eros", "giorgio-armani-acqua-di-gio-profumo", "bleu-de-chanel-edp"],
-    "rating": 4.0
+    "similar": [
+      "versace-eros",
+      "giorgio-armani-acqua-di-gio-profumo",
+      "bleu-de-chanel-edp"
+    ],
+    "rating": 4
   },
   {
     "slug": "initio-oud-for-greatness",
@@ -556,19 +1201,45 @@
     "perfumer": "Initio Parfums Privés",
     "family": "Oriental amaderado",
     "notes": {
-      "top": ["Azafrán", "Nuez moscada"],
-      "heart": ["Oud", "Lavanda"],
-      "base": ["Almizcle", "Pachulí", "Maderas"]
+      "top": [
+        "Azafrán",
+        "Nuez moscada"
+      ],
+      "heart": [
+        "Oud",
+        "Lavanda"
+      ],
+      "base": [
+        "Almizcle",
+        "Pachulí",
+        "Maderas"
+      ]
     },
-    "priceRange": { "min": 220, "max": 340, "currency": "EUR" },
+    "priceRange": {
+      "min": 220,
+      "max": 340,
+      "currency": "EUR"
+    },
     "pricePerMl": 3.4,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["eventos", "cita"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "eventos",
+      "cita"
+    ],
     "projection": "Alta",
     "longevity": "9-12 horas",
     "history": "Oud for Greatness se lanzó en 2018 y se transformó en el perfume estrella de Initio gracias a su difusión viral en redes sociales. Combina un oud potente con azafrán especiado y una lavanda inesperada que aporta un toque jabonoso y limpio. Su proyección imponente y su carácter de lujo lo convirtieron en uno de los perfumes de nicho más deseados de los últimos años.",
-    "similar": ["tom-ford-oud-wood", "mfk-baccarat-rouge-540", "parfums-de-marly-herod"],
+    "similar": [
+      "tom-ford-oud-wood",
+      "mfk-baccarat-rouge-540",
+      "parfums-de-marly-herod"
+    ],
     "rating": 4.3
   },
   {
@@ -582,19 +1253,48 @@
     "perfumer": "Chris Maurice",
     "family": "Oriental fougère",
     "notes": {
-      "top": ["Bergamota", "Limón", "Lavanda"],
-      "heart": ["Miel", "Hoja de tabaco", "Canela", "Jazmín"],
-      "base": ["Vainilla", "Haba tonka", "Cachemira"]
+      "top": [
+        "Bergamota",
+        "Limón",
+        "Lavanda"
+      ],
+      "heart": [
+        "Miel",
+        "Hoja de tabaco",
+        "Canela",
+        "Jazmín"
+      ],
+      "base": [
+        "Vainilla",
+        "Haba tonka",
+        "Cachemira"
+      ]
     },
-    "priceRange": { "min": 220, "max": 360, "currency": "EUR" },
+    "priceRange": {
+      "min": 220,
+      "max": 360,
+      "currency": "EUR"
+    },
     "pricePerMl": 3.6,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["eventos", "cita"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "eventos",
+      "cita"
+    ],
     "projection": "Alta",
     "longevity": "9-12 horas",
     "history": "Naxos pertenece a la colección Join the Club de Xerjoff y se ha convertido en uno de los perfumes más aclamados de la casa italiana de lujo. Lanzado en 2015, combina la dulzura de la miel con el tabaco curado y una vainilla cremosa, todo sobre una base de lavanda aromática. A menudo descrito como una versión sublimada y mucho más refinada de Le Male, es una joya de culto en la perfumería de alta gama.",
-    "similar": ["jean-paul-gaultier-le-male", "tom-ford-tobacco-vanille", "parfums-de-marly-herod"],
+    "similar": [
+      "jean-paul-gaultier-le-male",
+      "tom-ford-tobacco-vanille",
+      "parfums-de-marly-herod"
+    ],
     "rating": 4.6
   },
   {
@@ -608,19 +1308,50 @@
     "perfumer": "Antoine Maisondieu, Olivier Pescheux, Jordi Fernández",
     "family": "Chipre amaderado",
     "notes": {
-      "top": ["Bergamota de Italia", "Pimienta rosa", "Hoja de cilantro"],
-      "heart": ["Vetiver de Haití", "Cuero", "Salvia"],
-      "base": ["Pachulí de Indonesia", "Akigalawood", "Ambroxan"]
+      "top": [
+        "Bergamota de Italia",
+        "Pimienta rosa",
+        "Hoja de cilantro"
+      ],
+      "heart": [
+        "Vetiver de Haití",
+        "Cuero",
+        "Salvia"
+      ],
+      "base": [
+        "Pachulí de Indonesia",
+        "Akigalawood",
+        "Ambroxan"
+      ]
     },
-    "priceRange": { "min": 45, "max": 90, "currency": "EUR" },
+    "priceRange": {
+      "min": 45,
+      "max": 90,
+      "currency": "EUR"
+    },
     "pricePerMl": 0.9,
-    "seasons": ["primavera", "otono", "invierno"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["diario", "oficina", "eventos"],
+    "seasons": [
+      "primavera",
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "eventos"
+    ],
     "projection": "Alta",
     "longevity": "8-10 horas",
     "history": "Explorer se lanzó en 2019 y sorprendió al mercado por ofrecer un rendimiento de nivel nicho a un precio muy accesible. A menudo comparado con Creed Aventus por su perfil afrutado y amaderado, combina bergamota luminosa con un vetiver terroso y un pachulí potente. Su excelente relación calidad-precio lo convirtió en uno de los lanzamientos masculinos más recomendados de los últimos años.",
-    "similar": ["creed-aventus", "dior-sauvage-edp", "parfums-de-marly-layton"],
+    "similar": [
+      "creed-aventus",
+      "dior-sauvage-edp",
+      "parfums-de-marly-layton"
+    ],
     "rating": 4.2
   },
   {
@@ -634,19 +1365,50 @@
     "perfumer": "Daniela Andrier",
     "family": "Amaderado floral almizclado",
     "notes": {
-      "top": ["Neroli", "Pimienta negra", "Cardamomo"],
-      "heart": ["Iris", "Violeta", "Geranio"],
-      "base": ["Cedro", "Sándalo", "Almizcle", "Pachulí"]
+      "top": [
+        "Neroli",
+        "Pimienta negra",
+        "Cardamomo"
+      ],
+      "heart": [
+        "Iris",
+        "Violeta",
+        "Geranio"
+      ],
+      "base": [
+        "Cedro",
+        "Sándalo",
+        "Almizcle",
+        "Pachulí"
+      ]
     },
-    "priceRange": { "min": 55, "max": 100, "currency": "EUR" },
-    "pricePerMl": 1.0,
-    "seasons": ["primavera", "otono"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["oficina", "diario", "eventos"],
+    "priceRange": {
+      "min": 55,
+      "max": 100,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1,
+    "seasons": [
+      "primavera",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "oficina",
+      "diario",
+      "eventos"
+    ],
     "projection": "Media",
     "longevity": "7-9 horas",
     "history": "L'Homme Prada llegó en 2016 como un retrato de la elegancia masculina italiana, sobria y atemporal. Daniela Andrier construyó una fragancia limpia y refinada alrededor del iris pulverulento y un almizcle aterciopelado. Su carácter discreto, sofisticado y muy versátil lo convirtió en un favorito para la oficina y en una alternativa elegante a las propuestas más comerciales del mercado.",
-    "similar": ["bleu-de-chanel-edp", "dior-homme-intense", "givenchy-gentleman-edp"],
+    "similar": [
+      "bleu-de-chanel-edp",
+      "dior-homme-intense",
+      "givenchy-gentleman-edp"
+    ],
     "rating": 4.2
   },
   {
@@ -660,19 +1422,48 @@
     "perfumer": "Nathalie Lorson, Olivier Cresp",
     "family": "Amaderado floral",
     "notes": {
-      "top": ["Pera", "Cardamomo"],
-      "heart": ["Iris", "Lavanda"],
-      "base": ["Pachulí", "Cuero", "Haba tonka"]
+      "top": [
+        "Pera",
+        "Cardamomo"
+      ],
+      "heart": [
+        "Iris",
+        "Lavanda"
+      ],
+      "base": [
+        "Pachulí",
+        "Cuero",
+        "Haba tonka"
+      ]
     },
-    "priceRange": { "min": 55, "max": 110, "currency": "EUR" },
+    "priceRange": {
+      "min": 55,
+      "max": 110,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.1,
-    "seasons": ["otono", "invierno", "primavera"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["oficina", "cita", "eventos"],
+    "seasons": [
+      "otono",
+      "invierno",
+      "primavera"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "oficina",
+      "cita",
+      "eventos"
+    ],
     "projection": "Media-alta",
     "longevity": "8-10 horas",
     "history": "Gentleman Eau de Parfum reinventó en 2018 el nombre clásico de Givenchy, que existía desde 1974, para una nueva generación. Combina una pera jugosa y un iris elegante con un fondo de cacao y cuero suave. Moderno pero refinado, recuperó el prestigio de la línea Gentleman y se ganó un puesto entre las propuestas masculinas más versátiles de su gama de precio.",
-    "similar": ["dior-homme-intense", "prada-lhomme", "carolina-herrera-bad-boy"],
+    "similar": [
+      "dior-homme-intense",
+      "prada-lhomme",
+      "carolina-herrera-bad-boy"
+    ],
     "rating": 4.2
   },
   {
@@ -686,19 +1477,47 @@
     "perfumer": "Alberto Morillas",
     "family": "Oriental especiado",
     "notes": {
-      "top": ["Especias", "Ron"],
-      "heart": ["Cuero", "Tuberosa", "Iris"],
-      "base": ["Ámbar", "Tabaco", "Haba tonka", "Benjuí"]
+      "top": [
+        "Especias",
+        "Ron"
+      ],
+      "heart": [
+        "Cuero",
+        "Tuberosa",
+        "Iris"
+      ],
+      "base": [
+        "Ámbar",
+        "Tabaco",
+        "Haba tonka",
+        "Benjuí"
+      ]
     },
-    "priceRange": { "min": 50, "max": 100, "currency": "EUR" },
-    "pricePerMl": 1.0,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["cita", "eventos"],
+    "priceRange": {
+      "min": 50,
+      "max": 100,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1,
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "eventos"
+    ],
     "projection": "Media-alta",
     "longevity": "8-10 horas",
     "history": "Man in Black se lanzó en 2014 inspirado en el mito de la creación de la virilidad. Alberto Morillas firmó un oriental cálido y sofisticado que une el ron especiado con un cuero suave y una base ambarina muy reconfortante. Sensual y de carácter adulto, se ganó la fidelidad de quienes buscan una fragancia nocturna distinta y elegante.",
-    "similar": ["dolce-gabbana-the-one", "parfums-de-marly-herod", "tom-ford-tobacco-vanille"],
+    "similar": [
+      "dolce-gabbana-the-one",
+      "parfums-de-marly-herod",
+      "tom-ford-tobacco-vanille"
+    ],
     "rating": 4.1
   },
   {
@@ -712,19 +1531,52 @@
     "perfumer": "Ernest Beaux",
     "family": "Floral aldehídico",
     "notes": {
-      "top": ["Aldehídos", "Ylang-ylang", "Neroli", "Bergamota"],
-      "heart": ["Rosa de Mayo", "Jazmín", "Iris", "Lirio de los valles"],
-      "base": ["Sándalo", "Vainilla", "Vetiver", "Almizcle"]
+      "top": [
+        "Aldehídos",
+        "Ylang-ylang",
+        "Neroli",
+        "Bergamota"
+      ],
+      "heart": [
+        "Rosa de Mayo",
+        "Jazmín",
+        "Iris",
+        "Lirio de los valles"
+      ],
+      "base": [
+        "Sándalo",
+        "Vainilla",
+        "Vetiver",
+        "Almizcle"
+      ]
     },
-    "priceRange": { "min": 95, "max": 165, "currency": "EUR" },
+    "priceRange": {
+      "min": 95,
+      "max": 165,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.65,
-    "seasons": ["otono", "invierno", "primavera"],
-    "timeOfDay": ["noche", "dia"],
-    "occasions": ["eventos", "cita"],
+    "seasons": [
+      "otono",
+      "invierno",
+      "primavera"
+    ],
+    "timeOfDay": [
+      "noche",
+      "dia"
+    ],
+    "occasions": [
+      "eventos",
+      "cita"
+    ],
     "projection": "Media-alta",
     "longevity": "8-10 horas",
     "history": "Chanel N°5 es probablemente el perfume más famoso de la historia. Creado por Ernest Beaux en 1921 a petición de Gabrielle 'Coco' Chanel, fue revolucionario por su generoso uso de aldehídos, que le dieron una abstracción inédita hasta entonces. Su nombre proviene de la quinta muestra que la diseñadora eligió. Inmortalizado por Marilyn Monroe y por décadas de campañas legendarias, sigue siendo un icono cultural absoluto.",
-    "similar": ["dior-jadore", "chanel-coco-mademoiselle", "jean-paul-gaultier-classique"],
+    "similar": [
+      "dior-jadore",
+      "chanel-coco-mademoiselle",
+      "jean-paul-gaultier-classique"
+    ],
     "rating": 4.3
   },
   {
@@ -738,20 +1590,57 @@
     "perfumer": "Jacques Polge",
     "family": "Chipre floral",
     "notes": {
-      "top": ["Naranja", "Bergamota", "Pomelo", "Mandarina"],
-      "heart": ["Rosa", "Jazmín", "Litchi"],
-      "base": ["Pachulí", "Vetiver", "Vainilla", "Almizcle blanco"]
+      "top": [
+        "Naranja",
+        "Bergamota",
+        "Pomelo",
+        "Mandarina"
+      ],
+      "heart": [
+        "Rosa",
+        "Jazmín",
+        "Litchi"
+      ],
+      "base": [
+        "Pachulí",
+        "Vetiver",
+        "Vainilla",
+        "Almizcle blanco"
+      ]
     },
-    "priceRange": { "min": 95, "max": 160, "currency": "EUR" },
+    "priceRange": {
+      "min": 95,
+      "max": 160,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.6,
-    "seasons": ["primavera", "otono", "invierno"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["oficina", "diario", "cita", "eventos"],
+    "seasons": [
+      "primavera",
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "oficina",
+      "diario",
+      "cita",
+      "eventos"
+    ],
     "projection": "Alta",
     "longevity": "8-10 horas",
     "history": "Coco Mademoiselle llegó en 2001 como una versión más joven y vibrante del espíritu de Coco Chanel, pensada para una nueva generación. Jacques Polge combinó cítricos chispeantes con un chipre moderno de pachulí y rosa. Con campañas protagonizadas por Keira Knightley, se convirtió en uno de los perfumes femeninos más vendidos del mundo y en un superventas que define el gusto contemporáneo.",
-    "similar": ["chanel-no-5", "carolina-herrera-good-girl", "dior-miss-dior"],
-    "rating": 4.4
+    "similar": [
+      "chanel-no-5",
+      "carolina-herrera-good-girl",
+      "dior-miss-dior"
+    ],
+    "rating": 4.4,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Coco_mademoiselle.jpg/960px-Coco_mademoiselle.jpg",
+    "imageSource": "Wikipedia (en)",
+    "imageTitle": "Coco Mademoiselle"
   },
   {
     "slug": "dior-jadore",
@@ -764,20 +1653,57 @@
     "perfumer": "Calice Becker",
     "family": "Floral frutal",
     "notes": {
-      "top": ["Pera", "Melón", "Magnolia", "Bergamota"],
-      "heart": ["Jazmín", "Rosa", "Tuberosa", "Ciruela"],
-      "base": ["Almizcle", "Madera de cedro", "Vainilla"]
+      "top": [
+        "Pera",
+        "Melón",
+        "Magnolia",
+        "Bergamota"
+      ],
+      "heart": [
+        "Jazmín",
+        "Rosa",
+        "Tuberosa",
+        "Ciruela"
+      ],
+      "base": [
+        "Almizcle",
+        "Madera de cedro",
+        "Vainilla"
+      ]
     },
-    "priceRange": { "min": 90, "max": 155, "currency": "EUR" },
+    "priceRange": {
+      "min": 90,
+      "max": 155,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.55,
-    "seasons": ["primavera", "verano", "otono"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["diario", "oficina", "eventos", "cita"],
+    "seasons": [
+      "primavera",
+      "verano",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "eventos",
+      "cita"
+    ],
     "projection": "Media-alta",
     "longevity": "7-9 horas",
     "history": "J'adore se lanzó en 1999 como un gran ramo floral luminoso y sensual, símbolo de feminidad clásica y dorada. Calice Becker creó un buqué exuberante de ylang-ylang, rosa y jazmín de carácter solar. Con su frasco con forma de ánfora y campañas protagonizadas por Charlize Theron, se transformó en uno de los pilares de la perfumería femenina moderna y en un superventas perpetuo de la casa Dior.",
-    "similar": ["chanel-no-5", "dior-miss-dior", "chloe-eau-de-parfum"],
-    "rating": 4.3
+    "similar": [
+      "chanel-no-5",
+      "dior-miss-dior",
+      "chloe-eau-de-parfum"
+    ],
+    "rating": 4.3,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/J%27adore_Logo.png",
+    "imageSource": "Wikipedia (en)",
+    "imageTitle": "J'adore (fragrance)"
   },
   {
     "slug": "dior-miss-dior",
@@ -790,20 +1716,54 @@
     "perfumer": "François Demachy",
     "family": "Floral chipre",
     "notes": {
-      "top": ["Mandarina", "Notas frutales"],
-      "heart": ["Rosa de Grasse", "Peonía", "Lirio de los valles"],
-      "base": ["Almizcle blanco", "Pachulí", "Madera de rosa"]
+      "top": [
+        "Mandarina",
+        "Notas frutales"
+      ],
+      "heart": [
+        "Rosa de Grasse",
+        "Peonía",
+        "Lirio de los valles"
+      ],
+      "base": [
+        "Almizcle blanco",
+        "Pachulí",
+        "Madera de rosa"
+      ]
     },
-    "priceRange": { "min": 85, "max": 150, "currency": "EUR" },
+    "priceRange": {
+      "min": 85,
+      "max": 150,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.5,
-    "seasons": ["primavera", "verano", "otono"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["diario", "cita", "oficina", "eventos"],
+    "seasons": [
+      "primavera",
+      "verano",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "cita",
+      "oficina",
+      "eventos"
+    ],
     "projection": "Media-alta",
     "longevity": "7-9 horas",
     "history": "El nombre Miss Dior existe desde 1947, cuando Christian Dior bautizó su primer perfume en honor a su hermana Catherine. La versión Eau de Parfum de 2017, firmada por François Demachy, es un floral romántico centrado en la rosa de Grasse. Con Natalie Portman como rostro de campaña, se convirtió en una de las fragancias femeninas más populares de la marca, sinónimo de romanticismo juvenil.",
-    "similar": ["dior-jadore", "chloe-eau-de-parfum", "ysl-libre"],
-    "rating": 4.2
+    "similar": [
+      "dior-jadore",
+      "chloe-eau-de-parfum",
+      "ysl-libre"
+    ],
+    "rating": 4.2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Miss_Dior_Ch%C3%A9rie_bottle.jpg/960px-Miss_Dior_Ch%C3%A9rie_bottle.jpg",
+    "imageSource": "Wikipedia (es)",
+    "imageTitle": "Miss Dior Chérie"
   },
   {
     "slug": "lancome-la-vie-est-belle",
@@ -816,19 +1776,50 @@
     "perfumer": "Olivier Polge, Dominique Ropion, Anne Flipo",
     "family": "Floral gourmand",
     "notes": {
-      "top": ["Grosella negra", "Pera"],
-      "heart": ["Iris", "Jazmín", "Flor de azahar"],
-      "base": ["Praliné", "Vainilla", "Pachulí", "Haba tonka"]
+      "top": [
+        "Grosella negra",
+        "Pera"
+      ],
+      "heart": [
+        "Iris",
+        "Jazmín",
+        "Flor de azahar"
+      ],
+      "base": [
+        "Praliné",
+        "Vainilla",
+        "Pachulí",
+        "Haba tonka"
+      ]
     },
-    "priceRange": { "min": 75, "max": 135, "currency": "EUR" },
+    "priceRange": {
+      "min": 75,
+      "max": 135,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.35,
-    "seasons": ["otono", "invierno", "primavera"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["diario", "cita", "eventos"],
+    "seasons": [
+      "otono",
+      "invierno",
+      "primavera"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "cita",
+      "eventos"
+    ],
     "projection": "Alta",
     "longevity": "8-10 horas",
     "history": "La Vie Est Belle se lanzó en 2012 con la idea de capturar la felicidad escogida libremente, con Julia Roberts como embajadora. Un trío de perfumistas de élite construyó un floral gourmand alrededor del iris noble y un praliné goloso. Su carácter dulce, alegre y reconfortante la convirtió rápidamente en uno de los perfumes femeninos más vendidos de Europa y en la firma estrella de Lancôme.",
-    "similar": ["ysl-black-opium", "carolina-herrera-good-girl", "viktor-rolf-flowerbomb"],
+    "similar": [
+      "ysl-black-opium",
+      "carolina-herrera-good-girl",
+      "viktor-rolf-flowerbomb"
+    ],
     "rating": 4.3
   },
   {
@@ -842,19 +1833,49 @@
     "perfumer": "Nathalie Lorson, Marie Salamagne, Olivier Cresp, Honorine Blanc",
     "family": "Oriental vainilla",
     "notes": {
-      "top": ["Pera", "Pimienta rosa", "Flor de azahar"],
-      "heart": ["Café", "Jazmín", "Almendra amarga"],
-      "base": ["Vainilla", "Pachulí", "Cedro", "Almizcle"]
+      "top": [
+        "Pera",
+        "Pimienta rosa",
+        "Flor de azahar"
+      ],
+      "heart": [
+        "Café",
+        "Jazmín",
+        "Almendra amarga"
+      ],
+      "base": [
+        "Vainilla",
+        "Pachulí",
+        "Cedro",
+        "Almizcle"
+      ]
     },
-    "priceRange": { "min": 75, "max": 140, "currency": "EUR" },
+    "priceRange": {
+      "min": 75,
+      "max": 140,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.4,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["cita", "ocio", "eventos"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "ocio",
+      "eventos"
+    ],
     "projection": "Alta",
     "longevity": "8-10 horas",
     "history": "Black Opium llegó en 2014 como reinterpretación moderna y rockera del legendario Opium de 1977. Su rasgo más distintivo es la nota de café negro fusionada con vainilla dulce, creando un gourmand adictivo y nocturno. Con su frasco de purpurina negra y campañas protagonizadas por Edie Campbell y Zoë Kravitz, conquistó al público joven y se volvió un superventas mundial.",
-    "similar": ["lancome-la-vie-est-belle", "carolina-herrera-good-girl", "mugler-angel"],
+    "similar": [
+      "lancome-la-vie-est-belle",
+      "carolina-herrera-good-girl",
+      "mugler-angel"
+    ],
     "rating": 4.2
   },
   {
@@ -868,19 +1889,53 @@
     "perfumer": "Anne Flipo, Carlos Benaïm",
     "family": "Floral aromático",
     "notes": {
-      "top": ["Mandarina", "Grosella negra", "Bergamota", "Lavanda"],
-      "heart": ["Lavanda", "Flor de azahar", "Jazmín"],
-      "base": ["Vainilla de Madagascar", "Almizcle", "Cedro", "Ámbar"]
+      "top": [
+        "Mandarina",
+        "Grosella negra",
+        "Bergamota",
+        "Lavanda"
+      ],
+      "heart": [
+        "Lavanda",
+        "Flor de azahar",
+        "Jazmín"
+      ],
+      "base": [
+        "Vainilla de Madagascar",
+        "Almizcle",
+        "Cedro",
+        "Ámbar"
+      ]
     },
-    "priceRange": { "min": 80, "max": 145, "currency": "EUR" },
+    "priceRange": {
+      "min": 80,
+      "max": 145,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.45,
-    "seasons": ["primavera", "otono", "invierno"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["diario", "oficina", "cita", "eventos"],
+    "seasons": [
+      "primavera",
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "cita",
+      "eventos"
+    ],
     "projection": "Alta",
     "longevity": "8-10 horas",
     "history": "Libre se lanzó en 2019 como himno a la libertad femenina, con Dua Lipa como rostro de campaña. Su gran novedad fue llevar la lavanda, tradicionalmente masculina, al universo floral femenino, contrastándola con una vainilla cálida. Ese juego entre lo aromático y lo dulce le dio una identidad propia y la convirtió en uno de los perfumes femeninos más exitosos del catálogo de Yves Saint Laurent.",
-    "similar": ["dior-miss-dior", "ysl-black-opium", "lancome-idole"],
+    "similar": [
+      "dior-miss-dior",
+      "ysl-black-opium",
+      "lancome-idole"
+    ],
     "rating": 4.2
   },
   {
@@ -894,19 +1949,50 @@
     "perfumer": "Louise Turner",
     "family": "Oriental floral",
     "notes": {
-      "top": ["Almendra", "Café", "Bergamota", "Limón"],
-      "heart": ["Tuberosa", "Jazmín sambac", "Nardo"],
-      "base": ["Haba tonka", "Cacao", "Praliné", "Vainilla"]
+      "top": [
+        "Almendra",
+        "Café",
+        "Bergamota",
+        "Limón"
+      ],
+      "heart": [
+        "Tuberosa",
+        "Jazmín sambac",
+        "Nardo"
+      ],
+      "base": [
+        "Haba tonka",
+        "Cacao",
+        "Praliné",
+        "Vainilla"
+      ]
     },
-    "priceRange": { "min": 70, "max": 135, "currency": "EUR" },
+    "priceRange": {
+      "min": 70,
+      "max": 135,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.35,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["cita", "eventos", "ocio"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "eventos",
+      "ocio"
+    ],
     "projection": "Alta",
     "longevity": "8-10 horas",
     "history": "Good Girl irrumpió en 2016 con su icónico frasco en forma de zapato de tacón de aguja, una idea audaz de Carolina Herrera para representar la dualidad femenina. Louise Turner construyó un oriental que mezcla la tuberosa luminosa con un fondo oscuro de cacao y café. Convertido en superventas inmediato, generó una extensa familia de variaciones y se consolidó como uno de los grandes éxitos recientes de la perfumería femenina.",
-    "similar": ["ysl-black-opium", "lancome-la-vie-est-belle", "mugler-angel"],
+    "similar": [
+      "ysl-black-opium",
+      "lancome-la-vie-est-belle",
+      "mugler-angel"
+    ],
     "rating": 4.2
   },
   {
@@ -920,20 +2006,51 @@
     "perfumer": "Anne Flipo, Béatrice Piquet, Dominique Ropion",
     "family": "Floral frutal amaderado",
     "notes": {
-      "top": ["Frambuesa", "Neroli", "Limón"],
-      "heart": ["Jazmín sambac", "Flor de azahar", "Gardenia"],
-      "base": ["Pachulí", "Miel", "Ámbar"]
+      "top": [
+        "Frambuesa",
+        "Neroli",
+        "Limón"
+      ],
+      "heart": [
+        "Jazmín sambac",
+        "Flor de azahar",
+        "Gardenia"
+      ],
+      "base": [
+        "Pachulí",
+        "Miel",
+        "Ámbar"
+      ]
     },
-    "priceRange": { "min": 55, "max": 105, "currency": "EUR" },
+    "priceRange": {
+      "min": 55,
+      "max": 105,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.05,
-    "seasons": ["primavera", "otono", "invierno"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["cita", "ocio", "eventos"],
+    "seasons": [
+      "primavera",
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "ocio",
+      "eventos"
+    ],
     "projection": "Alta",
     "longevity": "7-9 horas",
     "history": "Lady Million debutó en 2010 como contrapartida femenina del exitoso 1 Million, con un frasco con forma de diamante dorado. El trío de perfumistas creó un floral chispeante y luminoso que une la frescura de la frambuesa con un fondo meloso y ambarino. Glamuroso y desenfadado, se convirtió rápidamente en un superventas y en uno de los perfumes femeninos más reconocibles de su generación.",
-    "similar": ["carolina-herrera-good-girl", "versace-bright-crystal", "lancome-la-vie-est-belle"],
-    "rating": 4.0
+    "similar": [
+      "carolina-herrera-good-girl",
+      "versace-bright-crystal",
+      "lancome-la-vie-est-belle"
+    ],
+    "rating": 4
   },
   {
     "slug": "giorgio-armani-si",
@@ -946,19 +2063,51 @@
     "perfumer": "Christine Nagel, Julie Massé",
     "family": "Chipre frutal",
     "notes": {
-      "top": ["Grosella negra", "Mandarina"],
-      "heart": ["Rosa de Mayo", "Néctar", "Fresia"],
-      "base": ["Vainilla", "Pachulí", "Almizcle blanco", "Madera ambarina"]
+      "top": [
+        "Grosella negra",
+        "Mandarina"
+      ],
+      "heart": [
+        "Rosa de Mayo",
+        "Néctar",
+        "Fresia"
+      ],
+      "base": [
+        "Vainilla",
+        "Pachulí",
+        "Almizcle blanco",
+        "Madera ambarina"
+      ]
     },
-    "priceRange": { "min": 75, "max": 140, "currency": "EUR" },
+    "priceRange": {
+      "min": 75,
+      "max": 140,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.4,
-    "seasons": ["otono", "invierno", "primavera"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["diario", "oficina", "cita", "eventos"],
+    "seasons": [
+      "otono",
+      "invierno",
+      "primavera"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "cita",
+      "eventos"
+    ],
     "projection": "Media-alta",
     "longevity": "8-10 horas",
     "history": "Sì se lanzó en 2013 como retrato de la mujer moderna que dice 'sí' a su propia libertad, con Cate Blanchett como embajadora. Christine Nagel creó un chipre afrutado que une la grosella negra jugosa con una rosa elegante y un fondo de vainilla y pachulí. Su carácter sofisticado pero accesible la convirtió en uno de los grandes superventas femeninos de Armani.",
-    "similar": ["chanel-coco-mademoiselle", "lancome-la-vie-est-belle", "narciso-rodriguez-for-her"],
+    "similar": [
+      "chanel-coco-mademoiselle",
+      "lancome-la-vie-est-belle",
+      "narciso-rodriguez-for-her"
+    ],
     "rating": 4.1
   },
   {
@@ -972,20 +2121,53 @@
     "perfumer": "Olivier Cresp, Yves de Chiris",
     "family": "Oriental gourmand",
     "notes": {
-      "top": ["Bergamota", "Notas cítricas", "Algodón de azúcar"],
-      "heart": ["Miel", "Frutos rojos", "Mora", "Albaricoque"],
-      "base": ["Pachulí", "Vainilla", "Caramelo", "Chocolate"]
+      "top": [
+        "Bergamota",
+        "Notas cítricas",
+        "Algodón de azúcar"
+      ],
+      "heart": [
+        "Miel",
+        "Frutos rojos",
+        "Mora",
+        "Albaricoque"
+      ],
+      "base": [
+        "Pachulí",
+        "Vainilla",
+        "Caramelo",
+        "Chocolate"
+      ]
     },
-    "priceRange": { "min": 65, "max": 125, "currency": "EUR" },
+    "priceRange": {
+      "min": 65,
+      "max": 125,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.25,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["cita", "eventos"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "eventos"
+    ],
     "projection": "Muy alta",
     "longevity": "10-14 horas",
     "history": "Angel revolucionó la perfumería en 1992 al inaugurar la categoría gourmand: fue el primer gran perfume que olía abiertamente a algodón de azúcar, chocolate y caramelo. Olivier Cresp creó una fórmula tan potente y divisiva como adictiva, presentada en un frasco con forma de estrella. Su influencia es inmensa: prácticamente todos los perfumes dulces posteriores le deben algo a esta creación icónica de Thierry Mugler.",
-    "similar": ["ysl-black-opium", "carolina-herrera-good-girl", "lancome-la-vie-est-belle"],
-    "rating": 4.1
+    "similar": [
+      "ysl-black-opium",
+      "carolina-herrera-good-girl",
+      "lancome-la-vie-est-belle"
+    ],
+    "rating": 4.1,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Angel_Men_%281413014127%29.jpg/960px-Angel_Men_%281413014127%29.jpg",
+    "imageSource": "Wikipedia (fr)",
+    "imageTitle": "Angel (parfum)"
   },
   {
     "slug": "viktor-rolf-flowerbomb",
@@ -998,19 +2180,51 @@
     "perfumer": "Olivier Polge, Carlos Benaïm, Domitille Bertier",
     "family": "Floral oriental",
     "notes": {
-      "top": ["Té", "Bergamota", "Osmanto"],
-      "heart": ["Jazmín", "Rosa", "Orquídea", "Fresia"],
-      "base": ["Pachulí", "Almizcle", "Vainilla"]
+      "top": [
+        "Té",
+        "Bergamota",
+        "Osmanto"
+      ],
+      "heart": [
+        "Jazmín",
+        "Rosa",
+        "Orquídea",
+        "Fresia"
+      ],
+      "base": [
+        "Pachulí",
+        "Almizcle",
+        "Vainilla"
+      ]
     },
-    "priceRange": { "min": 75, "max": 140, "currency": "EUR" },
+    "priceRange": {
+      "min": 75,
+      "max": 140,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.4,
-    "seasons": ["otono", "invierno", "primavera"],
-    "timeOfDay": ["noche", "dia"],
-    "occasions": ["cita", "eventos", "diario"],
+    "seasons": [
+      "otono",
+      "invierno",
+      "primavera"
+    ],
+    "timeOfDay": [
+      "noche",
+      "dia"
+    ],
+    "occasions": [
+      "cita",
+      "eventos",
+      "diario"
+    ],
     "projection": "Alta",
     "longevity": "8-10 horas",
     "history": "Flowerbomb estalló en 2005 con la idea de que un ramo de flores podía ser tan explosivo como una bomba, concepto fiel al estilo provocador de Viktor&Rolf. El equipo de perfumistas creó un floral opulento y dulce, envuelto en pachulí y vainilla. Presentado en un frasco facetado en forma de granada rosa, se convirtió en un superventas duradero y en uno de los florales más reconocibles del mercado.",
-    "similar": ["lancome-la-vie-est-belle", "dior-jadore", "carolina-herrera-good-girl"],
+    "similar": [
+      "lancome-la-vie-est-belle",
+      "dior-jadore",
+      "carolina-herrera-good-girl"
+    ],
     "rating": 4.2
   },
   {
@@ -1024,20 +2238,49 @@
     "perfumer": "Olivier Cresp",
     "family": "Floral frutal",
     "notes": {
-      "top": ["Manzana Granny Smith", "Limón de Sicilia", "Campanilla"],
-      "heart": ["Bambú", "Jazmín", "Rosa blanca"],
-      "base": ["Madera de cedro", "Almizcle", "Ámbar"]
+      "top": [
+        "Manzana Granny Smith",
+        "Limón de Sicilia",
+        "Campanilla"
+      ],
+      "heart": [
+        "Bambú",
+        "Jazmín",
+        "Rosa blanca"
+      ],
+      "base": [
+        "Madera de cedro",
+        "Almizcle",
+        "Ámbar"
+      ]
     },
-    "priceRange": { "min": 50, "max": 100, "currency": "EUR" },
-    "pricePerMl": 1.0,
-    "seasons": ["primavera", "verano"],
-    "timeOfDay": ["dia"],
-    "occasions": ["diario", "oficina", "ocio"],
+    "priceRange": {
+      "min": 50,
+      "max": 100,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1,
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "ocio"
+    ],
     "projection": "Media",
     "longevity": "5-7 horas",
     "history": "Light Blue se lanzó en 2001 y se convirtió de inmediato en sinónimo del verano mediterráneo. Olivier Cresp capturó la sensación de una jornada soleada en la costa italiana con una manzana crujiente y un cedro luminoso. Fresco, alegre y muy reconocible, es uno de los perfumes de verano más vendidos del mundo y un clásico imprescindible de la estación cálida.",
-    "similar": ["versace-bright-crystal", "narciso-rodriguez-for-her", "chloe-eau-de-parfum"],
-    "rating": 4.0
+    "similar": [
+      "versace-bright-crystal",
+      "narciso-rodriguez-for-her",
+      "chloe-eau-de-parfum"
+    ],
+    "rating": 4
   },
   {
     "slug": "marc-jacobs-daisy",
@@ -1050,19 +2293,48 @@
     "perfumer": "Alberto Morillas",
     "family": "Floral frutal",
     "notes": {
-      "top": ["Fresa salvaje", "Hoja de violeta", "Pomelo"],
-      "heart": ["Gardenia", "Violeta", "Jazmín"],
-      "base": ["Almizcle", "Madera de sándalo", "Vainilla"]
+      "top": [
+        "Fresa salvaje",
+        "Hoja de violeta",
+        "Pomelo"
+      ],
+      "heart": [
+        "Gardenia",
+        "Violeta",
+        "Jazmín"
+      ],
+      "base": [
+        "Almizcle",
+        "Madera de sándalo",
+        "Vainilla"
+      ]
     },
-    "priceRange": { "min": 50, "max": 95, "currency": "EUR" },
+    "priceRange": {
+      "min": 50,
+      "max": 95,
+      "currency": "EUR"
+    },
     "pricePerMl": 0.95,
-    "seasons": ["primavera", "verano"],
-    "timeOfDay": ["dia"],
-    "occasions": ["diario", "ocio", "oficina"],
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "ocio",
+      "oficina"
+    ],
     "projection": "Media",
     "longevity": "5-7 horas",
     "history": "Daisy llegó en 2007 con su frasco coronado de margaritas, un símbolo de frescura juvenil y despreocupada. Alberto Morillas creó un floral luminoso y suave, fácil de llevar, que conectó de inmediato con el público joven. Su estética alegre y su aroma primaveral lo convirtieron en un superventas duradero y en una de las firmas más reconocibles de Marc Jacobs.",
-    "similar": ["chloe-eau-de-parfum", "dolce-gabbana-light-blue", "dior-miss-dior"],
+    "similar": [
+      "chloe-eau-de-parfum",
+      "dolce-gabbana-light-blue",
+      "dior-miss-dior"
+    ],
     "rating": 3.9
   },
   {
@@ -1076,19 +2348,50 @@
     "perfumer": "Amandine Clerc-Marie, Michel Almairac",
     "family": "Floral",
     "notes": {
-      "top": ["Peonía", "Litchi", "Fresia"],
-      "heart": ["Rosa", "Magnolia", "Lirio de los valles"],
-      "base": ["Cedro", "Almizcle", "Ámbar"]
+      "top": [
+        "Peonía",
+        "Litchi",
+        "Fresia"
+      ],
+      "heart": [
+        "Rosa",
+        "Magnolia",
+        "Lirio de los valles"
+      ],
+      "base": [
+        "Cedro",
+        "Almizcle",
+        "Ámbar"
+      ]
     },
-    "priceRange": { "min": 70, "max": 130, "currency": "EUR" },
+    "priceRange": {
+      "min": 70,
+      "max": 130,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.3,
-    "seasons": ["primavera", "otono"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["diario", "oficina", "cita", "eventos"],
+    "seasons": [
+      "primavera",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "cita",
+      "eventos"
+    ],
     "projection": "Media-alta",
     "longevity": "6-8 horas",
     "history": "El Chloé Eau de Parfum de 2008 reinventó por completo la perfumería de la casa francesa, abandonando lo anterior por un floral de rosa limpio y elegante. Michel Almairac creó un aroma con sensación de jabón fino y pétalos frescos, sofisticado pero nada pesado. Considerado un clásico moderno, se convirtió en sinónimo de feminidad chic y atemporal.",
-    "similar": ["dior-miss-dior", "narciso-rodriguez-for-her", "marc-jacobs-daisy"],
+    "similar": [
+      "dior-miss-dior",
+      "narciso-rodriguez-for-her",
+      "marc-jacobs-daisy"
+    ],
     "rating": 4.1
   },
   {
@@ -1102,20 +2405,49 @@
     "perfumer": "Alberto Morillas",
     "family": "Floral frutal",
     "notes": {
-      "top": ["Granada", "Yuzu", "Hielo"],
-      "heart": ["Peonía", "Magnolia", "Loto"],
-      "base": ["Almizcle", "Caoba", "Ámbar"]
+      "top": [
+        "Granada",
+        "Yuzu",
+        "Hielo"
+      ],
+      "heart": [
+        "Peonía",
+        "Magnolia",
+        "Loto"
+      ],
+      "base": [
+        "Almizcle",
+        "Caoba",
+        "Ámbar"
+      ]
     },
-    "priceRange": { "min": 45, "max": 90, "currency": "EUR" },
+    "priceRange": {
+      "min": 45,
+      "max": 90,
+      "currency": "EUR"
+    },
     "pricePerMl": 0.9,
-    "seasons": ["primavera", "verano"],
-    "timeOfDay": ["dia"],
-    "occasions": ["diario", "oficina", "ocio"],
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "ocio"
+    ],
     "projection": "Media",
     "longevity": "6-8 horas",
     "history": "Bright Crystal se lanzó en 2006 como un floral frutal luminoso y cristalino, fiel al glamour accesible de la casa Versace. Alberto Morillas combinó la granada jugosa con flores acuáticas y un fondo suave de almizcle. Fresco, femenino y muy fácil de llevar, se ha mantenido durante años como uno de los perfumes femeninos más vendidos de la marca italiana.",
-    "similar": ["dolce-gabbana-light-blue", "paco-rabanne-lady-million", "marc-jacobs-daisy"],
-    "rating": 4.0
+    "similar": [
+      "dolce-gabbana-light-blue",
+      "paco-rabanne-lady-million",
+      "marc-jacobs-daisy"
+    ],
+    "rating": 4
   },
   {
     "slug": "narciso-rodriguez-for-her",
@@ -1128,19 +2460,51 @@
     "perfumer": "Francis Kurkdjian, Christine Nagel",
     "family": "Almizclado floral",
     "notes": {
-      "top": ["Flor de naranjo", "Osmanto", "Bergamota"],
-      "heart": ["Almizcle", "Rosa", "Flores blancas"],
-      "base": ["Pachulí", "Vainilla", "Ámbar", "Vetiver"]
+      "top": [
+        "Flor de naranjo",
+        "Osmanto",
+        "Bergamota"
+      ],
+      "heart": [
+        "Almizcle",
+        "Rosa",
+        "Flores blancas"
+      ],
+      "base": [
+        "Pachulí",
+        "Vainilla",
+        "Ámbar",
+        "Vetiver"
+      ]
     },
-    "priceRange": { "min": 65, "max": 120, "currency": "EUR" },
+    "priceRange": {
+      "min": 65,
+      "max": 120,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.2,
-    "seasons": ["otono", "invierno", "primavera"],
-    "timeOfDay": ["noche", "dia"],
-    "occasions": ["cita", "oficina", "eventos"],
+    "seasons": [
+      "otono",
+      "invierno",
+      "primavera"
+    ],
+    "timeOfDay": [
+      "noche",
+      "dia"
+    ],
+    "occasions": [
+      "cita",
+      "oficina",
+      "eventos"
+    ],
     "projection": "Media-alta",
     "longevity": "7-9 horas",
     "history": "For Her de Narciso Rodriguez se lanzó en 2003 y popularizó el almizcle como protagonista absoluto de un perfume femenino. Kurkdjian y Nagel crearon una fragancia sensual y aterciopelada, a la vez limpia y carnal, que resultó muy innovadora. Su frasco negro minimalista y su aroma adictivo la convirtieron en un objeto de culto y en una influencia clave de la perfumería almizclada moderna.",
-    "similar": ["chloe-eau-de-parfum", "giorgio-armani-si", "le-labo-santal-33"],
+    "similar": [
+      "chloe-eau-de-parfum",
+      "giorgio-armani-si",
+      "le-labo-santal-33"
+    ],
     "rating": 4.2
   },
   {
@@ -1154,19 +2518,52 @@
     "perfumer": "Jacques Cavallier",
     "family": "Oriental floral",
     "notes": {
-      "top": ["Flor de azahar", "Rosa", "Mandarina", "Anís estrellado"],
-      "heart": ["Jengibre", "Iris", "Ylang-ylang", "Canela"],
-      "base": ["Vainilla", "Ámbar", "Almizcle", "Sándalo"]
+      "top": [
+        "Flor de azahar",
+        "Rosa",
+        "Mandarina",
+        "Anís estrellado"
+      ],
+      "heart": [
+        "Jengibre",
+        "Iris",
+        "Ylang-ylang",
+        "Canela"
+      ],
+      "base": [
+        "Vainilla",
+        "Ámbar",
+        "Almizcle",
+        "Sándalo"
+      ]
     },
-    "priceRange": { "min": 50, "max": 100, "currency": "EUR" },
-    "pricePerMl": 1.0,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche", "dia"],
-    "occasions": ["cita", "eventos", "diario"],
+    "priceRange": {
+      "min": 50,
+      "max": 100,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1,
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche",
+      "dia"
+    ],
+    "occasions": [
+      "cita",
+      "eventos",
+      "diario"
+    ],
     "projection": "Media-alta",
     "longevity": "7-9 horas",
     "history": "Classique se lanzó en 1993 dentro de su célebre frasco con forma de torso femenino, presentado en una lata de conserva, una provocación marca de la casa Gaultier. Jacques Cavallier creó un oriental floral envolvente de flor de azahar y vainilla. Sensual, retro y atrevido, se convirtió en un icono de los noventa y en un superventas que ha resistido el paso de las décadas.",
-    "similar": ["chanel-no-5", "mugler-angel", "ysl-black-opium"],
+    "similar": [
+      "chanel-no-5",
+      "mugler-angel",
+      "ysl-black-opium"
+    ],
     "rating": 4.1
   },
   {
@@ -1180,20 +2577,50 @@
     "perfumer": "Shyamala Maisondieu, Adriana Medina, Nadège Le Garlantezec",
     "family": "Floral chipre",
     "notes": {
-      "top": ["Pera", "Bergamota", "Rosa"],
-      "heart": ["Rosa", "Jazmín"],
-      "base": ["Almizcle blanco", "Vainilla", "Pachulí", "Cedro"]
+      "top": [
+        "Pera",
+        "Bergamota",
+        "Rosa"
+      ],
+      "heart": [
+        "Rosa",
+        "Jazmín"
+      ],
+      "base": [
+        "Almizcle blanco",
+        "Vainilla",
+        "Pachulí",
+        "Cedro"
+      ]
     },
-    "priceRange": { "min": 70, "max": 130, "currency": "EUR" },
+    "priceRange": {
+      "min": 70,
+      "max": 130,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.3,
-    "seasons": ["primavera", "otono"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["diario", "oficina", "cita"],
+    "seasons": [
+      "primavera",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "cita"
+    ],
     "projection": "Media",
     "longevity": "6-8 horas",
     "history": "Idôle se lanzó en 2019 dentro del frasco más fino del mercado, un gesto de diseño pensado para una nueva generación de mujeres, con Zendaya como embajadora. Su fórmula es un chipre rosado limpio y luminoso, con un almizcle aterciopelado muy contemporáneo. Moderna y fácil de llevar, se sumó al catálogo estrella de Lancôme junto a La Vie Est Belle.",
-    "similar": ["ysl-libre", "chloe-eau-de-parfum", "giorgio-armani-si"],
-    "rating": 4.0
+    "similar": [
+      "ysl-libre",
+      "chloe-eau-de-parfum",
+      "giorgio-armani-si"
+    ],
+    "rating": 4
   },
   {
     "slug": "le-labo-santal-33",
@@ -1206,20 +2633,53 @@
     "perfumer": "Frank Voelkl",
     "family": "Amaderado especiado",
     "notes": {
-      "top": ["Cardamomo", "Iris", "Violeta"],
-      "heart": ["Ambroxan", "Sándalo"],
-      "base": ["Cuero", "Cedro", "Almizcle"]
+      "top": [
+        "Cardamomo",
+        "Iris",
+        "Violeta"
+      ],
+      "heart": [
+        "Ambroxan",
+        "Sándalo"
+      ],
+      "base": [
+        "Cuero",
+        "Cedro",
+        "Almizcle"
+      ]
     },
-    "priceRange": { "min": 200, "max": 340, "currency": "EUR" },
+    "priceRange": {
+      "min": 200,
+      "max": 340,
+      "currency": "EUR"
+    },
     "pricePerMl": 3.4,
-    "seasons": ["otono", "invierno", "primavera"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["diario", "oficina", "cita"],
+    "seasons": [
+      "otono",
+      "invierno",
+      "primavera"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "cita"
+    ],
     "projection": "Media",
     "longevity": "8-10 horas",
     "history": "Santal 33 se lanzó en 2011 y se transformó en un auténtico fenómeno cultural, hasta el punto de ser apodado 'el olor de Brooklyn'. Frank Voelkl creó un amaderado seco y ahumado de sándalo y cuero, con un toque inesperado de iris. Su ubicuidad en hoteles, tiendas y cafeterías de moda lo convirtió en uno de los perfumes de nicho más influyentes y reconocibles del siglo.",
-    "similar": ["tom-ford-oud-wood", "byredo-gypsy-water", "narciso-rodriguez-for-her"],
-    "rating": 4.2
+    "similar": [
+      "tom-ford-oud-wood",
+      "byredo-gypsy-water",
+      "narciso-rodriguez-for-her"
+    ],
+    "rating": 4.2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Le_Labo_Santal_33_in_a_50_milliliter_bottle_%28cropped%29.jpg",
+    "imageSource": "Wikipedia (en)",
+    "imageTitle": "Santal 33"
   },
   {
     "slug": "byredo-gypsy-water",
@@ -1232,19 +2692,50 @@
     "perfumer": "Jérôme Epinette",
     "family": "Amaderado aromático",
     "notes": {
-      "top": ["Bergamota", "Limón", "Pimienta", "Enebro"],
-      "heart": ["Incienso", "Pino", "Orris"],
-      "base": ["Ámbar", "Sándalo", "Vainilla"]
+      "top": [
+        "Bergamota",
+        "Limón",
+        "Pimienta",
+        "Enebro"
+      ],
+      "heart": [
+        "Incienso",
+        "Pino",
+        "Orris"
+      ],
+      "base": [
+        "Ámbar",
+        "Sándalo",
+        "Vainilla"
+      ]
     },
-    "priceRange": { "min": 160, "max": 260, "currency": "EUR" },
+    "priceRange": {
+      "min": 160,
+      "max": 260,
+      "currency": "EUR"
+    },
     "pricePerMl": 2.6,
-    "seasons": ["primavera", "otono"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["diario", "oficina", "ocio"],
+    "seasons": [
+      "primavera",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "ocio"
+    ],
     "projection": "Media",
     "longevity": "6-8 horas",
     "history": "Gypsy Water se lanzó en 2008 como una de las primeras grandes creaciones de Byredo, la casa sueca fundada por Ben Gorham. Evoca el estilo de vida romántico y libre de los pueblos nómadas con un aroma a hoguera de bosque suavizado por vainilla cremosa. Su mezcla de naturaleza y confort lo convirtió en una de las firmas más queridas y reconocibles de la marca.",
-    "similar": ["le-labo-santal-33", "maison-margiela-by-the-fireplace", "tom-ford-oud-wood"],
+    "similar": [
+      "le-labo-santal-33",
+      "maison-margiela-by-the-fireplace",
+      "tom-ford-oud-wood"
+    ],
     "rating": 4.1
   },
   {
@@ -1258,19 +2749,45 @@
     "perfumer": "Francis Kurkdjian",
     "family": "Ambar vainilla",
     "notes": {
-      "top": ["Ámbar", "Benjuí"],
-      "heart": ["Vainilla", "Haba tonka"],
-      "base": ["Ámbar gris", "Cisto", "Resinas"]
+      "top": [
+        "Ámbar",
+        "Benjuí"
+      ],
+      "heart": [
+        "Vainilla",
+        "Haba tonka"
+      ],
+      "base": [
+        "Ámbar gris",
+        "Cisto",
+        "Resinas"
+      ]
     },
-    "priceRange": { "min": 190, "max": 320, "currency": "EUR" },
+    "priceRange": {
+      "min": 190,
+      "max": 320,
+      "currency": "EUR"
+    },
     "pricePerMl": 3.2,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["eventos", "cita"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "eventos",
+      "cita"
+    ],
     "projection": "Media-alta",
     "longevity": "9-12 horas",
     "history": "Grand Soir se lanzó en 2016 como un homenaje al esplendor nocturno de París. Francis Kurkdjian creó un ámbar dorado y luminoso, envuelto en vainilla y resinas cálidas, sin caer en lo empalagoso. Elegante y reconfortante, se ha convertido en uno de los perfumes ambarinos más recomendados del segmento de lujo y en una firma de elegancia para las noches frías.",
-    "similar": ["tom-ford-tobacco-vanille", "mfk-baccarat-rouge-540", "parfums-de-marly-herod"],
+    "similar": [
+      "tom-ford-tobacco-vanille",
+      "mfk-baccarat-rouge-540",
+      "parfums-de-marly-herod"
+    ],
     "rating": 4.4
   },
   {
@@ -1284,19 +2801,49 @@
     "perfumer": "Marie Salamagne",
     "family": "Amaderado especiado",
     "notes": {
-      "top": ["Clavo", "Pimienta rosa", "Bergamota de naranja"],
-      "heart": ["Castaña", "Guaiac", "Notas ahumadas"],
-      "base": ["Vainilla", "Haba tonka", "Cachemira"]
+      "top": [
+        "Clavo",
+        "Pimienta rosa",
+        "Bergamota de naranja"
+      ],
+      "heart": [
+        "Castaña",
+        "Guaiac",
+        "Notas ahumadas"
+      ],
+      "base": [
+        "Vainilla",
+        "Haba tonka",
+        "Cachemira"
+      ]
     },
-    "priceRange": { "min": 75, "max": 140, "currency": "EUR" },
+    "priceRange": {
+      "min": 75,
+      "max": 140,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.4,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["diario", "ocio", "cita"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "ocio",
+      "cita"
+    ],
     "projection": "Media",
     "longevity": "6-8 horas",
     "history": "By the Fireplace pertenece a la colección Replica de Maison Margiela, que busca recrear recuerdos y momentos concretos. Lanzado en 2015, evoca la sensación de estar junto a una chimenea encendida en invierno, con castañas asadas y madera ahumada envueltas en una vainilla acogedora. Su carácter cálido y nostálgico lo convirtió en uno de los perfumes invernales más populares de su gama.",
-    "similar": ["byredo-gypsy-water", "tom-ford-tobacco-vanille", "le-labo-santal-33"],
+    "similar": [
+      "byredo-gypsy-water",
+      "tom-ford-tobacco-vanille",
+      "le-labo-santal-33"
+    ],
     "rating": 4.2
   },
   {
@@ -1310,19 +2857,44 @@
     "perfumer": "Christine Nagel",
     "family": "Amaderado aromático",
     "notes": {
-      "top": ["Sal marina", "Ambrette"],
-      "heart": ["Salvia"],
-      "base": ["Pomelo rojo", "Maderas"]
+      "top": [
+        "Sal marina",
+        "Ambrette"
+      ],
+      "heart": [
+        "Salvia"
+      ],
+      "base": [
+        "Pomelo rojo",
+        "Maderas"
+      ]
     },
-    "priceRange": { "min": 70, "max": 145, "currency": "EUR" },
+    "priceRange": {
+      "min": 70,
+      "max": 145,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.45,
-    "seasons": ["primavera", "verano"],
-    "timeOfDay": ["dia"],
-    "occasions": ["diario", "oficina", "ocio"],
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "ocio"
+    ],
     "projection": "Media",
     "longevity": "5-7 horas",
     "history": "Wood Sage & Sea Salt se lanzó en 2014 y se convirtió en uno de los grandes éxitos de Jo Malone London. Christine Nagel capturó la sensación de un paseo por un acantilado junto al mar, con sal marina, salvia mineral y maderas. Fresco, sobrio y elegante, popularizó la nota salada en la perfumería comercial y es un favorito unisex para los días cálidos.",
-    "similar": ["jo-malone-english-pear", "dolce-gabbana-light-blue", "byredo-gypsy-water"],
+    "similar": [
+      "jo-malone-english-pear",
+      "dolce-gabbana-light-blue",
+      "byredo-gypsy-water"
+    ],
     "rating": 4.1
   },
   {
@@ -1336,19 +2908,48 @@
     "perfumer": "Christine Nagel",
     "family": "Floral frutal chipre",
     "notes": {
-      "top": ["Pera", "Membrillo", "Bergamota"],
-      "heart": ["Fresia", "Rosa"],
-      "base": ["Pachulí", "Pétalos blancos", "Ámbar"]
+      "top": [
+        "Pera",
+        "Membrillo",
+        "Bergamota"
+      ],
+      "heart": [
+        "Fresia",
+        "Rosa"
+      ],
+      "base": [
+        "Pachulí",
+        "Pétalos blancos",
+        "Ámbar"
+      ]
     },
-    "priceRange": { "min": 70, "max": 145, "currency": "EUR" },
+    "priceRange": {
+      "min": 70,
+      "max": 145,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.45,
-    "seasons": ["otono", "primavera"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["diario", "oficina", "cita"],
+    "seasons": [
+      "otono",
+      "primavera"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "cita"
+    ],
     "projection": "Media",
     "longevity": "5-7 horas",
     "history": "English Pear & Freesia se lanzó en 2010 y es uno de los perfumes más vendidos de Jo Malone London. Christine Nagel evoca un huerto otoñal inglés con peras maduras envueltas en fresia floral. Su carácter fresco, frutal y elegante lo convirtió en un favorito de la temporada de otoño y en un superventas perpetuo de la casa británica.",
-    "similar": ["jo-malone-wood-sage-sea-salt", "chloe-eau-de-parfum", "marc-jacobs-daisy"],
+    "similar": [
+      "jo-malone-wood-sage-sea-salt",
+      "chloe-eau-de-parfum",
+      "marc-jacobs-daisy"
+    ],
     "rating": 4.1
   },
   {
@@ -1362,19 +2963,49 @@
     "perfumer": "David Apel, Pierre Negrin",
     "family": "Oriental floral",
     "notes": {
-      "top": ["Trufa", "Grosella negra", "Bergamota", "Mandarina"],
-      "heart": ["Orquídea negra", "Especias", "Flor de loto"],
-      "base": ["Pachulí", "Vainilla", "Incienso", "Chocolate"]
+      "top": [
+        "Trufa",
+        "Grosella negra",
+        "Bergamota",
+        "Mandarina"
+      ],
+      "heart": [
+        "Orquídea negra",
+        "Especias",
+        "Flor de loto"
+      ],
+      "base": [
+        "Pachulí",
+        "Vainilla",
+        "Incienso",
+        "Chocolate"
+      ]
     },
-    "priceRange": { "min": 90, "max": 165, "currency": "EUR" },
+    "priceRange": {
+      "min": 90,
+      "max": 165,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.65,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["eventos", "cita"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "eventos",
+      "cita"
+    ],
     "projection": "Alta",
     "longevity": "9-12 horas",
     "history": "Black Orchid fue el primer perfume firmado por Tom Ford bajo su propia marca, lanzado en 2006. Audaz y oscuro, mezcla notas de trufa, chocolate negro y orquídea en una composición opulenta y enigmática. Su carácter lujoso e inconfundible, presentado en un frasco negro brillante, lo convirtió en una declaración de estilo y en uno de los perfumes más reconocibles de la casa.",
-    "similar": ["tom-ford-tobacco-vanille", "mugler-angel", "ysl-black-opium"],
+    "similar": [
+      "tom-ford-tobacco-vanille",
+      "mugler-angel",
+      "ysl-black-opium"
+    ],
     "rating": 4.1
   },
   {
@@ -1388,20 +3019,51 @@
     "perfumer": "François Demachy",
     "family": "Amaderado floral almizclado",
     "notes": {
-      "top": ["Bergamota", "Cardamomo", "Pimienta rosa"],
-      "heart": ["Cachemira", "Iris", "Salvia"],
-      "base": ["Vetiver", "Pachulí", "Almizcle blanco"]
+      "top": [
+        "Bergamota",
+        "Cardamomo",
+        "Pimienta rosa"
+      ],
+      "heart": [
+        "Cachemira",
+        "Iris",
+        "Salvia"
+      ],
+      "base": [
+        "Vetiver",
+        "Pachulí",
+        "Almizcle blanco"
+      ]
     },
-    "priceRange": { "min": 70, "max": 120, "currency": "EUR" },
+    "priceRange": {
+      "min": 70,
+      "max": 120,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.2,
-    "seasons": ["primavera", "otono"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["oficina", "diario", "cita", "eventos"],
+    "seasons": [
+      "primavera",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "oficina",
+      "diario",
+      "cita",
+      "eventos"
+    ],
     "projection": "Media",
     "longevity": "7-9 horas",
     "history": "En 2020 Dior renovó por completo su línea Dior Homme, sustituyendo el iris pulverulento clásico por una composición más fresca y aromática con cachemira y cítricos. François Demachy buscó una versión más versátil y luminosa, apta para todas las estaciones suaves. Esta reformulación dividió a los aficionados al original, pero amplió el atractivo de la línea para el uso diario.",
-    "similar": ["prada-lhomme", "bleu-de-chanel-edp", "givenchy-gentleman-edp"],
-    "rating": 4.0
+    "similar": [
+      "prada-lhomme",
+      "bleu-de-chanel-edp",
+      "givenchy-gentleman-edp"
+    ],
+    "rating": 4
   },
   {
     "slug": "creed-green-irish-tweed",
@@ -1414,19 +3076,48 @@
     "perfumer": "Olivier Creed, Pierre Bourdon",
     "family": "Aromático verde",
     "notes": {
-      "top": ["Limón", "Verbena", "Hoja de violeta"],
-      "heart": ["Iris", "Hoja de violeta"],
-      "base": ["Sándalo", "Ámbar gris"]
+      "top": [
+        "Limón",
+        "Verbena",
+        "Hoja de violeta"
+      ],
+      "heart": [
+        "Iris",
+        "Hoja de violeta"
+      ],
+      "base": [
+        "Sándalo",
+        "Ámbar gris"
+      ]
     },
-    "priceRange": { "min": 230, "max": 360, "currency": "EUR" },
+    "priceRange": {
+      "min": 230,
+      "max": 360,
+      "currency": "EUR"
+    },
     "pricePerMl": 3.6,
-    "seasons": ["primavera", "verano", "otono"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["oficina", "diario", "eventos"],
+    "seasons": [
+      "primavera",
+      "verano",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "oficina",
+      "diario",
+      "eventos"
+    ],
     "projection": "Media-alta",
     "longevity": "7-9 horas",
     "history": "Green Irish Tweed se lanzó en 1985 y es considerado uno de los grandes clásicos de la perfumería masculina del siglo XX. Pierre Bourdon firmó esta composición verde y fresca de hoja de violeta e iris, que evoca campos irlandeses húmedos. Inspiró toda una familia de perfumes posteriores y sigue siendo un referente de elegancia atemporal para los entusiastas de Creed.",
-    "similar": ["creed-aventus", "giorgio-armani-acqua-di-gio-profumo", "bleu-de-chanel-edp"],
+    "similar": [
+      "creed-aventus",
+      "giorgio-armani-acqua-di-gio-profumo",
+      "bleu-de-chanel-edp"
+    ],
     "rating": 4.3
   },
   {
@@ -1440,20 +3131,53 @@
     "perfumer": "Jacques Guerlain",
     "family": "Oriental ambarino",
     "notes": {
-      "top": ["Bergamota", "Limón", "Mandarina"],
-      "heart": ["Iris", "Jazmín", "Rosa", "Pachulí"],
-      "base": ["Vainilla", "Incienso", "Ámbar", "Cuero"]
+      "top": [
+        "Bergamota",
+        "Limón",
+        "Mandarina"
+      ],
+      "heart": [
+        "Iris",
+        "Jazmín",
+        "Rosa",
+        "Pachulí"
+      ],
+      "base": [
+        "Vainilla",
+        "Incienso",
+        "Ámbar",
+        "Cuero"
+      ]
     },
-    "priceRange": { "min": 85, "max": 155, "currency": "EUR" },
+    "priceRange": {
+      "min": 85,
+      "max": 155,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.55,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["eventos", "cita"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "eventos",
+      "cita"
+    ],
     "projection": "Alta",
     "longevity": "9-12 horas",
     "history": "Shalimar se lanzó en 1925 y está considerado el primer gran perfume oriental de la historia. Jacques Guerlain se inspiró en la historia de amor del emperador Shah Jahan y los jardines de Shalimar para crear una composición de bergamota, iris y una vainilla casi infinita. Sensual y legendario, definió toda una categoría olfativa y sigue siendo un emblema de la perfumería francesa.",
-    "similar": ["chanel-no-5", "jean-paul-gaultier-classique", "tom-ford-black-orchid"],
-    "rating": 4.2
+    "similar": [
+      "chanel-no-5",
+      "jean-paul-gaultier-classique",
+      "tom-ford-black-orchid"
+    ],
+    "rating": 4.2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Perfume_Shalimar.jpg",
+    "imageSource": "Wikipedia (en)",
+    "imageTitle": "Shalimar (perfume)"
   },
   {
     "slug": "hermes-terre-dhermes",
@@ -1466,20 +3190,53 @@
     "perfumer": "Jean-Claude Ellena",
     "family": "Amaderado especiado",
     "notes": {
-      "top": ["Naranja", "Pomelo"],
-      "heart": ["Pimienta", "Pelargonio", "Pachulí"],
-      "base": ["Vetiver", "Cedro", "Benjuí"]
+      "top": [
+        "Naranja",
+        "Pomelo"
+      ],
+      "heart": [
+        "Pimienta",
+        "Pelargonio",
+        "Pachulí"
+      ],
+      "base": [
+        "Vetiver",
+        "Cedro",
+        "Benjuí"
+      ]
     },
-    "priceRange": { "min": 65, "max": 120, "currency": "EUR" },
+    "priceRange": {
+      "min": 65,
+      "max": 120,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.2,
-    "seasons": ["primavera", "otono", "invierno"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["oficina", "diario", "eventos"],
+    "seasons": [
+      "primavera",
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "oficina",
+      "diario",
+      "eventos"
+    ],
     "projection": "Media-alta",
     "longevity": "8-10 horas",
     "history": "Terre d'Hermès se lanzó en 2006 como una meditación olfativa sobre la relación entre el hombre y la tierra. Jean-Claude Ellena, perfumista de la casa, creó una obra de cítricos minerales, pimienta y un vetiver terroso de gran elegancia. Reconocido por la crítica como una obra maestra moderna, es uno de los perfumes masculinos más respetados y vendidos de la perfumería de lujo.",
-    "similar": ["bleu-de-chanel-edp", "montblanc-explorer", "prada-lhomme"],
-    "rating": 4.4
+    "similar": [
+      "bleu-de-chanel-edp",
+      "montblanc-explorer",
+      "prada-lhomme"
+    ],
+    "rating": 4.4,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Terre_d%E2%80%99Herm%C3%A8s_%28cropped%29.JPG/960px-Terre_d%E2%80%99Herm%C3%A8s_%28cropped%29.JPG",
+    "imageSource": "Wikipedia (en)",
+    "imageTitle": "Terre d'Hermès"
   },
   {
     "slug": "issey-miyake-leau-dissey-pour-homme",
@@ -1492,20 +3249,53 @@
     "perfumer": "Jacques Cavallier",
     "family": "Acuático amaderado",
     "notes": {
-      "top": ["Yuzu", "Bergamota", "Estragón", "Cilantro"],
-      "heart": ["Nenúfar", "Canela", "Nuez moscada", "Geranio"],
-      "base": ["Sándalo", "Cedro", "Ámbar", "Vetiver", "Tabaco"]
+      "top": [
+        "Yuzu",
+        "Bergamota",
+        "Estragón",
+        "Cilantro"
+      ],
+      "heart": [
+        "Nenúfar",
+        "Canela",
+        "Nuez moscada",
+        "Geranio"
+      ],
+      "base": [
+        "Sándalo",
+        "Cedro",
+        "Ámbar",
+        "Vetiver",
+        "Tabaco"
+      ]
     },
-    "priceRange": { "min": 40, "max": 85, "currency": "EUR" },
+    "priceRange": {
+      "min": 40,
+      "max": 85,
+      "currency": "EUR"
+    },
     "pricePerMl": 0.85,
-    "seasons": ["primavera", "verano"],
-    "timeOfDay": ["dia"],
-    "occasions": ["diario", "oficina", "ocio"],
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "ocio"
+    ],
     "projection": "Media",
     "longevity": "6-8 horas",
     "history": "L'Eau d'Issey Pour Homme se lanzó en 1994 y ayudó a definir la moda de los perfumes acuáticos masculinos de los años noventa. Jacques Cavallier creó una composición fresca y limpia de cítricos y notas acuáticas sobre un fondo amaderado y especiado. Su carácter minimalista, fiel a la estética del diseñador Issey Miyake, lo convirtió en un superventas duradero y en un clásico de la frescura.",
-    "similar": ["giorgio-armani-acqua-di-gio-profumo", "versace-dylan-blue", "dolce-gabbana-light-blue"],
-    "rating": 4.0
+    "similar": [
+      "giorgio-armani-acqua-di-gio-profumo",
+      "versace-dylan-blue",
+      "dolce-gabbana-light-blue"
+    ],
+    "rating": 4
   },
   {
     "slug": "calvin-klein-ck-one",
@@ -1518,19 +3308,50 @@
     "perfumer": "Alberto Morillas, Harry Fremont",
     "family": "Cítrico aromático",
     "notes": {
-      "top": ["Bergamota", "Mandarina", "Piña", "Papaya"],
-      "heart": ["Té verde", "Nuez moscada", "Violeta", "Rosa"],
-      "base": ["Almizcle", "Cedro", "Ámbar", "Musgo de roble"]
+      "top": [
+        "Bergamota",
+        "Mandarina",
+        "Piña",
+        "Papaya"
+      ],
+      "heart": [
+        "Té verde",
+        "Nuez moscada",
+        "Violeta",
+        "Rosa"
+      ],
+      "base": [
+        "Almizcle",
+        "Cedro",
+        "Ámbar",
+        "Musgo de roble"
+      ]
     },
-    "priceRange": { "min": 30, "max": 70, "currency": "EUR" },
+    "priceRange": {
+      "min": 30,
+      "max": 70,
+      "currency": "EUR"
+    },
     "pricePerMl": 0.7,
-    "seasons": ["primavera", "verano"],
-    "timeOfDay": ["dia"],
-    "occasions": ["diario", "ocio"],
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "ocio"
+    ],
     "projection": "Media",
     "longevity": "4-6 horas",
     "history": "CK One se lanzó en 1994 y revolucionó la industria al ser uno de los primeros perfumes abiertamente unisex y de gran consumo. Su frasco de farmacia y sus campañas con estética grunge capturaron el espíritu de toda una generación de los noventa. Fresco, limpio y democrático, vendió millones de unidades y cambió para siempre la forma de comercializar la perfumería.",
-    "similar": ["jo-malone-wood-sage-sea-salt", "issey-miyake-leau-dissey-pour-homme", "dolce-gabbana-light-blue"],
+    "similar": [
+      "jo-malone-wood-sage-sea-salt",
+      "issey-miyake-leau-dissey-pour-homme",
+      "dolce-gabbana-light-blue"
+    ],
     "rating": 3.9
   },
   {
@@ -1544,19 +3365,43 @@
     "perfumer": "Dominique Ropion, Laurent Bruyère",
     "family": "Floral amaderado ambarino",
     "notes": {
-      "top": ["Jazmín sambac"],
-      "heart": ["Jazmín", "Madera de cachemira"],
-      "base": ["Ámbar blanco", "Madera ambarina"]
+      "top": [
+        "Jazmín sambac"
+      ],
+      "heart": [
+        "Jazmín",
+        "Madera de cachemira"
+      ],
+      "base": [
+        "Ámbar blanco",
+        "Madera ambarina"
+      ]
     },
-    "priceRange": { "min": 70, "max": 135, "currency": "EUR" },
+    "priceRange": {
+      "min": 70,
+      "max": 135,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.35,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["cita", "eventos"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "eventos"
+    ],
     "projection": "Muy alta",
     "longevity": "10-14 horas",
     "history": "Alien se lanzó en 2005 como el segundo gran pilar femenino de Thierry Mugler tras Angel. Dominique Ropion construyó una fragancia hipnótica y radiante alrededor de un jazmín sambac solar y un ámbar luminoso. Su potencia y su carácter casi extraterrestre, fiel a su nombre, la convirtieron en un superventas duradero y en una de las firmas más reconocibles de la casa.",
-    "similar": ["mugler-angel", "viktor-rolf-flowerbomb", "carolina-herrera-good-girl"],
+    "similar": [
+      "mugler-angel",
+      "viktor-rolf-flowerbomb",
+      "carolina-herrera-good-girl"
+    ],
     "rating": 4.2
   },
   {
@@ -1570,19 +3415,47 @@
     "perfumer": "Antoine Maisondieu",
     "family": "Amaderado oriental",
     "notes": {
-      "top": ["Bergamota", "Mandarina"],
-      "heart": ["Iris", "Mirística"],
-      "base": ["Vainilla", "Cuero", "Ámbar"]
+      "top": [
+        "Bergamota",
+        "Mandarina"
+      ],
+      "heart": [
+        "Iris",
+        "Mirística"
+      ],
+      "base": [
+        "Vainilla",
+        "Cuero",
+        "Ámbar"
+      ]
     },
-    "priceRange": { "min": 60, "max": 115, "currency": "EUR" },
+    "priceRange": {
+      "min": 60,
+      "max": 115,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.15,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche", "dia"],
-    "occasions": ["cita", "oficina", "eventos"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche",
+      "dia"
+    ],
+    "occasions": [
+      "cita",
+      "oficina",
+      "eventos"
+    ],
     "projection": "Media-alta",
     "longevity": "8-10 horas",
     "history": "Valentino Uomo Intense profundiza la línea masculina de la casa italiana con un perfil más cálido y goloso. Antoine Maisondieu combinó el iris elegante con una vainilla cremosa y un toque de cuero suave. Refinado y sensual, se convirtió en una opción muy recomendada para las citas y los eventos de los meses fríos dentro de su gama de precio.",
-    "similar": ["dior-homme-intense", "givenchy-gentleman-edp", "carolina-herrera-bad-boy"],
+    "similar": [
+      "dior-homme-intense",
+      "givenchy-gentleman-edp",
+      "carolina-herrera-bad-boy"
+    ],
     "rating": 4.1
   },
   {
@@ -1596,20 +3469,46 @@
     "perfumer": "Alberto Morillas",
     "family": "Floral blanco",
     "notes": {
-      "top": ["Jazmín"],
-      "heart": ["Nardo", "Jazmín sambac"],
-      "base": ["Raíz de orris", "Enredadera de Rangún"]
+      "top": [
+        "Jazmín"
+      ],
+      "heart": [
+        "Nardo",
+        "Jazmín sambac"
+      ],
+      "base": [
+        "Raíz de orris",
+        "Enredadera de Rangún"
+      ]
     },
-    "priceRange": { "min": 70, "max": 135, "currency": "EUR" },
+    "priceRange": {
+      "min": 70,
+      "max": 135,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.35,
-    "seasons": ["primavera", "verano"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["diario", "cita", "eventos"],
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "cita",
+      "eventos"
+    ],
     "projection": "Media-alta",
     "longevity": "7-9 horas",
     "history": "Gucci Bloom se lanzó en 2017 como la primera gran fragancia femenina de la era creativa de Alessandro Michele en Gucci. Alberto Morillas concibió un floral blanco exuberante, dominado por el nardo y el jazmín, que evoca un jardín en plena floración. Su carácter intensamente floral y romántico la convirtió en un superventas y en una firma fácilmente reconocible de la casa italiana.",
-    "similar": ["dior-jadore", "viktor-rolf-flowerbomb", "gucci-flora-gorgeous-jasmine"],
-    "rating": 4.0
+    "similar": [
+      "dior-jadore",
+      "viktor-rolf-flowerbomb",
+      "gucci-flora-gorgeous-jasmine"
+    ],
+    "rating": 4
   },
   {
     "slug": "prada-paradoxe",
@@ -1622,20 +3521,49 @@
     "perfumer": "Fanny Bal, Nathalie Lorson, Jean-Christophe Hérault",
     "family": "Floral ambarino",
     "notes": {
-      "top": ["Bergamota", "Neroli"],
-      "heart": ["Flor de azahar", "Ámbar"],
-      "base": ["Almizcle blanco", "Notas ambaradas"]
+      "top": [
+        "Bergamota",
+        "Neroli"
+      ],
+      "heart": [
+        "Flor de azahar",
+        "Ámbar"
+      ],
+      "base": [
+        "Almizcle blanco",
+        "Notas ambaradas"
+      ]
     },
-    "priceRange": { "min": 75, "max": 140, "currency": "EUR" },
+    "priceRange": {
+      "min": 75,
+      "max": 140,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.4,
-    "seasons": ["primavera", "otono", "invierno"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["diario", "oficina", "cita", "eventos"],
+    "seasons": [
+      "primavera",
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "cita",
+      "eventos"
+    ],
     "projection": "Media",
     "longevity": "7-9 horas",
     "history": "Paradoxe se lanzó en 2022 como la fragancia femenina insignia de Prada, con Emma Watson como embajadora y también codirectora de la campaña. La fórmula combina la frescura del neroli con un fondo ambarino y almizclado muy moderno. Pensada como retrato de una mujer multifacética, se posicionó rápidamente entre las novedades femeninas más populares de su gama.",
-    "similar": ["lancome-idole", "ysl-libre", "chloe-eau-de-parfum"],
-    "rating": 4.0
+    "similar": [
+      "lancome-idole",
+      "ysl-libre",
+      "chloe-eau-de-parfum"
+    ],
+    "rating": 4
   },
   {
     "slug": "burberry-her",
@@ -1648,20 +3576,52 @@
     "perfumer": "Francis Kurkdjian",
     "family": "Floral frutal gourmand",
     "notes": {
-      "top": ["Frutos rojos", "Grosella negra", "Arándano", "Fresa", "Zarzamora"],
-      "heart": ["Jazmín", "Violeta"],
-      "base": ["Almizcle", "Ámbar", "Madera seca"]
+      "top": [
+        "Frutos rojos",
+        "Grosella negra",
+        "Arándano",
+        "Fresa",
+        "Zarzamora"
+      ],
+      "heart": [
+        "Jazmín",
+        "Violeta"
+      ],
+      "base": [
+        "Almizcle",
+        "Ámbar",
+        "Madera seca"
+      ]
     },
-    "priceRange": { "min": 65, "max": 125, "currency": "EUR" },
+    "priceRange": {
+      "min": 65,
+      "max": 125,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.25,
-    "seasons": ["otono", "invierno", "primavera"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["diario", "cita", "ocio"],
+    "seasons": [
+      "otono",
+      "invierno",
+      "primavera"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "cita",
+      "ocio"
+    ],
     "projection": "Alta",
     "longevity": "8-10 horas",
     "history": "Burberry Her se lanzó en 2018 como un retrato olfativo de las calles de Londres y de la energía juvenil de la ciudad. Francis Kurkdjian creó un gourmand afrutado dominado por un cóctel de frutos rojos jugosos sobre una base de almizcle. Dulce, vibrante y muy moderno, conectó con el público joven y revitalizó la perfumería femenina de la casa británica.",
-    "similar": ["ysl-black-opium", "carolina-herrera-good-girl", "lancome-la-vie-est-belle"],
-    "rating": 4.0
+    "similar": [
+      "ysl-black-opium",
+      "carolina-herrera-good-girl",
+      "lancome-la-vie-est-belle"
+    ],
+    "rating": 4
   },
   {
     "slug": "gucci-flora-gorgeous-jasmine",
@@ -1674,19 +3634,45 @@
     "perfumer": "Quentin Bisch",
     "family": "Floral frutal",
     "notes": {
-      "top": ["Pera", "Mandarina"],
-      "heart": ["Jazmín", "Magnolia"],
-      "base": ["Almizcle", "Maderas"]
+      "top": [
+        "Pera",
+        "Mandarina"
+      ],
+      "heart": [
+        "Jazmín",
+        "Magnolia"
+      ],
+      "base": [
+        "Almizcle",
+        "Maderas"
+      ]
     },
-    "priceRange": { "min": 70, "max": 130, "currency": "EUR" },
+    "priceRange": {
+      "min": 70,
+      "max": 130,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.3,
-    "seasons": ["primavera", "verano"],
-    "timeOfDay": ["dia"],
-    "occasions": ["diario", "oficina", "cita"],
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "cita"
+    ],
     "projection": "Media",
     "longevity": "6-8 horas",
     "history": "Flora Gorgeous Jasmine amplió en 2023 la popular colección Flora de Gucci, inspirada en el estampado floral histórico de la casa creado en los años sesenta. Quentin Bisch firmó un floral frutal luminoso y juvenil, con una pera jugosa y un jazmín suave. Fresco y fácil de llevar, se sumó a la familia Flora como una opción primaveral muy comercial.",
-    "similar": ["gucci-bloom", "marc-jacobs-daisy", "dior-miss-dior"],
+    "similar": [
+      "gucci-bloom",
+      "marc-jacobs-daisy",
+      "dior-miss-dior"
+    ],
     "rating": 3.9
   },
   {
@@ -1700,19 +3686,48 @@
     "perfumer": "François Demachy",
     "family": "Amaderado especiado",
     "notes": {
-      "top": ["Canela", "Nuez moscada", "Cardamomo", "Pomelo"],
-      "heart": ["Lavanda", "Esencia de lavanda"],
-      "base": ["Regaliz", "Sándalo", "Ámbar", "Pachulí"]
+      "top": [
+        "Canela",
+        "Nuez moscada",
+        "Cardamomo",
+        "Pomelo"
+      ],
+      "heart": [
+        "Lavanda",
+        "Esencia de lavanda"
+      ],
+      "base": [
+        "Regaliz",
+        "Sándalo",
+        "Ámbar",
+        "Pachulí"
+      ]
     },
-    "priceRange": { "min": 110, "max": 175, "currency": "EUR" },
+    "priceRange": {
+      "min": 110,
+      "max": 175,
+      "currency": "EUR"
+    },
     "pricePerMl": 2.4,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["cita", "eventos"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "eventos"
+    ],
     "projection": "Muy alta",
     "longevity": "10-14 horas",
     "history": "Sauvage Elixir llegó en 2021 como la versión más concentrada e intensa de la familia Sauvage de Dior. François Demachy multiplicó la dosis de materias primas para lograr una fragancia densa y especiada, con una lavanda potente y un fondo de regaliz y maderas. Su rendimiento abrumador y su carácter nocturno la convirtieron en una de las creaciones masculinas más comentadas de los últimos años.",
-    "similar": ["dior-sauvage-edp", "carolina-herrera-bad-boy", "tom-ford-noir-extreme"],
+    "similar": [
+      "dior-sauvage-edp",
+      "carolina-herrera-bad-boy",
+      "tom-ford-noir-extreme"
+    ],
     "rating": 4.4
   },
   {
@@ -1726,19 +3741,51 @@
     "perfumer": "Jacques Polge",
     "family": "Amaderado aromático",
     "notes": {
-      "top": ["Naranja", "Mandarina", "Aldehídos", "Pimienta"],
-      "heart": ["Notas marinas", "Neroli", "Cedro"],
-      "base": ["Almizcle blanco", "Vetiver", "Haba tonka", "Sándalo"]
+      "top": [
+        "Naranja",
+        "Mandarina",
+        "Aldehídos",
+        "Pimienta"
+      ],
+      "heart": [
+        "Notas marinas",
+        "Neroli",
+        "Cedro"
+      ],
+      "base": [
+        "Almizcle blanco",
+        "Vetiver",
+        "Haba tonka",
+        "Sándalo"
+      ]
     },
-    "priceRange": { "min": 70, "max": 125, "currency": "EUR" },
+    "priceRange": {
+      "min": 70,
+      "max": 125,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.25,
-    "seasons": ["primavera", "verano", "otono"],
-    "timeOfDay": ["dia"],
-    "occasions": ["diario", "oficina", "ocio"],
+    "seasons": [
+      "primavera",
+      "verano",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "ocio"
+    ],
     "projection": "Media",
     "longevity": "7-9 horas",
     "history": "Allure Homme Sport se lanzó en 2004 como una propuesta fresca y dinámica dentro de la elegancia clásica de Chanel. Jacques Polge combinó cítricos chispeantes con notas marinas y un fondo cálido de vetiver y haba tonka. Limpio, versátil y deportivo sin renunciar a la sofisticación, se mantiene como un superventas masculino para el día a día y las estaciones cálidas.",
-    "similar": ["bleu-de-chanel-edp", "giorgio-armani-acqua-di-gio-profumo", "hermes-terre-dhermes"],
+    "similar": [
+      "bleu-de-chanel-edp",
+      "giorgio-armani-acqua-di-gio-profumo",
+      "hermes-terre-dhermes"
+    ],
     "rating": 4.2
   },
   {
@@ -1752,19 +3799,46 @@
     "perfumer": "Antoine Lie, Antoine Maisondieu, Clément Gavarry",
     "family": "Oriental especiado",
     "notes": {
-      "top": ["Bergamota", "Limón", "Anís estrellado"],
-      "heart": ["Flor de olivo", "Guaiac"],
-      "base": ["Cuero", "Haba tonka", "Tabaco"]
+      "top": [
+        "Bergamota",
+        "Limón",
+        "Anís estrellado"
+      ],
+      "heart": [
+        "Flor de olivo",
+        "Guaiac"
+      ],
+      "base": [
+        "Cuero",
+        "Haba tonka",
+        "Tabaco"
+      ]
     },
-    "priceRange": { "min": 55, "max": 105, "currency": "EUR" },
+    "priceRange": {
+      "min": 55,
+      "max": 105,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.05,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["cita", "eventos"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "eventos"
+    ],
     "projection": "Media",
     "longevity": "7-9 horas",
     "history": "Armani Code se lanzó en 2004 como un retrato del hombre seductor y misterioso, y rápidamente se convirtió en un clásico de la perfumería de noche. Su mezcla de cítricos, flor de olivo y un fondo cálido de haba tonka y cuero resulta elegante y magnética. Considerado un seductor seguro para las citas, lleva dos décadas entre los superventas masculinos de Armani.",
-    "similar": ["dolce-gabbana-the-one", "ysl-la-nuit-de-lhomme", "bvlgari-man-in-black"],
+    "similar": [
+      "dolce-gabbana-the-one",
+      "ysl-la-nuit-de-lhomme",
+      "bvlgari-man-in-black"
+    ],
     "rating": 4.1
   },
   {
@@ -1778,19 +3852,50 @@
     "perfumer": "Cécile Matton",
     "family": "Amaderado aromático",
     "notes": {
-      "top": ["Cardamomo", "Pimienta rosa", "Violeta"],
-      "heart": ["Salvia", "Castaña", "Especias"],
-      "base": ["Vainilla", "Ámbar", "Cedro", "Haba tonka"]
+      "top": [
+        "Cardamomo",
+        "Pimienta rosa",
+        "Violeta"
+      ],
+      "heart": [
+        "Salvia",
+        "Castaña",
+        "Especias"
+      ],
+      "base": [
+        "Vainilla",
+        "Ámbar",
+        "Cedro",
+        "Haba tonka"
+      ]
     },
-    "priceRange": { "min": 50, "max": 95, "currency": "EUR" },
+    "priceRange": {
+      "min": 50,
+      "max": 95,
+      "currency": "EUR"
+    },
     "pricePerMl": 0.95,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche", "dia"],
-    "occasions": ["cita", "diario", "ocio"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche",
+      "dia"
+    ],
+    "occasions": [
+      "cita",
+      "diario",
+      "ocio"
+    ],
     "projection": "Media-alta",
     "longevity": "7-9 horas",
     "history": "Stronger With You llegó en 2017 dentro de la línea Emporio Armani como una declaración de complicidad y amor compartido. Cécile Matton firmó una fórmula cálida y golosa basada en una castaña tostada, especias suaves y vainilla cremosa. Su carácter acogedor y juvenil lo convirtió en un éxito enorme entre el público joven y en uno de los lanzamientos más populares de la marca.",
-    "similar": ["azzaro-the-most-wanted", "carolina-herrera-bad-boy", "dior-sauvage-edp"],
+    "similar": [
+      "azzaro-the-most-wanted",
+      "carolina-herrera-bad-boy",
+      "dior-sauvage-edp"
+    ],
     "rating": 4.2
   },
   {
@@ -1804,19 +3909,45 @@
     "perfumer": "Anne Flipo, Pierre Wargnye, Dominique Ropion",
     "family": "Amaderado especiado",
     "notes": {
-      "top": ["Cardamomo"],
-      "heart": ["Lavanda", "Bergamota", "Cedro"],
-      "base": ["Vetiver", "Haba tonka"]
+      "top": [
+        "Cardamomo"
+      ],
+      "heart": [
+        "Lavanda",
+        "Bergamota",
+        "Cedro"
+      ],
+      "base": [
+        "Vetiver",
+        "Haba tonka"
+      ]
     },
-    "priceRange": { "min": 55, "max": 105, "currency": "EUR" },
+    "priceRange": {
+      "min": 55,
+      "max": 105,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.05,
-    "seasons": ["primavera", "otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["cita", "eventos"],
+    "seasons": [
+      "primavera",
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "eventos"
+    ],
     "projection": "Media",
     "longevity": "7-9 horas",
     "history": "La Nuit de L'Homme se lanzó en 2009 y se ha consolidado como uno de los perfumes de cita más recomendados de la historia reciente. Su fórmula gira en torno a un cardamomo especiado y elegante sobre un fondo limpio de cedro y haba tonka. Sofisticado, sensual y nunca excesivo, es la apuesta segura para una noche romántica y un pilar del catálogo masculino de Yves Saint Laurent.",
-    "similar": ["armani-code", "dior-homme-intense", "prada-lhomme"],
+    "similar": [
+      "armani-code",
+      "dior-homme-intense",
+      "prada-lhomme"
+    ],
     "rating": 4.3
   },
   {
@@ -1830,19 +3961,48 @@
     "perfumer": "Véronique Nyberg, Anne Flipo, Olivier Polge, Dominique Ropion",
     "family": "Acuático aromático",
     "notes": {
-      "top": ["Pomelo", "Notas marinas", "Mandarina"],
-      "heart": ["Hoja de laurel", "Jazmín"],
-      "base": ["Guaiac", "Ámbar gris", "Pachulí", "Almizcle"]
+      "top": [
+        "Pomelo",
+        "Notas marinas",
+        "Mandarina"
+      ],
+      "heart": [
+        "Hoja de laurel",
+        "Jazmín"
+      ],
+      "base": [
+        "Guaiac",
+        "Ámbar gris",
+        "Pachulí",
+        "Almizcle"
+      ]
     },
-    "priceRange": { "min": 50, "max": 95, "currency": "EUR" },
+    "priceRange": {
+      "min": 50,
+      "max": 95,
+      "currency": "EUR"
+    },
     "pricePerMl": 0.95,
-    "seasons": ["primavera", "verano"],
-    "timeOfDay": ["dia"],
-    "occasions": ["ocio", "diario", "oficina"],
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "ocio",
+      "diario",
+      "oficina"
+    ],
     "projection": "Alta",
     "longevity": "7-9 horas",
     "history": "Invictus se lanzó en 2013 con su icónico frasco en forma de trofeo y un concepto centrado en la victoria y la energía deportiva. El equipo de perfumistas creó un contraste entre una frescura marina luminosa y un fondo amaderado y almizclado. Fresco, magnético y muy comercial, se convirtió en uno de los superventas masculinos de las estaciones cálidas.",
-    "similar": ["versace-dylan-blue", "giorgio-armani-acqua-di-gio-profumo", "davidoff-cool-water"],
+    "similar": [
+      "versace-dylan-blue",
+      "giorgio-armani-acqua-di-gio-profumo",
+      "davidoff-cool-water"
+    ],
     "rating": 3.9
   },
   {
@@ -1856,20 +4016,49 @@
     "perfumer": "Loc Dong, Anne Flipo, Dominique Ropion, Juliette Karagueuzoglou",
     "family": "Aromático fougère",
     "notes": {
-      "top": ["Limón", "Lavanda"],
-      "heart": ["Lavanda", "Manzana"],
-      "base": ["Vainilla", "Pachulí", "Madera"]
+      "top": [
+        "Limón",
+        "Lavanda"
+      ],
+      "heart": [
+        "Lavanda",
+        "Manzana"
+      ],
+      "base": [
+        "Vainilla",
+        "Pachulí",
+        "Madera"
+      ]
     },
-    "priceRange": { "min": 50, "max": 95, "currency": "EUR" },
+    "priceRange": {
+      "min": 50,
+      "max": 95,
+      "currency": "EUR"
+    },
     "pricePerMl": 0.95,
-    "seasons": ["primavera", "otono", "invierno"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["diario", "ocio", "cita"],
+    "seasons": [
+      "primavera",
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "ocio",
+      "cita"
+    ],
     "projection": "Media-alta",
     "longevity": "7-9 horas",
     "history": "Phantom se presentó en 2021 con un frasco robótico y un concepto tecnológico, fiel al espíritu futurista de Paco Rabanne. Su fórmula une una lavanda fresca y limpia con una vainilla golosa, creando un fougère moderno y adictivo. Divertido, juvenil y de buen rendimiento a un precio asequible, se sumó rápidamente a los superventas de la casa.",
-    "similar": ["paco-rabanne-1-million", "ysl-y-edp", "montblanc-legend"],
-    "rating": 4.0
+    "similar": [
+      "paco-rabanne-1-million",
+      "ysl-y-edp",
+      "montblanc-legend"
+    ],
+    "rating": 4
   },
   {
     "slug": "jpg-ultra-male",
@@ -1882,19 +4071,48 @@
     "perfumer": "Francis Kurkdjian",
     "family": "Aromático fougère",
     "notes": {
-      "top": ["Pera", "Bergamota", "Lavanda"],
-      "heart": ["Salvia", "Canela", "Flor de azahar"],
-      "base": ["Vainilla", "Haba tonka", "Ámbar", "Cedro"]
+      "top": [
+        "Pera",
+        "Bergamota",
+        "Lavanda"
+      ],
+      "heart": [
+        "Salvia",
+        "Canela",
+        "Flor de azahar"
+      ],
+      "base": [
+        "Vainilla",
+        "Haba tonka",
+        "Ámbar",
+        "Cedro"
+      ]
     },
-    "priceRange": { "min": 55, "max": 100, "currency": "EUR" },
-    "pricePerMl": 1.0,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["cita", "ocio"],
+    "priceRange": {
+      "min": 55,
+      "max": 100,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1,
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "ocio"
+    ],
     "projection": "Muy alta",
     "longevity": "9-12 horas",
     "history": "Ultra Male se lanzó en 2015 como la versión más intensa y golosa del clásico Le Male. Francis Kurkdjian potenció la dulzura con una pera jugosa y una vainilla envolvente, creando una bomba aromática de gran proyección. Su rendimiento descomunal y su carácter juvenil lo convirtieron en un favorito de las salidas nocturnas y en uno de los superventas de la casa.",
-    "similar": ["jean-paul-gaultier-le-male", "azzaro-the-most-wanted", "paco-rabanne-1-million"],
+    "similar": [
+      "jean-paul-gaultier-le-male",
+      "azzaro-the-most-wanted",
+      "paco-rabanne-1-million"
+    ],
     "rating": 4.2
   },
   {
@@ -1908,19 +4126,46 @@
     "perfumer": "Daniela Andrier",
     "family": "Acuático amaderado",
     "notes": {
-      "top": ["Bergamota", "Pimienta"],
-      "heart": ["Notas acuáticas", "Salvia"],
-      "base": ["Ambroxan", "Pachulí", "Musgo"]
+      "top": [
+        "Bergamota",
+        "Pimienta"
+      ],
+      "heart": [
+        "Notas acuáticas",
+        "Salvia"
+      ],
+      "base": [
+        "Ambroxan",
+        "Pachulí",
+        "Musgo"
+      ]
     },
-    "priceRange": { "min": 60, "max": 110, "currency": "EUR" },
+    "priceRange": {
+      "min": 60,
+      "max": 110,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.1,
-    "seasons": ["primavera", "verano"],
-    "timeOfDay": ["dia"],
-    "occasions": ["diario", "oficina", "ocio"],
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "ocio"
+    ],
     "projection": "Media-alta",
     "longevity": "8-10 horas",
     "history": "Luna Rossa Ocean se lanzó en 2022 dentro de la línea náutica Luna Rossa de Prada, inspirada en la vela de competición. Daniela Andrier creó una frescura acuática moderna y muy limpia, con bergamota luminosa y un fondo de ambroxan salino. Su carácter versátil y elegante lo convirtió en una de las novedades acuáticas masculinas más recomendadas.",
-    "similar": ["giorgio-armani-acqua-di-gio-profumo", "versace-dylan-blue", "issey-miyake-leau-dissey-pour-homme"],
+    "similar": [
+      "giorgio-armani-acqua-di-gio-profumo",
+      "versace-dylan-blue",
+      "issey-miyake-leau-dissey-pour-homme"
+    ],
     "rating": 4.1
   },
   {
@@ -1934,19 +4179,42 @@
     "perfumer": "Bruno Jovanovic",
     "family": "Oriental especiado",
     "notes": {
-      "top": ["Jengibre"],
-      "heart": ["Maninka", "Lavanda"],
-      "base": ["Cuero"]
+      "top": [
+        "Jengibre"
+      ],
+      "heart": [
+        "Maninka",
+        "Lavanda"
+      ],
+      "base": [
+        "Cuero"
+      ]
     },
-    "priceRange": { "min": 45, "max": 90, "currency": "EUR" },
+    "priceRange": {
+      "min": 45,
+      "max": 90,
+      "currency": "EUR"
+    },
     "pricePerMl": 0.9,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["cita", "eventos"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "eventos"
+    ],
     "projection": "Media",
     "longevity": "6-8 horas",
     "history": "Boss The Scent se lanzó en 2015 con un concepto de seducción y deseo, presentado en campañas muy sensuales. Bruno Jovanovic construyó una fragancia cálida alrededor del jengibre especiado, la exótica fruta maninka y un cuero suave. Discreto pero magnético, se convirtió en una opción nocturna popular dentro de la gama accesible de Hugo Boss.",
-    "similar": ["dolce-gabbana-the-one", "hugo-boss-bottled", "armani-code"],
+    "similar": [
+      "dolce-gabbana-the-one",
+      "hugo-boss-bottled",
+      "armani-code"
+    ],
     "rating": 3.9
   },
   {
@@ -1960,19 +4228,52 @@
     "perfumer": "Olivier Pescheux",
     "family": "Aromático fougère",
     "notes": {
-      "top": ["Bergamota", "Lavanda", "Piña", "Verbena"],
-      "heart": ["Manzana", "Rosa", "Geranio", "Jazmín"],
-      "base": ["Haba tonka", "Sándalo", "Musgo de roble"]
+      "top": [
+        "Bergamota",
+        "Lavanda",
+        "Piña",
+        "Verbena"
+      ],
+      "heart": [
+        "Manzana",
+        "Rosa",
+        "Geranio",
+        "Jazmín"
+      ],
+      "base": [
+        "Haba tonka",
+        "Sándalo",
+        "Musgo de roble"
+      ]
     },
-    "priceRange": { "min": 40, "max": 80, "currency": "EUR" },
+    "priceRange": {
+      "min": 40,
+      "max": 80,
+      "currency": "EUR"
+    },
     "pricePerMl": 0.8,
-    "seasons": ["primavera", "otono", "invierno"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["oficina", "diario", "cita"],
+    "seasons": [
+      "primavera",
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "oficina",
+      "diario",
+      "cita"
+    ],
     "projection": "Media",
     "longevity": "6-8 horas",
     "history": "Legend se lanzó en 2011 y se convirtió en uno de los mayores éxitos de Montblanc en perfumería. Olivier Pescheux creó un fougère moderno, limpio y muy versátil, con una lavanda aromática y un fondo suave de haba tonka. Su excelente relación calidad-precio y su perfil agradable y fácil de llevar lo mantienen como un superventas para el día a día.",
-    "similar": ["montblanc-explorer", "paco-rabanne-phantom", "ysl-y-edp"],
+    "similar": [
+      "montblanc-explorer",
+      "paco-rabanne-phantom",
+      "ysl-y-edp"
+    ],
     "rating": 3.9
   },
   {
@@ -1986,20 +4287,54 @@
     "perfumer": "Pierre Bourdon",
     "family": "Acuático aromático",
     "notes": {
-      "top": ["Menta", "Lavanda", "Romero", "Bergamota"],
-      "heart": ["Geranio", "Neroli", "Jazmín", "Sándalo"],
-      "base": ["Almizcle", "Cedro", "Musgo de roble", "Ámbar"]
+      "top": [
+        "Menta",
+        "Lavanda",
+        "Romero",
+        "Bergamota"
+      ],
+      "heart": [
+        "Geranio",
+        "Neroli",
+        "Jazmín",
+        "Sándalo"
+      ],
+      "base": [
+        "Almizcle",
+        "Cedro",
+        "Musgo de roble",
+        "Ámbar"
+      ]
     },
-    "priceRange": { "min": 20, "max": 55, "currency": "EUR" },
+    "priceRange": {
+      "min": 20,
+      "max": 55,
+      "currency": "EUR"
+    },
     "pricePerMl": 0.5,
-    "seasons": ["primavera", "verano"],
-    "timeOfDay": ["dia"],
-    "occasions": ["diario", "ocio"],
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "ocio"
+    ],
     "projection": "Media",
     "longevity": "5-7 horas",
     "history": "Cool Water se lanzó en 1988 y revolucionó la perfumería masculina al inaugurar la moda de las fragancias acuáticas. Pierre Bourdon creó una frescura mentolada y marina que resultó completamente nueva en su época e inspiró a toda una generación de perfumes. A un precio muy accesible, sigue siendo un clásico fresco y un referente histórico ineludible.",
-    "similar": ["paco-rabanne-invictus", "issey-miyake-leau-dissey-pour-homme", "giorgio-armani-acqua-di-gio-profumo"],
-    "rating": 3.8
+    "similar": [
+      "paco-rabanne-invictus",
+      "issey-miyake-leau-dissey-pour-homme",
+      "giorgio-armani-acqua-di-gio-profumo"
+    ],
+    "rating": 3.8,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/30/Davidoff_Cool_Water.jpg",
+    "imageSource": "Wikipedia (en)",
+    "imageTitle": "Cool Water (perfume)"
   },
   {
     "slug": "tom-ford-noir-extreme",
@@ -2012,19 +4347,50 @@
     "perfumer": "Sonia Constant",
     "family": "Oriental especiado",
     "notes": {
-      "top": ["Cardamomo", "Nuez moscada", "Azafrán", "Mandarina"],
-      "heart": ["Kulfi", "Flor de azahar", "Rosa", "Jazmín"],
-      "base": ["Ámbar", "Sándalo", "Vainilla", "Haba tonka"]
+      "top": [
+        "Cardamomo",
+        "Nuez moscada",
+        "Azafrán",
+        "Mandarina"
+      ],
+      "heart": [
+        "Kulfi",
+        "Flor de azahar",
+        "Rosa",
+        "Jazmín"
+      ],
+      "base": [
+        "Ámbar",
+        "Sándalo",
+        "Vainilla",
+        "Haba tonka"
+      ]
     },
-    "priceRange": { "min": 90, "max": 160, "currency": "EUR" },
+    "priceRange": {
+      "min": 90,
+      "max": 160,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.6,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["cita", "eventos"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "eventos"
+    ],
     "projection": "Alta",
     "longevity": "8-10 horas",
     "history": "Noir Extreme se lanzó en 2015 como una interpretación cálida y gourmand del hombre Tom Ford. Sonia Constant firmó una fragancia especiada y dulce inspirada en los postres orientales, con cardamomo, flores y un fondo ambarino de vainilla y haba tonka. Sofisticada y reconfortante, se ha convertido en uno de los perfumes invernales más queridos de la casa.",
-    "similar": ["dior-sauvage-elixir", "carolina-herrera-bad-boy", "valentino-uomo-intense"],
+    "similar": [
+      "dior-sauvage-elixir",
+      "carolina-herrera-bad-boy",
+      "valentino-uomo-intense"
+    ],
     "rating": 4.3
   },
   {
@@ -2038,19 +4404,53 @@
     "perfumer": "Armaf",
     "family": "Chipre frutal",
     "notes": {
-      "top": ["Piña", "Limón", "Grosella negra", "Bergamota", "Manzana"],
-      "heart": ["Abedul", "Jazmín", "Rosa"],
-      "base": ["Almizcle", "Vainilla", "Ámbar", "Musgo de roble"]
+      "top": [
+        "Piña",
+        "Limón",
+        "Grosella negra",
+        "Bergamota",
+        "Manzana"
+      ],
+      "heart": [
+        "Abedul",
+        "Jazmín",
+        "Rosa"
+      ],
+      "base": [
+        "Almizcle",
+        "Vainilla",
+        "Ámbar",
+        "Musgo de roble"
+      ]
     },
-    "priceRange": { "min": 20, "max": 40, "currency": "EUR" },
+    "priceRange": {
+      "min": 20,
+      "max": 40,
+      "currency": "EUR"
+    },
     "pricePerMl": 0.35,
-    "seasons": ["primavera", "verano", "otono"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["diario", "ocio", "oficina"],
+    "seasons": [
+      "primavera",
+      "verano",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "ocio",
+      "oficina"
+    ],
     "projection": "Alta",
     "longevity": "8-10 horas",
     "history": "Club de Nuit Intense Man se lanzó en 2015 y se hizo mundialmente famoso por ser la alternativa económica más conocida a Creed Aventus. La casa árabe Armaf logró un perfil afrutado y ahumado muy parecido al original a una fracción del precio. Su excelente rendimiento y su coste bajísimo lo convirtieron en un fenómeno viral y en la puerta de entrada de muchos aficionados a la perfumería.",
-    "similar": ["creed-aventus", "montblanc-explorer", "paco-rabanne-1-million"],
+    "similar": [
+      "creed-aventus",
+      "montblanc-explorer",
+      "paco-rabanne-1-million"
+    ],
     "rating": 4.2
   },
   {
@@ -2064,19 +4464,45 @@
     "perfumer": "Olivier Polge",
     "family": "Floral frutal",
     "notes": {
-      "top": ["Pomelo", "Membrillo"],
-      "heart": ["Jazmín", "Rosa"],
-      "base": ["Almizcle blanco", "Cedro"]
+      "top": [
+        "Pomelo",
+        "Membrillo"
+      ],
+      "heart": [
+        "Jazmín",
+        "Rosa"
+      ],
+      "base": [
+        "Almizcle blanco",
+        "Cedro"
+      ]
     },
-    "priceRange": { "min": 90, "max": 150, "currency": "EUR" },
+    "priceRange": {
+      "min": 90,
+      "max": 150,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.5,
-    "seasons": ["primavera", "verano"],
-    "timeOfDay": ["dia"],
-    "occasions": ["diario", "oficina", "cita"],
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "cita"
+    ],
     "projection": "Media",
     "longevity": "6-8 horas",
     "history": "Chance Eau Tendre forma parte de la popular familia Chance de Chanel, reconocible por su frasco redondo. La versión Eau de Parfum de 2019 es un floral frutal suave y luminoso, con pomelo, rosa y jazmín envueltos en un almizcle aterciopelado. Delicada y muy fácil de llevar, es una de las opciones femeninas más queridas de la casa para la vida diaria.",
-    "similar": ["chanel-coco-mademoiselle", "dior-miss-dior", "versace-bright-crystal"],
+    "similar": [
+      "chanel-coco-mademoiselle",
+      "dior-miss-dior",
+      "versace-bright-crystal"
+    ],
     "rating": 4.2
   },
   {
@@ -2090,20 +4516,55 @@
     "perfumer": "Sophia Grojsman",
     "family": "Floral",
     "notes": {
-      "top": ["Melocotón", "Albaricoque", "Bergamota", "Piña"],
-      "heart": ["Rosa", "Iris", "Heliotropo", "Lirio de los valles"],
-      "base": ["Sándalo", "Almizcle", "Vainilla", "Ámbar"]
+      "top": [
+        "Melocotón",
+        "Albaricoque",
+        "Bergamota",
+        "Piña"
+      ],
+      "heart": [
+        "Rosa",
+        "Iris",
+        "Heliotropo",
+        "Lirio de los valles"
+      ],
+      "base": [
+        "Sándalo",
+        "Almizcle",
+        "Vainilla",
+        "Ámbar"
+      ]
     },
-    "priceRange": { "min": 55, "max": 110, "currency": "EUR" },
+    "priceRange": {
+      "min": 55,
+      "max": 110,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.1,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche", "dia"],
-    "occasions": ["eventos", "cita"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche",
+      "dia"
+    ],
+    "occasions": [
+      "eventos",
+      "cita"
+    ],
     "projection": "Media-alta",
     "longevity": "7-9 horas",
     "history": "Trésor se lanzó en 1990 y es uno de los grandes clásicos florales de Lancôme. Sophia Grojsman creó una composición rosada, aterciopelada y abrazadora, descrita a menudo como un perfume que envuelve la piel. Inmortalizado por campañas con grandes actrices, sigue siendo un emblema de feminidad romántica y un superventas mantenido durante décadas.",
-    "similar": ["lancome-la-vie-est-belle", "viktor-rolf-flowerbomb", "giorgio-armani-si"],
-    "rating": 4.1
+    "similar": [
+      "lancome-la-vie-est-belle",
+      "viktor-rolf-flowerbomb",
+      "giorgio-armani-si"
+    ],
+    "rating": 4.1,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Lancome_Tresor.jpg",
+    "imageSource": "Wikipedia (fr)",
+    "imageTitle": "Trésor (parfum)"
   },
   {
     "slug": "givenchy-linterdit",
@@ -2116,20 +4577,53 @@
     "perfumer": "Dominique Ropion, Anne Flipo, Fanny Bal",
     "family": "Floral amaderado",
     "notes": {
-      "top": ["Pera", "Bergamota"],
-      "heart": ["Tuberosa", "Jazmín", "Flor de azahar"],
-      "base": ["Pachulí", "Vetiver", "Ámbar"]
+      "top": [
+        "Pera",
+        "Bergamota"
+      ],
+      "heart": [
+        "Tuberosa",
+        "Jazmín",
+        "Flor de azahar"
+      ],
+      "base": [
+        "Pachulí",
+        "Vetiver",
+        "Ámbar"
+      ]
     },
-    "priceRange": { "min": 65, "max": 125, "currency": "EUR" },
+    "priceRange": {
+      "min": 65,
+      "max": 125,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.25,
-    "seasons": ["otono", "invierno", "primavera"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["cita", "eventos", "diario"],
+    "seasons": [
+      "otono",
+      "invierno",
+      "primavera"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "eventos",
+      "diario"
+    ],
     "projection": "Media-alta",
     "longevity": "7-9 horas",
     "history": "L'Interdit recuperó en 2018 un nombre histórico de Givenchy, creado en 1957 para Audrey Hepburn. La nueva versión, con Rooney Mara como rostro, contrasta un ramo de flores blancas luminosas con un fondo oscuro de pachulí y vetiver. Ese juego entre luz y sombra le dio una identidad moderna y la convirtió en la fragancia femenina insignia de la casa.",
-    "similar": ["dior-miss-dior", "ysl-libre", "carolina-herrera-good-girl"],
-    "rating": 4.1
+    "similar": [
+      "dior-miss-dior",
+      "ysl-libre",
+      "carolina-herrera-good-girl"
+    ],
+    "rating": 4.1,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Audrey_Hepburn_in_Roman_Holiday_trailer.jpg",
+    "imageSource": "Wikipedia (en)",
+    "imageTitle": "L'Interdit"
   },
   {
     "slug": "ysl-mon-paris",
@@ -2142,19 +4636,51 @@
     "perfumer": "Harry Fremont, Olivier Cresp, Dora Baghriche",
     "family": "Chipre frutal",
     "notes": {
-      "top": ["Fresa", "Frambuesa", "Pera", "Mandarina"],
-      "heart": ["Peonía", "Jazmín", "Datura"],
-      "base": ["Pachulí", "Almizcle blanco", "Ámbar", "Haba tonka"]
+      "top": [
+        "Fresa",
+        "Frambuesa",
+        "Pera",
+        "Mandarina"
+      ],
+      "heart": [
+        "Peonía",
+        "Jazmín",
+        "Datura"
+      ],
+      "base": [
+        "Pachulí",
+        "Almizcle blanco",
+        "Ámbar",
+        "Haba tonka"
+      ]
     },
-    "priceRange": { "min": 70, "max": 130, "currency": "EUR" },
+    "priceRange": {
+      "min": 70,
+      "max": 130,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.3,
-    "seasons": ["otono", "invierno", "primavera"],
-    "timeOfDay": ["noche", "dia"],
-    "occasions": ["cita", "eventos"],
+    "seasons": [
+      "otono",
+      "invierno",
+      "primavera"
+    ],
+    "timeOfDay": [
+      "noche",
+      "dia"
+    ],
+    "occasions": [
+      "cita",
+      "eventos"
+    ],
     "projection": "Alta",
     "longevity": "8-10 horas",
     "history": "Mon Paris se lanzó en 2016 como una historia de amor apasionado ambientada en París. El equipo de perfumistas creó un chipre afrutado y vibrante, con frutos rojos jugosos sobre un fondo intenso de pachulí. Dulce, sensual y de gran proyección, conectó con el público joven y se sumó a los superventas femeninos de Yves Saint Laurent.",
-    "similar": ["carolina-herrera-good-girl", "ysl-black-opium", "paco-rabanne-lady-million"],
+    "similar": [
+      "carolina-herrera-good-girl",
+      "ysl-black-opium",
+      "paco-rabanne-lady-million"
+    ],
     "rating": 4.1
   },
   {
@@ -2168,19 +4694,52 @@
     "perfumer": "Quentin Bisch",
     "family": "Floral frutal",
     "notes": {
-      "top": ["Litchi", "Ruibarbo", "Bergamota"],
-      "heart": ["Rosa turca", "Peonía", "Flor de loto", "Muguete"],
-      "base": ["Vainilla", "Almizcle", "Cachemira", "Incienso"]
+      "top": [
+        "Litchi",
+        "Ruibarbo",
+        "Bergamota"
+      ],
+      "heart": [
+        "Rosa turca",
+        "Peonía",
+        "Flor de loto",
+        "Muguete"
+      ],
+      "base": [
+        "Vainilla",
+        "Almizcle",
+        "Cachemira",
+        "Incienso"
+      ]
     },
-    "priceRange": { "min": 180, "max": 300, "currency": "EUR" },
-    "pricePerMl": 3.0,
-    "seasons": ["primavera", "otono", "invierno"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["cita", "eventos", "diario"],
+    "priceRange": {
+      "min": 180,
+      "max": 300,
+      "currency": "EUR"
+    },
+    "pricePerMl": 3,
+    "seasons": [
+      "primavera",
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "eventos",
+      "diario"
+    ],
     "projection": "Alta",
     "longevity": "8-11 horas",
     "history": "Delina se lanzó en 2017 y se convirtió en la fragancia femenina más vendida de Parfums de Marly. Quentin Bisch construyó un floral frutal radiante alrededor de una rosa turca luminosa, con litchi y un fondo cremoso de vainilla y cachemira. Su carácter elegante y muy femenino la transformó en una de las grandes referencias de la perfumería de nicho.",
-    "similar": ["lancome-idole", "ysl-libre", "viktor-rolf-flowerbomb"],
+    "similar": [
+      "lancome-idole",
+      "ysl-libre",
+      "viktor-rolf-flowerbomb"
+    ],
     "rating": 4.4
   },
   {
@@ -2194,19 +4753,47 @@
     "perfumer": "Sonia Constant",
     "family": "Cuero floral",
     "notes": {
-      "top": ["Cardamomo"],
-      "heart": ["Cuero", "Jazmín"],
-      "base": ["Pachulí", "Ámbar", "Almizcle"]
+      "top": [
+        "Cardamomo"
+      ],
+      "heart": [
+        "Cuero",
+        "Jazmín"
+      ],
+      "base": [
+        "Pachulí",
+        "Ámbar",
+        "Almizcle"
+      ]
     },
-    "priceRange": { "min": 90, "max": 160, "currency": "EUR" },
+    "priceRange": {
+      "min": 90,
+      "max": 160,
+      "currency": "EUR"
+    },
     "pricePerMl": 1.6,
-    "seasons": ["otono", "invierno", "primavera"],
-    "timeOfDay": ["dia", "noche"],
-    "occasions": ["diario", "cita", "eventos"],
+    "seasons": [
+      "otono",
+      "invierno",
+      "primavera"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "cita",
+      "eventos"
+    ],
     "projection": "Media-alta",
     "longevity": "8-10 horas",
     "history": "Ombré Leather se lanzó en 2018 como una interpretación moderna y accesible del cuero, dentro de la línea de marca de Tom Ford. Sonia Constant combinó un cuero suave y aterciopelado con un toque floral de jazmín y un fondo ambarino. Versátil, sobrio y fácil de llevar pese a su nota protagonista, se convirtió en uno de los grandes éxitos de la casa.",
-    "similar": ["tom-ford-oud-wood", "bvlgari-man-in-black", "le-labo-santal-33"],
+    "similar": [
+      "tom-ford-oud-wood",
+      "bvlgari-man-in-black",
+      "le-labo-santal-33"
+    ],
     "rating": 4.2
   },
   {
@@ -2220,19 +4807,47 @@
     "perfumer": "Louise Turner",
     "family": "Oriental gourmand",
     "notes": {
-      "top": ["Cereza", "Licor de cereza", "Almendra amarga"],
-      "heart": ["Jazmín sambac", "Rosa de Turquía"],
-      "base": ["Haba tonka", "Vainilla", "Sándalo", "Cedro"]
+      "top": [
+        "Cereza",
+        "Licor de cereza",
+        "Almendra amarga"
+      ],
+      "heart": [
+        "Jazmín sambac",
+        "Rosa de Turquía"
+      ],
+      "base": [
+        "Haba tonka",
+        "Vainilla",
+        "Sándalo",
+        "Cedro"
+      ]
     },
-    "priceRange": { "min": 200, "max": 350, "currency": "EUR" },
+    "priceRange": {
+      "min": 200,
+      "max": 350,
+      "currency": "EUR"
+    },
     "pricePerMl": 3.5,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["cita", "eventos"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "eventos"
+    ],
     "projection": "Alta",
     "longevity": "8-11 horas",
     "history": "Lost Cherry se lanzó en 2018 dentro de la colección Private Blend y se convirtió en un fenómeno viral gracias a las redes sociales. Louise Turner creó un contraste entre una cereza dulce y golosa y una almendra amarga más oscura, sobre un fondo cálido de vainilla y haba tonka. Goloso y adictivo, es uno de los perfumes más deseados e imitados de la casa.",
-    "similar": ["mfk-baccarat-rouge-540", "tom-ford-tobacco-vanille", "kilian-angels-share"],
+    "similar": [
+      "mfk-baccarat-rouge-540",
+      "tom-ford-tobacco-vanille",
+      "kilian-angels-share"
+    ],
     "rating": 4.3
   },
   {
@@ -2246,19 +4861,50 @@
     "perfumer": "Lattafa Perfumes",
     "family": "Oriental especiado",
     "notes": {
-      "top": ["Canela", "Nuez moscada", "Bergamota"],
-      "heart": ["Dátil", "Praliné", "Haba tonka", "Mirística"],
-      "base": ["Vainilla", "Benjuí", "Ámbar", "Maderas"]
+      "top": [
+        "Canela",
+        "Nuez moscada",
+        "Bergamota"
+      ],
+      "heart": [
+        "Dátil",
+        "Praliné",
+        "Haba tonka",
+        "Mirística"
+      ],
+      "base": [
+        "Vainilla",
+        "Benjuí",
+        "Ámbar",
+        "Maderas"
+      ]
     },
-    "priceRange": { "min": 25, "max": 45, "currency": "EUR" },
+    "priceRange": {
+      "min": 25,
+      "max": 45,
+      "currency": "EUR"
+    },
     "pricePerMl": 0.4,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["cita", "eventos", "ocio"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "eventos",
+      "ocio"
+    ],
     "projection": "Alta",
     "longevity": "8-11 horas",
     "history": "Khamrah se lanzó en 2022 y se transformó en un superventas mundial gracias a su difusión viral y a su precio muy bajo. La casa árabe Lattafa creó un oriental especiado y goloso, con dátil dulce, canela y una vainilla cremosa, a menudo comparado con perfumes de nicho mucho más caros. Su calidad sorprendente lo convirtió en uno de los perfumes asequibles más recomendados de los últimos años.",
-    "similar": ["parfums-de-marly-herod", "tom-ford-tobacco-vanille", "kilian-angels-share"],
+    "similar": [
+      "parfums-de-marly-herod",
+      "tom-ford-tobacco-vanille",
+      "kilian-angels-share"
+    ],
     "rating": 4.3
   },
   {
@@ -2272,19 +4918,1664 @@
     "perfumer": "Benoist Lapouza",
     "family": "Oriental gourmand",
     "notes": {
-      "top": ["Coñac"],
-      "heart": ["Canela", "Haba tonka", "Praliné"],
-      "base": ["Vainilla bourbon", "Roble", "Sándalo"]
+      "top": [
+        "Coñac"
+      ],
+      "heart": [
+        "Canela",
+        "Haba tonka",
+        "Praliné"
+      ],
+      "base": [
+        "Vainilla bourbon",
+        "Roble",
+        "Sándalo"
+      ]
     },
-    "priceRange": { "min": 190, "max": 320, "currency": "EUR" },
+    "priceRange": {
+      "min": 190,
+      "max": 320,
+      "currency": "EUR"
+    },
     "pricePerMl": 3.2,
-    "seasons": ["otono", "invierno"],
-    "timeOfDay": ["noche"],
-    "occasions": ["cita", "eventos"],
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "eventos"
+    ],
     "projection": "Media-alta",
     "longevity": "8-10 horas",
     "history": "Angels' Share se lanzó en 2020 inspirado en la porción de coñac que se evapora durante su envejecimiento en barricas de roble. Benoist Lapouza creó un gourmand cálido y embriagador, con coñac, canela y una vainilla cremosa muy reconfortante. Su carácter goloso y acogedor lo convirtió en uno de los perfumes invernales más deseados de la casa Kilian.",
-    "similar": ["tom-ford-lost-cherry", "lattafa-khamrah", "mfk-grand-soir"],
+    "similar": [
+      "tom-ford-lost-cherry",
+      "lattafa-khamrah",
+      "mfk-grand-soir"
+    ],
     "rating": 4.4
+  },
+  {
+    "slug": "dior-eau-sauvage",
+    "name": "Eau Sauvage",
+    "concentration": "Eau de Toilette",
+    "brand": "Dior",
+    "brandSlug": "dior",
+    "gender": "hombre",
+    "year": 1966,
+    "perfumer": "Edmond Roudnitska",
+    "family": "Cítrico aromático",
+    "notes": {
+      "top": [
+        "Limón",
+        "Bergamota",
+        "Romero",
+        "Albahaca"
+      ],
+      "heart": [
+        "Jazmín",
+        "Hedione",
+        "Lirio de los valles",
+        "Geranio"
+      ],
+      "base": [
+        "Vetiver",
+        "Musgo de roble",
+        "Almizcle",
+        "Ámbar"
+      ]
+    },
+    "priceRange": {
+      "min": 65,
+      "max": 115,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1.15,
+    "seasons": [
+      "primavera",
+      "verano",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "oficina",
+      "diario",
+      "eventos"
+    ],
+    "projection": "Media",
+    "longevity": "5-7 horas",
+    "history": "Eau Sauvage se lanzó en 1966 como una pequeña revolución de la perfumería masculina. Edmond Roudnitska introdujo por primera vez la molécula Hedione, un jazmín limpio y aireado que cambió la perfumería para siempre. Elegante, fresco y atemporal, es uno de los grandes monumentos de la perfumería francesa del siglo XX y sigue siendo un referente de estilo.",
+    "similar": [
+      "hermes-terre-dhermes",
+      "acqua-di-parma-colonia",
+      "chanel-allure-homme-sport"
+    ],
+    "rating": 4.2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Eau_Sauvage_Christian_Dior.jpg/960px-Eau_Sauvage_Christian_Dior.jpg",
+    "imageSource": "Wikipedia (en)",
+    "imageTitle": "Eau Sauvage"
+  },
+  {
+    "slug": "ralph-lauren-polo",
+    "name": "Polo",
+    "concentration": "Eau de Toilette",
+    "brand": "Ralph Lauren",
+    "brandSlug": "ralph-lauren",
+    "gender": "hombre",
+    "year": 1978,
+    "perfumer": "Carlos Benaïm",
+    "family": "Chipre amaderado",
+    "notes": {
+      "top": [
+        "Pino",
+        "Cilantro",
+        "Albahaca",
+        "Bergamota"
+      ],
+      "heart": [
+        "Clavel",
+        "Geranio",
+        "Manzanilla"
+      ],
+      "base": [
+        "Cuero",
+        "Tabaco",
+        "Musgo de roble",
+        "Pachulí"
+      ]
+    },
+    "priceRange": {
+      "min": 35,
+      "max": 70,
+      "currency": "EUR"
+    },
+    "pricePerMl": 0.7,
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche",
+      "dia"
+    ],
+    "occasions": [
+      "oficina",
+      "eventos"
+    ],
+    "projection": "Media-alta",
+    "longevity": "7-9 horas",
+    "history": "Polo Ralph Lauren se lanzó en 1978 y definió todo un estilo masculino estadounidense: el del caballero clásico, deportivo y refinado. Carlos Benaïm creó un chipre amaderado verde con pino, cuero y tabaco que sigue siendo un clásico inconfundible. Su frasco verde con el icónico jinete del polo es uno de los objetos más reconocibles del siglo XX en perfumería.",
+    "similar": [
+      "drakkar-noir",
+      "calvin-klein-obsession-for-men",
+      "hugo-boss-bottled"
+    ],
+    "rating": 4
+  },
+  {
+    "slug": "ralph-lauren-polo-blue",
+    "name": "Polo Blue",
+    "concentration": "Eau de Toilette",
+    "brand": "Ralph Lauren",
+    "brandSlug": "ralph-lauren",
+    "gender": "hombre",
+    "year": 2003,
+    "perfumer": "Carlos Benaïm",
+    "family": "Acuático aromático",
+    "notes": {
+      "top": [
+        "Pepino",
+        "Mandarina",
+        "Albahaca"
+      ],
+      "heart": [
+        "Geranio",
+        "Salvia",
+        "Notas marinas"
+      ],
+      "base": [
+        "Almizcle",
+        "Madera de Ámbar",
+        "Vetiver"
+      ]
+    },
+    "priceRange": {
+      "min": 45,
+      "max": 90,
+      "currency": "EUR"
+    },
+    "pricePerMl": 0.9,
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "ocio"
+    ],
+    "projection": "Media",
+    "longevity": "6-8 horas",
+    "history": "Polo Blue se lanzó en 2003 como la versión fresca y acuática de la línea Polo, pensada para las estaciones cálidas. Carlos Benaïm creó una composición limpia y luminosa con un toque vegetal de pepino y notas marinas. Discreto y deportivo, se convirtió en uno de los perfumes de verano más recomendados dentro de su franja de precio.",
+    "similar": [
+      "paco-rabanne-invictus",
+      "davidoff-cool-water",
+      "versace-dylan-blue"
+    ],
+    "rating": 3.9
+  },
+  {
+    "slug": "drakkar-noir",
+    "name": "Drakkar Noir",
+    "concentration": "Eau de Toilette",
+    "brand": "Guy Laroche",
+    "brandSlug": "guy-laroche",
+    "gender": "hombre",
+    "year": 1982,
+    "perfumer": "Pierre Wargnye",
+    "family": "Aromático fougère",
+    "notes": {
+      "top": [
+        "Lavanda",
+        "Bergamota",
+        "Limón",
+        "Romero"
+      ],
+      "heart": [
+        "Cardamomo",
+        "Geranio",
+        "Especias"
+      ],
+      "base": [
+        "Pachulí",
+        "Cuero",
+        "Musgo de roble",
+        "Ámbar"
+      ]
+    },
+    "priceRange": {
+      "min": 25,
+      "max": 55,
+      "currency": "EUR"
+    },
+    "pricePerMl": 0.55,
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "oficina",
+      "diario"
+    ],
+    "projection": "Alta",
+    "longevity": "8-10 horas",
+    "history": "Drakkar Noir se lanzó en 1982 y se convirtió en uno de los perfumes más vendidos de los años ochenta. Pierre Wargnye creó un fougère poderoso, especiado y muy masculino que definió toda una época. Su frasco oscuro y su intensidad lo convirtieron en sinónimo de virilidad en su momento y, a un precio bajísimo, sigue siendo un superventas.",
+    "similar": [
+      "ralph-lauren-polo",
+      "calvin-klein-obsession-for-men",
+      "calvin-klein-eternity-for-men"
+    ],
+    "rating": 3.9,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Drakkar_Noir_200_ml_bottle.jpg/960px-Drakkar_Noir_200_ml_bottle.jpg",
+    "imageSource": "Wikipedia (en)",
+    "imageTitle": "Drakkar Noir"
+  },
+  {
+    "slug": "calvin-klein-eternity-for-men",
+    "name": "Eternity for Men",
+    "concentration": "Eau de Toilette",
+    "brand": "Calvin Klein",
+    "brandSlug": "calvin-klein",
+    "gender": "hombre",
+    "year": 1989,
+    "perfumer": "Carlos Benaïm",
+    "family": "Aromático fougère",
+    "notes": {
+      "top": [
+        "Lavanda",
+        "Mandarina",
+        "Limón",
+        "Salvia"
+      ],
+      "heart": [
+        "Jazmín",
+        "Geranio",
+        "Lirio de los valles"
+      ],
+      "base": [
+        "Sándalo",
+        "Vetiver",
+        "Ámbar",
+        "Almizcle"
+      ]
+    },
+    "priceRange": {
+      "min": 30,
+      "max": 65,
+      "currency": "EUR"
+    },
+    "pricePerMl": 0.65,
+    "seasons": [
+      "primavera",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "oficina",
+      "diario",
+      "eventos"
+    ],
+    "projection": "Media",
+    "longevity": "6-8 horas",
+    "history": "Eternity for Men se lanzó en 1989 como una declaración de amor duradero, fiel al estilo minimalista de Calvin Klein. Carlos Benaïm creó un fougère elegante y limpio con lavanda y maderas suaves. Sobrio, atemporal y muy versátil, se ha mantenido durante más de tres décadas como un clásico moderno asequible.",
+    "similar": [
+      "drakkar-noir",
+      "hugo-boss-bottled",
+      "armani-code"
+    ],
+    "rating": 3.8
+  },
+  {
+    "slug": "calvin-klein-obsession-for-men",
+    "name": "Obsession for Men",
+    "concentration": "Eau de Toilette",
+    "brand": "Calvin Klein",
+    "brandSlug": "calvin-klein",
+    "gender": "hombre",
+    "year": 1986,
+    "perfumer": "Bob Slattery",
+    "family": "Oriental especiado",
+    "notes": {
+      "top": [
+        "Mandarina",
+        "Bergamota",
+        "Lavanda",
+        "Albahaca"
+      ],
+      "heart": [
+        "Salvia",
+        "Nuez moscada",
+        "Mirística",
+        "Cilantro"
+      ],
+      "base": [
+        "Ámbar",
+        "Sándalo",
+        "Vainilla",
+        "Vetiver",
+        "Almizcle"
+      ]
+    },
+    "priceRange": {
+      "min": 30,
+      "max": 60,
+      "currency": "EUR"
+    },
+    "pricePerMl": 0.6,
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "eventos"
+    ],
+    "projection": "Alta",
+    "longevity": "8-10 horas",
+    "history": "Obsession for Men se lanzó en 1986 y marcó la era dorada de los perfumes orientales especiados. Bob Slattery firmó una composición cálida y envolvente con vainilla, ámbar y especias. Sensual y muy proyectivo, fue uno de los grandes nombres de la perfumería ochentera y todavía hoy se considera un clásico de la noche a precio popular.",
+    "similar": [
+      "drakkar-noir",
+      "ralph-lauren-polo",
+      "ysl-opium"
+    ],
+    "rating": 3.9
+  },
+  {
+    "slug": "cartier-declaration",
+    "name": "Déclaration",
+    "concentration": "Eau de Toilette",
+    "brand": "Cartier",
+    "brandSlug": "cartier",
+    "gender": "hombre",
+    "year": 1998,
+    "perfumer": "Jean-Claude Ellena",
+    "family": "Amaderado especiado",
+    "notes": {
+      "top": [
+        "Bergamota",
+        "Mandarina",
+        "Bayas de enebro",
+        "Cilantro"
+      ],
+      "heart": [
+        "Comino",
+        "Té",
+        "Pimienta",
+        "Cardamomo"
+      ],
+      "base": [
+        "Vetiver",
+        "Cedro",
+        "Cuero",
+        "Roble",
+        "Ámbar"
+      ]
+    },
+    "priceRange": {
+      "min": 60,
+      "max": 110,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1.1,
+    "seasons": [
+      "primavera",
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "oficina",
+      "diario",
+      "eventos"
+    ],
+    "projection": "Media",
+    "longevity": "7-9 horas",
+    "history": "Déclaration se lanzó en 1998 como uno de los primeros perfumes masculinos firmados por Jean-Claude Ellena, futuro perfumista de Hermès. Su uso atrevido del comino le da un carácter especiado y profundamente personal. Considerado una obra de culto y muy respetado por los entendidos, sigue siendo uno de los pilares de la perfumería masculina de la casa Cartier.",
+    "similar": [
+      "hermes-terre-dhermes",
+      "armani-code",
+      "dior-homme-intense"
+    ],
+    "rating": 4.2
+  },
+  {
+    "slug": "acqua-di-parma-colonia",
+    "name": "Colonia",
+    "concentration": "Eau de Cologne",
+    "brand": "Acqua di Parma",
+    "brandSlug": "acqua-di-parma",
+    "gender": "unisex",
+    "year": 1916,
+    "perfumer": "Acqua di Parma",
+    "family": "Cítrico aromático",
+    "notes": {
+      "top": [
+        "Limón siciliano",
+        "Bergamota",
+        "Naranja amarga"
+      ],
+      "heart": [
+        "Rosa búlgara",
+        "Romero",
+        "Verbena",
+        "Lavanda"
+      ],
+      "base": [
+        "Sándalo",
+        "Pachulí",
+        "Almizcle blanco",
+        "Vetiver"
+      ]
+    },
+    "priceRange": {
+      "min": 75,
+      "max": 150,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1.5,
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "oficina",
+      "diario",
+      "eventos"
+    ],
+    "projection": "Media",
+    "longevity": "5-7 horas",
+    "history": "Colonia se lanzó en 1916 y es el perfume original de la casa italiana Acqua di Parma. Una colonia cítrica y aromática elegante, fiel a la tradición de los grandes eau de cologne europeos. Su frasco art déco amarillo es un objeto de culto y la fragancia es un símbolo del estilo italiano clásico, refinado y luminoso.",
+    "similar": [
+      "dior-eau-sauvage",
+      "chanel-allure-homme-sport",
+      "hermes-terre-dhermes"
+    ],
+    "rating": 4.2
+  },
+  {
+    "slug": "bvlgari-aqva-pour-homme",
+    "name": "Aqva pour Homme",
+    "concentration": "Eau de Toilette",
+    "brand": "Bvlgari",
+    "brandSlug": "bvlgari",
+    "gender": "hombre",
+    "year": 2005,
+    "perfumer": "Jacques Cavallier",
+    "family": "Acuático aromático",
+    "notes": {
+      "top": [
+        "Petitgrain",
+        "Mandarina"
+      ],
+      "heart": [
+        "Notas marinas",
+        "Posidonia",
+        "Algas"
+      ],
+      "base": [
+        "Almizcle",
+        "Cedro",
+        "Madera de amaranto"
+      ]
+    },
+    "priceRange": {
+      "min": 45,
+      "max": 90,
+      "currency": "EUR"
+    },
+    "pricePerMl": 0.9,
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "ocio",
+      "oficina"
+    ],
+    "projection": "Media",
+    "longevity": "6-8 horas",
+    "history": "Bvlgari Aqva pour Homme se lanzó en 2005 con una nota destacada de posidonia, una planta marina, que aporta una frescura mineral muy original. Jacques Cavallier evocó la sensación del Mediterráneo en calma, con notas marinas y un fondo amaderado suave. Elegante y veraniego, es uno de los acuáticos más característicos del mercado.",
+    "similar": [
+      "giorgio-armani-acqua-di-gio-profumo",
+      "prada-luna-rossa-ocean",
+      "issey-miyake-leau-dissey-pour-homme"
+    ],
+    "rating": 4
+  },
+  {
+    "slug": "hermes-voyage-dhermes",
+    "name": "Voyage d'Hermès",
+    "concentration": "Eau de Toilette",
+    "brand": "Hermès",
+    "brandSlug": "hermes",
+    "gender": "unisex",
+    "year": 2010,
+    "perfumer": "Jean-Claude Ellena",
+    "family": "Amaderado almizclado",
+    "notes": {
+      "top": [
+        "Cardamomo",
+        "Limón",
+        "Especias"
+      ],
+      "heart": [
+        "Junípero",
+        "Té verde",
+        "Hedione"
+      ],
+      "base": [
+        "Almizcle blanco",
+        "Cedro",
+        "Ámbar"
+      ]
+    },
+    "priceRange": {
+      "min": 65,
+      "max": 125,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1.25,
+    "seasons": [
+      "primavera",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "oficina",
+      "diario",
+      "eventos"
+    ],
+    "projection": "Media",
+    "longevity": "6-8 horas",
+    "history": "Voyage d'Hermès se lanzó en 2010 como un perfume unisex que evoca el viaje y el descubrimiento. Jean-Claude Ellena, fiel a su estilo minimalista y luminoso, creó una composición especiada, almizclada y muy aireada, con un cardamomo limpio. Discreto, sofisticado y elegante, es una de las propuestas unisex más recomendadas de la casa Hermès.",
+    "similar": [
+      "hermes-terre-dhermes",
+      "prada-lhomme",
+      "le-labo-santal-33"
+    ],
+    "rating": 4.1
+  },
+  {
+    "slug": "ysl-opium",
+    "name": "Opium",
+    "concentration": "Eau de Parfum",
+    "brand": "Yves Saint Laurent",
+    "brandSlug": "ysl",
+    "gender": "mujer",
+    "year": 1977,
+    "perfumer": "Jean Amic, Jean-Louis Sieuzac",
+    "family": "Oriental especiado",
+    "notes": {
+      "top": [
+        "Mandarina",
+        "Bergamota",
+        "Limón",
+        "Pimienta",
+        "Clavo"
+      ],
+      "heart": [
+        "Mirra",
+        "Jazmín",
+        "Rosa",
+        "Canela",
+        "Casia"
+      ],
+      "base": [
+        "Ámbar",
+        "Sándalo",
+        "Pachulí",
+        "Vainilla",
+        "Incienso"
+      ]
+    },
+    "priceRange": {
+      "min": 65,
+      "max": 130,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1.3,
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "eventos",
+      "cita"
+    ],
+    "projection": "Alta",
+    "longevity": "9-12 horas",
+    "history": "Opium se lanzó en 1977 y revolucionó la perfumería femenina con su carácter oriental especiado y opulento. Yves Saint Laurent lo concibió como una declaración hedonista y provocadora, en plena fiebre del Studio 54. Su mezcla de mirra, ámbar, canela y vainilla lo convirtió en uno de los perfumes más influyentes de la historia y en un símbolo de los años setenta y ochenta.",
+    "similar": [
+      "guerlain-shalimar",
+      "calvin-klein-obsession-for-men",
+      "jean-paul-gaultier-classique"
+    ],
+    "rating": 4.2
+  },
+  {
+    "slug": "estee-lauder-beautiful",
+    "name": "Beautiful",
+    "concentration": "Eau de Parfum",
+    "brand": "Estée Lauder",
+    "brandSlug": "estee-lauder",
+    "gender": "mujer",
+    "year": 1985,
+    "perfumer": "Sophia Grojsman, Max Gavarry, Bernard Chant",
+    "family": "Floral",
+    "notes": {
+      "top": [
+        "Rosa",
+        "Mandarina",
+        "Lirio",
+        "Verbena"
+      ],
+      "heart": [
+        "Jazmín",
+        "Tuberosa",
+        "Flor de azahar",
+        "Lirio de los valles",
+        "Rosa de Casablanca"
+      ],
+      "base": [
+        "Sándalo",
+        "Pachulí",
+        "Almizcle",
+        "Ámbar",
+        "Vetiver"
+      ]
+    },
+    "priceRange": {
+      "min": 55,
+      "max": 110,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1.1,
+    "seasons": [
+      "otono",
+      "invierno",
+      "primavera"
+    ],
+    "timeOfDay": [
+      "noche",
+      "dia"
+    ],
+    "occasions": [
+      "eventos",
+      "cita"
+    ],
+    "projection": "Media-alta",
+    "longevity": "8-10 horas",
+    "history": "Beautiful se lanzó en 1985 como un ramo nupcial olfativo, con cientos de flores reunidas en una sola fragancia. Sophia Grojsman creó un floral exuberante y muy reconocible, asociado a las bodas y a la celebración. Sigue siendo uno de los grandes superventas de Estée Lauder y un clásico floral de generaciones de mujeres.",
+    "similar": [
+      "chanel-no-5",
+      "lancome-tresor",
+      "dior-jadore"
+    ],
+    "rating": 4.1
+  },
+  {
+    "slug": "clinique-happy",
+    "name": "Happy",
+    "concentration": "Perfume Spray",
+    "brand": "Clinique",
+    "brandSlug": "clinique",
+    "gender": "mujer",
+    "year": 1997,
+    "perfumer": "Jean-Claude Delville, Rene Morgenthaler",
+    "family": "Cítrico floral",
+    "notes": {
+      "top": [
+        "Pomelo",
+        "Mandarina",
+        "Limón",
+        "Bergamota"
+      ],
+      "heart": [
+        "Jazmín",
+        "Magnolia",
+        "Rosa",
+        "Lirio"
+      ],
+      "base": [
+        "Almizcle",
+        "Maderas"
+      ]
+    },
+    "priceRange": {
+      "min": 35,
+      "max": 75,
+      "currency": "EUR"
+    },
+    "pricePerMl": 0.75,
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "ocio"
+    ],
+    "projection": "Media",
+    "longevity": "5-7 horas",
+    "history": "Happy se lanzó en 1997 como un perfume luminoso y optimista, dominado por una explosión de cítricos. Su frasco amarillo y su nombre alegre lo convirtieron en sinónimo de buen humor y verano. Sencillo, fresco y muy fácil de llevar, sigue siendo uno de los superventas femeninos del catálogo de Clinique.",
+    "similar": [
+      "dolce-gabbana-light-blue",
+      "marc-jacobs-daisy",
+      "chanel-chance-eau-tendre"
+    ],
+    "rating": 3.9
+  },
+  {
+    "slug": "boucheron-quatre",
+    "name": "Quatre",
+    "concentration": "Eau de Parfum",
+    "brand": "Boucheron",
+    "brandSlug": "boucheron",
+    "gender": "mujer",
+    "year": 2015,
+    "perfumer": "Christophe Raynaud",
+    "family": "Oriental floral",
+    "notes": {
+      "top": [
+        "Pomelo blanco",
+        "Bergamota",
+        "Pimienta rosa"
+      ],
+      "heart": [
+        "Magnolia blanca",
+        "Esencia de naranja amarga",
+        "Rosa"
+      ],
+      "base": [
+        "Vainilla",
+        "Ámbar",
+        "Maderas"
+      ]
+    },
+    "priceRange": {
+      "min": 55,
+      "max": 110,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1.1,
+    "seasons": [
+      "otono",
+      "invierno",
+      "primavera"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "eventos",
+      "cita",
+      "oficina"
+    ],
+    "projection": "Media-alta",
+    "longevity": "8-10 horas",
+    "history": "Quatre Boucheron rinde homenaje al icónico anillo de la joyería con su frasco facetado. Lanzado en 2015, combina la luminosidad de los cítricos y la magnolia con una base ambarina y vainilla cálida. Joyero y refinado, es la fragancia femenina insignia de la casa francesa de alta joyería.",
+    "similar": [
+      "carolina-herrera-good-girl",
+      "viktor-rolf-flowerbomb",
+      "ysl-libre"
+    ],
+    "rating": 4
+  },
+  {
+    "slug": "lancome-hypnose",
+    "name": "Hypnôse",
+    "concentration": "Eau de Parfum",
+    "brand": "Lancôme",
+    "brandSlug": "lancome",
+    "gender": "mujer",
+    "year": 2005,
+    "perfumer": "Thierry Wasser",
+    "family": "Oriental floral",
+    "notes": {
+      "top": [
+        "Flor de la pasión"
+      ],
+      "heart": [
+        "Jazmín sambac"
+      ],
+      "base": [
+        "Vainilla",
+        "Vetiver"
+      ]
+    },
+    "priceRange": {
+      "min": 55,
+      "max": 105,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1.05,
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "eventos"
+    ],
+    "projection": "Media-alta",
+    "longevity": "7-9 horas",
+    "history": "Hypnôse se lanzó en 2005 como una invitación al hechizo y la sensualidad. Thierry Wasser firmó una composición sencilla pero envolvente, con flor de la pasión y un jazmín sambac voluptuoso sobre una vainilla cremosa. Discretamente seductora, es uno de los superventas femeninos clásicos de Lancôme.",
+    "similar": [
+      "ysl-black-opium",
+      "lancome-tresor",
+      "guerlain-shalimar"
+    ],
+    "rating": 4
+  },
+  {
+    "slug": "cartier-la-panthere",
+    "name": "La Panthère",
+    "concentration": "Eau de Parfum",
+    "brand": "Cartier",
+    "brandSlug": "cartier",
+    "gender": "mujer",
+    "year": 2014,
+    "perfumer": "Mathilde Laurent",
+    "family": "Chipre floral",
+    "notes": {
+      "top": [
+        "Gardenia"
+      ],
+      "heart": [
+        "Almizcle",
+        "Notas frutales"
+      ],
+      "base": [
+        "Pachulí",
+        "Musgo de roble"
+      ]
+    },
+    "priceRange": {
+      "min": 80,
+      "max": 145,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1.45,
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche",
+      "dia"
+    ],
+    "occasions": [
+      "cita",
+      "eventos",
+      "oficina"
+    ],
+    "projection": "Media-alta",
+    "longevity": "7-9 horas",
+    "history": "La Panthère se lanzó en 2014 evocando la pantera, símbolo histórico de la maison Cartier. Mathilde Laurent, perfumista de la casa, construyó un chipre felino y carnal alrededor de una gardenia animal y un fondo de pachulí. Elegante, salvaje y muy distintivo, es una de las grandes creaciones femeninas de la perfumería contemporánea de lujo.",
+    "similar": [
+      "chanel-coco-mademoiselle",
+      "narciso-rodriguez-for-her",
+      "givenchy-linterdit"
+    ],
+    "rating": 4.2
+  },
+  {
+    "slug": "ferragamo-signorina",
+    "name": "Signorina",
+    "concentration": "Eau de Parfum",
+    "brand": "Salvatore Ferragamo",
+    "brandSlug": "salvatore-ferragamo",
+    "gender": "mujer",
+    "year": 2011,
+    "perfumer": "Christophe Raynaud, Juliette Karagueuzoglou",
+    "family": "Floral frutal",
+    "notes": {
+      "top": [
+        "Grosella negra",
+        "Pera"
+      ],
+      "heart": [
+        "Peonía",
+        "Rosa",
+        "Jazmín"
+      ],
+      "base": [
+        "Pachulí",
+        "Almizcle",
+        "Pannacotta"
+      ]
+    },
+    "priceRange": {
+      "min": 50,
+      "max": 100,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1,
+    "seasons": [
+      "primavera",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "cita"
+    ],
+    "projection": "Media",
+    "longevity": "6-8 horas",
+    "history": "Signorina se lanzó en 2011 como un retrato de la joven elegante italiana, con su lazo rosa en el frasco. Combina una grosella negra jugosa con un fondo cremoso de pannacotta, un guiño goloso al postre italiano. Femenino, refinado y juvenil, se ha consolidado como una de las propuestas más populares de Ferragamo.",
+    "similar": [
+      "chloe-eau-de-parfum",
+      "marc-jacobs-daisy",
+      "dior-miss-dior"
+    ],
+    "rating": 3.9
+  },
+  {
+    "slug": "carolina-herrera-very-good-girl",
+    "name": "Very Good Girl",
+    "concentration": "Eau de Parfum",
+    "brand": "Carolina Herrera",
+    "brandSlug": "carolina-herrera",
+    "gender": "mujer",
+    "year": 2021,
+    "perfumer": "Quentin Bisch, Louise Turner",
+    "family": "Floral frutal",
+    "notes": {
+      "top": [
+        "Frutos rojos",
+        "Cereza",
+        "Frambuesa"
+      ],
+      "heart": [
+        "Rosa",
+        "Jazmín"
+      ],
+      "base": [
+        "Almizcle",
+        "Maderas"
+      ]
+    },
+    "priceRange": {
+      "min": 70,
+      "max": 135,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1.35,
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "eventos"
+    ],
+    "projection": "Alta",
+    "longevity": "8-10 horas",
+    "history": "Very Good Girl se lanzó en 2021 como evolución roja y más adulta de la línea Good Girl. Mantiene el icónico frasco con forma de zapato pero esta vez en rojo intenso. Su fórmula floral frutal con cereza y rosa la convirtió rápidamente en un éxito comercial y en la elección habitual para noches especiales.",
+    "similar": [
+      "carolina-herrera-good-girl",
+      "ysl-mon-paris",
+      "tom-ford-lost-cherry"
+    ],
+    "rating": 4.1
+  },
+  {
+    "slug": "marc-jacobs-decadence",
+    "name": "Decadence",
+    "concentration": "Eau de Parfum",
+    "brand": "Marc Jacobs",
+    "brandSlug": "marc-jacobs",
+    "gender": "mujer",
+    "year": 2015,
+    "perfumer": "Annie Buzantian, Ann Gottlieb",
+    "family": "Chipre floral",
+    "notes": {
+      "top": [
+        "Ciruela",
+        "Iris",
+        "Azafrán"
+      ],
+      "heart": [
+        "Rosa búlgara",
+        "Jazmín sambac",
+        "Orris"
+      ],
+      "base": [
+        "Vetiver",
+        "Pachulí",
+        "Cuero",
+        "Ámbar"
+      ]
+    },
+    "priceRange": {
+      "min": 55,
+      "max": 105,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1.05,
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "eventos"
+    ],
+    "projection": "Alta",
+    "longevity": "8-10 horas",
+    "history": "Decadence se lanzó en 2015 con su célebre frasco con forma de bolso esmeralda y borla dorada, un objeto deseable por sí mismo. Marc Jacobs apostó por una fragancia opulenta y oscura, con ciruela, rosa y un fondo de cuero ahumado. Glamurosa y madura, es uno de los lanzamientos más recordados de la casa.",
+    "similar": [
+      "tom-ford-black-orchid",
+      "ysl-black-opium",
+      "narciso-rodriguez-for-her"
+    ],
+    "rating": 4
+  },
+  {
+    "slug": "hermes-twilly-dhermes",
+    "name": "Twilly d'Hermès",
+    "concentration": "Eau de Parfum",
+    "brand": "Hermès",
+    "brandSlug": "hermes",
+    "gender": "mujer",
+    "year": 2017,
+    "perfumer": "Christine Nagel",
+    "family": "Floral especiado",
+    "notes": {
+      "top": [
+        "Jengibre"
+      ],
+      "heart": [
+        "Tuberosa"
+      ],
+      "base": [
+        "Sándalo"
+      ]
+    },
+    "priceRange": {
+      "min": 75,
+      "max": 140,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1.4,
+    "seasons": [
+      "primavera",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "cita",
+      "eventos"
+    ],
+    "projection": "Media-alta",
+    "longevity": "7-9 horas",
+    "history": "Twilly d'Hermès se lanzó en 2017 como la primera fragancia de Christine Nagel para Hermès, dedicada a las jóvenes Hermèsistas. Combina un jengibre especiado con una tuberosa cremosa y sándalo cálido, en una composición ligera pero distintiva. Juvenil y moderna, abrió una nueva dirección en la perfumería femenina de la maison.",
+    "similar": [
+      "chanel-coco-mademoiselle",
+      "dior-miss-dior",
+      "ysl-libre"
+    ],
+    "rating": 4
+  },
+  {
+    "slug": "frederic-malle-portrait-of-a-lady",
+    "name": "Portrait of a Lady",
+    "concentration": "Eau de Parfum",
+    "brand": "Frederic Malle",
+    "brandSlug": "frederic-malle",
+    "gender": "mujer",
+    "year": 2010,
+    "perfumer": "Dominique Ropion",
+    "family": "Chipre floral",
+    "notes": {
+      "top": [
+        "Frambuesa",
+        "Bergamota",
+        "Pimienta rosa"
+      ],
+      "heart": [
+        "Rosa de Turquía",
+        "Clavo",
+        "Canela"
+      ],
+      "base": [
+        "Pachulí",
+        "Sándalo",
+        "Ámbar",
+        "Incienso",
+        "Almizcle blanco"
+      ]
+    },
+    "priceRange": {
+      "min": 230,
+      "max": 380,
+      "currency": "EUR"
+    },
+    "pricePerMl": 3.8,
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "eventos",
+      "cita"
+    ],
+    "projection": "Muy alta",
+    "longevity": "10-14 horas",
+    "history": "Portrait of a Lady se lanzó en 2010 dentro de la prestigiosa editorial de perfumería de Frédéric Malle. Dominique Ropion construyó un monumento a la rosa: una rosa de Turquía majestuosa envuelta en pachulí, incienso y especias. Considerado una obra maestra moderna y uno de los grandes perfumes de rosa de la historia, es referencia obligada de la perfumería de autor.",
+    "similar": [
+      "mfk-baccarat-rouge-540",
+      "parfums-de-marly-delina",
+      "tom-ford-black-orchid"
+    ],
+    "rating": 4.6
+  },
+  {
+    "slug": "frederic-malle-musc-ravageur",
+    "name": "Musc Ravageur",
+    "concentration": "Eau de Parfum",
+    "brand": "Frederic Malle",
+    "brandSlug": "frederic-malle",
+    "gender": "unisex",
+    "year": 2000,
+    "perfumer": "Maurice Roucel",
+    "family": "Oriental amaderado",
+    "notes": {
+      "top": [
+        "Bergamota",
+        "Mandarina",
+        "Lavanda"
+      ],
+      "heart": [
+        "Canela",
+        "Clavo"
+      ],
+      "base": [
+        "Almizcle",
+        "Vainilla",
+        "Sándalo",
+        "Cedro",
+        "Ámbar"
+      ]
+    },
+    "priceRange": {
+      "min": 220,
+      "max": 370,
+      "currency": "EUR"
+    },
+    "pricePerMl": 3.7,
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "eventos"
+    ],
+    "projection": "Alta",
+    "longevity": "10-12 horas",
+    "history": "Musc Ravageur se lanzó en 2000 y es uno de los grandes clásicos modernos de la perfumería de nicho. Maurice Roucel firmó un oriental cálido y carnal, con almizcle, vainilla y un toque especiado. Sensual sin caer en lo obvio, es la firma adulta y atemporal de muchos amantes del perfume.",
+    "similar": [
+      "tom-ford-tobacco-vanille",
+      "mfk-grand-soir",
+      "narciso-rodriguez-for-her"
+    ],
+    "rating": 4.4
+  },
+  {
+    "slug": "diptyque-philosykos",
+    "name": "Philosykos",
+    "concentration": "Eau de Parfum",
+    "brand": "Diptyque",
+    "brandSlug": "diptyque",
+    "gender": "unisex",
+    "year": 1996,
+    "perfumer": "Olivia Giacobetti",
+    "family": "Verde amaderado",
+    "notes": {
+      "top": [
+        "Hoja de higuera"
+      ],
+      "heart": [
+        "Higo verde",
+        "Madera de higuera",
+        "Coco"
+      ],
+      "base": [
+        "Almizcle",
+        "Cedro"
+      ]
+    },
+    "priceRange": {
+      "min": 100,
+      "max": 175,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1.75,
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "ocio"
+    ],
+    "projection": "Media",
+    "longevity": "6-8 horas",
+    "history": "Philosykos se lanzó en 1996 y es considerado uno de los grandes perfumes de higuera de la historia. Olivia Giacobetti capturó el aroma completo del árbol —hojas, fruto y madera— en una composición verde, cremosa y luminosa que evoca el Mediterráneo. Es un clásico moderno de la perfumería de nicho y un imprescindible del verano.",
+    "similar": [
+      "jo-malone-wood-sage-sea-salt",
+      "byredo-gypsy-water",
+      "le-labo-santal-33"
+    ],
+    "rating": 4.3
+  },
+  {
+    "slug": "diptyque-tam-dao",
+    "name": "Tam Dao",
+    "concentration": "Eau de Parfum",
+    "brand": "Diptyque",
+    "brandSlug": "diptyque",
+    "gender": "unisex",
+    "year": 2003,
+    "perfumer": "Daniel Moliere",
+    "family": "Amaderado",
+    "notes": {
+      "top": [
+        "Pimienta rosa",
+        "Italia",
+        "Ciprés"
+      ],
+      "heart": [
+        "Sándalo",
+        "Mirto",
+        "Rosa"
+      ],
+      "base": [
+        "Cedro",
+        "Ámbar"
+      ]
+    },
+    "priceRange": {
+      "min": 100,
+      "max": 175,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1.75,
+    "seasons": [
+      "otono",
+      "invierno",
+      "primavera"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "cita"
+    ],
+    "projection": "Media",
+    "longevity": "7-9 horas",
+    "history": "Tam Dao se lanzó en 2003 como un homenaje a las montañas de Vietnam y al sándalo asiático. Daniel Moliere creó una composición meditativa, cremosa y serena dominada por el sándalo. Sobrio y aterciopelado, es uno de los grandes sándalos contemporáneos y un favorito unisex de los conocedores de perfumería.",
+    "similar": [
+      "le-labo-santal-33",
+      "byredo-gypsy-water",
+      "frederic-malle-musc-ravageur"
+    ],
+    "rating": 4.3
+  },
+  {
+    "slug": "byredo-mojave-ghost",
+    "name": "Mojave Ghost",
+    "concentration": "Eau de Parfum",
+    "brand": "Byredo",
+    "brandSlug": "byredo",
+    "gender": "unisex",
+    "year": 2014,
+    "perfumer": "Jérôme Epinette",
+    "family": "Amaderado floral",
+    "notes": {
+      "top": [
+        "Crujido de Ambrette",
+        "Magnolia",
+        "Nesberry"
+      ],
+      "heart": [
+        "Sándalo",
+        "Violeta",
+        "Rosa de Cachemira"
+      ],
+      "base": [
+        "Almizcle",
+        "Ámbar",
+        "Cedro"
+      ]
+    },
+    "priceRange": {
+      "min": 160,
+      "max": 280,
+      "currency": "EUR"
+    },
+    "pricePerMl": 2.8,
+    "seasons": [
+      "primavera",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "cita",
+      "oficina"
+    ],
+    "projection": "Media",
+    "longevity": "7-9 horas",
+    "history": "Mojave Ghost se lanzó en 2014 inspirado en una flor resistente que crece en el desierto de Mojave. Jérôme Epinette firmó una composición elegante y suave, con magnolia, sándalo y almizcle, que evoca un paisaje árido y poético. Es uno de los grandes superventas de la casa sueca Byredo.",
+    "similar": [
+      "le-labo-santal-33",
+      "byredo-gypsy-water",
+      "narciso-rodriguez-for-her"
+    ],
+    "rating": 4.2
+  },
+  {
+    "slug": "parfums-de-marly-pegasus",
+    "name": "Pegasus",
+    "concentration": "Eau de Parfum",
+    "brand": "Parfums de Marly",
+    "brandSlug": "parfums-de-marly",
+    "gender": "hombre",
+    "year": 2011,
+    "perfumer": "Hamid Merati-Kashani",
+    "family": "Amaderado floral",
+    "notes": {
+      "top": [
+        "Bergamota",
+        "Almendra amarga"
+      ],
+      "heart": [
+        "Heliotropo",
+        "Jazmín"
+      ],
+      "base": [
+        "Vainilla",
+        "Sándalo",
+        "Pachulí",
+        "Ámbar"
+      ]
+    },
+    "priceRange": {
+      "min": 175,
+      "max": 290,
+      "currency": "EUR"
+    },
+    "pricePerMl": 2.9,
+    "seasons": [
+      "otono",
+      "invierno",
+      "primavera"
+    ],
+    "timeOfDay": [
+      "noche",
+      "dia"
+    ],
+    "occasions": [
+      "eventos",
+      "cita",
+      "oficina"
+    ],
+    "projection": "Alta",
+    "longevity": "9-11 horas",
+    "history": "Pegasus se lanzó en 2011 dentro de la colección de Parfums de Marly y rinde homenaje al célebre caballo alado. Su carácter goloso y elegante combina una almendra amarga con vainilla cremosa y heliotropo, sobre un fondo de maderas. Adictivo y refinado, es uno de los perfumes más queridos de la casa francesa.",
+    "similar": [
+      "parfums-de-marly-layton",
+      "carolina-herrera-bad-boy",
+      "dior-homme-intense"
+    ],
+    "rating": 4.4
+  },
+  {
+    "slug": "parfums-de-marly-greenley",
+    "name": "Greenley",
+    "concentration": "Eau de Parfum",
+    "brand": "Parfums de Marly",
+    "brandSlug": "parfums-de-marly",
+    "gender": "hombre",
+    "year": 2020,
+    "perfumer": "Parfums de Marly",
+    "family": "Amaderado aromático",
+    "notes": {
+      "top": [
+        "Pomelo",
+        "Hoja de mandarina",
+        "Bergamota"
+      ],
+      "heart": [
+        "Ginebra",
+        "Té verde"
+      ],
+      "base": [
+        "Cedro",
+        "Pachulí",
+        "Ambrette",
+        "Almizcle"
+      ]
+    },
+    "priceRange": {
+      "min": 175,
+      "max": 290,
+      "currency": "EUR"
+    },
+    "pricePerMl": 2.9,
+    "seasons": [
+      "primavera",
+      "verano",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "oficina",
+      "diario",
+      "eventos"
+    ],
+    "projection": "Media-alta",
+    "longevity": "8-10 horas",
+    "history": "Greenley se lanzó en 2020 como una propuesta verde y aromática dentro del universo de lujo de Parfums de Marly. Une cítricos luminosos con un corazón fresco de té y ginebra, sobre maderas elegantes. Diurno, sofisticado y muy versátil, llenó un hueco fresco dentro del catálogo más cálido de la casa.",
+    "similar": [
+      "creed-green-irish-tweed",
+      "hermes-terre-dhermes",
+      "parfums-de-marly-pegasus"
+    ],
+    "rating": 4.3
+  },
+  {
+    "slug": "xerjoff-erba-pura",
+    "name": "Erba Pura",
+    "concentration": "Eau de Parfum",
+    "brand": "Xerjoff",
+    "brandSlug": "xerjoff",
+    "gender": "unisex",
+    "year": 2014,
+    "perfumer": "Xerjoff",
+    "family": "Floral frutal",
+    "notes": {
+      "top": [
+        "Bergamota",
+        "Mandarina",
+        "Limón",
+        "Naranja"
+      ],
+      "heart": [
+        "Frutos del bosque",
+        "Notas frutales"
+      ],
+      "base": [
+        "Vainilla",
+        "Ámbar gris",
+        "Almizcle",
+        "Pachulí"
+      ]
+    },
+    "priceRange": {
+      "min": 220,
+      "max": 360,
+      "currency": "EUR"
+    },
+    "pricePerMl": 3.6,
+    "seasons": [
+      "primavera",
+      "verano",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "cita",
+      "eventos"
+    ],
+    "projection": "Alta",
+    "longevity": "9-12 horas",
+    "history": "Erba Pura se lanzó en 2014 y es uno de los superventas de la casa italiana Xerjoff. Combina una explosión de cítricos jugosos con un fondo cálido de vainilla y ámbar, en una mezcla universalmente agradable. Su carácter fresco pero envolvente lo convirtió en uno de los perfumes unisex más recomendados del nicho.",
+    "similar": [
+      "mfk-baccarat-rouge-540",
+      "xerjoff-naxos",
+      "creed-aventus"
+    ],
+    "rating": 4.5
+  },
+  {
+    "slug": "mfk-aqua-universalis",
+    "name": "Aqua Universalis",
+    "concentration": "Eau de Toilette",
+    "brand": "Maison Francis Kurkdjian",
+    "brandSlug": "maison-francis-kurkdjian",
+    "gender": "unisex",
+    "year": 2009,
+    "perfumer": "Francis Kurkdjian",
+    "family": "Floral cítrico",
+    "notes": {
+      "top": [
+        "Bergamota de Calabria",
+        "Limón siciliano"
+      ],
+      "heart": [
+        "Lirio de los valles",
+        "Rosa de Mayo"
+      ],
+      "base": [
+        "Almizcle blanco",
+        "Maderas"
+      ]
+    },
+    "priceRange": {
+      "min": 165,
+      "max": 280,
+      "currency": "EUR"
+    },
+    "pricePerMl": 2.8,
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "ocio"
+    ],
+    "projection": "Media",
+    "longevity": "5-7 horas",
+    "history": "Aqua Universalis se lanzó en 2009 y es la propuesta universal y limpia de Maison Francis Kurkdjian. Su mezcla de cítricos frescos, flores blancas y almizcle aterciopelado resulta inmediatamente reconocible: limpio, luminoso y radical en su simplicidad. Es uno de los perfumes más vendidos de la casa y un símbolo de elegancia diaria.",
+    "similar": [
+      "jo-malone-wood-sage-sea-salt",
+      "chanel-allure-homme-sport",
+      "dior-eau-sauvage"
+    ],
+    "rating": 4.2
   }
 ]
