@@ -53,10 +53,17 @@ export default function SiteFooter() {
             </ul>
           </div>
         </div>
+        <nav className="footer-legal" aria-label="Información legal">
+          <Link href="/sobre">Sobre Olfativa</Link>
+          <Link href="/aviso-legal">Aviso legal</Link>
+          <Link href="/politica-privacidad">Privacidad</Link>
+          <Link href="/politica-cookies">Cookies</Link>
+          <Link href="/divulgacion-afiliados">Afiliados</Link>
+        </nav>
         <div className="footer-bottom">
           © {new Date().getFullYear()} {SITE_NAME}. Información orientativa con
           fines divulgativos. Los precios y notas pueden variar según el
-          mercado.
+          mercado. Algunos enlaces son de afiliado.
         </div>
       </div>
     </footer>

@@ -183,10 +183,27 @@ img {
   color: var(--accent);
 }
 
-.footer-bottom {
-  margin-top: 40px;
+.footer-legal {
+  margin-top: 36px;
   padding-top: 20px;
   border-top: 1px solid var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 22px;
+  font-size: 0.85rem;
+}
+
+.footer-legal a {
+  color: var(--text-soft);
+}
+
+.footer-legal a:hover {
+  color: var(--accent);
+}
+
+.footer-bottom {
+  margin-top: 16px;
   font-size: 0.82rem;
   color: var(--text-soft);
   text-align: center;
