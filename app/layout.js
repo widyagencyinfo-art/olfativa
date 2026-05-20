@@ -50,6 +50,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es" suppressHydrationWarning>
       <head>
+        <link rel="preconnect" href="https://upload.wikimedia.org" />
+        <link rel="dns-prefetch" href="https://www.amazon.es" />
+        <link rel="dns-prefetch" href="https://www.notino.es" />
+        <link rel="dns-prefetch" href="https://www.druni.es" />
+        <link rel="dns-prefetch" href="https://www.google.com" />
+        <meta name="theme-color" content="#9c7a4d" />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body>

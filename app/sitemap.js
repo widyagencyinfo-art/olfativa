@@ -7,6 +7,7 @@ import {
 } from "@/lib/data";
 import { LISTS } from "@/lib/lists";
 import { GUIDES } from "@/lib/guides";
+import { CLONES } from "@/lib/clones";
 
 export default function sitemap() {
   const now = new Date();
@@ -19,6 +20,7 @@ export default function sitemap() {
     "/buscar",
     "/comparativas",
     "/mejores",
+    "/clones",
     "/guias",
     "/genero/hombre",
     "/genero/mujer",
@@ -85,6 +87,13 @@ export default function sitemap() {
     priority: 0.85,
   }));
 
+  const clonePages = CLONES.map((c) => ({
+    url: `${SITE_URL}/clones/${c.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.9,
+  }));
+
   return [
     ...staticPages,
     ...perfumePages,
@@ -94,5 +103,6 @@ export default function sitemap() {
     ...notePages,
     ...listPages,
     ...guidePages,
+    ...clonePages,
   ];
 }

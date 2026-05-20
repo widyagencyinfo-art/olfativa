@@ -7,6 +7,7 @@ const NAV = [
   { href: "/perfumes", label: "Perfumes" },
   { href: "/mejores", label: "Mejores" },
   { href: "/comparativas", label: "Comparativas" },
+  { href: "/clones", label: "Clones" },
   { href: "/guias", label: "Guías" },
   { href: "/marcas", label: "Marcas" },
   { href: "/genero/hombre", label: "Hombre" },

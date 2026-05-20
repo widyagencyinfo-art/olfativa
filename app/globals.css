@@ -917,6 +917,26 @@ img {
   color: var(--accent);
 }
 
+/* ---------- Callout ---------- */
+.callout {
+  background: var(--accent-soft);
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--border));
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+}
+
+.callout h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.callout p {
+  color: var(--text-soft);
+  margin-bottom: 14px;
+  font-size: 0.95rem;
+}
+
 /* ---------- BuyBox ---------- */
 .buybox {
   background: linear-gradient(150deg, var(--accent-soft), var(--surface));

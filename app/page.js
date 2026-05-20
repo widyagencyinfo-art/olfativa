@@ -13,6 +13,7 @@ import {
   SITE_DESCRIPTION,
 } from "@/lib/data";
 import { GUIDES } from "@/lib/guides";
+import { CLONES } from "@/lib/clones";
 
 export default function HomePage() {
   const perfumes = getAllPerfumes();
@@ -118,6 +119,26 @@ export default function HomePage() {
       <section className="section">
         <div className="container">
           <div className="section-head">
+            <h2>Clones y alternativas baratas</h2>
+            <Link href="/clones">Ver todos →</Link>
+          </div>
+          <p style={{ color: "var(--text-soft)", marginBottom: "20px" }}>
+            Los mejores clones de los perfumes más caros: por qué pagar 300€
+            cuando una alternativa de 30€ huele casi igual.
+          </p>
+          <div className="chip-row">
+            {CLONES.slice(0, 8).map((c) => (
+              <Link key={c.slug} href={`/clones/${c.slug}`} className="chip">
+                {c.h1.replace(/^Clones de /i, "").replace(/:.*$/, "")}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section" style={{ background: "var(--bg-soft)" }}>
+        <div className="container">
+          <div className="section-head">
             <h2>Guías de perfumería</h2>
             <Link href="/guias">Ver todas →</Link>
           </div>
@@ -132,7 +153,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section" style={{ background: "var(--bg-soft)" }}>
+      <section className="section">
         <div className="container">
           <div className="section-head">
             <h2>Marcas destacadas</h2>

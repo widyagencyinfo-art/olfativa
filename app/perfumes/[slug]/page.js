@@ -5,6 +5,7 @@ import PerfumeGrid from "@/components/PerfumeGrid";
 import PerfumeImage from "@/components/PerfumeImage";
 import BuyBox from "@/components/BuyBox";
 import Comments from "@/components/Comments";
+import { CLONES } from "@/lib/clones";
 import {
   getAllPerfumes,
   getPerfumeBySlug,
@@ -50,6 +51,8 @@ export default async function PerfumePage({ params }) {
   if (!perfume) notFound();
 
   const similar = getSimilarPerfumes(perfume);
+  const clonePage = CLONES.find((c) => c.originalSlug === perfume.slug);
+  const inClonesOf = CLONES.find((c) => c.alternatives.includes(perfume.slug));
   const { min, max, currency } = perfume.priceRange;
 
   const faqLd = {
@@ -265,6 +268,36 @@ export default async function PerfumePage({ params }) {
         <div className="block">
           <BuyBox perfume={perfume} />
         </div>
+
+        {clonePage && (
+          <div className="block">
+            <div className="callout">
+              <h3>¿Lo encuentras caro? Mira las alternativas</h3>
+              <p>
+                Hay clones y alternativas más asequibles a {perfume.name} que
+                conservan buena parte de su carácter por mucho menos dinero.
+              </p>
+              <Link href={`/clones/${clonePage.slug}`} className="btn">
+                Ver clones de {perfume.name} →
+              </Link>
+            </div>
+          </div>
+        )}
+
+        {!clonePage && inClonesOf && (
+          <div className="block">
+            <div className="callout">
+              <h3>{perfume.name} es alternativa de un perfume más caro</h3>
+              <p>
+                Este perfume se considera una de las mejores alternativas
+                baratas a otro más exclusivo. Mira la comparativa completa.
+              </p>
+              <Link href={`/clones/${inClonesOf.slug}`} className="btn">
+                Ver comparativa →
+              </Link>
+            </div>
+          </div>
+        )}
 
         <div className="block">
           <h2>Historia de {perfume.name}</h2>
