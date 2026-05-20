@@ -12,6 +12,7 @@ import {
   SITE_URL,
   SITE_DESCRIPTION,
 } from "@/lib/data";
+import { GUIDES } from "@/lib/guides";
 
 export default function HomePage() {
   const perfumes = getAllPerfumes();
@@ -115,6 +116,23 @@ export default function HomePage() {
       </section>
 
       <section className="section">
+        <div className="container">
+          <div className="section-head">
+            <h2>Guías de perfumería</h2>
+            <Link href="/guias">Ver todas →</Link>
+          </div>
+          <div className="tile-grid">
+            {GUIDES.slice(0, 6).map((g) => (
+              <Link key={g.slug} href={`/guias/${g.slug}`} className="tile">
+                <h3>{g.title}</h3>
+                <p>{g.description.slice(0, 110)}…</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section" style={{ background: "var(--bg-soft)" }}>
         <div className="container">
           <div className="section-head">
             <h2>Marcas destacadas</h2>

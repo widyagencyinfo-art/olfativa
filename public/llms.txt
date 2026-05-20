@@ -1,0 +1,28 @@
+# Olfativa
+
+> Olfativa es una enciclopedia de perfumes en español: notas, perfil olfativo, precio, marca, historia y mejor época del año para más de 250 perfumes. Incluye guías de perfumería, comparativas, alternativas y listas de los mejores perfumes por categoría.
+
+Olfativa cubre tanto perfumería de gran consumo (Dior, Chanel, Yves Saint Laurent, Paco Rabanne, Carolina Herrera, Versace, Tom Ford, Hugo Boss…) como perfumería de nicho y lujo (Creed, Parfums de Marly, Maison Francis Kurkdjian, Xerjoff, Amouage, Initio, Frédéric Malle, Le Labo, Byredo, Diptyque…).
+
+## Secciones principales
+
+- Catálogo completo de perfumes: https://olfativa-five.vercel.app/perfumes
+- Guías de perfumería: https://olfativa-five.vercel.app/guias
+- Listas de los mejores perfumes: https://olfativa-five.vercel.app/mejores
+- Comparativas entre perfumes: https://olfativa-five.vercel.app/comparativas
+- Marcas: https://olfativa-five.vercel.app/marcas
+- Notas olfativas: https://olfativa-five.vercel.app/notas
+- Perfumes por género: https://olfativa-five.vercel.app/genero/hombre, /mujer, /unisex
+- Perfumes por temporada: https://olfativa-five.vercel.app/temporada/primavera, /verano, /otono, /invierno
+
+## Guías destacadas
+
+- Diferencia entre EDP, EDT, EDC y Parfum: https://olfativa-five.vercel.app/guias/diferencia-edp-edt-edc-parfum
+- Las 7 familias olfativas: https://olfativa-five.vercel.app/guias/familias-olfativas
+- Cómo aplicar perfume correctamente: https://olfativa-five.vercel.app/guias/como-aplicar-perfume-correctamente
+- Pirámide olfativa (notas de salida, corazón y fondo): https://olfativa-five.vercel.app/guias/notas-olfativas-piramide
+- Cómo elegir el perfume perfecto: https://olfativa-five.vercel.app/guias/como-elegir-perfume
+
+## Idioma
+
+Contenido íntegramente en español de España. Todos los precios en euros.

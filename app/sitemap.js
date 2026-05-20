@@ -6,6 +6,7 @@ import {
   getComparisonPairs,
 } from "@/lib/data";
 import { LISTS } from "@/lib/lists";
+import { GUIDES } from "@/lib/guides";
 
 export default function sitemap() {
   const now = new Date();
@@ -18,6 +19,7 @@ export default function sitemap() {
     "/buscar",
     "/comparativas",
     "/mejores",
+    "/guias",
     "/genero/hombre",
     "/genero/mujer",
     "/genero/unisex",
@@ -76,6 +78,13 @@ export default function sitemap() {
     priority: 0.85,
   }));
 
+  const guidePages = GUIDES.map((g) => ({
+    url: `${SITE_URL}/guias/${g.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.85,
+  }));
+
   return [
     ...staticPages,
     ...perfumePages,
@@ -84,5 +93,6 @@ export default function sitemap() {
     ...brandPages,
     ...notePages,
     ...listPages,
+    ...guidePages,
   ];
 }
