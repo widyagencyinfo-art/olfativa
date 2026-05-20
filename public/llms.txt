@@ -6,22 +6,22 @@ Olfativa cubre tanto perfumería de gran consumo (Dior, Chanel, Yves Saint Laure
 
 ## Secciones principales
 
-- Catálogo completo de perfumes: https://olfativa-five.vercel.app/perfumes
-- Guías de perfumería: https://olfativa-five.vercel.app/guias
-- Listas de los mejores perfumes: https://olfativa-five.vercel.app/mejores
-- Comparativas entre perfumes: https://olfativa-five.vercel.app/comparativas
-- Marcas: https://olfativa-five.vercel.app/marcas
-- Notas olfativas: https://olfativa-five.vercel.app/notas
-- Perfumes por género: https://olfativa-five.vercel.app/genero/hombre, /mujer, /unisex
-- Perfumes por temporada: https://olfativa-five.vercel.app/temporada/primavera, /verano, /otono, /invierno
+- Catálogo completo de perfumes: https://olfativa.es/perfumes
+- Guías de perfumería: https://olfativa.es/guias
+- Listas de los mejores perfumes: https://olfativa.es/mejores
+- Comparativas entre perfumes: https://olfativa.es/comparativas
+- Marcas: https://olfativa.es/marcas
+- Notas olfativas: https://olfativa.es/notas
+- Perfumes por género: https://olfativa.es/genero/hombre, /mujer, /unisex
+- Perfumes por temporada: https://olfativa.es/temporada/primavera, /verano, /otono, /invierno
 
 ## Guías destacadas
 
-- Diferencia entre EDP, EDT, EDC y Parfum: https://olfativa-five.vercel.app/guias/diferencia-edp-edt-edc-parfum
-- Las 7 familias olfativas: https://olfativa-five.vercel.app/guias/familias-olfativas
-- Cómo aplicar perfume correctamente: https://olfativa-five.vercel.app/guias/como-aplicar-perfume-correctamente
-- Pirámide olfativa (notas de salida, corazón y fondo): https://olfativa-five.vercel.app/guias/notas-olfativas-piramide
-- Cómo elegir el perfume perfecto: https://olfativa-five.vercel.app/guias/como-elegir-perfume
+- Diferencia entre EDP, EDT, EDC y Parfum: https://olfativa.es/guias/diferencia-edp-edt-edc-parfum
+- Las 7 familias olfativas: https://olfativa.es/guias/familias-olfativas
+- Cómo aplicar perfume correctamente: https://olfativa.es/guias/como-aplicar-perfume-correctamente
+- Pirámide olfativa (notas de salida, corazón y fondo): https://olfativa.es/guias/notas-olfativas-piramide
+- Cómo elegir el perfume perfecto: https://olfativa.es/guias/como-elegir-perfume
 
 ## Idioma
 
