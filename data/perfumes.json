@@ -57,7 +57,8 @@
       "versace-eros",
       "ysl-y-edp"
     ],
-    "rating": 4.3
+    "rating": 4.3,
+    "image": "/perfumes/dior-sauvage-edp.jpg"
   },
   {
     "slug": "bleu-de-chanel-edp",
@@ -119,7 +120,8 @@
       "prada-lhomme",
       "givenchy-gentleman-edp"
     ],
-    "rating": 4.4
+    "rating": 4.4,
+    "image": "/perfumes/bleu-de-chanel-edp.jpg"
   },
   {
     "slug": "creed-aventus",
@@ -179,7 +181,8 @@
       "xerjoff-naxos",
       "dior-sauvage-edp"
     ],
-    "rating": 4.5
+    "rating": 4.5,
+    "image": "/perfumes/creed-aventus.jpg"
   },
   {
     "slug": "paco-rabanne-1-million",
@@ -234,7 +237,8 @@
       "azzaro-the-most-wanted",
       "viktor-rolf-spicebomb"
     ],
-    "rating": 4
+    "rating": 4,
+    "image": "/perfumes/paco-rabanne-1-million.jpg"
   },
   {
     "slug": "jean-paul-gaultier-le-male",
@@ -1130,7 +1134,8 @@
       "bvlgari-man-in-black",
       "givenchy-gentleman-edp"
     ],
-    "rating": 4
+    "rating": 4,
+    "image": "/perfumes/dolce-gabbana-the-one.jpg"
   },
   {
     "slug": "versace-dylan-blue",
@@ -2447,7 +2452,8 @@
       "paco-rabanne-lady-million",
       "marc-jacobs-daisy"
     ],
-    "rating": 4
+    "rating": 4,
+    "image": "/perfumes/versace-bright-crystal.jpg"
   },
   {
     "slug": "narciso-rodriguez-for-her",
@@ -3006,7 +3012,8 @@
       "mugler-angel",
       "ysl-black-opium"
     ],
-    "rating": 4.1
+    "rating": 4.1,
+    "image": "/perfumes/tom-ford-black-orchid.jpg"
   },
   {
     "slug": "dior-homme-2020",
@@ -3839,7 +3846,8 @@
       "ysl-la-nuit-de-lhomme",
       "bvlgari-man-in-black"
     ],
-    "rating": 4.1
+    "rating": 4.1,
+    "image": "/perfumes/armani-code.jpg"
   },
   {
     "slug": "emporio-armani-stronger-with-you",
@@ -5306,7 +5314,8 @@
       "ralph-lauren-polo",
       "ysl-opium"
     ],
-    "rating": 3.9
+    "rating": 3.9,
+    "image": "/perfumes/calvin-klein-obsession-for-men.jpg"
   },
   {
     "slug": "cartier-declaration",
@@ -6242,7 +6251,8 @@
       "byredo-gypsy-water",
       "le-labo-santal-33"
     ],
-    "rating": 4.3
+    "rating": 4.3,
+    "image": "/perfumes/diptyque-philosykos.jpg"
   },
   {
     "slug": "diptyque-tam-dao",
@@ -6410,7 +6420,8 @@
       "carolina-herrera-bad-boy",
       "dior-homme-intense"
     ],
-    "rating": 4.4
+    "rating": 4.4,
+    "image": "/perfumes/parfums-de-marly-pegasus.jpg"
   },
   {
     "slug": "parfums-de-marly-greenley",
@@ -6577,5 +6588,1479 @@
       "dior-eau-sauvage"
     ],
     "rating": 4.2
+  },
+  {
+    "slug": "hugo-boss-hugo-man",
+    "name": "Hugo Man",
+    "concentration": "Eau de Toilette",
+    "brand": "Hugo Boss",
+    "brandSlug": "hugo-boss",
+    "gender": "hombre",
+    "year": 1995,
+    "perfumer": "Bob Aliano",
+    "family": "Aromático fougère",
+    "notes": {
+      "top": [
+        "Pomelo",
+        "Menta",
+        "Salvia",
+        "Lavanda",
+        "Manzana verde"
+      ],
+      "heart": [
+        "Albahaca",
+        "Geranio",
+        "Jazmín",
+        "Salvia"
+      ],
+      "base": [
+        "Pino",
+        "Abeto",
+        "Cedro",
+        "Pachulí"
+      ]
+    },
+    "priceRange": {
+      "min": 30,
+      "max": 60,
+      "currency": "EUR"
+    },
+    "pricePerMl": 0.6,
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "ocio",
+      "oficina"
+    ],
+    "projection": "Media",
+    "longevity": "5-7 horas",
+    "history": "Hugo Man se lanzó en 1995 dentro de la línea joven Hugo, con su característico frasco con forma de petaca metálica. Aromático verde y muy fresco, capturó el espíritu rebelde y deportivo de la generación de los noventa. A un precio muy accesible, sigue siendo un clásico fresco para el día a día.",
+    "similar": [
+      "calvin-klein-eternity-for-men",
+      "drakkar-noir",
+      "davidoff-cool-water"
+    ],
+    "rating": 3.8
+  },
+  {
+    "slug": "lacoste-l1212-blanc",
+    "name": "L.12.12 Blanc",
+    "concentration": "Eau de Toilette",
+    "brand": "Lacoste",
+    "brandSlug": "lacoste",
+    "gender": "hombre",
+    "year": 2011,
+    "perfumer": "Christophe Raynaud, Loc Dong, Richard Ibanez",
+    "family": "Aromático",
+    "notes": {
+      "top": [
+        "Pomelo",
+        "Romero"
+      ],
+      "heart": [
+        "Cardamomo",
+        "Tuberosa",
+        "Ylang-ylang"
+      ],
+      "base": [
+        "Cedro",
+        "Almizcle",
+        "Vetiver"
+      ]
+    },
+    "priceRange": {
+      "min": 35,
+      "max": 70,
+      "currency": "EUR"
+    },
+    "pricePerMl": 0.7,
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "ocio"
+    ],
+    "projection": "Media",
+    "longevity": "6-8 horas",
+    "history": "L.12.12 Blanc forma parte de la colección Polos de Lacoste, inspirada en el icónico polo de la marca. Su perfil aromático limpio con tuberosa y cedro lo convirtió en uno de los superventas masculinos más populares en España. Fresco, jabonoso y muy fácil de llevar, especialmente apreciado en climas cálidos.",
+    "similar": [
+      "chanel-allure-homme-sport",
+      "davidoff-cool-water",
+      "issey-miyake-leau-dissey-pour-homme"
+    ],
+    "rating": 3.9
+  },
+  {
+    "slug": "versace-pour-homme",
+    "name": "Versace Pour Homme",
+    "concentration": "Eau de Toilette",
+    "brand": "Versace",
+    "brandSlug": "versace",
+    "gender": "hombre",
+    "year": 2008,
+    "perfumer": "Alberto Morillas",
+    "family": "Amaderado aromático",
+    "notes": {
+      "top": [
+        "Limón",
+        "Bergamota",
+        "Neroli",
+        "Pimienta rosa"
+      ],
+      "heart": [
+        "Geranio",
+        "Salvia",
+        "Jacinto"
+      ],
+      "base": [
+        "Tonka",
+        "Cedro",
+        "Pino",
+        "Ámbar",
+        "Almizcle"
+      ]
+    },
+    "priceRange": {
+      "min": 40,
+      "max": 80,
+      "currency": "EUR"
+    },
+    "pricePerMl": 0.8,
+    "seasons": [
+      "primavera",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "eventos"
+    ],
+    "projection": "Media",
+    "longevity": "6-8 horas",
+    "history": "Versace Pour Homme se lanzó en 2008 como retrato del hombre mediterráneo: fresco, elegante y seguro de sí mismo. Alberto Morillas firmó un amaderado aromático luminoso, con cítricos italianos y un fondo cálido de haba tonka. Versátil y atemporal, es uno de los superventas masculinos clásicos de la marca italiana.",
+    "similar": [
+      "versace-eros",
+      "giorgio-armani-acqua-di-gio-profumo",
+      "hugo-boss-bottled"
+    ],
+    "rating": 4
+  },
+  {
+    "slug": "cartier-pasha-edition-noire",
+    "name": "Pasha de Cartier Édition Noire",
+    "concentration": "Eau de Toilette",
+    "brand": "Cartier",
+    "brandSlug": "cartier",
+    "gender": "hombre",
+    "year": 2013,
+    "perfumer": "Mathilde Laurent",
+    "family": "Amaderado especiado",
+    "notes": {
+      "top": [
+        "Menta",
+        "Bergamota"
+      ],
+      "heart": [
+        "Cedro",
+        "Pachulí"
+      ],
+      "base": [
+        "Cardamomo negro",
+        "Maderas"
+      ]
+    },
+    "priceRange": {
+      "min": 60,
+      "max": 110,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1.1,
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche",
+      "dia"
+    ],
+    "occasions": [
+      "oficina",
+      "cita",
+      "eventos"
+    ],
+    "projection": "Media",
+    "longevity": "7-9 horas",
+    "history": "Pasha de Cartier Édition Noire es la reinterpretación oscura y elegante del clásico Pasha de 1992. Mathilde Laurent contrastó una menta refrescante con un cardamomo negro especiado sobre maderas profundas. Sobrio y sofisticado, está pensado para el hombre adulto que busca presencia sin estridencias.",
+    "similar": [
+      "cartier-declaration",
+      "hermes-terre-dhermes",
+      "armani-code"
+    ],
+    "rating": 4.1
+  },
+  {
+    "slug": "diesel-only-the-brave",
+    "name": "Only The Brave",
+    "concentration": "Eau de Toilette",
+    "brand": "Diesel",
+    "brandSlug": "diesel",
+    "gender": "hombre",
+    "year": 2009,
+    "perfumer": "Olivier Polge, Pierre Wargnye, Annick Menardo",
+    "family": "Amaderado especiado",
+    "notes": {
+      "top": [
+        "Limón",
+        "Mandarina",
+        "Bergamota"
+      ],
+      "heart": [
+        "Cuero",
+        "Violeta",
+        "Pimienta"
+      ],
+      "base": [
+        "Ámbar",
+        "Pachulí",
+        "Haba tonka",
+        "Madera de cedro",
+        "Benjuí"
+      ]
+    },
+    "priceRange": {
+      "min": 35,
+      "max": 70,
+      "currency": "EUR"
+    },
+    "pricePerMl": 0.7,
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche",
+      "dia"
+    ],
+    "occasions": [
+      "ocio",
+      "cita",
+      "diario"
+    ],
+    "projection": "Media-alta",
+    "longevity": "7-9 horas",
+    "history": "Only The Brave se lanzó en 2009 con su famoso frasco en forma de puño, símbolo del coraje y la actitud Diesel. Combina la frescura cítrica con un fondo cuero-ambarino para crear un perfil masculino joven y rebelde. Asequible y de buen rendimiento, se convirtió en uno de los superventas adolescentes-juveniles de la marca.",
+    "similar": [
+      "paco-rabanne-1-million",
+      "azzaro-the-most-wanted",
+      "hugo-boss-bottled"
+    ],
+    "rating": 3.9
+  },
+  {
+    "slug": "joop-homme",
+    "name": "Joop! Homme",
+    "concentration": "Eau de Toilette",
+    "brand": "Joop!",
+    "brandSlug": "joop",
+    "gender": "hombre",
+    "year": 1989,
+    "perfumer": "Michel Almairac",
+    "family": "Oriental gourmand",
+    "notes": {
+      "top": [
+        "Mandarina",
+        "Bergamota",
+        "Naranja",
+        "Pomelo",
+        "Limón"
+      ],
+      "heart": [
+        "Canela",
+        "Jazmín",
+        "Lirio de los valles"
+      ],
+      "base": [
+        "Vainilla",
+        "Haba tonka",
+        "Pachulí",
+        "Sándalo",
+        "Cedro"
+      ]
+    },
+    "priceRange": {
+      "min": 25,
+      "max": 55,
+      "currency": "EUR"
+    },
+    "pricePerMl": 0.55,
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "ocio"
+    ],
+    "projection": "Muy alta",
+    "longevity": "8-10 horas",
+    "history": "Joop! Homme se lanzó en 1989 y es uno de los perfumes masculinos más potentes y golosos jamás creados. Su frasco rosa rompe los códigos de la época y su mezcla descarada de vainilla y canela es divisiva pero adictiva. Considerado un pionero del gourmand masculino, lleva décadas como un superventas de culto.",
+    "similar": [
+      "mugler-a-men",
+      "jean-paul-gaultier-le-male",
+      "calvin-klein-obsession-for-men"
+    ],
+    "rating": 4
+  },
+  {
+    "slug": "aramis-classic",
+    "name": "Aramis Classic",
+    "concentration": "Eau de Toilette",
+    "brand": "Aramis",
+    "brandSlug": "aramis",
+    "gender": "hombre",
+    "year": 1965,
+    "perfumer": "Bernard Chant",
+    "family": "Chipre cuero",
+    "notes": {
+      "top": [
+        "Bergamota",
+        "Salvia",
+        "Mirística",
+        "Cilantro",
+        "Cardamomo",
+        "Limón verde"
+      ],
+      "heart": [
+        "Pachulí",
+        "Jazmín",
+        "Geranio",
+        "Vetiver"
+      ],
+      "base": [
+        "Cuero",
+        "Musgo de roble",
+        "Ámbar",
+        "Sándalo",
+        "Almizcle"
+      ]
+    },
+    "priceRange": {
+      "min": 30,
+      "max": 70,
+      "currency": "EUR"
+    },
+    "pricePerMl": 0.7,
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "eventos",
+      "oficina"
+    ],
+    "projection": "Alta",
+    "longevity": "9-12 horas",
+    "history": "Aramis se lanzó en 1965 y es uno de los grandes hitos de la perfumería masculina del siglo XX. Bernard Chant creó un chipre cuero potente, especiado y muy adulto, que se convirtió en el perfume firma de toda una generación de caballeros. Aún hoy se considera un clásico atemporal de gran carácter, a precio muy razonable.",
+    "similar": [
+      "drakkar-noir",
+      "ralph-lauren-polo",
+      "calvin-klein-obsession-for-men"
+    ],
+    "rating": 4
+  },
+  {
+    "slug": "mancera-cedrat-boise",
+    "name": "Cedrat Boisé",
+    "concentration": "Eau de Parfum",
+    "brand": "Mancera",
+    "brandSlug": "mancera",
+    "gender": "unisex",
+    "year": 2011,
+    "perfumer": "Pierre Montale",
+    "family": "Cítrico amaderado",
+    "notes": {
+      "top": [
+        "Cidra",
+        "Bergamota",
+        "Limón"
+      ],
+      "heart": [
+        "Salvia",
+        "Pimienta",
+        "Vetiver"
+      ],
+      "base": [
+        "Ámbar",
+        "Pachulí",
+        "Musgo de roble",
+        "Madera de cedro"
+      ]
+    },
+    "priceRange": {
+      "min": 110,
+      "max": 180,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1.5,
+    "seasons": [
+      "primavera",
+      "verano",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "eventos"
+    ],
+    "projection": "Alta",
+    "longevity": "9-12 horas",
+    "history": "Cedrat Boisé se lanzó en 2011 dentro de la colección de Mancera, casa francesa fundada por Pierre Montale. Combina una cidra cítrica vibrante con un fondo amaderado-ámbar muy proyectivo. Considerado uno de los grandes cítricos amaderados del nicho moderno, ofrece un rendimiento excepcional para los días cálidos sin sacrificar carácter.",
+    "similar": [
+      "dior-eau-sauvage",
+      "chanel-allure-homme-sport",
+      "hermes-terre-dhermes"
+    ],
+    "rating": 4.3
+  },
+  {
+    "slug": "carolina-herrera-212-men",
+    "name": "212 Men",
+    "concentration": "Eau de Toilette",
+    "brand": "Carolina Herrera",
+    "brandSlug": "carolina-herrera",
+    "gender": "hombre",
+    "year": 1999,
+    "perfumer": "Rosendo Mateu",
+    "family": "Amaderado especiado",
+    "notes": {
+      "top": [
+        "Bergamota",
+        "Petitgrain",
+        "Hoja de violeta",
+        "Albahaca",
+        "Pomelo",
+        "Lavanda"
+      ],
+      "heart": [
+        "Vodka",
+        "Salvia",
+        "Especias",
+        "Jengibre"
+      ],
+      "base": [
+        "Sándalo",
+        "Musgo de roble",
+        "Almizcle",
+        "Cedro virginiano"
+      ]
+    },
+    "priceRange": {
+      "min": 50,
+      "max": 95,
+      "currency": "EUR"
+    },
+    "pricePerMl": 0.95,
+    "seasons": [
+      "primavera",
+      "verano",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "cita"
+    ],
+    "projection": "Media",
+    "longevity": "6-8 horas",
+    "history": "212 Men se lanzó en 1999 inspirado en el código postal de Manhattan, símbolo de la energía urbana de Nueva York. Rosendo Mateu firmó un amaderado limpio y aromático con un toque cítrico fresco. Moderno, urbano y muy versátil, lleva más de dos décadas siendo uno de los pilares masculinos de Carolina Herrera.",
+    "similar": [
+      "chanel-allure-homme-sport",
+      "calvin-klein-eternity-for-men",
+      "hugo-boss-bottled"
+    ],
+    "rating": 4
+  },
+  {
+    "slug": "carolina-herrera-212-vip-men",
+    "name": "212 VIP Men",
+    "concentration": "Eau de Toilette",
+    "brand": "Carolina Herrera",
+    "brandSlug": "carolina-herrera",
+    "gender": "hombre",
+    "year": 2011,
+    "perfumer": "Rosendo Mateu, Olivier Cresp",
+    "family": "Oriental amaderado",
+    "notes": {
+      "top": [
+        "Vodka",
+        "Lima fresca",
+        "Menta",
+        "Pimienta"
+      ],
+      "heart": [
+        "Jengibre",
+        "Ginebra",
+        "Cuero",
+        "Anís"
+      ],
+      "base": [
+        "Ámbar",
+        "Sándalo",
+        "Tonka"
+      ]
+    },
+    "priceRange": {
+      "min": 55,
+      "max": 100,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1,
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "ocio",
+      "eventos"
+    ],
+    "projection": "Alta",
+    "longevity": "8-10 horas",
+    "history": "212 VIP Men se lanzó en 2011 como la versión clubbing y nocturna del 212 original. Inspirado en los cócteles de Manhattan, su mezcla golosa de vodka, jengibre y cuero captura la energía de las noches en discotecas neoyorquinas. Muy comercial y reconocible, es un favorito de salidas nocturnas.",
+    "similar": [
+      "paco-rabanne-1-million",
+      "azzaro-the-most-wanted",
+      "diesel-only-the-brave"
+    ],
+    "rating": 3.9
+  },
+  {
+    "slug": "carolina-herrera-212",
+    "name": "212",
+    "concentration": "Eau de Toilette",
+    "brand": "Carolina Herrera",
+    "brandSlug": "carolina-herrera",
+    "gender": "mujer",
+    "year": 1997,
+    "perfumer": "Alberto Morillas, Annie Buzantian",
+    "family": "Floral amaderado",
+    "notes": {
+      "top": [
+        "Mandarina verde",
+        "Aldehídos",
+        "Bergamota",
+        "Pomelo",
+        "Lirio"
+      ],
+      "heart": [
+        "Rosa",
+        "Magnolia",
+        "Jazmín",
+        "Gardenia"
+      ],
+      "base": [
+        "Almizcle",
+        "Sándalo",
+        "Madera de cedro",
+        "Ámbar"
+      ]
+    },
+    "priceRange": {
+      "min": 50,
+      "max": 95,
+      "currency": "EUR"
+    },
+    "pricePerMl": 0.95,
+    "seasons": [
+      "primavera",
+      "verano",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "oficina"
+    ],
+    "projection": "Media",
+    "longevity": "6-8 horas",
+    "history": "212 femenino se lanzó en 1997 como la respuesta de Carolina Herrera al espíritu cosmopolita de Manhattan. Su frasco plateado se ha convertido en un icono de los noventa. Floral fresco y luminoso, marcó toda una generación de mujeres urbanas y sigue siendo una de las propuestas más populares de la marca.",
+    "similar": [
+      "chanel-chance-eau-tendre",
+      "dolce-gabbana-light-blue",
+      "marc-jacobs-daisy"
+    ],
+    "rating": 4
+  },
+  {
+    "slug": "burberry-brit-for-her",
+    "name": "Brit for Her",
+    "concentration": "Eau de Parfum",
+    "brand": "Burberry",
+    "brandSlug": "burberry",
+    "gender": "mujer",
+    "year": 2003,
+    "perfumer": "Nathalie Lorson",
+    "family": "Oriental gourmand",
+    "notes": {
+      "top": [
+        "Almendra",
+        "Lima italiana",
+        "Pera"
+      ],
+      "heart": [
+        "Acebo",
+        "Peonía",
+        "Azúcar"
+      ],
+      "base": [
+        "Vainilla",
+        "Haba tonka",
+        "Madera de caoba"
+      ]
+    },
+    "priceRange": {
+      "min": 40,
+      "max": 80,
+      "currency": "EUR"
+    },
+    "pricePerMl": 0.8,
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "cita"
+    ],
+    "projection": "Media",
+    "longevity": "6-8 horas",
+    "history": "Burberry Brit for Her se lanzó en 2003 como un gourmand acogedor inspirado en la elegancia británica relajada. Combina pera jugosa y almendra con un fondo cálido de vainilla y haba tonka. Confortable y femenino, se convirtió en un superventas casual para los meses fríos.",
+    "similar": [
+      "lancome-la-vie-est-belle",
+      "burberry-her",
+      "viktor-rolf-flowerbomb"
+    ],
+    "rating": 4
+  },
+  {
+    "slug": "lancome-magnifique",
+    "name": "Magnifique",
+    "concentration": "Eau de Parfum",
+    "brand": "Lancôme",
+    "brandSlug": "lancome",
+    "gender": "mujer",
+    "year": 2008,
+    "perfumer": "Olivier Cresp",
+    "family": "Oriental floral",
+    "notes": {
+      "top": [
+        "Azafrán",
+        "Jengibre"
+      ],
+      "heart": [
+        "Rosa",
+        "Vetiver",
+        "Pétalos"
+      ],
+      "base": [
+        "Sándalo",
+        "Ámbar",
+        "Vainilla"
+      ]
+    },
+    "priceRange": {
+      "min": 45,
+      "max": 90,
+      "currency": "EUR"
+    },
+    "pricePerMl": 0.9,
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "eventos",
+      "cita"
+    ],
+    "projection": "Media-alta",
+    "longevity": "7-9 horas",
+    "history": "Magnifique se lanzó en 2008 como un oriental especiado dedicado a la mujer magnífica y poderosa. Olivier Cresp creó una composición cálida alrededor del azafrán y la rosa, con un fondo de sándalo cremoso. Sofisticado y femenino, es una de las propuestas más adultas del catálogo de Lancôme.",
+    "similar": [
+      "lancome-tresor",
+      "ysl-libre",
+      "guerlain-shalimar"
+    ],
+    "rating": 3.9
+  },
+  {
+    "slug": "estee-lauder-pleasures",
+    "name": "Pleasures",
+    "concentration": "Eau de Parfum",
+    "brand": "Estée Lauder",
+    "brandSlug": "estee-lauder",
+    "gender": "mujer",
+    "year": 1995,
+    "perfumer": "Alberto Morillas",
+    "family": "Floral",
+    "notes": {
+      "top": [
+        "Lila blanca",
+        "Hoja de violeta",
+        "Pimienta negra",
+        "Mandarina verde"
+      ],
+      "heart": [
+        "Lirio blanco",
+        "Lirio brasileño rojo",
+        "Lirio de los valles",
+        "Peonía",
+        "Hoja de geranio",
+        "Rosa búlgara",
+        "Jazmín"
+      ],
+      "base": [
+        "Almizcle",
+        "Notas amaderadas",
+        "Madera de pachulí"
+      ]
+    },
+    "priceRange": {
+      "min": 45,
+      "max": 90,
+      "currency": "EUR"
+    },
+    "pricePerMl": 0.9,
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "oficina"
+    ],
+    "projection": "Media",
+    "longevity": "6-8 horas",
+    "history": "Pleasures se lanzó en 1995 con la idea de capturar la sensación de un ramo de flores recién cortadas tras la lluvia. Alberto Morillas creó un floral aireado, luminoso y muy limpio, que se convirtió en uno de los grandes éxitos de Estée Lauder y en un favorito de la perfumería casual elegante de los noventa.",
+    "similar": [
+      "chloe-eau-de-parfum",
+      "estee-lauder-beautiful",
+      "dior-jadore"
+    ],
+    "rating": 3.9
+  },
+  {
+    "slug": "estee-lauder-bronze-goddess",
+    "name": "Bronze Goddess",
+    "concentration": "Eau Fraîche",
+    "brand": "Estée Lauder",
+    "brandSlug": "estee-lauder",
+    "gender": "mujer",
+    "year": 2008,
+    "perfumer": "Calice Becker",
+    "family": "Floral oriental",
+    "notes": {
+      "top": [
+        "Bergamota",
+        "Limón",
+        "Lavanda",
+        "Mandarina"
+      ],
+      "heart": [
+        "Tiare",
+        "Tuberosa",
+        "Jazmín",
+        "Coco",
+        "Magnolia"
+      ],
+      "base": [
+        "Ámbar",
+        "Almizcle",
+        "Sándalo",
+        "Vetiver",
+        "Vainilla"
+      ]
+    },
+    "priceRange": {
+      "min": 55,
+      "max": 105,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1.05,
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "ocio",
+      "diario"
+    ],
+    "projection": "Media",
+    "longevity": "5-7 horas",
+    "history": "Bronze Goddess se lanzó en 2008 como la fragancia oficial del verano de Estée Lauder. Calice Becker capturó el aroma de la piel bronceada al sol, con coco cremoso, tiare y un fondo cálido de ámbar y vainilla. Es uno de los grandes 'perfumes vacaciones' del mercado, esperado cada temporada por sus fans.",
+    "similar": [
+      "dolce-gabbana-light-blue",
+      "versace-bright-crystal",
+      "estee-lauder-beautiful"
+    ],
+    "rating": 4.2
+  },
+  {
+    "slug": "marc-jacobs-honey",
+    "name": "Honey",
+    "concentration": "Eau de Parfum",
+    "brand": "Marc Jacobs",
+    "brandSlug": "marc-jacobs",
+    "gender": "mujer",
+    "year": 2013,
+    "perfumer": "Annie Buzantian",
+    "family": "Floral frutal",
+    "notes": {
+      "top": [
+        "Mandarina verde",
+        "Pera",
+        "Pimienta rosa"
+      ],
+      "heart": [
+        "Madreselva",
+        "Peonía",
+        "Naranja"
+      ],
+      "base": [
+        "Vainilla",
+        "Madera de almizcle"
+      ]
+    },
+    "priceRange": {
+      "min": 50,
+      "max": 95,
+      "currency": "EUR"
+    },
+    "pricePerMl": 0.95,
+    "seasons": [
+      "primavera",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "ocio"
+    ],
+    "projection": "Media",
+    "longevity": "6-8 horas",
+    "history": "Honey de Marc Jacobs se lanzó en 2013 dentro de la familia Daisy, con su famosa tapa de abejas doradas. Combina pera y mandarina con flores luminosas y un fondo cremoso de vainilla. Juvenil, alegre y dulce sin empalagar, mantuvo la línea Daisy entre las favoritas del público joven.",
+    "similar": [
+      "marc-jacobs-daisy",
+      "chloe-eau-de-parfum",
+      "chanel-chance-eau-tendre"
+    ],
+    "rating": 3.9
+  },
+  {
+    "slug": "versace-yellow-diamond",
+    "name": "Yellow Diamond",
+    "concentration": "Eau de Toilette",
+    "brand": "Versace",
+    "brandSlug": "versace",
+    "gender": "mujer",
+    "year": 2011,
+    "perfumer": "Alain Astori, Antoine Lie",
+    "family": "Floral",
+    "notes": {
+      "top": [
+        "Bergamota",
+        "Neroli",
+        "Pera",
+        "Cítricos"
+      ],
+      "heart": [
+        "Fresia",
+        "Mimosa",
+        "Nenúfar",
+        "Hoja de naranjo"
+      ],
+      "base": [
+        "Ámbar",
+        "Almizcle",
+        "Madera de palo Santo"
+      ]
+    },
+    "priceRange": {
+      "min": 40,
+      "max": 85,
+      "currency": "EUR"
+    },
+    "pricePerMl": 0.85,
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "ocio",
+      "oficina"
+    ],
+    "projection": "Media",
+    "longevity": "5-7 horas",
+    "history": "Yellow Diamond se lanzó en 2011 con su luminoso frasco amarillo. Combina cítricos jugosos con flores blancas y un fondo cálido y almizclado. Solar, fresco y femenino, es una de las opciones más populares de Versace para el verano y los climas cálidos.",
+    "similar": [
+      "versace-bright-crystal",
+      "dolce-gabbana-light-blue",
+      "marc-jacobs-daisy"
+    ],
+    "rating": 3.8
+  },
+  {
+    "slug": "cartier-baiser-vole",
+    "name": "Baiser Volé",
+    "concentration": "Eau de Parfum",
+    "brand": "Cartier",
+    "brandSlug": "cartier",
+    "gender": "mujer",
+    "year": 2011,
+    "perfumer": "Mathilde Laurent",
+    "family": "Floral",
+    "notes": {
+      "top": [
+        "Hojas de lirio"
+      ],
+      "heart": [
+        "Pétalos de lirio"
+      ],
+      "base": [
+        "Polen de lirio"
+      ]
+    },
+    "priceRange": {
+      "min": 75,
+      "max": 140,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1.4,
+    "seasons": [
+      "primavera",
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "eventos",
+      "oficina",
+      "cita"
+    ],
+    "projection": "Media",
+    "longevity": "7-9 horas",
+    "history": "Baiser Volé se lanzó en 2011 como un homenaje monomateria al lirio: la flor entera, desde sus hojas verdes hasta su polen aterciopelado. Mathilde Laurent, perfumista de la casa Cartier, creó una de las grandes interpretaciones del lirio en perfumería moderna. Elegante, blanca y muy refinada.",
+    "similar": [
+      "chloe-eau-de-parfum",
+      "givenchy-linterdit",
+      "dior-miss-dior"
+    ],
+    "rating": 4.1,
+    "image": "/perfumes/cartier-baiser-vole.jpg"
+  },
+  {
+    "slug": "maison-margiela-replica-jazz-club",
+    "name": "Replica Jazz Club",
+    "concentration": "Eau de Toilette",
+    "brand": "Maison Margiela",
+    "brandSlug": "maison-margiela",
+    "gender": "hombre",
+    "year": 2013,
+    "perfumer": "Maurice Roucel, Cécile Hua",
+    "family": "Oriental amaderado",
+    "notes": {
+      "top": [
+        "Pimienta rosa",
+        "Néroli",
+        "Limón"
+      ],
+      "heart": [
+        "Ron",
+        "Hoja de tabaco",
+        "Haba tonka"
+      ],
+      "base": [
+        "Vainilla",
+        "Vetiver",
+        "Cedro",
+        "Benjuí",
+        "Styrax"
+      ]
+    },
+    "priceRange": {
+      "min": 80,
+      "max": 140,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1.4,
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "cita",
+      "eventos",
+      "ocio"
+    ],
+    "projection": "Media",
+    "longevity": "7-9 horas",
+    "history": "Replica Jazz Club pertenece a la línea Replica de Maison Margiela, dedicada a recrear recuerdos. Su escenario es un bar de jazz nocturno: el aroma del ron, el tabaco curado y la madera ahumada. Maurice Roucel firmó uno de los grandes perfumes de tabaco contemporáneos, sobrio y muy elegante.",
+    "similar": [
+      "tom-ford-tobacco-vanille",
+      "maison-margiela-by-the-fireplace",
+      "valentino-uomo-intense"
+    ],
+    "rating": 4.3
+  },
+  {
+    "slug": "maison-margiela-replica-lazy-sunday-morning",
+    "name": "Replica Lazy Sunday Morning",
+    "concentration": "Eau de Toilette",
+    "brand": "Maison Margiela",
+    "brandSlug": "maison-margiela",
+    "gender": "mujer",
+    "year": 2012,
+    "perfumer": "Marie Salamagne",
+    "family": "Floral aldehídico",
+    "notes": {
+      "top": [
+        "Aldehídos",
+        "Pera",
+        "Lirio de los valles"
+      ],
+      "heart": [
+        "Rosa",
+        "Iris",
+        "Almizcle",
+        "Algodón"
+      ],
+      "base": [
+        "Ambrette",
+        "Almizcle blanco",
+        "Madera de Indonesia",
+        "Pachulí"
+      ]
+    },
+    "priceRange": {
+      "min": 75,
+      "max": 135,
+      "currency": "EUR"
+    },
+    "pricePerMl": 1.35,
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "ocio"
+    ],
+    "projection": "Media",
+    "longevity": "5-7 horas",
+    "history": "Lazy Sunday Morning recrea el aroma de unas sábanas limpias en una mañana lenta de domingo. Marie Salamagne creó una composición jabonosa y aterciopelada, con almizcle blanco, lirio y un toque de pera. Es uno de los grandes 'perfumes ropa limpia' del mercado, perfecto para amantes de los aromas pulcros y reconfortantes.",
+    "similar": [
+      "narciso-rodriguez-for-her",
+      "maison-margiela-by-the-fireplace",
+      "chloe-eau-de-parfum"
+    ],
+    "rating": 4.1
+  },
+  {
+    "slug": "lattafa-yara",
+    "name": "Yara",
+    "concentration": "Eau de Parfum",
+    "brand": "Lattafa",
+    "brandSlug": "lattafa",
+    "gender": "mujer",
+    "year": 2020,
+    "perfumer": "Lattafa Perfumes",
+    "family": "Floral gourmand",
+    "notes": {
+      "top": [
+        "Notas frutales",
+        "Pera"
+      ],
+      "heart": [
+        "Gardenia",
+        "Orquídea"
+      ],
+      "base": [
+        "Vainilla",
+        "Almizcle",
+        "Madera"
+      ]
+    },
+    "priceRange": {
+      "min": 20,
+      "max": 40,
+      "currency": "EUR"
+    },
+    "pricePerMl": 0.35,
+    "seasons": [
+      "otono",
+      "invierno",
+      "primavera"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "cita",
+      "ocio"
+    ],
+    "projection": "Alta",
+    "longevity": "8-10 horas",
+    "history": "Yara se lanzó en 2020 y se viralizó en TikTok como uno de los perfumes árabes más populares del mundo. Lattafa creó una mezcla golosa y muy reconocible de gardenia, vainilla y pera. Su precio bajísimo y su gran rendimiento la convirtieron en una entrada masiva a la perfumería árabe para el público occidental.",
+    "similar": [
+      "mfk-baccarat-rouge-540",
+      "lattafa-khamrah",
+      "lancome-la-vie-est-belle"
+    ],
+    "rating": 4.2
+  },
+  {
+    "slug": "lattafa-asad",
+    "name": "Asad",
+    "concentration": "Eau de Parfum",
+    "brand": "Lattafa",
+    "brandSlug": "lattafa",
+    "gender": "hombre",
+    "year": 2021,
+    "perfumer": "Lattafa Perfumes",
+    "family": "Chipre frutal",
+    "notes": {
+      "top": [
+        "Piña",
+        "Manzana verde",
+        "Bergamota"
+      ],
+      "heart": [
+        "Pimienta rosa",
+        "Abedul"
+      ],
+      "base": [
+        "Pachulí",
+        "Vainilla",
+        "Musgo de roble",
+        "Ámbar"
+      ]
+    },
+    "priceRange": {
+      "min": 20,
+      "max": 40,
+      "currency": "EUR"
+    },
+    "pricePerMl": 0.35,
+    "seasons": [
+      "primavera",
+      "verano",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "ocio",
+      "cita"
+    ],
+    "projection": "Alta",
+    "longevity": "8-10 horas",
+    "history": "Asad se lanzó en 2021 como una alternativa árabe accesible al perfil afrutado-ahumado de Creed Aventus. La casa Lattafa logró un perfil similar al original con piña jugosa y madera de abedul. Su excelente relación calidad-precio lo convirtió en otro fenómeno viral del nicho árabe asequible.",
+    "similar": [
+      "armaf-club-de-nuit-intense-man",
+      "creed-aventus",
+      "montblanc-explorer"
+    ],
+    "rating": 4.1
+  },
+  {
+    "slug": "nishane-hacivat",
+    "name": "Hacivat",
+    "concentration": "Extrait de Parfum",
+    "brand": "Nishane",
+    "brandSlug": "nishane",
+    "gender": "unisex",
+    "year": 2017,
+    "perfumer": "Jorge Lee",
+    "family": "Chipre frutal",
+    "notes": {
+      "top": [
+        "Piña",
+        "Bergamota",
+        "Pomelo"
+      ],
+      "heart": [
+        "Hoja de higuera",
+        "Pachulí",
+        "Musgo de roble"
+      ],
+      "base": [
+        "Madera de cedro",
+        "Ámbar gris",
+        "Olíbano"
+      ]
+    },
+    "priceRange": {
+      "min": 180,
+      "max": 290,
+      "currency": "EUR"
+    },
+    "pricePerMl": 2.9,
+    "seasons": [
+      "primavera",
+      "verano",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "eventos"
+    ],
+    "projection": "Alta",
+    "longevity": "9-12 horas",
+    "history": "Hacivat se lanzó en 2017 como una de las grandes creaciones de la casa turca Nishane. Jorge Lee construyó un chipre afrutado con piña jugosa y un fondo de musgo e incienso, frecuentemente comparado con Aventus pero con un carácter propio más fresco y verde. Es uno de los nicho árabe/turcos más recomendados del mercado.",
+    "similar": [
+      "creed-aventus",
+      "xerjoff-erba-pura",
+      "armaf-club-de-nuit-intense-man"
+    ],
+    "rating": 4.4
+  },
+  {
+    "slug": "mfk-oud-satin-mood",
+    "name": "Oud Satin Mood",
+    "concentration": "Extrait de Parfum",
+    "brand": "Maison Francis Kurkdjian",
+    "brandSlug": "maison-francis-kurkdjian",
+    "gender": "unisex",
+    "year": 2015,
+    "perfumer": "Francis Kurkdjian",
+    "family": "Oriental amaderado",
+    "notes": {
+      "top": [
+        "Rosa búlgara",
+        "Violeta"
+      ],
+      "heart": [
+        "Oud"
+      ],
+      "base": [
+        "Benjuí",
+        "Vainilla"
+      ]
+    },
+    "priceRange": {
+      "min": 250,
+      "max": 400,
+      "currency": "EUR"
+    },
+    "pricePerMl": 4,
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "timeOfDay": [
+      "noche"
+    ],
+    "occasions": [
+      "eventos",
+      "cita"
+    ],
+    "projection": "Muy alta",
+    "longevity": "10-14 horas",
+    "history": "Oud Satin Mood se lanzó en 2015 dentro del Mood Collection de Maison Francis Kurkdjian. Combina una rosa búlgara opulenta con oud, violeta y un fondo de vainilla y benjuí. Sensual, oriental y muy proyectivo, es una de las grandes creaciones de oud accesible para el público occidental dentro del lujo.",
+    "similar": [
+      "initio-oud-for-greatness",
+      "tom-ford-oud-wood",
+      "mfk-baccarat-rouge-540"
+    ],
+    "rating": 4.5
+  },
+  {
+    "slug": "parfums-de-marly-cassili",
+    "name": "Cassili",
+    "concentration": "Eau de Parfum",
+    "brand": "Parfums de Marly",
+    "brandSlug": "parfums-de-marly",
+    "gender": "mujer",
+    "year": 2017,
+    "perfumer": "Hamid Merati-Kashani",
+    "family": "Floral frutal",
+    "notes": {
+      "top": [
+        "Mandarina",
+        "Bergamota",
+        "Frutos exóticos"
+      ],
+      "heart": [
+        "Tiare",
+        "Ylang-ylang",
+        "Jazmín",
+        "Mango"
+      ],
+      "base": [
+        "Vainilla",
+        "Maderas",
+        "Almizcle"
+      ]
+    },
+    "priceRange": {
+      "min": 175,
+      "max": 285,
+      "currency": "EUR"
+    },
+    "pricePerMl": 2.85,
+    "seasons": [
+      "primavera",
+      "verano",
+      "otono"
+    ],
+    "timeOfDay": [
+      "dia",
+      "noche"
+    ],
+    "occasions": [
+      "diario",
+      "cita",
+      "ocio"
+    ],
+    "projection": "Alta",
+    "longevity": "8-10 horas",
+    "history": "Cassili se lanzó en 2017 como un floral frutal tropical dentro del catálogo de Parfums de Marly. Combina frutas exóticas con flores blancas como tiare y ylang-ylang, sobre un fondo vainillado. Veraniego y festivo sin perder elegancia, es una de las propuestas femeninas más alegres de la casa de nicho francesa.",
+    "similar": [
+      "parfums-de-marly-delina",
+      "viktor-rolf-flowerbomb",
+      "estee-lauder-bronze-goddess"
+    ],
+    "rating": 4.2
+  },
+  {
+    "slug": "byredo-bal-dafrique",
+    "name": "Bal d'Afrique",
+    "concentration": "Eau de Parfum",
+    "brand": "Byredo",
+    "brandSlug": "byredo",
+    "gender": "unisex",
+    "year": 2009,
+    "perfumer": "Jérôme Epinette",
+    "family": "Floral verde",
+    "notes": {
+      "top": [
+        "Bergamota",
+        "Limón",
+        "Neroli",
+        "Pimienta rosa",
+        "Hoja de violeta"
+      ],
+      "heart": [
+        "Mosqueta africana",
+        "Jazmín",
+        "Cilantro",
+        "Caléndula"
+      ],
+      "base": [
+        "Ámbar negro",
+        "Madera de cedro",
+        "Vetiver",
+        "Almizcle"
+      ]
+    },
+    "priceRange": {
+      "min": 165,
+      "max": 280,
+      "currency": "EUR"
+    },
+    "pricePerMl": 2.8,
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "timeOfDay": [
+      "dia"
+    ],
+    "occasions": [
+      "diario",
+      "oficina",
+      "ocio"
+    ],
+    "projection": "Media",
+    "longevity": "7-9 horas",
+    "history": "Bal d'Afrique se lanzó en 2009 inspirado en el París bohemio de los años veinte y su fascinación por el arte africano. Jérôme Epinette firmó un floral verde luminoso y muy elegante, con cítricos brillantes y un fondo vetiver-ámbar. Es uno de los grandes superventas de Byredo y uno de sus perfumes más alabados por la crítica.",
+    "similar": [
+      "byredo-mojave-ghost",
+      "le-labo-santal-33",
+      "narciso-rodriguez-for-her"
+    ],
+    "rating": 4.3
   }
 ]
