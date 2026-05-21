@@ -15,9 +15,18 @@ import {
   occasionLabel,
   formatPrice,
   googleImagesUrl,
+  perfumeAnswer,
+  perfumeFaq,
+  perfumeScentDescription,
+  perfumeAudience,
   slugify,
   SITE_URL,
+  SITE_NAME,
+  perfumes as ALL_PERFUMES,
 } from "@/lib/data";
+
+const CURRENT_YEAR = 2026;
+const UPDATED_LABEL = "21 de mayo de 2026";
 
 export function generateStaticParams() {
   return getAllPerfumes().map((p) => ({ slug: p.slug }));
@@ -27,19 +36,20 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const perfume = getPerfumeBySlug(slug);
   if (!perfume) return {};
-  const title = `${perfume.name} de ${perfume.brand} — Notas, Precio e Historia`;
-  const description = `${perfume.name} (${perfume.concentration}) de ${perfume.brand}: perfil ${perfume.family.toLowerCase()}, perfume de ${genderLabel(
+  const title = `${perfume.name} de ${perfume.brand} ${CURRENT_YEAR}: notas, precio, opiniones e historia`;
+  const description = `${perfume.name} (${perfume.concentration}) de ${perfume.brand}: perfume ${perfume.family.toLowerCase()} de ${genderLabel(
     perfume.gender
-  ).toLowerCase()}. Notas, precio (${formatPrice(perfume)}), historia y mejor época del año para usarlo.`;
+  ).toLowerCase()}. Notas, precio (${formatPrice(perfume)}), duración ${perfume.longevity}, mejor época del año y opiniones.`;
   return {
     title,
     description,
     alternates: { canonical: `/perfumes/${perfume.slug}` },
     openGraph: {
-      title: `${title} | Olfativa`,
+      title: `${title} | ${SITE_NAME}`,
       description,
       url: `${SITE_URL}/perfumes/${perfume.slug}`,
       type: "article",
+      locale: "es_ES",
     },
     twitter: { card: "summary_large_image", title, description },
   };
@@ -55,59 +65,50 @@ export default async function PerfumePage({ params }) {
   const inClonesOf = CLONES.find((c) => c.alternatives.includes(perfume.slug));
   const { min, max, currency } = perfume.priceRange;
 
+  // Otros perfumes de la MISMA marca y de la MISMA familia
+  // para enlazado interno y mayor permanencia del usuario en el sitio.
+  const sameBrand = ALL_PERFUMES.filter(
+    (p) => p.brandSlug === perfume.brandSlug && p.slug !== perfume.slug
+  ).slice(0, 6);
+  const sameFamily = ALL_PERFUMES.filter(
+    (p) =>
+      p.family === perfume.family &&
+      p.slug !== perfume.slug &&
+      p.brandSlug !== perfume.brandSlug
+  ).slice(0, 6);
+
+  const answer = perfumeAnswer(perfume);
+  const faq = perfumeFaq(perfume);
+  const scent = perfumeScentDescription(perfume);
+  const audience = perfumeAudience(perfume);
+
   const faqLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: `¿${perfume.name} es para hombre o para mujer?`,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `${perfume.name} de ${perfume.brand} es un perfume de ${genderLabel(perfume.gender).toLowerCase()}, lanzado en ${perfume.year}.`,
-        },
-      },
-      {
-        "@type": "Question",
-        name: `¿Cuánto dura ${perfume.name}?`,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `${perfume.name} tiene una duración aproximada de ${perfume.longevity} con proyección ${perfume.projection.toLowerCase()}.`,
-        },
-      },
-      {
-        "@type": "Question",
-        name: `¿En qué época del año usar ${perfume.name}?`,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `${perfume.name} es ideal en ${perfume.seasons.map((s) => seasonLabel(s).toLowerCase()).join(", ")}.`,
-        },
-      },
-      {
-        "@type": "Question",
-        name: `¿Cuánto cuesta ${perfume.name}?`,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `${perfume.name} (${perfume.concentration}) tiene un precio orientativo de ${formatPrice(perfume)}, lo que equivale a unos ${perfume.pricePerMl.toFixed(2)}€ por mililitro.`,
-        },
-      },
-    ],
+    mainEntity: faq.map((q) => ({
+      "@type": "Question",
+      name: q.q,
+      acceptedAnswer: { "@type": "Answer", text: q.a },
+    })),
   };
 
-  const jsonLd = {
+  const productLd = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: `${perfume.name} ${perfume.concentration}`,
+    name: `${perfume.brand} ${perfume.name} ${perfume.concentration}`,
     brand: { "@type": "Brand", name: perfume.brand },
-    category: "Perfume",
-    description: perfume.history,
+    category: "Perfume / Fragancia",
+    description: `${perfume.name} (${perfume.concentration}) de ${perfume.brand}, perfume ${perfume.family.toLowerCase()} de ${genderLabel(perfume.gender).toLowerCase()} lanzado en ${perfume.year}.`,
     audience: { "@type": "PeopleAudience", suggestedGender: perfume.gender },
+    releaseDate: `${perfume.year}-01-01`,
+    inLanguage: "es-ES",
     offers: {
       "@type": "AggregateOffer",
       priceCurrency: currency,
       lowPrice: min,
       highPrice: max,
-      offerCount: 1,
+      offerCount: 3,
+      availability: "https://schema.org/InStock",
     },
     aggregateRating: {
       "@type": "AggregateRating",
@@ -115,6 +116,22 @@ export default async function PerfumePage({ params }) {
       bestRating: 5,
       ratingCount: 100,
     },
+    additionalProperty: [
+      { "@type": "PropertyValue", name: "Familia olfativa", value: perfume.family },
+      { "@type": "PropertyValue", name: "Perfumista", value: perfume.perfumer },
+      { "@type": "PropertyValue", name: "Duración", value: perfume.longevity },
+      { "@type": "PropertyValue", name: "Proyección", value: perfume.projection },
+    ],
+  };
+
+  const speakableLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".perfume-answer-box", ".perfume-h1"],
+    },
+    url: `${SITE_URL}/perfumes/${perfume.slug}`,
   };
 
   const levels = [
@@ -127,20 +144,22 @@ export default async function PerfumePage({ params }) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productLd) }}
       />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableLd) }}
+      />
+
       <Breadcrumbs
         items={[
           { href: "/", label: "Inicio" },
           { href: "/perfumes", label: "Perfumes" },
-          {
-            href: `/marcas/${perfume.brandSlug}`,
-            label: perfume.brand,
-          },
+          { href: `/marcas/${perfume.brandSlug}`, label: perfume.brand },
           { href: `/perfumes/${perfume.slug}`, label: perfume.name },
         ]}
       />
@@ -152,9 +171,16 @@ export default async function PerfumePage({ params }) {
             <Link href={`/marcas/${perfume.brandSlug}`} className="detail-brand">
               {perfume.brand}
             </Link>
-            <h1>{perfume.name}</h1>
+            <h1 className="perfume-h1">
+              {perfume.name}{" "}
+              <span style={{ fontSize: "0.55em", color: "var(--text-soft)", fontFamily: "Inter, sans-serif", fontWeight: 400 }}>
+                {perfume.concentration}
+              </span>
+            </h1>
             <p className="detail-tagline">
-              {perfume.concentration} · {perfume.family}
+              Perfume {perfume.family.toLowerCase()} de{" "}
+              {genderLabel(perfume.gender).toLowerCase()} ·{" "}
+              <time>{perfume.year}</time> · Por {perfume.perfumer}
             </p>
             <div className="detail-badges">
               <span className={`badge ${perfume.gender}`}>
@@ -207,8 +233,26 @@ export default async function PerfumePage({ params }) {
           </div>
         </div>
 
+        <p className="guide-meta" style={{ marginTop: "16px" }}>
+          Publicado por <Link href="/sobre">Editorial Olfativa</Link> ·{" "}
+          <time>Actualizado el {UPDATED_LABEL}</time>
+        </p>
+
+        <aside
+          className="perfume-answer-box guide-answer-box"
+          aria-label="Resumen rápido"
+        >
+          <strong className="guide-answer-label">En pocas palabras</strong>
+          <p>{answer}</p>
+        </aside>
+
         <div className="block">
-          <h2>Pirámide olfativa</h2>
+          <h2>Cómo huele {perfume.name}</h2>
+          <p style={{ fontSize: "1.02rem", lineHeight: "1.75" }}>{scent}</p>
+        </div>
+
+        <div className="block">
+          <h2>Pirámide olfativa de {perfume.name}</h2>
           <div className="pyramid">
             {levels.map((level) => (
               <div key={level.key} className="pyramid-level">
@@ -227,6 +271,11 @@ export default async function PerfumePage({ params }) {
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="block">
+          <h2>Quién debería usar {perfume.name}</h2>
+          <p style={{ fontSize: "1.02rem", lineHeight: "1.75" }}>{audience}</p>
         </div>
 
         <div className="block">
@@ -306,6 +355,20 @@ export default async function PerfumePage({ params }) {
           </div>
         </div>
 
+        <div className="block">
+          <h2>Preguntas frecuentes sobre {perfume.name}</h2>
+          <div className="faq-list">
+            {faq.map((q, i) => (
+              <details key={i} className="faq-item" open={i === 0}>
+                <summary>{q.q}</summary>
+                <div className="faq-answer">
+                  <p>{q.a}</p>
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+
         {similar.length > 0 && (
           <div className="block">
             <h2>Perfumes similares a {perfume.name}</h2>
@@ -327,6 +390,25 @@ export default async function PerfumePage({ params }) {
                 );
               })}
             </div>
+          </div>
+        )}
+
+        {sameBrand.length > 0 && (
+          <div className="block">
+            <h2>Otros perfumes de {perfume.brand}</h2>
+            <PerfumeGrid perfumes={sameBrand} />
+            <div className="chip-row" style={{ marginTop: "16px" }}>
+              <Link href={`/marcas/${perfume.brandSlug}`} className="chip">
+                Ver toda la perfumería de {perfume.brand} →
+              </Link>
+            </div>
+          </div>
+        )}
+
+        {sameFamily.length > 0 && (
+          <div className="block">
+            <h2>Otros perfumes {perfume.family.toLowerCase()}</h2>
+            <PerfumeGrid perfumes={sameFamily} />
           </div>
         )}
 
