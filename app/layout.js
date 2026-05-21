@@ -34,6 +34,40 @@ export const metadata = {
   },
   alternates: {
     canonical: "/",
+    languages: {
+      "es-ES": SITE_URL,
+      "x-default": SITE_URL,
+    },
+  },
+  authors: [{ name: `Editorial ${SITE_NAME}`, url: `${SITE_URL}/sobre` }],
+  creator: `Editorial ${SITE_NAME}`,
+  publisher: SITE_NAME,
+  applicationName: SITE_NAME,
+  category: "Perfumería",
+};
+
+const orgLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: SITE_NAME,
+  alternateName: "Olfativa.es",
+  url: SITE_URL,
+  description: SITE_DESCRIPTION,
+  inLanguage: "es-ES",
+  knowsAbout: [
+    "Perfumes",
+    "Fragancias",
+    "Perfumería de nicho",
+    "Familias olfativas",
+    "Notas olfativas",
+  ],
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: `${SITE_URL}/buscar?q={search_term_string}`,
+    },
+    "query-input": "required name=search_term_string",
   },
 };
 
@@ -56,6 +90,12 @@ export default function RootLayout({ children }) {
         <link rel="dns-prefetch" href="https://www.druni.es" />
         <link rel="dns-prefetch" href="https://www.google.com" />
         <meta name="theme-color" content="#9c7a4d" />
+        <link rel="alternate" hrefLang="es-ES" href={SITE_URL} />
+        <link rel="alternate" hrefLang="x-default" href={SITE_URL} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgLd) }}
+        />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body>

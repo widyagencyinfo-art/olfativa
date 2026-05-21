@@ -2,8 +2,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import MarkdownText from "@/components/MarkdownText";
-import { GUIDES, getGuide } from "@/lib/guides";
+import { GUIDES, getGuide, getAnswer } from "@/lib/guides";
 import { SITE_URL, SITE_NAME } from "@/lib/data";
+
+const UPDATED = "2026-05-21";
+const UPDATED_LABEL = "21 de mayo de 2026";
 
 export function generateStaticParams() {
   return GUIDES.map((g) => ({ slug: g.slug }));
@@ -22,12 +25,36 @@ export async function generateMetadata({ params }) {
       description: guide.description,
       type: "article",
       url: `${SITE_URL}/guias/${guide.slug}`,
+      locale: "es_ES",
     },
     twitter: {
       card: "summary_large_image",
       title: guide.title,
       description: guide.description,
     },
+  };
+}
+
+// Detecta si la guía es una guía "cómo se hace" (HowTo) elegible para
+// schema HowTo de Google. Solo aplica al subset de guías procedimentales.
+function buildHowToLd(guide) {
+  const howToSlugs = ["como-aplicar-perfume-correctamente", "como-conservar-perfumes"];
+  if (!howToSlugs.includes(guide.slug)) return null;
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: guide.h1,
+    description: guide.description,
+    totalTime: "PT5M",
+    step: guide.sections.map((s, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: s.h2,
+      text: s.body
+        .replace(/\*\*/g, "")
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+        .slice(0, 280),
+    })),
   };
 }
 
@@ -40,28 +67,49 @@ export default async function GuiaPage({ params }) {
     .map((s) => GUIDES.find((g) => g.slug === s))
     .filter(Boolean);
 
+  const answer = getAnswer(slug);
+
   const articleLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: guide.title,
     description: guide.description,
     inLanguage: "es-ES",
-    author: { "@type": "Organization", name: SITE_NAME },
-    publisher: { "@type": "Organization", name: SITE_NAME },
+    datePublished: UPDATED,
+    dateModified: UPDATED,
+    author: {
+      "@type": "Organization",
+      name: `Editorial ${SITE_NAME}`,
+      url: `${SITE_URL}/sobre`,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
     mainEntityOfPage: `${SITE_URL}/guias/${guide.slug}`,
+    ...(answer && {
+      speakable: {
+        "@type": "SpeakableSpecification",
+        cssSelector: [".guide-answer-box"],
+      },
+    }),
   };
 
-  const faqLd = guide.faq && guide.faq.length
-    ? {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: guide.faq.map((q) => ({
-          "@type": "Question",
-          name: q.q,
-          acceptedAnswer: { "@type": "Answer", text: q.a },
-        })),
-      }
-    : null;
+  const faqLd =
+    guide.faq && guide.faq.length
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: guide.faq.map((q) => ({
+            "@type": "Question",
+            name: q.q,
+            acceptedAnswer: { "@type": "Answer", text: q.a },
+          })),
+        }
+      : null;
+
+  const howToLd = buildHowToLd(guide);
 
   return (
     <>
@@ -73,6 +121,12 @@ export default async function GuiaPage({ params }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        />
+      )}
+      {howToLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToLd) }}
         />
       )}
 
@@ -89,10 +143,21 @@ export default async function GuiaPage({ params }) {
           <header className="guide-head">
             <span className="eyebrow">Guía Olfativa</span>
             <h1>{guide.h1}</h1>
+            <p className="guide-meta">
+              Publicado por <Link href="/sobre">Editorial Olfativa</Link> ·{" "}
+              <time dateTime={UPDATED}>Actualizado el {UPDATED_LABEL}</time>
+            </p>
             <p className="guide-lead">
               <MarkdownText>{guide.intro}</MarkdownText>
             </p>
           </header>
+
+          {answer && (
+            <aside className="guide-answer-box" aria-label="Respuesta rápida">
+              <strong className="guide-answer-label">Respuesta rápida</strong>
+              <p>{answer}</p>
+            </aside>
+          )}
 
           {guide.sections.length > 0 && (
             <nav className="guide-toc" aria-label="Contenido">

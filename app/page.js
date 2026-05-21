@@ -39,11 +39,48 @@ export default function HomePage() {
     name: SITE_NAME,
     url: SITE_URL,
     description: SITE_DESCRIPTION,
+    inLanguage: "es-ES",
     potentialAction: {
       "@type": "SearchAction",
-      target: `${SITE_URL}/buscar?q={search_term_string}`,
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${SITE_URL}/buscar?q={search_term_string}`,
+      },
       "query-input": "required name=search_term_string",
     },
+  };
+
+  const HOME_FAQ = [
+    {
+      q: "¿Cuántos perfumes tiene Olfativa?",
+      a: `Olfativa tiene actualmente ${perfumes.length} perfumes catalogados con notas olfativas, perfil, precio orientativo, historia y mejor época del año, distribuidos en ${brands.length} marcas distintas (de gran consumo, nicho y lujo) y ${families.length} familias olfativas.`,
+    },
+    {
+      q: "¿Cómo elijo el perfume adecuado para mí?",
+      a: "Identifica primero tu familia olfativa preferida (floral, amaderada, cítrica, oriental, gourmand...), prueba siempre en piel (no en blotter), espera 2 horas para que se desarrolle y no compres en caliente. Empieza por muestras o decants antes del frasco grande. Ver guía completa: /guias/como-elegir-perfume.",
+    },
+    {
+      q: "¿Qué significa EDP, EDT y Parfum?",
+      a: "Son las concentraciones de esencia de un perfume. Parfum: 20-40%, dura 10-14 horas. EDP (Eau de Parfum): 15-20%, dura 7-10 horas. EDT (Eau de Toilette): 5-15%, dura 4-7 horas. EDC (Eau de Cologne): 2-5%, dura 2-4 horas. Cuanta más esencia, más intenso y proyectivo.",
+    },
+    {
+      q: "¿Qué son los clones de perfumes?",
+      a: "Los clones son perfumes asequibles que imitan el perfil olfativo de fragancias caras (Aventus, Baccarat Rouge 540, Tobacco Vanille, Sauvage…) a una fracción del precio. Marcas como Armaf, Lattafa, Nishane o Mancera lideran este mercado. En Olfativa tenemos páginas dedicadas con los mejores clones de cada perfume estrella.",
+    },
+    {
+      q: "¿Cómo aplicar perfume para que dure todo el día?",
+      a: "Aplica 2-4 pulverizaciones en los puntos de pulso (muñecas, cuello, pecho), a 15-20 cm de la piel, sobre piel hidratada y sin frotar. La piel hidratada con crema neutra multiplica la duración. No guardes el perfume en el baño: la humedad y el calor lo degradan rápidamente.",
+    },
+  ];
+
+  const homeFaqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: HOME_FAQ.map((q) => ({
+      "@type": "Question",
+      name: q.q,
+      acceptedAnswer: { "@type": "Answer", text: q.a },
+    })),
   };
 
   return (
@@ -51,6 +88,10 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqLd) }}
       />
 
       <section className="hero">
@@ -154,6 +195,24 @@ export default function HomePage() {
       </section>
 
       <section className="section">
+        <div className="container">
+          <div className="section-head">
+            <h2>Preguntas frecuentes sobre perfumes</h2>
+          </div>
+          <div className="faq-list" style={{ maxWidth: "820px" }}>
+            {HOME_FAQ.map((q, i) => (
+              <details key={i} className="faq-item" open={i === 0}>
+                <summary>{q.q}</summary>
+                <div className="faq-answer">
+                  <p>{q.a}</p>
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section" style={{ background: "var(--bg-soft)" }}>
         <div className="container">
           <div className="section-head">
             <h2>Marcas destacadas</h2>
