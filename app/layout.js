@@ -90,8 +90,6 @@ export default function RootLayout({ children }) {
         <link rel="dns-prefetch" href="https://www.druni.es" />
         <link rel="dns-prefetch" href="https://www.google.com" />
         <meta name="theme-color" content="#9c7a4d" />
-        <link rel="alternate" hrefLang="es-ES" href={SITE_URL} />
-        <link rel="alternate" hrefLang="x-default" href={SITE_URL} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgLd) }}
