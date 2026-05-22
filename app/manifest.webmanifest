@@ -1,0 +1,23 @@
+{
+  "name": "Olfativa — Enciclopedia y buscador de perfumes",
+  "short_name": "Olfativa",
+  "description": "Enciclopedia de perfumes en español: notas, perfil olfativo, precio, marca, historia y mejor época del año para más de 280 perfumes.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf8f4",
+  "theme_color": "#9c7a4d",
+  "lang": "es-ES",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/apple-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

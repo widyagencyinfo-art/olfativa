@@ -44,6 +44,7 @@ export const metadata = {
   publisher: SITE_NAME,
   applicationName: SITE_NAME,
   category: "Perfumería",
+  manifest: "/manifest.webmanifest",
 };
 
 const orgLd = {

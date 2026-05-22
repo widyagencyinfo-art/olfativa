@@ -28,6 +28,7 @@ export default function SiteFooter() {
               <li><Link href="/clones">Clones baratos</Link></li>
               <li><Link href="/guias">Guías de perfumería</Link></li>
               <li><Link href="/glosario">Glosario</Link></li>
+              <li><Link href="/preguntas-frecuentes">Preguntas frecuentes</Link></li>
               <li><Link href="/marcas">Marcas</Link></li>
               <li><Link href="/notas">Notas olfativas</Link></li>
               <li><Link href="/buscar">Buscador avanzado</Link></li>
