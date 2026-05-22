@@ -22,6 +22,7 @@ export default function sitemap() {
     "/mejores",
     "/clones",
     "/guias",
+    "/glosario",
     "/sobre",
     "/aviso-legal",
     "/politica-privacidad",

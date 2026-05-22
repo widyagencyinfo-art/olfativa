@@ -33,6 +33,13 @@ export default function HomePage() {
     .sort((a, b) => b.rating - a.rating)
     .slice(0, 8);
 
+  // Novedades: perfumes lanzados en los ultimos 3 anos. Senal de
+  // frescura para Google y razon para que el usuario vuelva.
+  const novedades = [...perfumes]
+    .filter((p) => p.year >= 2023)
+    .sort((a, b) => b.year - a.year || b.rating - a.rating)
+    .slice(0, 8);
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -122,6 +129,19 @@ export default function HomePage() {
       </section>
 
       <section className="section">
+        <div className="container">
+          <div className="section-head">
+            <h2>Novedades 2024-2026</h2>
+            <Link href="/perfumes">Ver todos →</Link>
+          </div>
+          <p style={{ color: "var(--text-soft)", marginBottom: "20px" }}>
+            Lanzamientos recientes de las grandes marcas y casas de nicho.
+          </p>
+          <PerfumeGrid perfumes={novedades} />
+        </div>
+      </section>
+
+      <section className="section" style={{ background: "var(--bg-soft)" }}>
         <div className="container">
           <div className="section-head">
             <h2>Perfumes mejor valorados</h2>

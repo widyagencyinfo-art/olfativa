@@ -9,6 +9,7 @@ const NAV = [
   { href: "/comparativas", label: "Comparativas" },
   { href: "/clones", label: "Clones" },
   { href: "/guias", label: "Guías" },
+  { href: "/glosario", label: "Glosario" },
   { href: "/marcas", label: "Marcas" },
   { href: "/genero/hombre", label: "Hombre" },
   { href: "/genero/mujer", label: "Mujer" },
