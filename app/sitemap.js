@@ -24,6 +24,7 @@ export default function sitemap() {
     "/guias",
     "/glosario",
     "/preguntas-frecuentes",
+    "/test/familia-olfativa",
     "/sobre",
     "/aviso-legal",
     "/politica-privacidad",

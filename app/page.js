@@ -130,6 +130,26 @@ export default function HomePage() {
 
       <section className="section">
         <div className="container">
+          <div
+            className="callout"
+            style={{ textAlign: "center", padding: "32px 28px" }}
+          >
+            <h2 style={{ margin: "0 0 6px", fontSize: "1.6rem" }}>
+              ¿No sabes qué tipo de perfume buscar?
+            </h2>
+            <p style={{ marginBottom: "18px", color: "var(--text)" }}>
+              Haz nuestro <strong>test gratis de 6 preguntas</strong> y
+              descubre tu familia olfativa + 6 perfumes recomendados.
+            </p>
+            <Link href="/test/familia-olfativa" className="btn">
+              Empezar test (1 minuto) →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="section" style={{ background: "var(--bg-soft)" }}>
+        <div className="container">
           <div className="section-head">
             <h2>Novedades 2024-2026</h2>
             <Link href="/perfumes">Ver todos →</Link>
