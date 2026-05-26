@@ -1,0 +1,55 @@
+name: Bot social diario
+
+# Ejecuta el bot dos veces al dia (UTC).
+# 07:00 UTC = 09:00 Madrid (verano) / 08:00 Madrid (invierno)
+# 17:00 UTC = 19:00 Madrid (verano) / 18:00 Madrid (invierno)
+# Si quieres ajustar, cambia los cron schedules.
+on:
+  schedule:
+    - cron: "0 7 * * *"   # mañana
+    - cron: "0 17 * * *"  # tarde
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "Slot a postear (morning o evening)"
+        required: false
+        default: "morning"
+        type: choice
+        options:
+          - morning
+          - evening
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Determinar slot
+        id: slot
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "value=${{ github.event.inputs.slot }}" >> "$GITHUB_OUTPUT"
+          else
+            HOUR=$(date -u +%H)
+            if [ "$HOUR" -lt "12" ]; then
+              echo "value=morning" >> "$GITHUB_OUTPUT"
+            else
+              echo "value=evening" >> "$GITHUB_OUTPUT"
+            fi
+          fi
+
+      - name: Postear
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_PASSWORD: ${{ secrets.BLUESKY_PASSWORD }}
+          MASTODON_INSTANCE: ${{ secrets.MASTODON_INSTANCE }}
+          MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+        run: node scripts/social-bot.js ${{ steps.slot.outputs.value }}
