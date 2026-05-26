@@ -11,6 +11,7 @@ const NAV = [
   { href: "/guias", label: "Guías" },
   { href: "/glosario", label: "Glosario" },
   { href: "/test/familia-olfativa", label: "Test" },
+  { href: "/perfume-zodiacal", label: "Zodiacal" },
   { href: "/marcas", label: "Marcas" },
   { href: "/genero/hombre", label: "Hombre" },
   { href: "/genero/mujer", label: "Mujer" },

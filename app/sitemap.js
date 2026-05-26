@@ -8,6 +8,7 @@ import {
 import { LISTS } from "@/lib/lists";
 import { GUIDES } from "@/lib/guides";
 import { CLONES } from "@/lib/clones";
+import { ZODIAC } from "@/lib/zodiac";
 
 export default function sitemap() {
   const now = new Date();
@@ -25,6 +26,7 @@ export default function sitemap() {
     "/glosario",
     "/preguntas-frecuentes",
     "/test/familia-olfativa",
+    "/perfume-zodiacal",
     "/sobre",
     "/aviso-legal",
     "/politica-privacidad",
@@ -102,6 +104,13 @@ export default function sitemap() {
     priority: 0.9,
   }));
 
+  const zodiacPages = ZODIAC.map((s) => ({
+    url: `${SITE_URL}/perfume-zodiacal/${s.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.85,
+  }));
+
   return [
     ...staticPages,
     ...perfumePages,
@@ -112,5 +121,6 @@ export default function sitemap() {
     ...listPages,
     ...guidePages,
     ...clonePages,
+    ...zodiacPages,
   ];
 }

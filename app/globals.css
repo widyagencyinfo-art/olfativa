@@ -1365,3 +1365,113 @@ img {
     padding: 48px 0 40px;
   }
 }
+
+/* Quiz zodiacal viral */
+.share-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin: 20px 0 8px;
+}
+.share-label {
+  font-size: 0.95rem;
+  color: var(--text-soft);
+  font-weight: 600;
+}
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.15s ease, transform 0.1s ease;
+}
+.share-btn:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+.zodiac-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 14px;
+  margin: 24px 0;
+}
+.zodiac-tile {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 14px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text);
+  transition: all 0.2s ease;
+}
+.zodiac-tile:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+.zodiac-tile .emoji {
+  font-size: 2.4rem;
+  display: block;
+  margin-bottom: 4px;
+}
+.zodiac-tile h3 {
+  margin: 6px 0 2px;
+  font-size: 1.1rem;
+}
+.zodiac-tile p {
+  font-size: 0.82rem;
+  color: var(--text-soft);
+  margin: 0;
+}
+.zodiac-hero {
+  text-align: center;
+  padding: 36px 24px 28px;
+  background: linear-gradient(135deg, var(--bg-soft), var(--bg));
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  margin-bottom: 24px;
+}
+.zodiac-hero .emoji-big {
+  font-size: 4rem;
+  display: block;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.zodiac-hero h1 {
+  margin: 8px 0 4px;
+}
+.zodiac-hero .dates {
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+.zodiac-keyword-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+.zodiac-keyword {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  color: var(--text-soft);
+}
+.zodiac-quote {
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--accent);
+  text-align: center;
+  margin: 24px auto;
+  padding: 18px 24px;
+  border-left: 3px solid var(--accent);
+  border-right: 3px solid var(--accent);
+  max-width: 600px;
+}

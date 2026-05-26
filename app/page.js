@@ -151,6 +151,44 @@ export default function HomePage() {
       <section className="section" style={{ background: "var(--bg-soft)" }}>
         <div className="container">
           <div className="section-head">
+            <h2>¿Qué perfume eres según tu signo zodiacal? ♈♉♊</h2>
+            <Link href="/perfume-zodiacal">Ver los 12 signos →</Link>
+          </div>
+          <p style={{ color: "var(--text-soft)", marginBottom: 20 }}>
+            12 signos del zodiaco, 72 perfumes recomendados. Cada signo conecta
+            con una familia olfativa concreta. Descubre el tuyo, el de tu
+            pareja, tu mejor amiga o tu jefe.
+          </p>
+          <div className="chip-row">
+            {[
+              { slug: "aries", emoji: "♈", name: "Aries" },
+              { slug: "tauro", emoji: "♉", name: "Tauro" },
+              { slug: "geminis", emoji: "♊", name: "Géminis" },
+              { slug: "cancer", emoji: "♋", name: "Cáncer" },
+              { slug: "leo", emoji: "♌", name: "Leo" },
+              { slug: "virgo", emoji: "♍", name: "Virgo" },
+              { slug: "libra", emoji: "♎", name: "Libra" },
+              { slug: "escorpio", emoji: "♏", name: "Escorpio" },
+              { slug: "sagitario", emoji: "♐", name: "Sagitario" },
+              { slug: "capricornio", emoji: "♑", name: "Capricornio" },
+              { slug: "acuario", emoji: "♒", name: "Acuario" },
+              { slug: "piscis", emoji: "♓", name: "Piscis" }
+            ].map((z) => (
+              <Link
+                key={z.slug}
+                href={`/perfume-zodiacal/${z.slug}`}
+                className="chip"
+              >
+                {z.emoji} {z.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="section-head">
             <h2>Novedades 2024-2026</h2>
             <Link href="/perfumes">Ver todos →</Link>
           </div>
