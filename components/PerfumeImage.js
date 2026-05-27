@@ -1,8 +1,5 @@
-"use client";
-
-import { useState } from "react";
 import PerfumeBottle from "./PerfumeBottle";
-import { familyTheme, SITE_URL } from "@/lib/data";
+import { familyTheme } from "@/lib/data";
 
 function sourceUrl(perfume) {
   if (!perfume.imageSource) return null;
@@ -21,11 +18,10 @@ function sourceUrl(perfume) {
 
 export default function PerfumeImage({ perfume, variant = "card" }) {
   const cls = variant === "detail" ? "detail-visual" : "card-visual";
-  const [failed, setFailed] = useState(false);
   const theme = familyTheme(perfume.family);
 
-  // Si tenemos imagen real del frasco y no ha fallado al cargar
-  if (perfume.image && !failed) {
+  if (perfume.image) {
+    const isLocal = perfume.image.startsWith("/");
     const visual = (
       <div
         className={`${cls} has-photo`}
@@ -36,9 +32,9 @@ export default function PerfumeImage({ perfume, variant = "card" }) {
         <img
           src={perfume.image}
           alt={`Foto del perfume ${perfume.name} de ${perfume.brand}`}
-          loading="lazy"
-          onError={() => setFailed(true)}
-          referrerPolicy="no-referrer"
+          loading={variant === "detail" ? "eager" : "lazy"}
+          decoding="async"
+          {...(!isLocal && { referrerPolicy: "no-referrer" })}
         />
       </div>
     );
@@ -64,25 +60,7 @@ export default function PerfumeImage({ perfume, variant = "card" }) {
     return visual;
   }
 
-  // Fallback en pagina de detalle: OG image dinamica generada por nosotros
-  if (variant === "detail") {
-    return (
-      <div
-        className={`${cls} has-photo`}
-        style={{
-          background: `linear-gradient(150deg, ${theme.bg1}, ${theme.bg2})`
-        }}
-      >
-        <img
-          src={`${SITE_URL}/perfumes/${perfume.slug}/opengraph-image`}
-          alt={`${perfume.name} ${perfume.brand}`}
-          loading="lazy"
-        />
-      </div>
-    );
-  }
-
-  // Cards sin imagen: SVG bottle estilizado con paleta de la familia
+  // Sin imagen: fondo gradient + SVG bottle estilizado
   return (
     <div
       className={cls}
