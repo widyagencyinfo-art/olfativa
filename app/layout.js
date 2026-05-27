@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import TelegramCta from "@/components/TelegramCta";
@@ -109,6 +110,7 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <SiteFooter />
         <TelegramCta />
+        <Analytics />
       </body>
     </html>
   );
