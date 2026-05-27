@@ -364,15 +364,13 @@ img {
   overflow: hidden;
 }
 
+/* Cards de foto: gradient de la familia olfativa visible detras del
+   frasco. Si la imagen tiene fondo transparente (procesada con rembg)
+   el frasco "flota" sobre el gradient. Si tiene fondo blanco lo deja
+   ver pero no rompe el grid. */
 .card-visual.has-photo,
 .detail-visual.has-photo {
-  padding: 0;
-  background: #fff;
-}
-
-[data-theme="dark"] .card-visual.has-photo,
-[data-theme="dark"] .detail-visual.has-photo {
-  background: #f4f1ea;
+  padding: 14px;
 }
 
 .card-visual.has-photo img,
@@ -382,12 +380,15 @@ img {
   object-fit: contain;
   display: block;
   margin: 0 auto;
-  padding: 12px;
-  box-sizing: border-box;
+  filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.18));
+}
+
+.detail-visual.has-photo {
+  padding: 32px;
 }
 
 .detail-visual.has-photo img {
-  padding: 24px;
+  filter: drop-shadow(0 10px 28px rgba(0, 0, 0, 0.22));
 }
 
 .card-body {
