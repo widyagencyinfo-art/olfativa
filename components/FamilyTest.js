@@ -99,6 +99,26 @@ export default function FamilyTest({ allPerfumes }) {
           </Link>
         </div>
 
+        <div className="tg-inline">
+          <span className="tg-emoji">📨</span>
+          <div className="tg-content">
+            <h3>Sigue descubriendo perfumes {family.name.toLowerCase()}</h3>
+            <p>
+              Cada mañana publicamos un perfume nuevo en el canal de
+              Telegram <strong>@olfativacomunidad</strong>. Si te gusta lo{" "}
+              {family.name.toLowerCase()}, te va a encantar.
+            </p>
+          </div>
+          <a
+            href="https://t.me/olfativacomunidad"
+            target="_blank"
+            rel="noopener"
+            className="tg-btn"
+          >
+            Unirme
+          </a>
+        </div>
+
         <p
           style={{
             color: "var(--text-soft)",

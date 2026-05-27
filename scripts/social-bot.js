@@ -65,10 +65,12 @@ function postMorning() {
   // Mañana: perfume del dia (offset por hora -> no repite entre slots)
   const p = pick(perfumes, hourSalt());
   const url = `${SITE}/perfumes/${p.slug}`;
+  const ogImage = `${SITE}/perfumes/${p.slug}/opengraph-image`;
   const top = p.notes.top.slice(0, 3).join(", ").toLowerCase();
   const base = p.notes.base.slice(0, 2).join(" y ").toLowerCase();
 
   return {
+    photo: ogImage,
     short: `🌸 Perfume del día: ${p.name} de ${p.brand}\n\n${p.family} · ${p.concentration} · ${p.year}\n\nSalida: ${top}\nFondo: ${base}\n\nDuración: ${p.longevity}\n\n${url}`,
     long: `🌸 Perfume del día\n\n${p.name} — ${p.brand} (${p.year})\n\nUn ${p.family.toLowerCase()} ${p.concentration} firmado por ${p.perfumer}.\n\nNotas de salida: ${top}.\nFondo: ${base}.\nProyección ${p.projection.toLowerCase()}, duración ${p.longevity}.\n\nFicha completa, FAQ y precio orientativo: ${url}\n\n#perfume #fragancia #olfativa #${p.brandSlug.replace(/-/g, "")}`
   };
@@ -103,23 +105,48 @@ function postEvening() {
 
 // =================== Telegram ===================
 
-async function postTelegram(text) {
+async function postTelegram(text, photoUrl) {
   const token = process.env.TELEGRAM_BOT_TOKEN;
   const chat = process.env.TELEGRAM_CHAT_ID;
   if (!token || !chat) {
     console.log("[telegram] sin credenciales, saltado");
     return;
   }
-  const url = `https://api.telegram.org/bot${token}/sendMessage`;
-  const r = await fetch(url, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      chat_id: chat,
-      text,
-      disable_web_page_preview: false
-    })
-  });
+
+  // Si hay photoUrl, mandamos sendPhoto (caption con texto). Cuando
+  // alguien reenvia el post en Telegram, se ve la imagen preciosa.
+  if (photoUrl) {
+    const r = await fetch(
+      `https://api.telegram.org/bot${token}/sendPhoto`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          chat_id: chat,
+          photo: photoUrl,
+          caption: text.slice(0, 1024) // limite caption Telegram
+        })
+      }
+    );
+    const j = await r.json();
+    console.log("[telegram:photo]", r.status, j.ok ? "OK" : j.description);
+    if (j.ok) return;
+    // Fallback a sendMessage si sendPhoto fallo (ej. OG no accesible)
+    console.log("[telegram] photo fallo, fallback a texto");
+  }
+
+  const r = await fetch(
+    `https://api.telegram.org/bot${token}/sendMessage`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        chat_id: chat,
+        text,
+        disable_web_page_preview: false
+      })
+    }
+  );
   const j = await r.json();
   console.log("[telegram]", r.status, j.ok ? "OK" : j.description);
 }
@@ -230,7 +257,7 @@ async function main() {
   console.log("---");
 
   await Promise.all([
-    postTelegram(post.long),
+    postTelegram(post.long, post.photo),
     postBluesky(post.long),
     postMastodon(post.long)
   ]);

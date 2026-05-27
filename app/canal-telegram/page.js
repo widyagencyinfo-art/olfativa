@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ShareButtons from "@/components/ShareButtons";
+import TelegramWidget from "@/components/TelegramWidget";
 import {
   TELEGRAM_CHANNEL_URL,
   TELEGRAM_CHANNEL_NAME,
@@ -123,6 +124,15 @@ export default function CanalTelegramPage() {
             url="/canal-telegram"
             text="📨 1 perfume al día gratis en este canal de Telegram"
           />
+
+          <div className="section-head" style={{ marginTop: 36 }}>
+            <h2>El canal en vivo</h2>
+          </div>
+          <p style={{ marginBottom: 12, color: "var(--text-soft)" }}>
+            Mira lo que estamos publicando ahora mismo. Si te gusta lo que
+            ves, dale a "Suscribirse" arriba a la derecha.
+          </p>
+          <TelegramWidget channel="olfativacomunidad" height={620} />
 
           <div className="section-head" style={{ marginTop: 36 }}>
             <h2>Qué publicamos cada día</h2>
