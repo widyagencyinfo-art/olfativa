@@ -6,8 +6,10 @@ name: Bot social diario
 # Si quieres ajustar, cambia los cron schedules.
 on:
   schedule:
-    - cron: "0 7 * * *"   # mañana
-    - cron: "0 17 * * *"  # tarde
+    - cron: "0 7 * * *"   # 09:00 Madrid - perfume del dia
+    - cron: "0 11 * * *"  # 13:00 Madrid - clon / curiosidad
+    - cron: "0 16 * * *"  # 18:00 Madrid - perfume del dia rotativo
+    - cron: "0 19 * * *"  # 21:00 Madrid - clon / curiosidad
   workflow_dispatch:
     inputs:
       slot:
@@ -36,12 +38,15 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "value=${{ github.event.inputs.slot }}" >> "$GITHUB_OUTPUT"
           else
+            # Slot rotativo segun la hora UTC del cron
             HOUR=$(date -u +%H)
-            if [ "$HOUR" -lt "12" ]; then
-              echo "value=morning" >> "$GITHUB_OUTPUT"
-            else
-              echo "value=evening" >> "$GITHUB_OUTPUT"
-            fi
+            case "$HOUR" in
+              07) echo "value=morning" >> "$GITHUB_OUTPUT" ;;
+              11) echo "value=evening" >> "$GITHUB_OUTPUT" ;;
+              16) echo "value=morning" >> "$GITHUB_OUTPUT" ;;
+              19) echo "value=evening" >> "$GITHUB_OUTPUT" ;;
+              *)  echo "value=morning" >> "$GITHUB_OUTPUT" ;;
+            esac
           fi
 
       - name: Postear

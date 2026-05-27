@@ -52,11 +52,18 @@ function pick(arr, offset = 0) {
   return arr[(dayOfYear() + offset) % arr.length];
 }
 
+// Offset adicional segun hora UTC para que slots distintos del mismo
+// dia no posteen el mismo item (4 slots/dia con catalogos rotando).
+function hourSalt() {
+  const h = new Date().getUTCHours();
+  return Math.floor(h * 7); // 0, 49, 56, 77, 112, 133 -> dispersos
+}
+
 // =================== Construccion de posts ===================
 
 function postMorning() {
-  // Mañana: perfume del dia
-  const p = pick(perfumes);
+  // Mañana: perfume del dia (offset por hora -> no repite entre slots)
+  const p = pick(perfumes, hourSalt());
   const url = `${SITE}/perfumes/${p.slug}`;
   const top = p.notes.top.slice(0, 3).join(", ").toLowerCase();
   const base = p.notes.base.slice(0, 2).join(" y ").toLowerCase();
@@ -68,11 +75,12 @@ function postMorning() {
 }
 
 function postEvening() {
-  // Tarde: clon del dia O dato curioso, alternando
-  const isClone = dayOfYear() % 2 === 0;
+  // Tarde: clon del dia O dato curioso, alternando por hora+dia
+  const slot = (dayOfYear() + new Date().getUTCHours()) % 2;
+  const isClone = slot === 0;
 
   if (isClone && clones.length) {
-    const c = pick(clones, 7);
+    const c = pick(clones, 7 + hourSalt());
     const url = `${SITE}/clones/${c.slug}`;
     return {
       short: `💰 Clon del día\n\n${c.h1}\n\n${url}`,
@@ -82,7 +90,7 @@ function postEvening() {
 
   // Guia curiosa
   if (guides.length) {
-    const g = pick(guides, 13);
+    const g = pick(guides, 13 + hourSalt());
     const url = `${SITE}/guias/${g.slug}`;
     return {
       short: `💡 ¿Sabías que...?\n\n${g.title}\n\n${url}`,
