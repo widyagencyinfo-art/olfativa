@@ -1,5 +1,12 @@
 import Link from "next/link";
-import { getBrands, getGenders, getSeasons, SITE_NAME } from "@/lib/data";
+import {
+  getBrands,
+  getGenders,
+  getSeasons,
+  SITE_NAME,
+  TELEGRAM_CHANNEL_URL,
+  TELEGRAM_CHANNEL_HANDLE,
+} from "@/lib/data";
 
 export default function SiteFooter() {
   const brands = getBrands().slice(0, 6);
@@ -18,6 +25,26 @@ export default function SiteFooter() {
               La enciclopedia de perfumes. Notas, perfil olfativo, precio,
               historia y la mejor época del año para llevar cada fragancia.
             </p>
+            <a
+              href={TELEGRAM_CHANNEL_URL}
+              target="_blank"
+              rel="noopener"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 8,
+                marginTop: 14,
+                padding: "10px 16px",
+                background: "#229ED9",
+                color: "#fff",
+                borderRadius: 999,
+                fontSize: "0.88rem",
+                fontWeight: 600,
+                textDecoration: "none"
+              }}
+            >
+              📨 Telegram {TELEGRAM_CHANNEL_HANDLE}
+            </a>
           </div>
           <div>
             <h4>Explorar</h4>
@@ -29,6 +56,8 @@ export default function SiteFooter() {
               <li><Link href="/guias">Guías de perfumería</Link></li>
               <li><Link href="/glosario">Glosario</Link></li>
               <li><Link href="/test/familia-olfativa">Test ¿Qué familia olfativa eres?</Link></li>
+              <li><Link href="/perfume-zodiacal">Perfume zodiacal</Link></li>
+              <li><Link href="/canal-telegram">Canal Telegram</Link></li>
               <li><Link href="/preguntas-frecuentes">Preguntas frecuentes</Link></li>
               <li><Link href="/marcas">Marcas</Link></li>
               <li><Link href="/notas">Notas olfativas</Link></li>

@@ -1,7 +1,13 @@
 import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
-import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from "@/lib/data";
+import TelegramCta from "@/components/TelegramCta";
+import {
+  SITE_NAME,
+  SITE_URL,
+  SITE_DESCRIPTION,
+  TELEGRAM_CHANNEL_URL,
+} from "@/lib/data";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
@@ -62,6 +68,7 @@ const orgLd = {
     "Familias olfativas",
     "Notas olfativas",
   ],
+  sameAs: [TELEGRAM_CHANNEL_URL],
   potentialAction: {
     "@type": "SearchAction",
     target: {
@@ -101,6 +108,7 @@ export default function RootLayout({ children }) {
         <SiteHeader />
         <main>{children}</main>
         <SiteFooter />
+        <TelegramCta />
       </body>
     </html>
   );

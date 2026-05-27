@@ -130,6 +130,26 @@ export default function HomePage() {
 
       <section className="section">
         <div className="container">
+          <div className="tg-inline" style={{ marginTop: 0 }}>
+            <span className="tg-emoji">📨</span>
+            <div className="tg-content">
+              <h3>1 perfume al día gratis en Telegram</h3>
+              <p>
+                Cada mañana enviamos un perfume del catálogo al canal{" "}
+                <strong>@olfativacomunidad</strong>. Por la tarde, clones
+                baratos o curiosidades. Sin algoritmo, sin spam.
+              </p>
+            </div>
+            <a
+              href="https://t.me/olfativacomunidad"
+              target="_blank"
+              rel="noopener"
+              className="tg-btn"
+            >
+              Suscribirme →
+            </a>
+          </div>
+
           <div
             className="callout"
             style={{ textAlign: "center", padding: "32px 28px" }}

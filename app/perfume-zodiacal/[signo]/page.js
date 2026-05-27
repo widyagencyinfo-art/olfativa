@@ -4,7 +4,12 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import PerfumeGrid from "@/components/PerfumeGrid";
 import ShareButtons from "@/components/ShareButtons";
 import { ZODIAC, getZodiacMatches, getAllZodiacSlugs } from "@/lib/zodiac";
-import { SITE_URL, SITE_NAME } from "@/lib/data";
+import {
+  SITE_URL,
+  SITE_NAME,
+  TELEGRAM_CHANNEL_URL,
+  TELEGRAM_CHANNEL_HANDLE,
+} from "@/lib/data";
 
 export function generateStaticParams() {
   return getAllZodiacSlugs().map((signo) => ({ signo }));
@@ -153,6 +158,26 @@ export default async function ZodiacSignPage({ params }) {
           <PerfumeGrid perfumes={data.perfumes} />
 
           <ShareButtons url={pageUrl} text={shareText} />
+
+          <div className="tg-inline">
+            <span className="tg-emoji">📨</span>
+            <div className="tg-content">
+              <h3>1 perfume al día gratis en Telegram</h3>
+              <p>
+                Recibe cada mañana un perfume rotativo del catálogo + clones
+                baratos por la tarde. Sin algoritmo, sin spam. Canal{" "}
+                {TELEGRAM_CHANNEL_HANDLE}.
+              </p>
+            </div>
+            <a
+              href={TELEGRAM_CHANNEL_URL}
+              target="_blank"
+              rel="noopener"
+              className="tg-btn"
+            >
+              Unirme
+            </a>
+          </div>
 
           <div
             className="callout"

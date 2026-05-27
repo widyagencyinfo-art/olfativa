@@ -27,6 +27,7 @@ export default function sitemap() {
     "/preguntas-frecuentes",
     "/test/familia-olfativa",
     "/perfume-zodiacal",
+    "/canal-telegram",
     "/sobre",
     "/aviso-legal",
     "/politica-privacidad",
