@@ -376,9 +376,9 @@ img {
 }
 
 .card-visual {
-  height: 230px;
+  height: 240px;
   display: flex;
-  align-items: flex-end; /* frasco "asienta" en la base */
+  align-items: center;
   justify-content: center;
   background: linear-gradient(160deg, var(--accent-soft), var(--bg-soft));
   position: relative;
@@ -414,23 +414,23 @@ img {
   );
 }
 
-/* Sombra de suelo eliptica: el frasco proyecta sombra sobre la base */
+/* Sombra elíptica sutil bajo el frasco centrado */
 .card-visual.has-photo::after {
   content: "";
   position: absolute;
-  bottom: 10px;
+  bottom: 18px;
   left: 50%;
   transform: translateX(-50%);
-  width: 50%;
-  height: 12px;
+  width: 60%;
+  height: 14px;
   background: radial-gradient(
     ellipse at center,
-    rgba(0, 0, 0, 0.28) 0%,
-    rgba(0, 0, 0, 0.08) 50%,
+    rgba(0, 0, 0, 0.22) 0%,
+    rgba(0, 0, 0, 0.06) 50%,
     transparent 75%
   );
-  filter: blur(4px);
-  opacity: 0.5;
+  filter: blur(8px);
+  opacity: 0.55;
   transition: opacity 0.4s ease, width 0.4s ease;
   pointer-events: none;
   z-index: 0;
@@ -439,8 +439,8 @@ img {
 [data-theme="dark"] .card-visual.has-photo::after {
   background: radial-gradient(
     ellipse at center,
-    rgba(0, 0, 0, 0.55) 0%,
-    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.18) 50%,
     transparent 75%
   );
 }
@@ -452,39 +452,39 @@ img {
     filter 0.4s ease;
 }
 
-/* Cards de foto premium: frasco asienta en la base con sombra de
-   suelo, gradient familia olfativa de fondo, luz superior. */
+/* Cards de foto premium: frasco centrado con sombra eliptica y luz
+   superior coherente. */
 .card-visual.has-photo {
-  padding: 20px 20px 24px;
+  padding: 24px;
 }
 
 .card-visual.has-photo img {
   max-width: 100%;
   max-height: 100%;
   width: auto;
-  height: 100%;
+  height: auto;
   object-fit: contain;
-  object-position: bottom;
+  object-position: center;
   display: block;
   margin: 0 auto;
-  filter: drop-shadow(0 14px 18px rgba(0, 0, 0, 0.22));
+  filter: drop-shadow(0 16px 18px rgba(0, 0, 0, 0.22));
 }
 
 .detail-visual.has-photo {
-  padding: 36px 36px 44px;
-  align-items: flex-end;
+  padding: 40px;
+  align-items: center;
 }
 
 .detail-visual.has-photo img {
   max-width: 100%;
   max-height: 100%;
   width: auto;
-  height: 100%;
+  height: auto;
   object-fit: contain;
-  object-position: bottom;
+  object-position: center;
   display: block;
   margin: 0 auto;
-  filter: drop-shadow(0 22px 28px rgba(0, 0, 0, 0.28));
+  filter: drop-shadow(0 22px 30px rgba(0, 0, 0, 0.28));
   position: relative;
   z-index: 2;
 }
@@ -1762,4 +1762,99 @@ img {
     text-align: center;
     padding: 22px 18px;
   }
+}
+
+/* ---------- Premium boutique effects ---------- */
+
+/* Shimmer: barrido de luz al pasar el cursor */
+.card-visual.has-photo {
+  position: relative;
+}
+
+.card-visual.has-photo .shimmer {
+  display: none;
+}
+
+.perfume-card .card-visual::before,
+.perfume-card .card-visual::after {
+  pointer-events: none;
+}
+
+/* Anillo dorado sutil al hover */
+.perfume-card {
+  position: relative;
+  isolation: isolate;
+}
+
+.perfume-card::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(156, 122, 77, 0) 0%,
+    rgba(156, 122, 77, 0.5) 45%,
+    rgba(212, 180, 131, 0.9) 50%,
+    rgba(156, 122, 77, 0.5) 55%,
+    rgba(156, 122, 77, 0) 100%
+  );
+  background-size: 250% 250%;
+  background-position: 100% 100%;
+  -webkit-mask: linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease, background-position 0.9s ease;
+  z-index: 3;
+}
+
+.perfume-card:hover::after {
+  opacity: 1;
+  background-position: 0% 0%;
+}
+
+/* Brillo radial superior tipo "spotlight" en hover */
+.perfume-card:hover .card-visual::before {
+  opacity: 1;
+  transform: translateX(-50%) scale(1.08);
+}
+
+.card-visual::before {
+  transition: opacity 0.5s ease, transform 0.6s ease;
+}
+
+/* Fade-in suave al cargar (sin stagger - mas simple) */
+.perfume-card {
+  animation: card-fade-in 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+@keyframes card-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .perfume-card,
+  .card-visual.has-photo img {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Detail visual: reflejo sutil bajo el frasco */
+.detail-visual.has-photo {
+  position: relative;
+}
+
+.detail-visual.has-photo::before {
+  z-index: 1;
 }
