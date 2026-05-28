@@ -1,5 +1,21 @@
 import "./globals.css";
+import { Fraunces, Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+
+const display = Fraunces({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+const sans = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-sans",
+  display: "swap",
+});
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import TelegramCta from "@/components/TelegramCta";
@@ -93,7 +109,11 @@ const themeScript = `
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es" suppressHydrationWarning>
+    <html
+      lang="es"
+      suppressHydrationWarning
+      className={`${display.variable} ${sans.variable}`}
+    >
       <head>
         <link rel="preconnect" href="https://upload.wikimedia.org" />
         <link rel="dns-prefetch" href="https://www.amazon.es" />
