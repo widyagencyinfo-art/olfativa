@@ -33,8 +33,6 @@ export default function HomePage() {
     .sort((a, b) => b.rating - a.rating)
     .slice(0, 8);
 
-  // Novedades: perfumes lanzados en los ultimos 3 anos. Senal de
-  // frescura para Google y razon para que el usuario vuelva.
   const novedades = [...perfumes]
     .filter((p) => p.year >= 2023)
     .sort((a, b) => b.year - a.year || b.rating - a.rating)
@@ -90,6 +88,21 @@ export default function HomePage() {
     })),
   };
 
+  const zodiac = [
+    { slug: "aries", emoji: "♈", name: "Aries" },
+    { slug: "tauro", emoji: "♉", name: "Tauro" },
+    { slug: "geminis", emoji: "♊", name: "Géminis" },
+    { slug: "cancer", emoji: "♋", name: "Cáncer" },
+    { slug: "leo", emoji: "♌", name: "Leo" },
+    { slug: "virgo", emoji: "♍", name: "Virgo" },
+    { slug: "libra", emoji: "♎", name: "Libra" },
+    { slug: "escorpio", emoji: "♏", name: "Escorpio" },
+    { slug: "sagitario", emoji: "♐", name: "Sagitario" },
+    { slug: "capricornio", emoji: "♑", name: "Capricornio" },
+    { slug: "acuario", emoji: "♒", name: "Acuario" },
+    { slug: "piscis", emoji: "♓", name: "Piscis" },
+  ];
+
   return (
     <>
       <script
@@ -101,14 +114,18 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqLd) }}
       />
 
+      {/* ============ HERO ============ */}
       <section className="hero">
-        <div className="container">
+        <div className="hero-glow" aria-hidden="true" />
+        <div className="container hero-inner">
           <span className="eyebrow">La enciclopedia de las fragancias</span>
-          <h1>Encuentra cualquier perfume y conócelo a fondo</h1>
+          <h1>
+            Encuentra cualquier perfume
+            <br />y conócelo <span className="hero-accent">a fondo</span>
+          </h1>
           <p>
-            Notas, perfil olfativo, precio, marca, historia y la mejor época
-            del año para usarlo. Todo sobre {perfumes.length} perfumes
-            populares del mercado.
+            Notas, perfil olfativo, precio, historia y la mejor época del año
+            para llevarlo. Todo sobre {perfumes.length} fragancias del mercado.
           </p>
           <SearchBox index={index} />
           <div className="stat-row">
@@ -116,18 +133,176 @@ export default function HomePage() {
               <strong>{perfumes.length}</strong>
               <span>Perfumes</span>
             </div>
+            <div className="stat-sep" aria-hidden="true" />
             <div className="stat">
               <strong>{brands.length}</strong>
               <span>Marcas</span>
             </div>
+            <div className="stat-sep" aria-hidden="true" />
+            <div className="stat">
+              <strong>{CLONES.length}</strong>
+              <span>Clones</span>
+            </div>
+            <div className="stat-sep" aria-hidden="true" />
             <div className="stat">
               <strong>{families.length}</strong>
-              <span>Familias olfativas</span>
+              <span>Familias</span>
             </div>
           </div>
         </div>
       </section>
 
+      {/* ============ MEJOR VALORADOS ============ */}
+      <section className="section">
+        <div className="container">
+          <div className="section-head">
+            <div>
+              <span className="section-eyebrow">Lo más recomendado</span>
+              <h2>Perfumes mejor valorados</h2>
+            </div>
+            <Link href="/perfumes" className="section-link">
+              Ver catálogo →
+            </Link>
+          </div>
+          <PerfumeGrid perfumes={featured} />
+        </div>
+      </section>
+
+      {/* ============ NOVEDADES ============ */}
+      <section className="section section-alt">
+        <div className="container">
+          <div className="section-head">
+            <div>
+              <span className="section-eyebrow">Recién llegados</span>
+              <h2>Novedades 2024-2026</h2>
+            </div>
+            <Link href="/perfumes" className="section-link">
+              Ver todos →
+            </Link>
+          </div>
+          <PerfumeGrid perfumes={novedades} />
+        </div>
+      </section>
+
+      {/* ============ CLONES (alta intención) ============ */}
+      <section className="section">
+        <div className="container">
+          <div className="section-head">
+            <div>
+              <span className="section-eyebrow">Ahorra sin renunciar al aroma</span>
+              <h2>Clones y alternativas baratas</h2>
+            </div>
+            <Link href="/clones" className="section-link">
+              Ver los 30 →
+            </Link>
+          </div>
+          <p className="section-lead">
+            ¿Por qué pagar 300€ cuando una alternativa de 30€ huele casi igual?
+            Los mejores clones de los perfumes más caros del mercado.
+          </p>
+          <div className="chip-row">
+            {CLONES.slice(0, 10).map((c) => (
+              <Link key={c.slug} href={`/clones/${c.slug}`} className="chip chip-lg">
+                💰 {c.h1.replace(/^Clones de /i, "").replace(/:.*$/, "")}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ============ HERRAMIENTAS INTERACTIVAS ============ */}
+      <section className="section section-alt">
+        <div className="container">
+          <div className="section-head">
+            <div>
+              <span className="section-eyebrow">Descúbrelo en 1 minuto</span>
+              <h2>Herramientas para encontrar tu perfume</h2>
+            </div>
+          </div>
+          <div className="tool-grid">
+            <Link href="/test/familia-olfativa" className="tool-card tool-test">
+              <span className="tool-emoji">🧪</span>
+              <h3>Test de familia olfativa</h3>
+              <p>
+                6 preguntas y descubre tu familia favorita + 6 perfumes
+                recomendados para ti.
+              </p>
+              <span className="tool-cta">Empezar test →</span>
+            </Link>
+            <Link href="/perfume-zodiacal" className="tool-card tool-zodiac">
+              <span className="tool-emoji">♒</span>
+              <h3>Tu perfume según tu signo</h3>
+              <p>
+                12 signos del zodiaco, 72 perfumes. Descubre el tuyo, el de tu
+                pareja o tu mejor amiga.
+              </p>
+              <span className="tool-cta">Ver mi signo →</span>
+            </Link>
+          </div>
+          <div className="zodiac-chip-row">
+            {zodiac.map((z) => (
+              <Link
+                key={z.slug}
+                href={`/perfume-zodiacal/${z.slug}`}
+                className="chip chip-zodiac"
+              >
+                {z.emoji} {z.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ============ EXPLORA POR CATEGORÍA ============ */}
+      <section className="section">
+        <div className="container">
+          <div className="section-head">
+            <div>
+              <span className="section-eyebrow">Navega el catálogo</span>
+              <h2>Explora por género y temporada</h2>
+            </div>
+          </div>
+          <div className="tile-grid">
+            {genders.map((g) => (
+              <Link key={g.slug} href={`/genero/${g.slug}`} className="tile">
+                <h3>Perfumes de {g.name.toLowerCase()}</h3>
+                <p>{g.count} fragancias</p>
+              </Link>
+            ))}
+            {seasons.map((s) => (
+              <Link key={s.slug} href={`/temporada/${s.slug}`} className="tile">
+                <h3>Perfumes de {seasonLabel(s.slug).toLowerCase()}</h3>
+                <p>{s.count} fragancias</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ============ GUÍAS ============ */}
+      <section className="section section-alt">
+        <div className="container">
+          <div className="section-head">
+            <div>
+              <span className="section-eyebrow">Aprende de perfumería</span>
+              <h2>Guías de perfumería</h2>
+            </div>
+            <Link href="/guias" className="section-link">
+              Ver las 20 →
+            </Link>
+          </div>
+          <div className="tile-grid">
+            {GUIDES.slice(0, 6).map((g) => (
+              <Link key={g.slug} href={`/guias/${g.slug}`} className="tile tile-guide">
+                <h3>{g.title}</h3>
+                <p>{g.description.slice(0, 110)}…</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ============ TELEGRAM CTA ============ */}
       <section className="section">
         <div className="container">
           <div className="tg-inline" style={{ marginTop: 0 }}>
@@ -135,9 +310,9 @@ export default function HomePage() {
             <div className="tg-content">
               <h3>1 perfume al día gratis en Telegram</h3>
               <p>
-                Cada mañana enviamos un perfume del catálogo al canal{" "}
-                <strong>@olfativacomunidad</strong>. Por la tarde, clones
-                baratos o curiosidades. Sin algoritmo, sin spam.
+                Cada mañana un perfume del catálogo con foto, notas y precio.
+                Por la tarde, clones baratos o curiosidades. Sin algoritmo, sin
+                spam.
               </p>
             </div>
             <a
@@ -149,153 +324,17 @@ export default function HomePage() {
               Suscribirme →
             </a>
           </div>
-
-          <div
-            className="callout"
-            style={{ textAlign: "center", padding: "32px 28px" }}
-          >
-            <h2 style={{ margin: "0 0 6px", fontSize: "1.6rem" }}>
-              ¿No sabes qué tipo de perfume buscar?
-            </h2>
-            <p style={{ marginBottom: "18px", color: "var(--text)" }}>
-              Haz nuestro <strong>test gratis de 6 preguntas</strong> y
-              descubre tu familia olfativa + 6 perfumes recomendados.
-            </p>
-            <Link href="/test/familia-olfativa" className="btn">
-              Empezar test (1 minuto) →
-            </Link>
-          </div>
         </div>
       </section>
 
-      <section className="section" style={{ background: "var(--bg-soft)" }}>
+      {/* ============ FAQ ============ */}
+      <section className="section section-alt">
         <div className="container">
           <div className="section-head">
-            <h2>¿Qué perfume eres según tu signo zodiacal? ♈♉♊</h2>
-            <Link href="/perfume-zodiacal">Ver los 12 signos →</Link>
-          </div>
-          <p style={{ color: "var(--text-soft)", marginBottom: 20 }}>
-            12 signos del zodiaco, 72 perfumes recomendados. Cada signo conecta
-            con una familia olfativa concreta. Descubre el tuyo, el de tu
-            pareja, tu mejor amiga o tu jefe.
-          </p>
-          <div className="chip-row">
-            {[
-              { slug: "aries", emoji: "♈", name: "Aries" },
-              { slug: "tauro", emoji: "♉", name: "Tauro" },
-              { slug: "geminis", emoji: "♊", name: "Géminis" },
-              { slug: "cancer", emoji: "♋", name: "Cáncer" },
-              { slug: "leo", emoji: "♌", name: "Leo" },
-              { slug: "virgo", emoji: "♍", name: "Virgo" },
-              { slug: "libra", emoji: "♎", name: "Libra" },
-              { slug: "escorpio", emoji: "♏", name: "Escorpio" },
-              { slug: "sagitario", emoji: "♐", name: "Sagitario" },
-              { slug: "capricornio", emoji: "♑", name: "Capricornio" },
-              { slug: "acuario", emoji: "♒", name: "Acuario" },
-              { slug: "piscis", emoji: "♓", name: "Piscis" }
-            ].map((z) => (
-              <Link
-                key={z.slug}
-                href={`/perfume-zodiacal/${z.slug}`}
-                className="chip"
-              >
-                {z.emoji} {z.name}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <div className="section-head">
-            <h2>Novedades 2024-2026</h2>
-            <Link href="/perfumes">Ver todos →</Link>
-          </div>
-          <p style={{ color: "var(--text-soft)", marginBottom: "20px" }}>
-            Lanzamientos recientes de las grandes marcas y casas de nicho.
-          </p>
-          <PerfumeGrid perfumes={novedades} />
-        </div>
-      </section>
-
-      <section className="section" style={{ background: "var(--bg-soft)" }}>
-        <div className="container">
-          <div className="section-head">
-            <h2>Perfumes mejor valorados</h2>
-            <Link href="/perfumes">Ver todos →</Link>
-          </div>
-          <PerfumeGrid perfumes={featured} />
-        </div>
-      </section>
-
-      <section className="section" style={{ background: "var(--bg-soft)" }}>
-        <div className="container">
-          <div className="section-head">
-            <h2>Explora por género</h2>
-          </div>
-          <div className="tile-grid">
-            {genders.map((g) => (
-              <Link key={g.slug} href={`/genero/${g.slug}`} className="tile">
-                <h3>Perfumes de {g.name.toLowerCase()}</h3>
-                <p>{g.count} fragancias</p>
-              </Link>
-            ))}
-            {seasons.map((s) => (
-              <Link
-                key={s.slug}
-                href={`/temporada/${s.slug}`}
-                className="tile"
-              >
-                <h3>Perfumes de {seasonLabel(s.slug).toLowerCase()}</h3>
-                <p>{s.count} fragancias</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <div className="section-head">
-            <h2>Clones y alternativas baratas</h2>
-            <Link href="/clones">Ver todos →</Link>
-          </div>
-          <p style={{ color: "var(--text-soft)", marginBottom: "20px" }}>
-            Los mejores clones de los perfumes más caros: por qué pagar 300€
-            cuando una alternativa de 30€ huele casi igual.
-          </p>
-          <div className="chip-row">
-            {CLONES.slice(0, 8).map((c) => (
-              <Link key={c.slug} href={`/clones/${c.slug}`} className="chip">
-                {c.h1.replace(/^Clones de /i, "").replace(/:.*$/, "")}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section" style={{ background: "var(--bg-soft)" }}>
-        <div className="container">
-          <div className="section-head">
-            <h2>Guías de perfumería</h2>
-            <Link href="/guias">Ver todas →</Link>
-          </div>
-          <div className="tile-grid">
-            {GUIDES.slice(0, 6).map((g) => (
-              <Link key={g.slug} href={`/guias/${g.slug}`} className="tile">
-                <h3>{g.title}</h3>
-                <p>{g.description.slice(0, 110)}…</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <div className="section-head">
-            <h2>Preguntas frecuentes sobre perfumes</h2>
+            <div>
+              <span className="section-eyebrow">Resolvemos tus dudas</span>
+              <h2>Preguntas frecuentes</h2>
+            </div>
           </div>
           <div className="faq-list" style={{ maxWidth: "820px" }}>
             {HOME_FAQ.map((q, i) => (
@@ -310,16 +349,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section" style={{ background: "var(--bg-soft)" }}>
+      {/* ============ MARCAS ============ */}
+      <section className="section">
         <div className="container">
           <div className="section-head">
-            <h2>Marcas destacadas</h2>
-            <Link href="/marcas">Ver todas →</Link>
+            <div>
+              <span className="section-eyebrow">{brands.length} casas</span>
+              <h2>Marcas destacadas</h2>
+            </div>
+            <Link href="/marcas" className="section-link">
+              Ver todas →
+            </Link>
           </div>
           <div className="chip-row">
             {brands.map((b) => (
               <Link key={b.slug} href={`/marcas/${b.slug}`} className="chip">
-                {b.name} ({b.count})
+                {b.name} <span className="chip-count">{b.count}</span>
               </Link>
             ))}
           </div>
