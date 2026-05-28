@@ -2141,3 +2141,38 @@ img {
   padding: 18px;
   text-align: center;
 }
+
+/* Selector de rango del grafico analytics */
+.adm-chart-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.adm-range-tabs {
+  display: flex;
+  gap: 4px;
+  background: var(--bg-soft);
+  padding: 3px;
+  border-radius: 999px;
+}
+.adm-range-tab {
+  border: none;
+  background: transparent;
+  color: var(--text-soft);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.18s ease;
+}
+.adm-range-tab:hover { color: var(--text); }
+.adm-range-tab.active {
+  background: var(--accent);
+  color: #fff;
+}
+.adm-bar-label { min-height: 0.8em; }

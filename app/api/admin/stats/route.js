@@ -29,25 +29,36 @@ function flagEmoji(code) {
   );
 }
 
-async function fetchAnalytics() {
+async function fetchAnalytics(rangeDays = 14) {
   if (!redisAvailable()) return { available: false };
   const now = Date.now();
-  const days = [];
-  for (let i = 13; i >= 0; i--) {
+  // Para los totales necesitamos hasta 90 dias; para el grafico el rango pedido
+  const maxDays = 90;
+  const allDays = [];
+  for (let i = maxDays - 1; i >= 0; i--) {
     const d = new Date(now - i * 86400000).toISOString().slice(0, 10);
-    days.push(d);
+    allDays.push(d);
   }
+  const days = allDays.slice(-rangeDays);
   const cmds = [
     ["GET", "pv:total"],
     ["ZCOUNT", "online", String(now - 5 * 60 * 1000), "+inf"],
     ["ZREVRANGE", "pv:pages", "0", "11", "WITHSCORES"],
     ["ZREVRANGE", "pv:countries", "0", "9", "WITHSCORES"],
     ["ZREVRANGE", "pv:cities", "0", "7", "WITHSCORES"],
-    ...days.map((d) => ["GET", `pv:day:${d}`])
+    ...allDays.map((d) => ["GET", `pv:day:${d}`])
   ];
   const res = await pipeline(cmds);
   const total = parseInt(res[0] || "0", 10);
   const online = parseInt(res[1] || "0", 10);
+
+  // Mapa fecha -> views para los 90 dias
+  const allDayValues = res.slice(5).map((v, i) => ({
+    date: allDays[i],
+    views: parseInt(v || "0", 10)
+  }));
+  const sumLast = (n) =>
+    allDayValues.slice(-n).reduce((s, d) => s + d.views, 0);
 
   // pages: [path, score, path, score...]
   const pagesRaw = res[2] || [];
@@ -71,19 +82,20 @@ async function fetchAnalytics() {
   for (let i = 0; i < citiesRaw.length; i += 2) {
     cities.push({ name: citiesRaw[i], views: parseInt(citiesRaw[i + 1], 10) });
   }
-  const dayValues = res.slice(5).map((v, i) => ({
-    date: days[i],
-    views: parseInt(v || "0", 10)
-  }));
-  const todayViews = dayValues[dayValues.length - 1]?.views || 0;
-  const last7 = dayValues.slice(-7).reduce((s, d) => s + d.views, 0);
+  // Grafico: solo los dias del rango pedido
+  const dayValues = allDayValues.slice(-rangeDays);
+  const todayViews = allDayValues[allDayValues.length - 1]?.views || 0;
 
   return {
     available: true,
     total,
     online,
     todayViews,
-    last7,
+    last7: sumLast(7),
+    last30: sumLast(30),
+    last60: sumLast(60),
+    last90: sumLast(90),
+    rangeDays,
     days: dayValues,
     pages,
     countries,
@@ -145,10 +157,13 @@ export async function POST(request) {
     return NextResponse.json({ ok: false, error: "unauthorized" }, { status: 401 });
   }
 
+  const validRanges = [7, 14, 30, 60, 90];
+  const rangeDays = validRanges.includes(body.range) ? body.range : 14;
+
   const [telegram, health, analytics] = await Promise.all([
     fetchTelegramStats(),
     fetchSiteHealth(),
-    fetchAnalytics()
+    fetchAnalytics(rangeDays)
   ]);
 
   // Catalogo stats

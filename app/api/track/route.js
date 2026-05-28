@@ -47,7 +47,7 @@ export async function POST(request) {
   await pipeline([
     ["INCR", "pv:total"],
     ["INCR", `pv:day:${day}`],
-    ["EXPIRE", `pv:day:${day}`, "5184000"], // 60 dias
+    ["EXPIRE", `pv:day:${day}`, "10368000"], // 120 dias
     ["ZINCRBY", "pv:pages", "1", path],
     ["ZINCRBY", "pv:countries", "1", country],
     ["ZADD", "online", String(now), vid],

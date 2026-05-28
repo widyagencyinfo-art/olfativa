@@ -38,12 +38,16 @@ function StatCard({ label, value, sub, color = "#9c7a4d", pulse = false }) {
 function BarChart({ days }) {
   if (!days || days.length === 0) return null;
   const max = Math.max(1, ...days.map((d) => d.views));
+  const n = days.length;
+  const dense = n > 20; // muchos dias: ocultar numeros, etiquetas espaciadas
+  const labelEvery = n > 60 ? 10 : n > 30 ? 5 : n > 14 ? 3 : 1;
   return (
     <div className="adm-bars">
       {days.map((d, i) => {
         const pct = (d.views / max) * 100;
         const label = d.date.slice(5); // MM-DD
         const isToday = i === days.length - 1;
+        const showLabel = (n - 1 - i) % labelEvery === 0;
         return (
           <div key={i} className="adm-bar-col" title={`${d.date}: ${d.views} visitas`}>
             <div className="adm-bar-wrap">
@@ -54,10 +58,12 @@ function BarChart({ days }) {
                   background: isToday ? "#229ED9" : "#9c7a4d"
                 }}
               >
-                {d.views > 0 && <span className="adm-bar-num">{d.views}</span>}
+                {!dense && d.views > 0 && (
+                  <span className="adm-bar-num">{d.views}</span>
+                )}
               </div>
             </div>
-            <span className="adm-bar-label">{label}</span>
+            <span className="adm-bar-label">{showLabel ? label : ""}</span>
           </div>
         );
       })}
@@ -120,27 +126,33 @@ export default function AdminDashboard({ initialKey }) {
   const [stats, setStats] = useState(null);
   const [err, setErr] = useState(null);
   const [now, setNow] = useState(Date.now());
+  const [range, setRange] = useState(14);
 
-  async function fetchStats(k) {
+  async function fetchStats(k, rangeDays = range) {
     try {
-      const r = await fetch("/api/admin/stats", {
+      const resp = await fetch("/api/admin/stats", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ key: k }),
+        body: JSON.stringify({ key: k, range: rangeDays }),
         cache: "no-store"
       });
-      if (r.status === 401) {
+      if (resp.status === 401) {
         setErr("Clave incorrecta");
         setAuthed(false);
         return;
       }
-      const data = await r.json();
+      const data = await resp.json();
       setStats(data);
       setAuthed(true);
       setErr(null);
     } catch (e) {
       setErr("Error de red");
     }
+  }
+
+  function changeRange(r) {
+    setRange(r);
+    fetchStats(key, r);
   }
 
   useEffect(() => {
@@ -223,6 +235,16 @@ export default function AdminDashboard({ initialKey }) {
                 color="#7d6b9c"
               />
               <StatCard
+                label="Últimos 30 días"
+                value={a.last30 || 0}
+                color="#5b9e8e"
+              />
+              <StatCard
+                label="Últimos 90 días"
+                value={a.last90 || 0}
+                color="#c47a32"
+              />
+              <StatCard
                 label="Total histórico"
                 value={a.total || 0}
                 color="#9c7a4d"
@@ -230,7 +252,22 @@ export default function AdminDashboard({ initialKey }) {
             </div>
 
             <div className="adm-chart">
-              <div className="adm-chart-title">Visitas por día (14 días)</div>
+              <div className="adm-chart-head">
+                <div className="adm-chart-title">
+                  Visitas por día · últimos {range} días
+                </div>
+                <div className="adm-range-tabs">
+                  {[7, 14, 30, 60, 90].map((r) => (
+                    <button
+                      key={r}
+                      className={`adm-range-tab ${range === r ? "active" : ""}`}
+                      onClick={() => changeRange(r)}
+                    >
+                      {r}d
+                    </button>
+                  ))}
+                </div>
+              </div>
               <BarChart days={a.days || []} />
             </div>
           </section>
