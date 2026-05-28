@@ -27,7 +27,10 @@ export async function POST(request) {
   // Geo desde headers de Vercel
   const country =
     request.headers.get("x-vercel-ip-country") || "??";
-  const city = request.headers.get("x-vercel-ip-city") || "";
+  let city = request.headers.get("x-vercel-ip-city") || "";
+  try {
+    city = decodeURIComponent(city);
+  } catch (e) {}
 
   // Visitor id: hash simple de IP+UA (no PII almacenable). Para "online".
   const ip = request.headers.get("x-forwarded-for") || "anon";
