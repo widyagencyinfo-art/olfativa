@@ -8,9 +8,88 @@ import { LISTS } from "@/lib/lists";
 import { GLOSSARY } from "@/lib/glossary";
 import { ZODIAC } from "@/lib/zodiac";
 import { TELEGRAM_CHANNEL_HANDLE } from "@/lib/data";
+import { pipeline, redisAvailable } from "@/lib/redis";
 
 export const runtime = "edge";
 export const revalidate = 0;
+
+const COUNTRY_NAMES = {
+  ES: "España", US: "EE.UU.", MX: "México", AR: "Argentina",
+  CO: "Colombia", CL: "Chile", PE: "Perú", FR: "Francia",
+  DE: "Alemania", GB: "Reino Unido", IT: "Italia", PT: "Portugal",
+  BR: "Brasil", VE: "Venezuela", EC: "Ecuador", UY: "Uruguay",
+  NL: "Países Bajos", BE: "Bélgica", CH: "Suiza", IE: "Irlanda",
+  CA: "Canadá", MA: "Marruecos", DO: "R. Dominicana", "??": "Desconocido"
+};
+
+function flagEmoji(code) {
+  if (!code || code.length !== 2) return "🌍";
+  return String.fromCodePoint(
+    ...[...code.toUpperCase()].map((c) => 127397 + c.charCodeAt(0))
+  );
+}
+
+async function fetchAnalytics() {
+  if (!redisAvailable()) return { available: false };
+  const now = Date.now();
+  const days = [];
+  for (let i = 13; i >= 0; i--) {
+    const d = new Date(now - i * 86400000).toISOString().slice(0, 10);
+    days.push(d);
+  }
+  const cmds = [
+    ["GET", "pv:total"],
+    ["ZCOUNT", "online", String(now - 5 * 60 * 1000), "+inf"],
+    ["ZREVRANGE", "pv:pages", "0", "11", "WITHSCORES"],
+    ["ZREVRANGE", "pv:countries", "0", "9", "WITHSCORES"],
+    ["ZREVRANGE", "pv:cities", "0", "7", "WITHSCORES"],
+    ...days.map((d) => ["GET", `pv:day:${d}`])
+  ];
+  const res = await pipeline(cmds);
+  const total = parseInt(res[0] || "0", 10);
+  const online = parseInt(res[1] || "0", 10);
+
+  // pages: [path, score, path, score...]
+  const pagesRaw = res[2] || [];
+  const pages = [];
+  for (let i = 0; i < pagesRaw.length; i += 2) {
+    pages.push({ path: pagesRaw[i], views: parseInt(pagesRaw[i + 1], 10) });
+  }
+  const countriesRaw = res[3] || [];
+  const countries = [];
+  for (let i = 0; i < countriesRaw.length; i += 2) {
+    const code = countriesRaw[i];
+    countries.push({
+      code,
+      name: COUNTRY_NAMES[code] || code,
+      flag: flagEmoji(code),
+      views: parseInt(countriesRaw[i + 1], 10)
+    });
+  }
+  const citiesRaw = res[4] || [];
+  const cities = [];
+  for (let i = 0; i < citiesRaw.length; i += 2) {
+    cities.push({ name: citiesRaw[i], views: parseInt(citiesRaw[i + 1], 10) });
+  }
+  const dayValues = res.slice(5).map((v, i) => ({
+    date: days[i],
+    views: parseInt(v || "0", 10)
+  }));
+  const todayViews = dayValues[dayValues.length - 1]?.views || 0;
+  const last7 = dayValues.slice(-7).reduce((s, d) => s + d.views, 0);
+
+  return {
+    available: true,
+    total,
+    online,
+    todayViews,
+    last7,
+    days: dayValues,
+    pages,
+    countries,
+    cities
+  };
+}
 
 async function fetchTelegramStats() {
   const token = process.env.TELEGRAM_BOT_TOKEN;
@@ -66,9 +145,10 @@ export async function POST(request) {
     return NextResponse.json({ ok: false, error: "unauthorized" }, { status: 401 });
   }
 
-  const [telegram, health] = await Promise.all([
+  const [telegram, health, analytics] = await Promise.all([
     fetchTelegramStats(),
-    fetchSiteHealth()
+    fetchSiteHealth(),
+    fetchAnalytics()
   ]);
 
   // Catalogo stats
@@ -93,6 +173,7 @@ export async function POST(request) {
   return NextResponse.json({
     ok: true,
     timestamp: Date.now(),
+    analytics,
     catalog: {
       perfumes: perfumesData.length,
       withRealPhoto: withImage,

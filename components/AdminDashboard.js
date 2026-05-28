@@ -35,6 +35,36 @@ function StatCard({ label, value, sub, color = "#9c7a4d", pulse = false }) {
   );
 }
 
+function BarChart({ days }) {
+  if (!days || days.length === 0) return null;
+  const max = Math.max(1, ...days.map((d) => d.views));
+  return (
+    <div className="adm-bars">
+      {days.map((d, i) => {
+        const pct = (d.views / max) * 100;
+        const label = d.date.slice(5); // MM-DD
+        const isToday = i === days.length - 1;
+        return (
+          <div key={i} className="adm-bar-col" title={`${d.date}: ${d.views} visitas`}>
+            <div className="adm-bar-wrap">
+              <div
+                className="adm-bar"
+                style={{
+                  height: `${Math.max(2, pct)}%`,
+                  background: isToday ? "#229ED9" : "#9c7a4d"
+                }}
+              >
+                {d.views > 0 && <span className="adm-bar-num">{d.views}</span>}
+              </div>
+            </div>
+            <span className="adm-bar-label">{label}</span>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 function StatusDot({ status }) {
   const color =
     status === "ok"
@@ -151,6 +181,7 @@ export default function AdminDashboard({ initialKey }) {
   if (!stats) return <div style={{ padding: 40 }}>Cargando…</div>;
 
   const nextCron = getNextCronTime();
+  const a = stats.analytics || {};
 
   return (
     <div className="adm-wrap">
@@ -168,6 +199,98 @@ export default function AdminDashboard({ initialKey }) {
           <span className="adm-meta">cache: {stats.health.cache}</span>
         </div>
       </header>
+
+      {a.available ? (
+        <>
+          <section>
+            <h2>👁️ Visitas</h2>
+            <div className="adm-grid">
+              <StatCard
+                label="🟢 Online ahora"
+                value={a.online || 0}
+                sub="últimos 5 min"
+                color="#2c7d4f"
+                pulse
+              />
+              <StatCard
+                label="Visitas hoy"
+                value={a.todayViews || 0}
+                color="#229ED9"
+              />
+              <StatCard
+                label="Últimos 7 días"
+                value={a.last7 || 0}
+                color="#7d6b9c"
+              />
+              <StatCard
+                label="Total histórico"
+                value={a.total || 0}
+                color="#9c7a4d"
+              />
+            </div>
+
+            <div className="adm-chart">
+              <div className="adm-chart-title">Visitas por día (14 días)</div>
+              <BarChart days={a.days || []} />
+            </div>
+          </section>
+
+          <section>
+            <div className="adm-two-col">
+              <div>
+                <h2>🔝 Páginas más visitadas</h2>
+                <div className="adm-list">
+                  {(a.pages || []).length === 0 && (
+                    <div className="adm-empty">Aún sin datos</div>
+                  )}
+                  {(a.pages || []).map((p, i) => (
+                    <div key={i} className="adm-list-row">
+                      <span className="adm-list-rank">{i + 1}</span>
+                      <span className="adm-list-name">{p.path}</span>
+                      <span className="adm-list-val">{p.views}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h2>🌍 Países</h2>
+                <div className="adm-list">
+                  {(a.countries || []).length === 0 && (
+                    <div className="adm-empty">Aún sin datos</div>
+                  )}
+                  {(a.countries || []).map((c, i) => (
+                    <div key={i} className="adm-list-row">
+                      <span className="adm-list-flag">{c.flag}</span>
+                      <span className="adm-list-name">{c.name}</span>
+                      <span className="adm-list-val">{c.views}</span>
+                    </div>
+                  ))}
+                </div>
+                {(a.cities || []).length > 0 && (
+                  <>
+                    <h2 style={{ marginTop: 24 }}>📍 Ciudades</h2>
+                    <div className="adm-list">
+                      {a.cities.map((c, i) => (
+                        <div key={i} className="adm-list-row">
+                          <span className="adm-list-name">{c.name}</span>
+                          <span className="adm-list-val">{c.views}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
+          </section>
+        </>
+      ) : (
+        <section>
+          <div className="adm-empty" style={{ padding: 24 }}>
+            📊 Analytics inicializándose. Las visitas aparecerán aquí en
+            cuanto la gente navegue por olfativa.es.
+          </div>
+        </section>
+      )}
 
       <section>
         <h2>🏷️ Catálogo</h2>

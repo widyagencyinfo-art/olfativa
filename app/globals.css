@@ -2028,3 +2028,116 @@ img {
 }
 .adm-health-row:last-child { border-bottom: none; }
 .adm-health-row .adm-meta { margin-left: auto; }
+
+/* ---------- Admin Analytics ---------- */
+.adm-chart {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  margin-top: 16px;
+}
+.adm-chart-title {
+  font-size: 0.85rem;
+  color: var(--text-soft);
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+.adm-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  height: 160px;
+}
+.adm-bar-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.adm-bar-wrap {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.adm-bar {
+  width: 70%;
+  min-height: 2px;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  transition: height 0.5s cubic-bezier(0.22,0.61,0.36,1);
+  display: flex;
+  justify-content: center;
+}
+.adm-bar-num {
+  position: absolute;
+  top: -16px;
+  font-size: 0.68rem;
+  color: var(--text-soft);
+  font-weight: 600;
+}
+.adm-bar-label {
+  font-size: 0.62rem;
+  color: var(--text-soft);
+  margin-top: 6px;
+  font-family: ui-monospace, monospace;
+}
+
+.adm-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+@media (max-width: 760px) {
+  .adm-two-col { grid-template-columns: 1fr; }
+}
+.adm-list {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.adm-list-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 16px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.92rem;
+}
+.adm-list-row:last-child { border-bottom: none; }
+.adm-list-rank {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: var(--bg-soft);
+  color: var(--text-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.adm-list-flag { font-size: 1.2rem; flex-shrink: 0; }
+.adm-list-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text);
+}
+.adm-list-val {
+  font-weight: 700;
+  color: var(--accent);
+  font-family: ui-rounded, system-ui;
+}
+.adm-empty {
+  color: var(--text-soft);
+  font-size: 0.9rem;
+  padding: 18px;
+  text-align: center;
+}

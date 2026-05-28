@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/next";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import TelegramCta from "@/components/TelegramCta";
+import TrackBeacon from "@/components/TrackBeacon";
 import {
   SITE_NAME,
   SITE_URL,
@@ -110,6 +111,7 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <SiteFooter />
         <TelegramCta />
+        <TrackBeacon />
         <Analytics />
       </body>
     </html>
