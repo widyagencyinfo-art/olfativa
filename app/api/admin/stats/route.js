@@ -45,7 +45,7 @@ async function fetchAnalytics(rangeDays = 14) {
     ["ZCOUNT", "online", String(now - 5 * 60 * 1000), "+inf"],
     ["ZREVRANGE", "pv:pages", "0", "11", "WITHSCORES"],
     ["ZREVRANGE", "pv:countries", "0", "9", "WITHSCORES"],
-    ["ZREVRANGE", "pv:cities", "0", "7", "WITHSCORES"],
+    ["ZREVRANGE", "pv:cities", "0", "11", "WITHSCORES"],
     ...allDays.map((d) => ["GET", `pv:day:${d}`])
   ];
   const res = await pipeline(cmds);
@@ -85,12 +85,14 @@ async function fetchAnalytics(rangeDays = 14) {
   // Grafico: solo los dias del rango pedido
   const dayValues = allDayValues.slice(-rangeDays);
   const todayViews = allDayValues[allDayValues.length - 1]?.views || 0;
+  const yesterdayViews = allDayValues[allDayValues.length - 2]?.views || 0;
 
   return {
     available: true,
     total,
     online,
     todayViews,
+    yesterdayViews,
     last7: sumLast(7),
     last30: sumLast(30),
     last60: sumLast(60),

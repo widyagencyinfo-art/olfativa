@@ -230,6 +230,11 @@ export default function AdminDashboard({ initialKey }) {
                 color="#229ED9"
               />
               <StatCard
+                label="Ayer"
+                value={a.yesterdayViews || 0}
+                color="#8a8278"
+              />
+              <StatCard
                 label="Últimos 7 días"
                 value={a.last7 || 0}
                 color="#7d6b9c"
@@ -273,7 +278,7 @@ export default function AdminDashboard({ initialKey }) {
           </section>
 
           <section>
-            <div className="adm-two-col">
+            <div className="adm-three-col">
               <div>
                 <h2>🔝 Páginas más visitadas</h2>
                 <div className="adm-list">
@@ -285,6 +290,21 @@ export default function AdminDashboard({ initialKey }) {
                       <span className="adm-list-rank">{i + 1}</span>
                       <span className="adm-list-name">{p.path}</span>
                       <span className="adm-list-val">{p.views}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h2>🏙️ Ciudades y pueblos</h2>
+                <div className="adm-list">
+                  {(a.cities || []).length === 0 && (
+                    <div className="adm-empty">Aún sin datos</div>
+                  )}
+                  {(a.cities || []).map((c, i) => (
+                    <div key={i} className="adm-list-row">
+                      <span className="adm-list-rank">{i + 1}</span>
+                      <span className="adm-list-name">📍 {c.name}</span>
+                      <span className="adm-list-val">{c.views}</span>
                     </div>
                   ))}
                 </div>
@@ -303,19 +323,6 @@ export default function AdminDashboard({ initialKey }) {
                     </div>
                   ))}
                 </div>
-                {(a.cities || []).length > 0 && (
-                  <>
-                    <h2 style={{ marginTop: 24 }}>📍 Ciudades</h2>
-                    <div className="adm-list">
-                      {a.cities.map((c, i) => (
-                        <div key={i} className="adm-list-row">
-                          <span className="adm-list-name">{c.name}</span>
-                          <span className="adm-list-val">{c.views}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </>
-                )}
               </div>
             </div>
           </section>

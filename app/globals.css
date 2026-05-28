@@ -2176,3 +2176,13 @@ img {
   color: #fff;
 }
 .adm-bar-label { min-height: 0.8em; }
+
+/* 3 columnas para paginas/ciudades/paises */
+.adm-three-col {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 24px;
+}
+@media (max-width: 900px) {
+  .adm-three-col { grid-template-columns: 1fr; }
+}
