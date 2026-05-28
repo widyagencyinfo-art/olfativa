@@ -60,7 +60,7 @@ async function fetchSiteHealth() {
 }
 
 export async function POST(request) {
-  const adminKey = process.env.OLFATIVA_ADMIN_TOKEN || "olfativa2026";
+  const adminKey = process.env.OLFATIVA_ADMIN_TOKEN || "OLFATIVA1234";
   const body = await request.json().catch(() => ({}));
   if (body.key !== adminKey) {
     return NextResponse.json({ ok: false, error: "unauthorized" }, { status: 401 });
