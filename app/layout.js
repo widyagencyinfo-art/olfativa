@@ -4,6 +4,7 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import TelegramCta from "@/components/TelegramCta";
 import TrackBeacon from "@/components/TrackBeacon";
+import ScrollReveal from "@/components/ScrollReveal";
 import {
   SITE_NAME,
   SITE_URL,
@@ -112,6 +113,7 @@ export default function RootLayout({ children }) {
         <SiteFooter />
         <TelegramCta />
         <TrackBeacon />
+        <ScrollReveal />
         <Analytics />
       </body>
     </html>

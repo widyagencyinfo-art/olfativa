@@ -61,18 +61,46 @@ function hourSalt() {
 
 // =================== Construccion de posts ===================
 
+// Devuelve la mejor imagen: foto real del frasco si existe, sino OG card.
+function bestPhoto(p) {
+  if (p.image && p.image.startsWith("/photos")) return `${SITE}${p.image}`;
+  return `${SITE}/perfumes/${p.slug}/opengraph-image`;
+}
+
+function priceTier(p) {
+  const min = p.priceRange?.min || 0;
+  if (min < 35) return "💸 Chollo (menos de 35€)";
+  if (min < 80) return "💰 Precio medio";
+  if (min < 180) return "💎 Gama alta diseñador";
+  return "👑 Lujo / nicho";
+}
+
 function postMorning() {
   // Mañana: perfume del dia (offset por hora -> no repite entre slots)
   const p = pick(perfumes, hourSalt());
   const url = `${SITE}/perfumes/${p.slug}`;
-  const ogImage = `${SITE}/perfumes/${p.slug}/opengraph-image`;
-  const top = p.notes.top.slice(0, 3).join(", ").toLowerCase();
-  const base = p.notes.base.slice(0, 2).join(" y ").toLowerCase();
+  const top = p.notes.top.slice(0, 3).join(" · ").toLowerCase();
+  const heart = p.notes.heart.slice(0, 2).join(" · ").toLowerCase();
+  const base = p.notes.base.slice(0, 2).join(" · ").toLowerCase();
+  const genderEmoji =
+    p.gender === "hombre" ? "👨" : p.gender === "mujer" ? "👩" : "🧑‍🤝‍🧑";
+
+  const caption =
+    `🌸 𝗣𝗘𝗥𝗙𝗨𝗠𝗘 𝗗𝗘𝗟 𝗗𝗜́𝗔\n\n` +
+    `✨ ${p.name} — ${p.brand}\n` +
+    `${genderEmoji} ${p.family} · ${p.concentration} · ${p.year}\n\n` +
+    `🌿 Salida: ${top}\n` +
+    `💗 Corazón: ${heart}\n` +
+    `🪵 Fondo: ${base}\n\n` +
+    `⏱ Dura ${p.longevity} · proyección ${p.projection.toLowerCase()}\n` +
+    `${priceTier(p)} · ${p.priceRange.min}-${p.priceRange.max}€\n\n` +
+    `👉 Notas completas, opiniones y dónde comprarlo 👇`;
 
   return {
-    photo: ogImage,
-    short: `🌸 Perfume del día: ${p.name} de ${p.brand}\n\n${p.family} · ${p.concentration} · ${p.year}\n\nSalida: ${top}\nFondo: ${base}\n\nDuración: ${p.longevity}\n\n${url}`,
-    long: `🌸 Perfume del día\n\n${p.name} — ${p.brand} (${p.year})\n\nUn ${p.family.toLowerCase()} ${p.concentration} firmado por ${p.perfumer}.\n\nNotas de salida: ${top}.\nFondo: ${base}.\nProyección ${p.projection.toLowerCase()}, duración ${p.longevity}.\n\nFicha completa, FAQ y precio orientativo: ${url}\n\n#perfume #fragancia #olfativa #${p.brandSlug.replace(/-/g, "")}`
+    photo: bestPhoto(p),
+    button: { text: `Ver ${p.name} en Olfativa →`, url },
+    short: caption,
+    long: caption
   };
 }
 
@@ -84,9 +112,26 @@ function postEvening() {
   if (isClone && clones.length) {
     const c = pick(clones, 7 + hourSalt());
     const url = `${SITE}/clones/${c.slug}`;
+    // Foto del perfume original que se clona
+    const orig = perfumes.find((x) => x.slug === c.originalSlug);
+    const photo = orig ? bestPhoto(orig) : `${SITE}/perfumes/${c.slug}/opengraph-image`;
+    const cleanTitle = c.h1
+      .replace(/^Clones de /i, "")
+      .replace(/:.*$/, "")
+      .trim();
+
+    const caption =
+      `💰 𝗖𝗟𝗢𝗡 𝗗𝗘𝗟 𝗗𝗜́𝗔\n\n` +
+      `🔥 ¿Te gusta ${cleanTitle}?\n` +
+      `Hay clones que huelen casi igual por 1/10 del precio.\n\n` +
+      `${c.description ? c.description.slice(0, 160) + "…" : ""}\n\n` +
+      `👉 Las mejores alternativas baratas 👇`;
+
     return {
-      short: `💰 Clon del día\n\n${c.h1}\n\n${url}`,
-      long: `💰 Clon del día — paga 1/10 sin renunciar al aroma\n\n${c.h1}\n\n${c.description ? c.description.slice(0, 180) : ""}\n\nAlternativas, comparativa y veredicto: ${url}\n\n#clonesperfumes #perfumebarato #lattafa #armaf`
+      photo,
+      button: { text: `Clones de ${cleanTitle} →`, url },
+      short: caption,
+      long: caption
     };
   }
 
@@ -94,9 +139,16 @@ function postEvening() {
   if (guides.length) {
     const g = pick(guides, 13 + hourSalt());
     const url = `${SITE}/guias/${g.slug}`;
+    const caption =
+      `💡 ¿𝗦𝗔𝗕𝗜́𝗔𝗦 𝗤𝗨𝗘...?\n\n` +
+      `${g.title}\n\n` +
+      `${g.description ? g.description.slice(0, 220) : ""}\n\n` +
+      `👉 Te lo contamos todo 👇`;
     return {
-      short: `💡 ¿Sabías que...?\n\n${g.title}\n\n${url}`,
-      long: `💡 Curiosidad olfativa: ${g.title}\n\n${g.description ? g.description.slice(0, 200) : ""}\n\nGuía completa: ${url}\n\n#perfumes #fragancias #olfativa`
+      photo: null,
+      button: { text: "Leer la guía completa →", url },
+      short: `💡 ${g.title}\n\n${url}`,
+      long: caption
     };
   }
 
@@ -105,7 +157,7 @@ function postEvening() {
 
 // =================== Telegram ===================
 
-async function postTelegram(text, photoUrl) {
+async function postTelegram(text, photoUrl, button) {
   const token = process.env.TELEGRAM_BOT_TOKEN;
   const chat = process.env.TELEGRAM_CHAT_ID;
   if (!token || !chat) {
@@ -113,40 +165,40 @@ async function postTelegram(text, photoUrl) {
     return;
   }
 
-  // Si hay photoUrl, mandamos sendPhoto (caption con texto). Cuando
-  // alguien reenvia el post en Telegram, se ve la imagen preciosa.
-  if (photoUrl) {
-    const r = await fetch(
-      `https://api.telegram.org/bot${token}/sendPhoto`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          chat_id: chat,
-          photo: photoUrl,
-          caption: text.slice(0, 1024) // limite caption Telegram
-        })
-      }
-    );
-    const j = await r.json();
-    console.log("[telegram:photo]", r.status, j.ok ? "OK" : j.description);
-    if (j.ok) return;
-    // Fallback a sendMessage si sendPhoto fallo (ej. OG no accesible)
-    console.log("[telegram] photo fallo, fallback a texto");
-  }
+  // Botón inline "Ver ficha" debajo del post -> 1 click al enlace
+  const replyMarkup = button
+    ? { inline_keyboard: [[{ text: button.text, url: button.url }]] }
+    : undefined;
 
-  const r = await fetch(
-    `https://api.telegram.org/bot${token}/sendMessage`,
-    {
+  // Si hay foto, sendPhoto con caption + botón. Cuando alguien reenvia
+  // el post, se ve la foto del frasco + botón llamativo.
+  if (photoUrl) {
+    const r = await fetch(`https://api.telegram.org/bot${token}/sendPhoto`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         chat_id: chat,
-        text,
-        disable_web_page_preview: false
+        photo: photoUrl,
+        caption: text.slice(0, 1024),
+        ...(replyMarkup && { reply_markup: replyMarkup })
       })
-    }
-  );
+    });
+    const j = await r.json();
+    console.log("[telegram:photo]", r.status, j.ok ? "OK" : j.description);
+    if (j.ok) return;
+    console.log("[telegram] photo fallo, fallback a texto");
+  }
+
+  const r = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      chat_id: chat,
+      text,
+      disable_web_page_preview: false,
+      ...(replyMarkup && { reply_markup: replyMarkup })
+    })
+  });
   const j = await r.json();
   console.log("[telegram]", r.status, j.ok ? "OK" : j.description);
 }
@@ -257,7 +309,7 @@ async function main() {
   console.log("---");
 
   await Promise.all([
-    postTelegram(post.long, post.photo),
+    postTelegram(post.long, post.photo, post.button),
     postBluesky(post.long),
     postMastodon(post.long)
   ]);

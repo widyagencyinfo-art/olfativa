@@ -2186,3 +2186,17 @@ img {
 @media (max-width: 900px) {
   .adm-three-col { grid-template-columns: 1fr; }
 }
+
+/* Reveal on scroll: secciones bajo el fold aparecen al hacer scroll */
+.reveal-section {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.reveal-section.revealed {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal-section { opacity: 1 !important; transform: none !important; }
+}
