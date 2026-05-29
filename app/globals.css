@@ -1415,6 +1415,154 @@ img {
   margin-top: 14px;
 }
 
+/* ---------- CTA de cabecera ---------- */
+.detail-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+/* ---------- Valoraciones ---------- */
+.ratings {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.ratings-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-right: 28px;
+  border-right: 1px solid var(--border);
+  min-width: 140px;
+}
+
+.ratings-num {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent-dark);
+}
+
+.ratings-stars {
+  font-size: 1.15rem;
+  color: var(--accent);
+  letter-spacing: 2px;
+  margin: 6px 0 4px;
+}
+
+.ratings-out {
+  font-size: 0.78rem;
+  color: var(--text-soft);
+}
+
+.rating-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rating-bar {
+  display: grid;
+  grid-template-columns: 110px 1fr 34px;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+}
+
+.rating-bar-label {
+  color: var(--text-soft);
+}
+
+.rating-bar-track {
+  height: 9px;
+  border-radius: 999px;
+  background: var(--bg-soft);
+  overflow: hidden;
+}
+
+.rating-bar-fill {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+}
+
+.rating-bar-val {
+  font-weight: 600;
+  text-align: right;
+  color: var(--text);
+}
+
+@media (max-width: 560px) {
+  .ratings {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .ratings-score {
+    flex-direction: row;
+    gap: 12px;
+    padding: 0 0 16px;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    justify-content: center;
+  }
+}
+
+/* ---------- Tabla comparativa ---------- */
+.compare-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  min-width: 560px;
+}
+
+.compare-table th,
+.compare-table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.compare-table th {
+  background: var(--bg-soft);
+  font-weight: 600;
+  color: var(--text-soft);
+  font-size: 0.82rem;
+}
+
+.compare-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.compare-table tr.is-current {
+  background: var(--accent-soft);
+}
+
+.compare-brand {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--text-soft);
+  font-weight: 400;
+}
+
+.compare-rating {
+  color: var(--accent-dark);
+  font-weight: 600;
+}
+
 /* ---------- Comparativa ---------- */
 .vs-grid {
   display: grid;
@@ -1807,6 +1955,7 @@ img {
   opacity: 0;
   transition: opacity 0.4s ease, background-position 0.9s ease;
   z-index: 3;
+  pointer-events: none;
 }
 
 .perfume-card:hover::after {

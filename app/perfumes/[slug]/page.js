@@ -28,6 +28,44 @@ import {
 const CURRENT_YEAR = 2026;
 const UPDATED_LABEL = "21 de mayo de 2026";
 
+const PROJECTION_SCORE = {
+  Suave: 2.6,
+  Media: 3.4,
+  "Media-alta": 4.1,
+  Alta: 4.6,
+  "Muy alta": 5,
+};
+
+function avgHours(longevity) {
+  const m = String(longevity).match(/(\d+)\D+(\d+)/);
+  if (m) return (Number(m[1]) + Number(m[2])) / 2;
+  const s = String(longevity).match(/\d+/);
+  return s ? Number(s[0]) : 0;
+}
+
+function clampScore(n) {
+  return Math.max(1, Math.min(5, n));
+}
+
+function longevityScore(longevity) {
+  return clampScore((avgHours(longevity) / 12) * 5);
+}
+
+function projectionScore(projection) {
+  return PROJECTION_SCORE[projection] || 3.2;
+}
+
+function versatilityScore(perfume) {
+  const seasons = perfume.seasons?.length || 0;
+  const occasions = perfume.occasions?.length || 0;
+  return clampScore(((seasons / 4) * 0.5 + (occasions / 5) * 0.5) * 5);
+}
+
+function stars(score) {
+  const full = Math.round(score);
+  return "★".repeat(full) + "☆".repeat(5 - full);
+}
+
 export function generateStaticParams() {
   return getAllPerfumes().map((p) => ({ slug: p.slug }));
 }
@@ -81,6 +119,14 @@ export default async function PerfumePage({ params }) {
   const faq = perfumeFaq(perfume);
   const scent = perfumeScentDescription(perfume);
   const audience = perfumeAudience(perfume);
+
+  const ratingMetrics = [
+    { label: "Duración", score: longevityScore(perfume.longevity) },
+    { label: "Proyección", score: projectionScore(perfume.projection) },
+    { label: "Versatilidad", score: versatilityScore(perfume) },
+  ];
+
+  const compareRows = [perfume, ...similar.slice(0, 3)];
 
   const faqLd = {
     "@context": "https://schema.org",
@@ -194,15 +240,19 @@ export default async function PerfumePage({ params }) {
               <small>· aprox. {perfume.pricePerMl.toFixed(2)}€/ml</small>
             </p>
 
-            <a
-              href={googleImagesUrl(perfume)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-ghost"
-              style={{ marginBottom: "18px" }}
-            >
-              Ver fotos en Google Imágenes →
-            </a>
+            <div className="detail-cta">
+              <a href="#comprar" className="btn">
+                Ver dónde comprar →
+              </a>
+              <a
+                href={googleImagesUrl(perfume)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-ghost"
+              >
+                Ver fotos en Google Imágenes →
+              </a>
+            </div>
 
             <dl className="spec-grid">
               <div>
@@ -231,6 +281,10 @@ export default async function PerfumePage({ params }) {
               </div>
             </dl>
           </div>
+        </div>
+
+        <div className="block" id="comprar" style={{ marginTop: "20px" }}>
+          <BuyBox perfume={perfume} />
         </div>
 
         <p className="guide-meta" style={{ marginTop: "16px" }}>
@@ -270,6 +324,35 @@ export default async function PerfumePage({ params }) {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        <div className="block">
+          <h2>Valoración de {perfume.name}</h2>
+          <div className="ratings">
+            <div className="ratings-score">
+              <span className="ratings-num">{perfume.rating.toFixed(1)}</span>
+              <span className="ratings-stars" aria-hidden="true">
+                {stars(perfume.rating)}
+              </span>
+              <span className="ratings-out">
+                sobre 5 · valoración media de la comunidad
+              </span>
+            </div>
+            <div className="rating-bars">
+              {ratingMetrics.map((m) => (
+                <div key={m.label} className="rating-bar">
+                  <span className="rating-bar-label">{m.label}</span>
+                  <span className="rating-bar-track">
+                    <span
+                      className="rating-bar-fill"
+                      style={{ width: `${(m.score / 5) * 100}%` }}
+                    />
+                  </span>
+                  <span className="rating-bar-val">{m.score.toFixed(1)}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -314,9 +397,55 @@ export default async function PerfumePage({ params }) {
           </div>
         </div>
 
-        <div className="block">
-          <BuyBox perfume={perfume} />
-        </div>
+        {similar.length > 0 && (
+          <div className="block">
+            <h2>{perfume.name} comparado con perfumes similares</h2>
+            <p style={{ color: "var(--text-soft)", marginBottom: "16px" }}>
+              Precio, familia, duración, proyección y valoración de un vistazo.
+            </p>
+            <div className="compare-wrap">
+              <table className="compare-table">
+                <thead>
+                  <tr>
+                    <th>Perfume</th>
+                    <th>Precio</th>
+                    <th>Familia</th>
+                    <th>Duración</th>
+                    <th>Proyección</th>
+                    <th>Nota</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {compareRows.map((p) => {
+                    const current = p.slug === perfume.slug;
+                    return (
+                      <tr key={p.slug} className={current ? "is-current" : ""}>
+                        <td>
+                          {current ? (
+                            <strong>
+                              {p.name}{" "}
+                              <span className="compare-brand">{p.brand}</span>
+                            </strong>
+                          ) : (
+                            <Link href={`/perfumes/${p.slug}`}>
+                              {p.name}{" "}
+                              <span className="compare-brand">{p.brand}</span>
+                            </Link>
+                          )}
+                        </td>
+                        <td>{formatPrice(p)}</td>
+                        <td>{p.family}</td>
+                        <td>{p.longevity}</td>
+                        <td>{p.projection}</td>
+                        <td className="compare-rating">★ {p.rating.toFixed(1)}</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
 
         {clonePage && (
           <div className="block">
