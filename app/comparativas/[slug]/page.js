@@ -26,6 +26,11 @@ export async function generateMetadata({ params }) {
   return {
     title,
     description,
+    // Las comparativas A-vs-B son combinatorias (944 paginas) y diluyen el
+    // presupuesto de rastreo de un dominio nuevo. Se mantienen accesibles para
+    // el usuario y el enlace interno, pero noindex para que Google concentre la
+    // indexacion en perfumes, marcas, alternativas, clones y guias.
+    robots: { index: false, follow: true },
     alternates: { canonical: `/comparativas/${slug}` },
     openGraph: { title: `${title} | Olfativa`, description },
   };

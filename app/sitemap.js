@@ -3,7 +3,6 @@ import {
   getAllPerfumes,
   getBrands,
   getNotes,
-  getComparisonPairs,
 } from "@/lib/data";
 import { LISTS } from "@/lib/lists";
 import { GUIDES } from "@/lib/guides";
@@ -63,12 +62,9 @@ export default function sitemap() {
     priority: 0.8,
   }));
 
-  const comparisonPages = getComparisonPairs().map((pair) => ({
-    url: `${SITE_URL}/comparativas/${pair.slug}`,
-    lastModified: now,
-    changeFrequency: "monthly",
-    priority: 0.8,
-  }));
+  // Las comparativas A-vs-B (combinatorias, ~944) se excluyen del sitemap y van
+  // con noindex: diluyen el presupuesto de rastreo en un dominio nuevo. Siguen
+  // accesibles por enlace interno.
 
   const brandPages = getBrands().map((b) => ({
     url: `${SITE_URL}/marcas/${b.slug}`,
@@ -77,12 +73,15 @@ export default function sitemap() {
     priority: 0.6,
   }));
 
-  const notePages = getNotes().map((n) => ({
-    url: `${SITE_URL}/notas/${n.slug}`,
-    lastModified: now,
-    changeFrequency: "monthly",
-    priority: 0.5,
-  }));
+  // Solo notas con 3+ perfumes (las de 1-2 son demasiado finas y van noindex).
+  const notePages = getNotes()
+    .filter((n) => n.count >= 3)
+    .map((n) => ({
+      url: `${SITE_URL}/notas/${n.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.5,
+    }));
 
   const listPages = LISTS.map((l) => ({
     url: `${SITE_URL}/mejores/${l.slug}`,
@@ -116,7 +115,6 @@ export default function sitemap() {
     ...staticPages,
     ...perfumePages,
     ...alternativesPages,
-    ...comparisonPages,
     ...brandPages,
     ...notePages,
     ...listPages,

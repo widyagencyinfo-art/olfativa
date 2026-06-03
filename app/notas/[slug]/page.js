@@ -16,6 +16,10 @@ export async function generateMetadata({ params }) {
   return {
     title,
     description,
+    // Las notas con menos de 3 perfumes son paginas demasiado finas (lista de
+    // 1-2 resultados): noindex para no diluir el rastreo. Se reactivan solas
+    // cuando la nota acumula 3+ perfumes en el catalogo.
+    ...(note.count < 3 ? { robots: { index: false, follow: true } } : {}),
     alternates: { canonical: `/notas/${note.slug}` },
     openGraph: { title: `${title} | Olfativa`, description },
   };
