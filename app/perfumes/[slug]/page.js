@@ -78,6 +78,15 @@ export async function generateMetadata({ params }) {
   const description = `${perfume.name} (${perfume.concentration}) de ${perfume.brand}: perfume ${perfume.family.toLowerCase()} de ${genderLabel(
     perfume.gender
   ).toLowerCase()}. Notas, precio (${formatPrice(perfume)}), duración ${perfume.longevity}, mejor época del año y opiniones.`;
+  const ogImages =
+    perfume.image && perfume.image.startsWith("/")
+      ? [
+          {
+            url: perfume.image,
+            alt: `Foto del perfume ${perfume.name} de ${perfume.brand}`,
+          },
+        ]
+      : undefined;
   return {
     title,
     description,
@@ -88,8 +97,14 @@ export async function generateMetadata({ params }) {
       url: `${SITE_URL}/perfumes/${perfume.slug}`,
       type: "article",
       locale: "es_ES",
+      ...(ogImages && { images: ogImages }),
     },
-    twitter: { card: "summary_large_image", title, description },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      ...(ogImages && { images: ogImages.map((i) => i.url) }),
+    },
   };
 }
 
@@ -142,6 +157,9 @@ export default async function PerfumePage({ params }) {
     "@context": "https://schema.org",
     "@type": "Product",
     name: `${perfume.brand} ${perfume.name} ${perfume.concentration}`,
+    ...(perfume.image && perfume.image.startsWith("/")
+      ? { image: `${SITE_URL}${perfume.image}` }
+      : {}),
     brand: { "@type": "Brand", name: perfume.brand },
     category: "Perfume / Fragancia",
     description: `${perfume.name} (${perfume.concentration}) de ${perfume.brand}, perfume ${perfume.family.toLowerCase()} de ${genderLabel(perfume.gender).toLowerCase()} lanzado en ${perfume.year}.`,

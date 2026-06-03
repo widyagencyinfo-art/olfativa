@@ -88,6 +88,17 @@ const orgLd = {
     "Notas olfativas",
   ],
   sameAs: [TELEGRAM_CHANNEL_URL],
+};
+
+const websiteLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: SITE_NAME,
+  alternateName: "Olfativa.es",
+  url: SITE_URL,
+  description: SITE_DESCRIPTION,
+  inLanguage: "es-ES",
+  publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
   potentialAction: {
     "@type": "SearchAction",
     target: {
@@ -124,6 +135,10 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteLd) }}
         />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
