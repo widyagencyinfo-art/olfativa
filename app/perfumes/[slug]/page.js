@@ -174,11 +174,16 @@ export default async function PerfumePage({ params }) {
       offerCount: 3,
       availability: "https://schema.org/InStock",
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: perfume.rating,
-      bestRating: 5,
-      ratingCount: 100,
+    review: {
+      "@type": "Review",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: perfume.rating,
+        bestRating: 5,
+        worstRating: 1,
+      },
+      author: { "@type": "Organization", name: "Editorial Olfativa" },
+      datePublished: "2026-05-21",
     },
     additionalProperty: [
       { "@type": "PropertyValue", name: "Familia olfativa", value: perfume.family },
@@ -354,7 +359,7 @@ export default async function PerfumePage({ params }) {
                 {stars(perfume.rating)}
               </span>
               <span className="ratings-out">
-                sobre 5 · valoración media de la comunidad
+                sobre 5 · valoración editorial de Olfativa
               </span>
             </div>
             <div className="rating-bars">
@@ -524,18 +529,15 @@ export default async function PerfumePage({ params }) {
               <Link href={`/alternativas/${perfume.slug}`} className="chip">
                 Ver todas las alternativas →
               </Link>
-              {similar.map((other) => {
-                const pair = [perfume.slug, other.slug].sort().join("-vs-");
-                return (
-                  <Link
-                    key={other.slug}
-                    href={`/comparativas/${pair}`}
-                    className="chip"
-                  >
-                    {perfume.name} vs {other.name}
-                  </Link>
-                );
-              })}
+              {similar.map((other) => (
+                <Link
+                  key={other.slug}
+                  href={`/perfumes/${other.slug}`}
+                  className="chip"
+                >
+                  {other.brand} {other.name} →
+                </Link>
+              ))}
             </div>
           </div>
         )}
