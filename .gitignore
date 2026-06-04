@@ -5,3 +5,6 @@ out/
 *.log
 .env*.local
 .vercel
+
+# Pinterest: PNGs generados (assets locales, no versionar)
+scripts/pinterest/out/
