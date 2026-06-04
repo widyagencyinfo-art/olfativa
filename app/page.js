@@ -38,6 +38,14 @@ export default function HomePage() {
     .sort((a, b) => b.year - a.year || b.rating - a.rating)
     .slice(0, 8);
 
+  // Guías destacadas en la home: las 3 más recientes (contenido fresco que así
+  // recibe enlaces desde la página de mayor autoridad y se indexa antes) + 3
+  // guías fundamentales de referencia. Sin duplicados.
+  const newestGuides = GUIDES.slice(-3).reverse();
+  const newestSlugs = new Set(newestGuides.map((g) => g.slug));
+  const evergreenGuides = GUIDES.filter((g) => !newestSlugs.has(g.slug)).slice(0, 3);
+  const homeGuides = [...newestGuides, ...evergreenGuides];
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -288,11 +296,11 @@ export default function HomePage() {
               <h2>Guías de perfumería</h2>
             </div>
             <Link href="/guias" className="section-link">
-              Ver las 20 →
+              Ver las {GUIDES.length} →
             </Link>
           </div>
           <div className="tile-grid">
-            {GUIDES.slice(0, 6).map((g) => (
+            {homeGuides.map((g) => (
               <Link key={g.slug} href={`/guias/${g.slug}`} className="tile tile-guide">
                 <h3>{g.title}</h3>
                 <p>{g.description.slice(0, 110)}…</p>
