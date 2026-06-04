@@ -3,9 +3,9 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { getComparisonPairs, getPerfumeBySlug } from "@/lib/data";
 
 export const metadata = {
-  title: "Comparativas de perfumes",
+  title: "Comparador de perfumes: comparativas enfrentadas",
   description:
-    "Comparativas de perfumes enfrentados: notas, precio, duración y proyección para decidir cuál comprar. Decenas de comparativas en Olfativa.",
+    "Comparador de perfumes: compara fragancias enfrentadas por notas, precio, duración y proyección para decidir cuál comprar. Decenas de comparativas en Olfativa.",
   alternates: { canonical: "/comparativas" },
 };
 
