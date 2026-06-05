@@ -31,7 +31,7 @@ import {
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} — Enciclopedia y buscador de perfumes`,
+    default: `${SITE_NAME} — Enciclopedia y buscador de perfumes y fragancias`,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
@@ -48,13 +48,13 @@ export const metadata = {
     type: "website",
     locale: "es_ES",
     siteName: SITE_NAME,
-    title: `${SITE_NAME} — Enciclopedia y buscador de perfumes`,
+    title: `${SITE_NAME} — Enciclopedia y buscador de perfumes y fragancias`,
     description: SITE_DESCRIPTION,
     url: SITE_URL,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} — Enciclopedia y buscador de perfumes`,
+    title: `${SITE_NAME} — Enciclopedia y buscador de perfumes y fragancias`,
     description: SITE_DESCRIPTION,
   },
   alternates: {

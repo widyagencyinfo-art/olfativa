@@ -4,9 +4,9 @@ import PerfumeExplorer from "@/components/PerfumeExplorer";
 import { getAllPerfumes, getFamilies, getBrands } from "@/lib/data";
 
 export const metadata = {
-  title: "Buscador de perfumes por nota, familia y marca",
+  title: "Buscador de perfumes y fragancias por nota y familia",
   description:
-    "Buscador avanzado de perfumes: filtra por género, familia olfativa, nota, marca, temporada y precio para encontrar tu fragancia ideal entre cientos de perfumes.",
+    "Buscador de perfumes y fragancias: filtra por género, familia olfativa, nota, marca, temporada y precio para encontrar tu fragancia ideal entre cientos de perfumes.",
   alternates: { canonical: "/buscar" },
   openGraph: {
     title: "Buscador de perfumes | Olfativa",
