@@ -62,6 +62,56 @@ Listo. El próximo cron postea el "perfume del día" al canal.
 
 ---
 
+## 🐦 4. X / Twitter (el que pediste para viralizar)
+
+**Por qué X:** máximo alcance y donde se viraliza contenido de nicho. El bot
+postea el mismo "perfume del día" / "clon del día" / curiosidad, recortado a 280.
+
+### Paso A — Crear la cuenta (lo haces tú, ~3 min: requiere móvil)
+> ⚠️ Esto **no lo puedo hacer yo**: la creación de cuenta exige verificación por
+> teléfono y CAPTCHA, y automatizarla = baneo inmediato. Es el único paso manual.
+
+1. En el móvil o en [x.com](https://x.com), crea cuenta nueva con el email de la marca.
+2. Verifica con tu número (X lo exige para poder publicar por API).
+3. Configura el perfil (textos listos en `marketing/twitter-lanzamiento.md`):
+   - **Handle:** `@olfativa_es` (1ª opción) · alternativas: `@olfativaperfumes`, `@olfativa_perfumes`.
+   - **Nombre:** Olfativa
+   - **Bio:** la de `twitter-lanzamiento.md`
+   - **Web:** `https://olfativa.es`
+   - **Foto/encabezado:** logo Olfativa (sirve el icono `app/icon.svg`).
+
+### Paso B — Sacar las 4 claves de API (~5 min, gratis)
+El plan **Free** de la API de X permite **500 posts/mes** de escritura — de sobra
+para 2-4 al día. Necesita un proyecto de desarrollador:
+
+1. Entra (ya logueado con la cuenta de Olfativa) en
+   [developer.x.com/en/portal/dashboard](https://developer.x.com/en/portal/dashboard).
+2. **Sign up for Free** → describe el uso ("bot que publica contenido propio de
+   una web de perfumes"). Aprobación inmediata.
+3. Te crea un **Project + App**. Entra en la App → **Settings** → **User
+   authentication settings** → Edit:
+   - **App permissions:** `Read and write` (¡importante! por defecto es solo lectura).
+   - **Type of App:** Web App / Automated App or Bot.
+   - **Callback URL:** `https://olfativa.es` · **Website:** `https://olfativa.es`. Guarda.
+4. Pestaña **Keys and tokens**:
+   - Copia **API Key** y **API Key Secret** (= consumer key/secret).
+   - En **Access Token and Secret** → **Generate**. Copia ambos.
+   - ⚠️ Si generaste los Access Token ANTES de poner permiso "Read and write",
+     **regéneralos** después, o solo podrá leer (error 403 al postear).
+
+### Añadir secrets a GitHub
+En `https://github.com/widyagencyinfo-art/olfativa/settings/secrets/actions`:
+
+- **Name:** `TWITTER_API_KEY` → **Value:** API Key
+- **Name:** `TWITTER_API_SECRET` → **Value:** API Key Secret
+- **Name:** `TWITTER_ACCESS_TOKEN` → **Value:** Access Token
+- **Name:** `TWITTER_ACCESS_SECRET` → **Value:** Access Token Secret
+
+Listo. El próximo cron publicará en X automáticamente (firma OAuth 1.0a ya
+implementada en `scripts/social-bot.js`, función `postTwitter()`).
+
+---
+
 ## Probar manualmente sin esperar al cron
 
 Una vez puestos los secrets, ve a:

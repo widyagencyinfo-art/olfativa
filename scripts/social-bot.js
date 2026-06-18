@@ -1,20 +1,25 @@
 // Bot de difusion social autonomo para Olfativa.
 // Postea cada dia perfume del dia + clon + curiosidad olfativa
-// a Telegram (canal broadcast), Bluesky y Mastodon. Sin servidor.
+// a Telegram (canal broadcast), Bluesky, Mastodon y X / Twitter. Sin servidor.
 //
 // Disparado por GitHub Actions (2 veces/dia, mañana y tarde).
 // Tokens en GitHub Secrets:
-//   TELEGRAM_BOT_TOKEN   (token de @BotFather)
-//   TELEGRAM_CHAT_ID     (id del canal, ej. @olfativa o -100123456)
-//   BLUESKY_HANDLE       (ej. olfativa.bsky.social)
-//   BLUESKY_PASSWORD     (app password, NO la contraseña principal)
-//   MASTODON_INSTANCE    (ej. mastodon.social)
-//   MASTODON_TOKEN       (access token desarrollador)
+//   TELEGRAM_BOT_TOKEN     (token de @BotFather)
+//   TELEGRAM_CHAT_ID       (id del canal, ej. @olfativa o -100123456)
+//   BLUESKY_HANDLE         (ej. olfativa.bsky.social)
+//   BLUESKY_PASSWORD       (app password, NO la contraseña principal)
+//   MASTODON_INSTANCE      (ej. mastodon.social)
+//   MASTODON_TOKEN         (access token desarrollador)
+//   TWITTER_API_KEY        (X dev portal: API Key / Consumer Key)
+//   TWITTER_API_SECRET     (X dev portal: API Secret / Consumer Secret)
+//   TWITTER_ACCESS_TOKEN   (X dev portal: Access Token, permiso Read+Write)
+//   TWITTER_ACCESS_SECRET  (X dev portal: Access Token Secret)
 //
 // Si una variable no esta configurada, esa red simplemente se salta.
 
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
 
 const SITE = "https://olfativa.es";
 
@@ -96,11 +101,21 @@ function postMorning() {
     `${priceTier(p)} · ${p.priceRange.min}-${p.priceRange.max}€\n\n` +
     `👉 Notas completas, opiniones y dónde comprarlo 👇`;
 
+  // Version corta para X / Twitter (limite 280, sin emojis de cabecera Unicode
+  // que cuentan doble). El enlace lo añade postTwitter al final.
+  const tweet =
+    `🌸 Perfume del día: ${p.name} — ${p.brand}\n` +
+    `${p.family} · ${p.year}\n` +
+    `🌿 Salida: ${top}\n` +
+    `🪵 Fondo: ${base}\n` +
+    `⏱ ${p.longevity} · ${p.priceRange.min}-${p.priceRange.max}€`;
+
   return {
     photo: bestPhoto(p),
     button: { text: `Ver ${p.name} en Olfativa →`, url },
     short: caption,
-    long: caption
+    long: caption,
+    tweet
   };
 }
 
@@ -127,11 +142,17 @@ function postEvening() {
       `${c.description ? c.description.slice(0, 160) + "…" : ""}\n\n` +
       `👉 Las mejores alternativas baratas 👇`;
 
+    const tweet =
+      `💰 ¿Te gusta ${cleanTitle}?\n` +
+      `Hay clones que huelen casi igual por una fracción del precio. ` +
+      `Las mejores alternativas baratas 👇`;
+
     return {
       photo,
       button: { text: `Clones de ${cleanTitle} →`, url },
       short: caption,
-      long: caption
+      long: caption,
+      tweet
     };
   }
 
@@ -144,11 +165,13 @@ function postEvening() {
       `${g.title}\n\n` +
       `${g.description ? g.description.slice(0, 220) : ""}\n\n` +
       `👉 Te lo contamos todo 👇`;
+    const cleanG = g.title.replace(/\s*\|.*$/, "").trim();
     return {
       photo: null,
       button: { text: "Leer la guía completa →", url },
       short: `💡 ${g.title}\n\n${url}`,
-      long: caption
+      long: caption,
+      tweet: `💡 ¿Sabías que...? ${cleanG}`
     };
   }
 
@@ -295,6 +318,83 @@ async function postMastodon(text) {
   );
 }
 
+// =================== X / Twitter (API v2 + OAuth 1.0a) ===================
+
+// Percent-encoding RFC 3986 (encodeURIComponent deja sin codificar !*'() ).
+function pctEncode(s) {
+  return encodeURIComponent(s).replace(
+    /[!*'()]/g,
+    (c) => "%" + c.charCodeAt(0).toString(16).toUpperCase()
+  );
+}
+
+async function postTwitter(post) {
+  const ck = process.env.TWITTER_API_KEY;
+  const cs = process.env.TWITTER_API_SECRET;
+  const tok = process.env.TWITTER_ACCESS_TOKEN;
+  const ts = process.env.TWITTER_ACCESS_SECRET;
+  if (!ck || !cs || !tok || !ts) {
+    console.log("[twitter] sin credenciales, saltado");
+    return;
+  }
+
+  // Construir tweet <=280. X cuenta cualquier URL como 23 chars (t.co).
+  const url = post.button && post.button.url;
+  let text = post.tweet || post.short || "";
+  const MAX = 280;
+  const URLLEN = 23;
+  const sep = "\n\n👉 ";
+  if (url) {
+    const budget = MAX - URLLEN - sep.length;
+    if (text.length > budget) text = text.slice(0, budget - 1).trimEnd() + "…";
+    text = text + sep + url;
+  } else if (text.length > MAX) {
+    text = text.slice(0, MAX - 1) + "…";
+  }
+
+  const endpoint = "https://api.twitter.com/2/tweets";
+  const oauth = {
+    oauth_consumer_key: ck,
+    oauth_nonce: crypto.randomBytes(16).toString("hex"),
+    oauth_signature_method: "HMAC-SHA1",
+    oauth_timestamp: Math.floor(Date.now() / 1000).toString(),
+    oauth_token: tok,
+    oauth_version: "1.0"
+  };
+
+  // Base string: para application/json el body NO entra en la firma; solo
+  // los parametros oauth_*. Orden alfabetico + percent-encoding.
+  const paramStr = Object.keys(oauth)
+    .sort()
+    .map((k) => `${pctEncode(k)}=${pctEncode(oauth[k])}`)
+    .join("&");
+  const baseString = ["POST", pctEncode(endpoint), pctEncode(paramStr)].join("&");
+  const signingKey = `${pctEncode(cs)}&${pctEncode(ts)}`;
+  oauth.oauth_signature = crypto
+    .createHmac("sha1", signingKey)
+    .update(baseString)
+    .digest("base64");
+
+  const authHeader =
+    "OAuth " +
+    Object.keys(oauth)
+      .sort()
+      .map((k) => `${pctEncode(k)}="${pctEncode(oauth[k])}"`)
+      .join(", ");
+
+  const r = await fetch(endpoint, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Authorization: authHeader },
+    body: JSON.stringify({ text })
+  });
+  const j = await r.json().catch(() => ({}));
+  console.log(
+    "[twitter]",
+    r.status,
+    j.data && j.data.id ? "OK " + j.data.id : JSON.stringify(j).slice(0, 220)
+  );
+}
+
 // =================== Main ===================
 
 async function main() {
@@ -311,7 +411,8 @@ async function main() {
   await Promise.all([
     postTelegram(post.long, post.photo, post.button),
     postBluesky(post.long),
-    postMastodon(post.long)
+    postMastodon(post.long),
+    postTwitter(post)
   ]);
 }
 
