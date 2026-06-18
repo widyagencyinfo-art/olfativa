@@ -287,6 +287,33 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ============ ESTUDIO DE DATOS (activo enlazable) ============ */}
+      <section className="section">
+        <div className="container">
+          <div className="section-head">
+            <div>
+              <span className="section-eyebrow">Datos, no opiniones</span>
+              <h2>La perfumería en datos</h2>
+            </div>
+            <Link href="/estudio/perfumeria-en-datos" className="section-link">
+              Ver el estudio →
+            </Link>
+          </div>
+          <p className="section-lead">
+            Analizamos las fichas de los {perfumes.length} perfumes del catálogo
+            para responder con cifras: las notas que más se repiten, las
+            familias que dominan, el reparto por género y concentración, y
+            cuánto cuesta de media un buen perfume.
+          </p>
+          <Link
+            href="/estudio/perfumeria-en-datos"
+            className="chip chip-lg"
+          >
+            📊 Ver las notas, familias y precios más comunes →
+          </Link>
+        </div>
+      </section>
+
       {/* ============ GUÍAS ============ */}
       <section className="section section-alt">
         <div className="container">

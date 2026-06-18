@@ -68,7 +68,13 @@ export default function GuiasPage() {
           <p>
             Y si quieres terminología precisa, complementa estas guías con el{" "}
             <Link href="/glosario">glosario de perfumería</Link> donde
-            encontrarás 60+ términos clave explicados en una línea.
+            encontrarás 60+ términos clave explicados en una línea. ¿Te van más
+            los datos? Echa un vistazo a{" "}
+            <Link href="/estudio/perfumeria-en-datos">
+              la perfumería en datos
+            </Link>
+            : las notas más usadas, las familias dominantes y el precio medio
+            del perfume, calculados sobre todo el catálogo.
           </p>
         </article>
         <div className="tile-grid" style={{ marginTop: "24px" }}>

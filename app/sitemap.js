@@ -22,6 +22,7 @@ export default function sitemap() {
     "/mejores",
     "/clones",
     "/guias",
+    "/estudio/perfumeria-en-datos",
     "/glosario",
     "/preguntas-frecuentes",
     "/test/familia-olfativa",

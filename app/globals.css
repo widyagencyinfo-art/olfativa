@@ -2565,3 +2565,150 @@ img {
   font-size: 0.88rem;
 }
 .tile-guide h3 { font-size: 1rem; }
+
+/* ============================================================
+   Data-viz del estudio "La perfumería en datos" (/estudio/...)
+   Gráficos 100% CSS, sin JS de cliente.
+   ============================================================ */
+.dv-keyfacts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin: 28px 0 8px;
+}
+.dv-kf {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 16px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+.dv-kf strong {
+  display: block;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+  line-height: 1.1;
+}
+.dv-kf span {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.78rem;
+  color: var(--text-soft);
+  letter-spacing: 0.01em;
+}
+
+.dv-chart {
+  margin: 18px 0 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.dv-bar-row {
+  display: grid;
+  grid-template-columns: 130px 1fr 52px;
+  align-items: center;
+  gap: 12px;
+}
+.dv-bar-link {
+  text-decoration: none;
+  color: inherit;
+  border-radius: 8px;
+}
+.dv-bar-link:hover .dv-bar-label { color: var(--accent-dark); }
+.dv-bar-link:hover .dv-bar-fill { background: var(--accent-dark); }
+.dv-bar-label {
+  font-size: 0.85rem;
+  color: var(--text);
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dv-bar-track {
+  position: relative;
+  height: 16px;
+  background: var(--bg-soft);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.dv-bar-fill {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+  border-radius: 999px;
+  min-width: 4px;
+  transition: width 0.2s ease;
+}
+.dv-bar-value {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-soft);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.dv-caption {
+  font-size: 0.8rem;
+  color: var(--text-soft);
+  margin-top: 10px;
+}
+
+.dv-twocol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.dv-subhead {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 4px 0 2px;
+}
+
+/* Décadas: columnas verticales */
+.dv-decades {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  height: 200px;
+  margin: 20px 0 6px;
+  padding: 0 4px;
+}
+.dv-deccol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  gap: 6px;
+}
+.dv-deccount {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-soft);
+  font-variant-numeric: tabular-nums;
+}
+.dv-decbar {
+  width: 100%;
+  max-width: 46px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-dark));
+  border-radius: 6px 6px 0 0;
+  min-height: 4px;
+}
+.dv-declabel {
+  font-size: 0.72rem;
+  color: var(--text-soft);
+}
+
+@media (max-width: 640px) {
+  .dv-keyfacts { grid-template-columns: repeat(2, 1fr); }
+  .dv-twocol { grid-template-columns: 1fr; gap: 24px; }
+  .dv-bar-row { grid-template-columns: 96px 1fr 44px; gap: 8px; }
+  .dv-bar-label { font-size: 0.78rem; }
+  .dv-decades { height: 160px; gap: 5px; }
+  .dv-deccount { font-size: 0.68rem; }
+}

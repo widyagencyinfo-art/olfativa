@@ -25,7 +25,7 @@ Participa con respuestas útiles; el enlace va cuando SUMA, no en cada mensaje.
 ## Carril 3 — Activos enlazables (lo que atrae enlaces solo)
 - [ ] Difundir el **Test de familia olfativa** (`/test/familia-olfativa`) — la gente comparte tests
 - [ ] Difundir las **guías de clones/equivalencias** (`/clones`) — alta demanda
-- [ ] Crear 1 pieza con **datos** (ej. "los 20 perfumes más buscados 2026") → linkable
+- [x] Crear 1 pieza con **datos** → **`/estudio/perfumeria-en-datos`** ("La perfumería en datos": notas más usadas, familias, género, concentración, marcas, décadas y precio medio, computado en vivo desde el catálogo). **Falta difundirla** (Reddit, Quora, prensa de nicho) y conseguir que la citen como fuente.
 
 ## Carril 4 — Outreach (semanas 3+)
 - [ ] Blogs de belleza/perfume ES pequeños → ofrecer un **guest post** original
