@@ -114,8 +114,9 @@
 1. **El algoritmo penaliza enlaces externos.** En tweets de máximo alcance
    (polls, debates, hilos), pon el enlace en la **respuesta** al tweet, no en el
    tweet principal. El bot sí lleva enlace porque su objetivo es tráfico, no viralidad.
-2. **Imagen o vídeo siempre que puedas:** dobla el alcance. (Siguiente fase:
-   generador de tarjetas-imagen de perfume — pídemelo.)
+2. **Imagen o vídeo siempre que puedas:** dobla el alcance. ✅ El bot ya adjunta
+   automáticamente una tarjeta visual del perfume (la OG card o la foto del
+   frasco) en cada post. Tú, en tus tweets manuales, sube también imagen.
 3. **Responde rápido** las primeras 2h: X mide la conversación inicial.
 4. **Consistencia > intensidad.** El bot ya garantiza 2-4/día; tú añade 2-3
    tweets "humanos" a la semana (polls, debates, opiniones).

@@ -110,6 +110,11 @@ En `https://github.com/widyagencyinfo-art/olfativa/settings/secrets/actions`:
 Listo. El próximo cron publicará en X automáticamente (firma OAuth 1.0a ya
 implementada en `scripts/social-bot.js`, función `postTwitter()`).
 
+**Imágenes:** el bot adjunta automáticamente la tarjeta visual del perfume (la
+OG card de la web o la foto del frasco) subiéndola a la API de media. Si tu
+plan/permiso no deja subir media, el tweet sale igual en solo-texto (fallback
+automático, nunca falla por esto).
+
 ---
 
 ## Probar manualmente sin esperar al cron

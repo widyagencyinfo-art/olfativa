@@ -328,12 +328,84 @@ function pctEncode(s) {
   );
 }
 
+// Cabecera Authorization OAuth 1.0a. Solo firma los parametros oauth_*: tanto
+// el body JSON (POST /2/tweets) como el multipart (media/upload) quedan fuera
+// de la firma, asi que el mismo helper vale para ambos endpoints.
+function oauthHeader(method, url, c) {
+  const oauth = {
+    oauth_consumer_key: c.ck,
+    oauth_nonce: crypto.randomBytes(16).toString("hex"),
+    oauth_signature_method: "HMAC-SHA1",
+    oauth_timestamp: Math.floor(Date.now() / 1000).toString(),
+    oauth_token: c.tok,
+    oauth_version: "1.0"
+  };
+  const paramStr = Object.keys(oauth)
+    .sort()
+    .map((k) => `${pctEncode(k)}=${pctEncode(oauth[k])}`)
+    .join("&");
+  const baseString = [method, pctEncode(url), pctEncode(paramStr)].join("&");
+  const signingKey = `${pctEncode(c.cs)}&${pctEncode(c.ts)}`;
+  oauth.oauth_signature = crypto
+    .createHmac("sha1", signingKey)
+    .update(baseString)
+    .digest("base64");
+  return (
+    "OAuth " +
+    Object.keys(oauth)
+      .sort()
+      .map((k) => `${pctEncode(k)}="${pctEncode(oauth[k])}"`)
+      .join(", ")
+  );
+}
+
+// Descarga una imagen (tarjeta OG o foto del frasco) y la sube a la API v1.1
+// de media. Devuelve media_id_string o null. Cualquier fallo -> null (el tweet
+// saldra en modo solo-texto). Multipart: el body no entra en la firma OAuth.
+async function uploadTwitterMedia(imageUrl, creds) {
+  try {
+    const img = await fetch(imageUrl);
+    if (!img.ok) {
+      console.log("[twitter:media] descarga fallo", img.status);
+      return null;
+    }
+    const buf = Buffer.from(await img.arrayBuffer());
+    if (buf.length > 5 * 1024 * 1024) {
+      console.log("[twitter:media] imagen >5MB, omitida");
+      return null;
+    }
+    const type = img.headers.get("content-type") || "image/png";
+    const ext = type.includes("webp")
+      ? "webp"
+      : type.includes("jpeg") || type.includes("jpg")
+      ? "jpg"
+      : "png";
+    const endpoint = "https://upload.twitter.com/1.1/media/upload.json";
+    const form = new FormData();
+    form.append("media", new Blob([buf], { type }), `card.${ext}`);
+    const r = await fetch(endpoint, {
+      method: "POST",
+      headers: { Authorization: oauthHeader("POST", endpoint, creds) },
+      body: form
+    });
+    const j = await r.json().catch(() => ({}));
+    if (j.media_id_string) return j.media_id_string;
+    console.log("[twitter:media] fallo", r.status, JSON.stringify(j).slice(0, 160));
+    return null;
+  } catch (e) {
+    console.log("[twitter:media] error", e.message);
+    return null;
+  }
+}
+
 async function postTwitter(post) {
-  const ck = process.env.TWITTER_API_KEY;
-  const cs = process.env.TWITTER_API_SECRET;
-  const tok = process.env.TWITTER_ACCESS_TOKEN;
-  const ts = process.env.TWITTER_ACCESS_SECRET;
-  if (!ck || !cs || !tok || !ts) {
+  const creds = {
+    ck: process.env.TWITTER_API_KEY,
+    cs: process.env.TWITTER_API_SECRET,
+    tok: process.env.TWITTER_ACCESS_TOKEN,
+    ts: process.env.TWITTER_ACCESS_SECRET
+  };
+  if (!creds.ck || !creds.cs || !creds.tok || !creds.ts) {
     console.log("[twitter] sin credenciales, saltado");
     return;
   }
@@ -352,45 +424,30 @@ async function postTwitter(post) {
     text = text.slice(0, MAX - 1) + "…";
   }
 
+  // Subir la tarjeta visual (OG card o foto del frasco). Imagen = +alcance.
+  let mediaIds = null;
+  if (post.photo) {
+    const id = await uploadTwitterMedia(post.photo, creds);
+    if (id) mediaIds = [id];
+  }
+
   const endpoint = "https://api.twitter.com/2/tweets";
-  const oauth = {
-    oauth_consumer_key: ck,
-    oauth_nonce: crypto.randomBytes(16).toString("hex"),
-    oauth_signature_method: "HMAC-SHA1",
-    oauth_timestamp: Math.floor(Date.now() / 1000).toString(),
-    oauth_token: tok,
-    oauth_version: "1.0"
-  };
-
-  // Base string: para application/json el body NO entra en la firma; solo
-  // los parametros oauth_*. Orden alfabetico + percent-encoding.
-  const paramStr = Object.keys(oauth)
-    .sort()
-    .map((k) => `${pctEncode(k)}=${pctEncode(oauth[k])}`)
-    .join("&");
-  const baseString = ["POST", pctEncode(endpoint), pctEncode(paramStr)].join("&");
-  const signingKey = `${pctEncode(cs)}&${pctEncode(ts)}`;
-  oauth.oauth_signature = crypto
-    .createHmac("sha1", signingKey)
-    .update(baseString)
-    .digest("base64");
-
-  const authHeader =
-    "OAuth " +
-    Object.keys(oauth)
-      .sort()
-      .map((k) => `${pctEncode(k)}="${pctEncode(oauth[k])}"`)
-      .join(", ");
+  const body = { text };
+  if (mediaIds) body.media = { media_ids: mediaIds };
 
   const r = await fetch(endpoint, {
     method: "POST",
-    headers: { "Content-Type": "application/json", Authorization: authHeader },
-    body: JSON.stringify({ text })
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: oauthHeader("POST", endpoint, creds)
+    },
+    body: JSON.stringify(body)
   });
   const j = await r.json().catch(() => ({}));
   console.log(
     "[twitter]",
     r.status,
+    mediaIds ? "(con imagen)" : "(solo texto)",
     j.data && j.data.id ? "OK " + j.data.id : JSON.stringify(j).slice(0, 220)
   );
 }
