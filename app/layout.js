@@ -26,6 +26,7 @@ import {
   SITE_URL,
   SITE_DESCRIPTION,
   TELEGRAM_CHANNEL_URL,
+  ADSENSE_CLIENT,
 } from "@/lib/data";
 
 export const metadata = {
@@ -142,6 +143,16 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteLd) }}
         />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        {ADSENSE_CLIENT ? (
+          <>
+            <meta name="google-adsense-account" content={ADSENSE_CLIENT} />
+            <script
+              async
+              src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+              crossOrigin="anonymous"
+            />
+          </>
+        ) : null}
       </head>
       <body>
         <SiteHeader />
