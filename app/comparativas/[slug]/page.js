@@ -26,11 +26,12 @@ export async function generateMetadata({ params }) {
   return {
     title,
     description,
-    // Las comparativas A-vs-B son combinatorias (944 paginas) y diluyen el
-    // presupuesto de rastreo de un dominio nuevo. Se mantienen accesibles para
-    // el usuario y el enlace interno, pero noindex para que Google concentre la
-    // indexacion en perfumes, marcas, alternativas, clones y guias.
-    robots: { index: false, follow: true },
+    // Los datos de GSC (jul 2026) muestran que las comparativas son el tipo de
+    // pagina que MEJOR rankea del sitio (posiciones 3-10 en long-tail "X vs Y",
+    // baja competencia), justo donde un dominio nuevo puede ganar. Son paginas
+    // ricas (diferencias, veredicto, fichas), no thin. Se indexan para capturar
+    // ese trafico en lugar de dejarlo escapar.
+    robots: { index: true, follow: true },
     alternates: { canonical: `/comparativas/${slug}` },
     openGraph: { title: `${title} | Olfativa`, description },
   };

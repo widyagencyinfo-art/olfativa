@@ -3,6 +3,7 @@ import {
   getAllPerfumes,
   getBrands,
   getNotes,
+  getComparisonPairs,
 } from "@/lib/data";
 import { LISTS } from "@/lib/lists";
 import { GUIDES } from "@/lib/guides";
@@ -63,9 +64,16 @@ export default function sitemap() {
     priority: 0.8,
   }));
 
-  // Las comparativas A-vs-B (combinatorias, ~944) se excluyen del sitemap y van
-  // con noindex: diluyen el presupuesto de rastreo en un dominio nuevo. Siguen
-  // accesibles por enlace interno.
+  // Las comparativas A-vs-B se generan sobre pares de perfumes REALMENTE
+  // similares (no combinatoria ciega). GSC (jul 2026) confirma que son el tipo
+  // de pagina que mejor rankea (posiciones 3-10 en long-tail de baja
+  // competencia), asi que las indexamos y las incluimos en el sitemap.
+  const comparativaPages = getComparisonPairs().map((c) => ({
+    url: `${SITE_URL}/comparativas/${c.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.6,
+  }));
 
   const brandPages = getBrands().map((b) => ({
     url: `${SITE_URL}/marcas/${b.slug}`,
@@ -116,6 +124,7 @@ export default function sitemap() {
     ...staticPages,
     ...perfumePages,
     ...alternativesPages,
+    ...comparativaPages,
     ...brandPages,
     ...notePages,
     ...listPages,
